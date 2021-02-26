@@ -1,0 +1,56 @@
+metadata:
+  name: manifoldfinance
+  short_name: manifold
+  description: Manifold Finance Documentation and Wiki
+  language: en
+  url: 'https://foldfinance.com'
+  pathPrefix: /
+  gaTrackingId: null
+  favicon: /assets/favicon.png
+  themeColor: '#0066cc'
+header:
+  enabled: true
+  logo: /assets/logo.png
+  links: []
+sidebar:
+  ignoreIndex: false
+  forcedNavOrder: []
+  expanded: []
+  groups: []
+  links: []
+  poweredBy: {}
+  enabled: true
+pwa:
+  enabled: true
+  manifest:
+    icon: /assets/logo.png
+    display: minimal-ui
+    crossOrigin: anonymous
+features:
+  editOnRepo:
+    editable: true
+    location: 'https://github.com/manifoldfinance/gitdocs'
+    type: github
+  search:
+    enabled: false
+    indexName: docs
+    showStats: true
+    pagination:
+      enabled: true
+  rss:
+    enabled: true
+    showIcon: true
+    copyright: ''
+    categories: []
+    matchRegex: ^/
+    outputPath: /rss.xml
+  darkMode:
+    enabled: true
+    default: false
+social:
+  github: 'https://github.com/manifoldfinance'
+  mail: contact@manifoldfinance.com
+  slack: 'https://t.me/manifoldfinance'
+  twitter: 'https://twitter.com/foldfinance'
+search:
+  enabled: false

@@ -1,5 +1,5 @@
 metadata:
-  name: manifoldfinance
+  name: Manifold Finance Documentation Portal
   short_name: manifold
   description: Manifold Finance Documentation and Wiki
   language: en
@@ -50,7 +50,6 @@ features:
 social:
   github: 'https://github.com/manifoldfinance'
   mail: contact@manifoldfinance.com
-  slack: 'https://t.me/manifoldfinance'
   twitter: 'https://twitter.com/foldfinance'
 search:
   enabled: false
