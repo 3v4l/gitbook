@@ -1,12 +1,12 @@
-import React from 'react';
-import styled from '@emotion/styled';
-import config from 'config';
-import ContentTree from './contentTree';
-import Links from './links';
-import PoweredBy from './poweredBy';
-import { getNavigationData } from '../Navigation';
-import { scrollbar } from '../../styles';
-import { onMobile } from '../../styles/responsive';
+import React from "react";
+import styled from "@emotion/styled";
+import config from "config";
+import ContentTree from "./contentTree";
+import Links from "./links";
+import PoweredBy from "./poweredBy";
+import { getNavigationData } from "../Navigation";
+import { scrollbar } from "../../styles";
+import { onMobile } from "../../styles/responsive";
 
 const Sidebar = styled.div`
   margin-left: ${(props) => props.theme.layout.leftMargin};
@@ -40,7 +40,8 @@ const PoweredByWrapper = styled.div`
   display: block;
   padding: 0;
   position: relative;
-  box-shadow: 0 -7px 10px -5px ${(props) => props.theme.navigationSidebar.backgroundPrimary};
+  box-shadow: 0 -7px 10px -5px
+    ${(props) => props.theme.navigationSidebar.backgroundPrimary};
 `;
 
 const NavigationWrapper = styled(({ className, children }) => {
@@ -50,7 +51,7 @@ const NavigationWrapper = styled(({ className, children }) => {
     </aside>
   );
 })`
-  display: ${(props) => props.show ? 'block' : 'none'};
+  display: ${(props) => (props.show ? "block" : "none")};
   height: 100vh;
   top: 0;
   flex: 0 0 ${(props) => props.theme.layout.leftWidth};

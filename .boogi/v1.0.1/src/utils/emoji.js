@@ -1,4 +1,4 @@
-const emoji = require('node-emoji');
+const emoji = require("node-emoji");
 
 const emojify = (text) => {
   return emoji.emojify(text, (name) => name);

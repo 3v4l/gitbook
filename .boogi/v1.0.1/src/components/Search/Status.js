@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from '@emotion/styled';
-import { css } from '@emotion/core';
-import { marginLeftRight } from './styles';
-import Loading from '../Loader';
+import React from "react";
+import styled from "@emotion/styled";
+import { css } from "@emotion/core";
+import { marginLeftRight } from "./styles";
+import Loading from "../Loader";
 
 const queryToken = css`
   font-weight: bold;
@@ -20,22 +20,22 @@ const StatusWrapper = styled.div`
 `;
 
 const SearchStatus = ({ searching, noHits, query }) => {
-  let text = '';
+  let text = "";
   if (searching) {
-    text = 'Searching...';
+    text = "Searching...";
   } else if (noHits) {
     text = `No results found for `;
   }
-  return text !== '' ? (
+  return text !== "" ? (
     <div css={marginLeftRight}>
       <StatusWrapper>
         <span>{text}</span>
-        {noHits ? <span css={queryToken}>{query}</span> : ''}
-        {searching ? <Loading css={{ margin: '20px auto' }} /> : ''}
+        {noHits ? <span css={queryToken}>{query}</span> : ""}
+        {searching ? <Loading css={{ margin: "20px auto" }} /> : ""}
       </StatusWrapper>
     </div>
   ) : (
-    ''
+    ""
   );
 };
 

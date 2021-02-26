@@ -1,6 +1,6 @@
-import React from 'react';
-import { ThemeProvider as EmotionThemeProvider } from 'emotion-theming';
-import { light, dark } from '../../theme';
+import React from "react";
+import { ThemeProvider as EmotionThemeProvider } from "emotion-theming";
+import { light, dark } from "../../theme";
 
 class ThemeProvider extends React.Component {
   state = {
@@ -20,10 +20,13 @@ class ThemeProvider extends React.Component {
     if (!this.darkModeConfig.enabled) {
       return false;
     }
-    let isDarkThemeActive = JSON.parse(window.localStorage.getItem('isDarkThemeActive'));
+    let isDarkThemeActive = JSON.parse(
+      window.localStorage.getItem("isDarkThemeActive")
+    );
     if (isDarkThemeActive == null) {
       isDarkThemeActive =
-        window.matchMedia('(prefers-color-scheme: dark)').matches || this.darkModeConfig.default;
+        window.matchMedia("(prefers-color-scheme: dark)").matches ||
+        this.darkModeConfig.default;
     }
     this.setState({ isDarkThemeActive });
     return isDarkThemeActive;
@@ -31,12 +34,17 @@ class ThemeProvider extends React.Component {
 
   toggleActiveTheme = () => {
     if (!this.darkModeConfig.enabled) {
-      console.warn('Dark mode is disabled, but trying to activate it.');
+      console.warn("Dark mode is disabled, but trying to activate it.");
       return false;
     }
-    this.setState((prevState) => ({ isDarkThemeActive: !prevState.isDarkThemeActive }));
+    this.setState((prevState) => ({
+      isDarkThemeActive: !prevState.isDarkThemeActive,
+    }));
 
-    window.localStorage.setItem('isDarkThemeActive', JSON.stringify(!this.state.isDarkThemeActive));
+    window.localStorage.setItem(
+      "isDarkThemeActive",
+      JSON.stringify(!this.state.isDarkThemeActive)
+    );
     return !this.state.isDarkThemeActive;
   };
 
@@ -47,7 +55,9 @@ class ThemeProvider extends React.Component {
 
     return (
       <div>
-        <EmotionThemeProvider theme={currentActiveTheme}>{children}</EmotionThemeProvider>
+        <EmotionThemeProvider theme={currentActiveTheme}>
+          {children}
+        </EmotionThemeProvider>
       </div>
     );
   }

@@ -1,4 +1,4 @@
-const sectionizeToc = require('./sectionize-toc');
+const sectionizeToc = require("./sectionize-toc");
 
 const transform = sectionizeToc();
 

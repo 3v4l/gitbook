@@ -6,18 +6,21 @@ const breakpointsInt = {
 const breakpoints = {};
 
 Object.keys(breakpointsInt).map(function (key, index) {
-  breakpoints[key] = breakpointsInt[key] + 'px';
+  breakpoints[key] = breakpointsInt[key] + "px";
 });
 
 const mq = Object.values(breakpoints).map((bp) => `@media (max-width: ${bp})`);
 
 const checkViewport = (maxValue) => {
   if (typeof document !== `undefined`) {
-    const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+    const vw = Math.max(
+      document.documentElement.clientWidth || 0,
+      window.innerWidth || 0
+    );
     return vw <= maxValue;
   }
   return false;
-}; 
+};
 
 export const isMobile = () => {
   return checkViewport(breakpointsInt.small);

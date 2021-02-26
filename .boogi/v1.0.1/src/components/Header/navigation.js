@@ -1,15 +1,15 @@
-import React from 'react';
-import styled from '@emotion/styled';
-import { onMobile } from '../../styles/responsive';
+import React from "react";
+import styled from "@emotion/styled";
+import { onMobile } from "../../styles/responsive";
 
 const Navigation = styled(({ className, links }) => {
   return (
-    <nav css={{display: 'flex'}}>
+    <nav css={{ display: "flex" }}>
       <ul className={className}>
         {links
           ? links.map((link, key) => {
-              const openRule = link.external ? '_blank' : '_self';
-              if (link.link !== '' && link.text !== '') {
+              const openRule = link.external ? "_blank" : "_self";
+              if (link.link !== "" && link.text !== "") {
                 return (
                   <li key={key}>
                     <a
@@ -49,7 +49,7 @@ const Navigation = styled(({ className, links }) => {
     list-style-type: none;
     display: flex;
     & > a:before {
-      content: '';
+      content: "";
       position: absolute;
       width: 100%;
       height: 3px;
@@ -67,7 +67,7 @@ const Navigation = styled(({ className, links }) => {
       transform: scaleX(1);
     }
     a {
-      font-family: 'Roboto';
+      font-family: "Roboto";
       position: relative;
       color: ${(props) => props.theme.header.font.base};
       font-size: 16px;

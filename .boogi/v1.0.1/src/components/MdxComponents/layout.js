@@ -1,9 +1,9 @@
-import React from 'react';
-import styled from '@emotion/styled';
+import React from "react";
+import styled from "@emotion/styled";
 
 const LayoutEl = styled.div`
   display: flex;
-  flex-direction: ${(props) => props.direction || 'row'};
+  flex-direction: ${(props) => props.direction || "row"};
   align-items: ${(props) => props.align};
   &.spacing-xlarge > * {
     margin: 64px 64px 64px 0;
@@ -25,9 +25,9 @@ const LayoutEl = styled.div`
   }
 `;
 const Layout = ({ children, spacing, ...props }) => {
-  let space = spacing || 'medium';
+  let space = spacing || "medium";
   return (
-    <LayoutEl className={'spacing-' + space} {...props}>
+    <LayoutEl className={"spacing-" + space} {...props}>
       {children}
     </LayoutEl>
   );

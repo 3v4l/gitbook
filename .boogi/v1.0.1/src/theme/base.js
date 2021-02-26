@@ -1,33 +1,37 @@
-import defaultColors from './colors';
-import colorfn from 'color';
-import { increaseIntensivity, decreaseIntensivity, grayscaleCompatible } from '../utils/colors';
+import defaultColors from "./colors";
+import colorfn from "color";
+import {
+  increaseIntensivity,
+  decreaseIntensivity,
+  grayscaleCompatible,
+} from "../utils/colors";
 
 const colors = {
   ...defaultColors,
 
   primary: defaultColors.red,
   primaryDark: defaultColors.blueDark,
-  fontLight: '#efefef',
-  font: '#dddddd',
-  fontDark: '#8a8a8a',
-  background: '#29282A',
-  mainBackground: '#1E1E1F',
-  border: '#323234',
+  fontLight: "#efefef",
+  font: "#dddddd",
+  fontDark: "#8a8a8a",
+  background: "#29282A",
+  mainBackground: "#1E1E1F",
+  border: "#323234",
   hover: defaultColors.red,
-  shadow: defaultColors.gray + '33',
+  shadow: defaultColors.gray + "33",
 };
 
 const pageLayout = {
-  leftWidth: '318px',
-  leftMargin: '30px',
-  rightWidth: '',
-  rightMargin: '',
+  leftWidth: "318px",
+  leftMargin: "30px",
+  rightWidth: "",
+  rightMargin: "",
 };
 
 const transitions = {
-  hover: 'all .5s cubic-bezier(0.25, 0.8, 0.25, 1) 0s',
-  hoverFast: 'all .3s cubic-bezier(0.25, 0.8, 0.25, 1) 0s',
-  hoverColor: 'color .5s cubic-bezier(0.25, 0.8, 0.25, 1) 0s',
+  hover: "all .5s cubic-bezier(0.25, 0.8, 0.25, 1) 0s",
+  hoverFast: "all .3s cubic-bezier(0.25, 0.8, 0.25, 1) 0s",
+  hoverColor: "color .5s cubic-bezier(0.25, 0.8, 0.25, 1) 0s",
 };
 
 const content = (colors) => ({
@@ -48,7 +52,10 @@ const navigationSidebar = (colors) => ({
   border: colors.border,
   row: {
     hover: colors.border,
-    active: colorfn(colors.white).mix(colorfn(colors.background)).whiten(3.5).hex(),
+    active: colorfn(colors.white)
+      .mix(colorfn(colors.background))
+      .whiten(3.5)
+      .hex(),
     activeBorder: colors.border,
     collapseHover: colors.hover,
   },
@@ -151,11 +158,14 @@ const highlights = (colors) => ({
 const table = (colors) => ({
   header: {
     background: colors.primary,
-    font: increaseIntensivity(colorfn(colors.primary).negate().grayscale(), 0.5),
+    font: increaseIntensivity(
+      colorfn(colors.primary).negate().grayscale(),
+      0.5
+    ),
   },
   oddRow: colors.mainBackground,
   evenRow: colors.background,
-  rowHover: colors.hover + '3d',
+  rowHover: colors.hover + "3d",
   border: colors.border,
 });
 
@@ -181,7 +191,12 @@ const previousNext = (colors) => ({
 const scrollTop = (colors) => ({
   background: colors.primary,
   hover: increaseIntensivity(colors.primary, 0.15),
-  arrow: colorfn(colors.primary).negate().grayscale().lighten(0.4).rgb().string(),
+  arrow: colorfn(colors.primary)
+    .negate()
+    .grayscale()
+    .lighten(0.4)
+    .rgb()
+    .string(),
 });
 
 export default {

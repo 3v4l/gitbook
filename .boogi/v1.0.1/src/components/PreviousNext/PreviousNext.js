@@ -1,18 +1,18 @@
-import React, { useEffect } from 'react';
-import { Link } from '../';
-import styled from '@emotion/styled';
-import emoji from '../../utils/emoji';
-import { navigate } from 'gatsby';
-import config from 'config';
-import { ChevronLeft, ChevronRight } from 'react-feather'
+import React, { useEffect } from "react";
+import { Link } from "../";
+import styled from "@emotion/styled";
+import emoji from "../../utils/emoji";
+import { navigate } from "gatsby";
+import config from "config";
+import { ChevronLeft, ChevronRight } from "react-feather";
 
-import { calculateFlatNavigation, getNavigationData } from '../Navigation';
-import { onMobile } from '../../styles/responsive';
+import { calculateFlatNavigation, getNavigationData } from "../Navigation";
+import { onMobile } from "../../styles/responsive";
 
 const conf = {
-  pathDivider: ' — ',
-  previousName: 'Previous',
-  nextName: 'Next',
+  pathDivider: " — ",
+  previousName: "Previous",
+  nextName: "Next",
 };
 
 const PreviousNextWrapper = styled.div`
@@ -25,14 +25,16 @@ const PreviousNextWrapper = styled.div`
   grid-template-columns: calc(50% - 12px) calc(50% - 12px);
 `;
 
-const Arrow = styled(({ className, arrow }) => <div className={className}>{arrow.render({color: ''})}</div>)`
+const Arrow = styled(({ className, arrow }) => (
+  <div className={className}>{arrow.render({ color: "" })}</div>
+))`
   display: block;
   margin: 0;
   flex: 0 0 auto;
   font-size: 16pt;
   transition: color 200ms ease 0s;
   padding: 16px;
-  
+
   ${onMobile} {
     padding: 6px;
   }
@@ -92,7 +94,11 @@ const LeftButton = ({ url, title, label }) => {
   return (
     <Button url={url}>
       <Arrow arrow={ChevronLeft} />
-      <ContentWrapper title={title} label={label} css={{ textAlign: 'right' }} />
+      <ContentWrapper
+        title={title}
+        label={label}
+        css={{ textAlign: "right" }}
+      />
     </Button>
   );
 };
@@ -108,7 +114,7 @@ const RightButton = ({ url, title, label }) => {
 
 const Button = styled(({ className, url, children }) => {
   return (
-    <Link to={url ? url : '#'} className={className}>
+    <Link to={url ? url : "#"} className={className}>
       {children}
     </Link>
   );
@@ -131,8 +137,8 @@ const Button = styled(({ className, url, children }) => {
   transition: border 200ms ease 0s;
   box-shadow: ${(props) => props.theme.previousNext.shadow} 0 3px 8px;
   text-decoration: none;
-  visibility: ${(props) => props.url ? 'visible' : 'hidden'};
-  opacity: ${(props) => props.url ? 1 : 0};
+  visibility: ${(props) => (props.url ? "visible" : "hidden")};
+  opacity: ${(props) => (props.url ? 1 : 0)};
 
   &:hover {
     color: ${(props) => props.theme.previousNext.hover};
@@ -178,10 +184,10 @@ const setArrowNavigation = (previous, next) => {
   useEffect(() => {
     document.onkeydown = (e) => {
       e = e || window.event;
-      if (e.keyCode == '37' && previous.url) {
+      if (e.keyCode == "37" && previous.url) {
         // left arrow
         navigate(previous.url);
-      } else if (e.keyCode == '39' && next.url) {
+      } else if (e.keyCode == "39" && next.url) {
         // right arrow
         navigate(next.url);
       }
@@ -205,15 +211,21 @@ const PreviousNext = ({ mdx }) => {
   if (config.features.previousNext.arrowKeyNavigation === true) {
     setArrowNavigation(previous, next);
   }
-  const previousLabel = `${previous.path ? previous.path + conf.pathDivider : ''} ${
-    conf.previousName
+  const previousLabel = `${
+    previous.path ? previous.path + conf.pathDivider : ""
+  } ${conf.previousName}`;
+  const nextLabel = `${conf.nextName} ${
+    next.path ? conf.pathDivider + next.path : ""
   }`;
-  const nextLabel = `${conf.nextName} ${next.path ? conf.pathDivider + next.path : ''}`;
   return (
     <PreviousNextWrapper>
       {currentIndex >= 0 ? (
         <>
-          <LeftButton url={previous.url} title={previous.title} label={previousLabel} />
+          <LeftButton
+            url={previous.url}
+            title={previous.title}
+            label={previousLabel}
+          />
           <RightButton url={next.url} title={next.title} label={nextLabel} />
         </>
       ) : null}

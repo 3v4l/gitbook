@@ -1,8 +1,8 @@
-import PropTypes from 'prop-types';
-import React from 'react';
-import styled from '@emotion/styled';
+import PropTypes from "prop-types";
+import React from "react";
+import styled from "@emotion/styled";
 
-const ButtonIconWrapper = styled('div')`
+const ButtonIconWrapper = styled("div")`
   display: flex;
   justify-content: flex-end;
   padding: 4px;
@@ -26,9 +26,9 @@ const ButtonIconWrapper = styled('div')`
 
 const ButtonIcon = ({ icon, ...props }) => {
   return (
-    <ButtonIconWrapper {...props} role={'button'} tabIndex={0}>
+    <ButtonIconWrapper {...props} role={"button"} tabIndex={0}>
       {/* not defining color as a workaround to use css styling instead */}
-      {icon.render({ color: '' })}
+      {icon.render({ color: "" })}
     </ButtonIconWrapper>
   );
 };

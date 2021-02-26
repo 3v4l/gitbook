@@ -1,6 +1,6 @@
-import PropTypes from 'prop-types';
-import ButtonIcon from './ButtonIcon';
-import { Link } from '../';
+import PropTypes from "prop-types";
+import ButtonIcon from "./ButtonIcon";
+import { Link } from "../";
 import {
   Facebook as FB,
   GitHub as GH,
@@ -13,12 +13,12 @@ import {
   Twitch as TC,
   Twitter as TW,
   Youtube as YT,
-} from 'react-feather';
+} from "react-feather";
 
 const SocialButton = ({ link, ...props }) => {
   // const theme = useTheme();
   return (
-    <Link to={link} target={'_blank'} rel={'noopener noreferrer'}>
+    <Link to={link} target={"_blank"} rel={"noopener noreferrer"}>
       <ButtonIcon {...props} />
     </Link>
   );

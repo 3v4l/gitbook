@@ -1,11 +1,11 @@
-import React from 'react';
-import styled from '@emotion/styled';
-import { onMobile } from '../../styles/responsive';
+import React from "react";
+import styled from "@emotion/styled";
+import { onMobile } from "../../styles/responsive";
 
 const Trademark = styled(({ className, trademark }) => {
   return (
     <div className={className}>
-      <img src={trademark} alt="powered by logo" loading={'lazy'} />
+      <img src={trademark} alt="powered by logo" loading={"lazy"} />
     </div>
   );
 })`
@@ -27,14 +27,14 @@ const PoweredText = styled(({ className, text }) => (
   padding-left: 20px;
   span {
     font-size: 12px;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
     line-height: 1.625;
   }
 `;
 
 const PoweredBy = styled(({ className, trademark, name, link }) => (
-  <div css={{ margin: '0 auto', width: 'fit-content' }}>
+  <div css={{ margin: "0 auto", width: "fit-content" }}>
     <a className={className} href={link} target="_blank" rel="noreferrer">
       <Trademark trademark={trademark} />
       <PoweredText text={name} />
@@ -49,10 +49,12 @@ const PoweredBy = styled(({ className, trademark, name, link }) => (
   padding: 12px 18px;
   border-radius: 4px;
   text-decoration: none;
-  background-color: ${(props) => props.theme.navigationSidebar.poweredBy.background};
+  background-color: ${(props) =>
+    props.theme.navigationSidebar.poweredBy.background};
   transition: ${(props) => props.theme.transitions.hoverColor};
   &:hover {
-    border: 1px solid ${(props) => props.theme.navigationSidebar.poweredBy.hover};
+    border: 1px solid
+      ${(props) => props.theme.navigationSidebar.poweredBy.hover};
     margin-top: 11px;
     color: ${(props) => props.theme.navigationSidebar.poweredBy.hover};
   }

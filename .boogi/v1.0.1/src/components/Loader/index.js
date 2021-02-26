@@ -1,5 +1,5 @@
-import React from 'react';
-import { css } from '@emotion/core';
+import React from "react";
+import { css } from "@emotion/core";
 
 const spinner = css`
   width: 40px;
@@ -53,7 +53,7 @@ const spinner = css`
 
 export default ({ ...props }) => (
   <div css={spinner} {...props}>
-    <div className={'double-bounce1'}></div>
-    <div className={'double-bounce2'}></div>
+    <div className={"double-bounce1"}></div>
+    <div className={"double-bounce2"}></div>
   </div>
 );

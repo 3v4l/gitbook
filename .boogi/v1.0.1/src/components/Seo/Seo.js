@@ -1,19 +1,21 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Helmet } from 'react-helmet';
-import config from 'config';
+import React from "react";
+import PropTypes from "prop-types";
+import { Helmet } from "react-helmet";
+import config from "config";
 
 const Seo = ({ frontmatter, title, url }) => {
   const description = frontmatter.description
     ? frontmatter.description
     : config.metadata.description;
-  const image = frontmatter.cover ? frontmatter.cover : config.metadata.siteImage;
+  const image = frontmatter.cover
+    ? frontmatter.cover
+    : config.metadata.siteImage;
 
   return (
     <Helmet
       htmlAttributes={{
         lang: config.metadata.language,
-        prefix: 'og: http://ogp.me/ns#',
+        prefix: "og: http://ogp.me/ns#",
       }}
     >
       {/* General tags */}

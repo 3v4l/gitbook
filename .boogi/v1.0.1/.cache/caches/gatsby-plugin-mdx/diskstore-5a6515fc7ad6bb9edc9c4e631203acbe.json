@@ -1,1 +1,1526 @@
-{"expireTime":9007200869051275000,"key":"gatsby-plugin-mdx-entire-payload-7f79b0b3a276834375837777aae7ede6-","val":{"mdast":{"type":"root","children":[{"type":"heading","depth":1,"children":[{"type":"text","value":"method","position":{"start":{"line":1,"column":3,"offset":2},"end":{"line":1,"column":9,"offset":8},"indent":[]}}],"position":{"start":{"line":1,"column":1,"offset":0},"end":{"line":1,"column":9,"offset":8},"indent":[]}},{"type":"heading","depth":2,"children":[{"type":"text","value":"/v1/jsonrpc/network/method","position":{"start":{"line":3,"column":4,"offset":13},"end":{"line":3,"column":30,"offset":39},"indent":[]}}],"position":{"start":{"line":3,"column":1,"offset":10},"end":{"line":3,"column":30,"offset":39},"indent":[]}},{"type":"paragraph","children":[{"type":"text","value":"A request using an \"HTTP GET-compatible\" (non-state-changing) JSON-RPC method. Most Ethereum JSON-RPC methods can be\ndescribed in this way, since they query the blockchain for various pieces of information. Use the\n","position":{"start":{"line":5,"column":1,"offset":41},"end":{"line":7,"column":1,"offset":256},"indent":[1,1]}},{"type":"inlineCode","value":"/v1/jsonrpc/{network}/methods","position":{"start":{"line":7,"column":1,"offset":256},"end":{"line":7,"column":32,"offset":287},"indent":[]}},{"type":"text","value":" endpoint to get the list of permitted methods.","position":{"start":{"line":7,"column":32,"offset":287},"end":{"line":7,"column":79,"offset":334},"indent":[]}}],"position":{"start":{"line":5,"column":1,"offset":41},"end":{"line":7,"column":79,"offset":334},"indent":[1,1]}},{"type":"heading","depth":3,"children":[{"type":"text","value":"GET","position":{"start":{"line":9,"column":5,"offset":340},"end":{"line":9,"column":8,"offset":343},"indent":[]}}],"position":{"start":{"line":9,"column":1,"offset":336},"end":{"line":9,"column":8,"offset":343},"indent":[]}},{"type":"paragraph","children":[{"type":"inlineCode","value":"GET https://api.backbonecabal.xyz/v1/jsonrpc/network/method?params=","position":{"start":{"line":11,"column":1,"offset":345},"end":{"line":11,"column":70,"offset":414},"indent":[]}}],"position":{"start":{"line":11,"column":1,"offset":345},"end":{"line":11,"column":70,"offset":414},"indent":[]}},{"type":"table","align":[null,null,null],"children":[{"type":"tableRow","children":[{"type":"tableCell","children":[{"type":"text","value":"Parameters","position":{"start":{"line":13,"column":3,"offset":418},"end":{"line":13,"column":13,"offset":428},"indent":[]}}],"position":{"start":{"line":13,"column":3,"offset":418},"end":{"line":13,"column":13,"offset":428},"indent":[]}},{"type":"tableCell","children":[],"position":{"start":{"line":13,"column":175,"offset":590},"end":{"line":13,"column":175,"offset":590},"indent":[]}},{"type":"tableCell","children":[],"position":{"start":{"line":13,"column":184,"offset":599},"end":{"line":13,"column":184,"offset":599},"indent":[]}}],"position":{"start":{"line":13,"column":1,"offset":416},"end":{"line":13,"column":185,"offset":600},"indent":[]}},{"type":"tableRow","children":[{"type":"tableCell","children":[{"type":"text","value":"network","position":{"start":{"line":15,"column":3,"offset":788},"end":{"line":15,"column":10,"offset":795},"indent":[]}}],"position":{"start":{"line":15,"column":3,"offset":788},"end":{"line":15,"column":13,"offset":798},"indent":[]}},{"type":"tableCell","children":[{"type":"text","value":"Ethereum network in lowercase. Possible values: ","position":{"start":{"line":15,"column":16,"offset":801},"end":{"line":15,"column":64,"offset":849},"indent":[]}},{"type":"inlineCode","value":"mainnet","position":{"start":{"line":15,"column":64,"offset":849},"end":{"line":15,"column":73,"offset":858},"indent":[]}},{"type":"text","value":", ","position":{"start":{"line":15,"column":73,"offset":858},"end":{"line":15,"column":75,"offset":860},"indent":[]}},{"type":"inlineCode","value":"ropsten","position":{"start":{"line":15,"column":75,"offset":860},"end":{"line":15,"column":84,"offset":869},"indent":[]}},{"type":"text","value":", ","position":{"start":{"line":15,"column":84,"offset":869},"end":{"line":15,"column":86,"offset":871},"indent":[]}},{"type":"inlineCode","value":"kovan","position":{"start":{"line":15,"column":86,"offset":871},"end":{"line":15,"column":93,"offset":878},"indent":[]}},{"type":"text","value":", ","position":{"start":{"line":15,"column":93,"offset":878},"end":{"line":15,"column":95,"offset":880},"indent":[]}},{"type":"inlineCode","value":"rinkeby","position":{"start":{"line":15,"column":95,"offset":880},"end":{"line":15,"column":104,"offset":889},"indent":[]}}],"position":{"start":{"line":15,"column":16,"offset":801},"end":{"line":15,"column":174,"offset":959},"indent":[]}},{"type":"tableCell","children":[{"type":"text","value":"Enum","position":{"start":{"line":15,"column":177,"offset":962},"end":{"line":15,"column":181,"offset":966},"indent":[]}}],"position":{"start":{"line":15,"column":177,"offset":962},"end":{"line":15,"column":183,"offset":968},"indent":[]}}],"position":{"start":{"line":15,"column":1,"offset":786},"end":{"line":15,"column":185,"offset":970},"indent":[]}},{"type":"tableRow","children":[{"type":"tableCell","children":[{"type":"text","value":"method","position":{"start":{"line":16,"column":3,"offset":973},"end":{"line":16,"column":9,"offset":979},"indent":[]}}],"position":{"start":{"line":16,"column":3,"offset":973},"end":{"line":16,"column":13,"offset":983},"indent":[]}},{"type":"tableCell","children":[{"type":"text","value":"JSON-RPC method. Use the ","position":{"start":{"line":16,"column":16,"offset":986},"end":{"line":16,"column":41,"offset":1011},"indent":[]}},{"type":"inlineCode","value":"/v1/jsonrpc/{network}/methods","position":{"start":{"line":16,"column":41,"offset":1011},"end":{"line":16,"column":72,"offset":1042},"indent":[]}},{"type":"text","value":" endpoint to get the list of permitted methods.","position":{"start":{"line":16,"column":72,"offset":1042},"end":{"line":16,"column":119,"offset":1089},"indent":[]}}],"position":{"start":{"line":16,"column":16,"offset":986},"end":{"line":16,"column":174,"offset":1144},"indent":[]}},{"type":"tableCell","children":[{"type":"text","value":"String","position":{"start":{"line":16,"column":177,"offset":1147},"end":{"line":16,"column":183,"offset":1153},"indent":[]}}],"position":{"start":{"line":16,"column":177,"offset":1147},"end":{"line":16,"column":183,"offset":1153},"indent":[]}}],"position":{"start":{"line":16,"column":1,"offset":971},"end":{"line":16,"column":185,"offset":1155},"indent":[]}},{"type":"tableRow","children":[{"type":"tableCell","children":[{"type":"text","value":"params","position":{"start":{"line":17,"column":3,"offset":1158},"end":{"line":17,"column":9,"offset":1164},"indent":[]}}],"position":{"start":{"line":17,"column":3,"offset":1158},"end":{"line":17,"column":13,"offset":1168},"indent":[]}},{"type":"tableCell","children":[{"type":"text","value":"This is the params field that would normally be part of the JSON-RPC POST body. Use the exact same format. If it's omitted, it will default to an empty array.","position":{"start":{"line":17,"column":16,"offset":1171},"end":{"line":17,"column":174,"offset":1329},"indent":[]}}],"position":{"start":{"line":17,"column":16,"offset":1171},"end":{"line":17,"column":174,"offset":1329},"indent":[]}},{"type":"tableCell","children":[{"type":"text","value":"Array","position":{"start":{"line":17,"column":177,"offset":1332},"end":{"line":17,"column":182,"offset":1337},"indent":[]}}],"position":{"start":{"line":17,"column":177,"offset":1332},"end":{"line":17,"column":183,"offset":1338},"indent":[]}}],"position":{"start":{"line":17,"column":1,"offset":1156},"end":{"line":17,"column":185,"offset":1340},"indent":[]}}],"position":{"start":{"line":13,"column":1,"offset":416},"end":{"line":17,"column":185,"offset":1340},"indent":[1,1,1,1]}},{"type":"heading","depth":3,"children":[{"type":"text","value":"Request","position":{"start":{"line":19,"column":5,"offset":1346},"end":{"line":19,"column":12,"offset":1353},"indent":[]}}],"position":{"start":{"line":19,"column":1,"offset":1342},"end":{"line":19,"column":12,"offset":1353},"indent":[]}},{"type":"code","lang":null,"meta":null,"value":"curl --include \\\n    --header \"Content-Type: application/json\" \\\n    --header \"Accept: application/json\" \\\n  'https://api.backbonecabal.xyz/v1/jsonrpc/{network}/{method}?params='","position":{"start":{"line":21,"column":1,"offset":1355},"end":{"line":26,"column":4,"offset":1541},"indent":[1,1,1,1,1]}},{"type":"heading","depth":3,"children":[{"type":"text","value":"Response","position":{"start":{"line":28,"column":5,"offset":1547},"end":{"line":28,"column":13,"offset":1555},"indent":[]}}],"position":{"start":{"line":28,"column":1,"offset":1543},"end":{"line":28,"column":13,"offset":1555},"indent":[]}},{"type":"table","align":[null,null,null],"children":[{"type":"tableRow","children":[{"type":"tableCell","children":[{"type":"text","value":"Attributes","position":{"start":{"line":30,"column":3,"offset":1559},"end":{"line":30,"column":13,"offset":1569},"indent":[]}}],"position":{"start":{"line":30,"column":3,"offset":1559},"end":{"line":30,"column":42,"offset":1598},"indent":[]}},{"type":"tableCell","children":[],"position":{"start":{"line":30,"column":54,"offset":1610},"end":{"line":30,"column":54,"offset":1610},"indent":[]}},{"type":"tableCell","children":[],"position":{"start":{"line":30,"column":63,"offset":1619},"end":{"line":30,"column":63,"offset":1619},"indent":[]}}],"position":{"start":{"line":30,"column":1,"offset":1557},"end":{"line":30,"column":64,"offset":1620},"indent":[]}},{"type":"tableRow","children":[{"type":"tableCell","children":[{"type":"inlineCode","value":"jsonrpc","position":{"start":{"line":32,"column":3,"offset":1687},"end":{"line":32,"column":12,"offset":1696},"indent":[]}}],"position":{"start":{"line":32,"column":3,"offset":1687},"end":{"line":32,"column":42,"offset":1726},"indent":[]}},{"type":"tableCell","children":[{"type":"text","value":"required","position":{"start":{"line":32,"column":45,"offset":1729},"end":{"line":32,"column":53,"offset":1737},"indent":[]}}],"position":{"start":{"line":32,"column":45,"offset":1729},"end":{"line":32,"column":53,"offset":1737},"indent":[]}},{"type":"tableCell","children":[{"type":"text","value":"enum","position":{"start":{"line":32,"column":56,"offset":1740},"end":{"line":32,"column":60,"offset":1744},"indent":[]}}],"position":{"start":{"line":32,"column":56,"offset":1740},"end":{"line":32,"column":62,"offset":1746},"indent":[]}}],"position":{"start":{"line":32,"column":1,"offset":1685},"end":{"line":32,"column":64,"offset":1748},"indent":[]}},{"type":"tableRow","children":[{"type":"tableCell","children":[{"type":"text","value":"JSON-RPC version","position":{"start":{"line":33,"column":3,"offset":1751},"end":{"line":33,"column":19,"offset":1767},"indent":[]}}],"position":{"start":{"line":33,"column":3,"offset":1751},"end":{"line":33,"column":42,"offset":1790},"indent":[]}},{"type":"tableCell","children":[{"type":"inlineCode","value":"2.0","position":{"start":{"line":33,"column":45,"offset":1793},"end":{"line":33,"column":50,"offset":1798},"indent":[]}}],"position":{"start":{"line":33,"column":45,"offset":1793},"end":{"line":33,"column":53,"offset":1801},"indent":[]}},{"type":"tableCell","children":[{"type":"text","value":"string","position":{"start":{"line":33,"column":56,"offset":1804},"end":{"line":33,"column":62,"offset":1810},"indent":[]}}],"position":{"start":{"line":33,"column":56,"offset":1804},"end":{"line":33,"column":62,"offset":1810},"indent":[]}}],"position":{"start":{"line":33,"column":1,"offset":1749},"end":{"line":33,"column":64,"offset":1812},"indent":[]}},{"type":"tableRow","children":[{"type":"tableCell","children":[{"type":"inlineCode","value":"id","position":{"start":{"line":34,"column":3,"offset":1815},"end":{"line":34,"column":7,"offset":1819},"indent":[]}}],"position":{"start":{"line":34,"column":3,"offset":1815},"end":{"line":34,"column":42,"offset":1854},"indent":[]}},{"type":"tableCell","children":[{"type":"text","value":"required","position":{"start":{"line":34,"column":45,"offset":1857},"end":{"line":34,"column":53,"offset":1865},"indent":[]}}],"position":{"start":{"line":34,"column":45,"offset":1857},"end":{"line":34,"column":53,"offset":1865},"indent":[]}},{"type":"tableCell","children":[{"type":"text","value":"number","position":{"start":{"line":34,"column":56,"offset":1868},"end":{"line":34,"column":62,"offset":1874},"indent":[]}}],"position":{"start":{"line":34,"column":56,"offset":1868},"end":{"line":34,"column":62,"offset":1874},"indent":[]}}],"position":{"start":{"line":34,"column":1,"offset":1813},"end":{"line":34,"column":64,"offset":1876},"indent":[]}},{"type":"tableRow","children":[{"type":"tableCell","children":[{"type":"text","value":"JSON-RPC request ID","position":{"start":{"line":35,"column":3,"offset":1879},"end":{"line":35,"column":22,"offset":1898},"indent":[]}}],"position":{"start":{"line":35,"column":3,"offset":1879},"end":{"line":35,"column":42,"offset":1918},"indent":[]}},{"type":"tableCell","children":[],"position":{"start":{"line":35,"column":54,"offset":1930},"end":{"line":35,"column":54,"offset":1930},"indent":[]}},{"type":"tableCell","children":[],"position":{"start":{"line":35,"column":63,"offset":1939},"end":{"line":35,"column":63,"offset":1939},"indent":[]}}],"position":{"start":{"line":35,"column":1,"offset":1877},"end":{"line":35,"column":64,"offset":1940},"indent":[]}},{"type":"tableRow","children":[{"type":"tableCell","children":[{"type":"inlineCode","value":"result","position":{"start":{"line":36,"column":3,"offset":1943},"end":{"line":36,"column":11,"offset":1951},"indent":[]}}],"position":{"start":{"line":36,"column":3,"offset":1943},"end":{"line":36,"column":42,"offset":1982},"indent":[]}},{"type":"tableCell","children":[],"position":{"start":{"line":36,"column":54,"offset":1994},"end":{"line":36,"column":54,"offset":1994},"indent":[]}},{"type":"tableCell","children":[{"type":"text","value":"string","position":{"start":{"line":36,"column":56,"offset":1996},"end":{"line":36,"column":62,"offset":2002},"indent":[]}}],"position":{"start":{"line":36,"column":56,"offset":1996},"end":{"line":36,"column":62,"offset":2002},"indent":[]}}],"position":{"start":{"line":36,"column":1,"offset":1941},"end":{"line":36,"column":64,"offset":2004},"indent":[]}},{"type":"tableRow","children":[{"type":"tableCell","children":[{"type":"text","value":"JSON-RPC result (can also be an object)","position":{"start":{"line":37,"column":3,"offset":2007},"end":{"line":37,"column":42,"offset":2046},"indent":[]}}],"position":{"start":{"line":37,"column":3,"offset":2007},"end":{"line":37,"column":42,"offset":2046},"indent":[]}},{"type":"tableCell","children":[],"position":{"start":{"line":37,"column":54,"offset":2058},"end":{"line":37,"column":54,"offset":2058},"indent":[]}},{"type":"tableCell","children":[],"position":{"start":{"line":37,"column":63,"offset":2067},"end":{"line":37,"column":63,"offset":2067},"indent":[]}}],"position":{"start":{"line":37,"column":1,"offset":2005},"end":{"line":37,"column":64,"offset":2068},"indent":[]}}],"position":{"start":{"line":30,"column":1,"offset":1557},"end":{"line":37,"column":64,"offset":2068},"indent":[1,1,1,1,1,1,1]}},{"type":"heading","depth":4,"children":[{"type":"text","value":"JSON-RPC Response","position":{"start":{"line":39,"column":6,"offset":2075},"end":{"line":39,"column":23,"offset":2092},"indent":[]}}],"position":{"start":{"line":39,"column":1,"offset":2070},"end":{"line":39,"column":23,"offset":2092},"indent":[]}},{"type":"paragraph","children":[{"type":"inlineCode","value":"200","position":{"start":{"line":41,"column":1,"offset":2094},"end":{"line":41,"column":6,"offset":2099},"indent":[]}}],"position":{"start":{"line":41,"column":1,"offset":2094},"end":{"line":41,"column":6,"offset":2099},"indent":[]}},{"type":"heading","depth":4,"children":[{"type":"text","value":"HEADERS","position":{"start":{"line":43,"column":6,"offset":2106},"end":{"line":43,"column":13,"offset":2113},"indent":[]}}],"position":{"start":{"line":43,"column":1,"offset":2101},"end":{"line":43,"column":13,"offset":2113},"indent":[]}},{"type":"paragraph","children":[{"type":"inlineCode","value":"Content-Type:application/json","position":{"start":{"line":45,"column":1,"offset":2115},"end":{"line":45,"column":32,"offset":2146},"indent":[]}}],"position":{"start":{"line":45,"column":1,"offset":2115},"end":{"line":45,"column":32,"offset":2146},"indent":[]}},{"type":"heading","depth":4,"children":[{"type":"text","value":"BODY","position":{"start":{"line":47,"column":6,"offset":2153},"end":{"line":47,"column":10,"offset":2157},"indent":[]}}],"position":{"start":{"line":47,"column":1,"offset":2148},"end":{"line":47,"column":10,"offset":2157},"indent":[]}},{"type":"code","lang":null,"meta":null,"value":"{\n  \"jsonrpc\": \"2.0\",\n  \"id\": -5294191,\n  \"result\": \"sed dolor eu ullamco\"\n}","position":{"start":{"line":49,"column":1,"offset":2159},"end":{"line":55,"column":4,"offset":2243},"indent":[1,1,1,1,1,1]}},{"type":"paragraph","children":[{"type":"strong","children":[{"type":"text","value":"JSON Schema","position":{"start":{"line":57,"column":3,"offset":2247},"end":{"line":57,"column":14,"offset":2258},"indent":[]}}],"position":{"start":{"line":57,"column":1,"offset":2245},"end":{"line":57,"column":16,"offset":2260},"indent":[]}}],"position":{"start":{"line":57,"column":1,"offset":2245},"end":{"line":57,"column":16,"offset":2260},"indent":[]}},{"type":"code","lang":null,"meta":null,"value":"{\n  \"type\": \"object\",\n  \"properties\": {\n    \"jsonrpc\": {\n      \"type\": \"string\",\n      \"description\": \"JSON-RPC version\",\n      \"enum\": [\n        \"2.0\"\n      ]\n    },\n    \"id\": {\n      \"type\": \"integer\",\n      \"description\": \"JSON-RPC request ID\"\n    },\n    \"result\": {\n      \"type\": \"string\",\n      \"description\": \"JSON-RPC result (can also be an object)\"\n    }\n  },\n  \"required\": [\n    \"jsonrpc\",\n    \"id\"\n  ]\n}","position":{"start":{"line":59,"column":1,"offset":2262},"end":{"line":84,"column":4,"offset":2683},"indent":[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]}},{"type":"heading","depth":3,"children":[{"type":"text","value":"Response","position":{"start":{"line":86,"column":5,"offset":2689},"end":{"line":86,"column":13,"offset":2697},"indent":[]}}],"position":{"start":{"line":86,"column":1,"offset":2685},"end":{"line":86,"column":13,"offset":2697},"indent":[]}},{"type":"paragraph","children":[{"type":"text","value":"Bad JSON in ","position":{"start":{"line":88,"column":1,"offset":2699},"end":{"line":88,"column":13,"offset":2711},"indent":[]}},{"type":"inlineCode","value":"params","position":{"start":{"line":88,"column":13,"offset":2711},"end":{"line":88,"column":21,"offset":2719},"indent":[]}},{"type":"text","value":" query parameter","position":{"start":{"line":88,"column":21,"offset":2719},"end":{"line":88,"column":37,"offset":2735},"indent":[]}}],"position":{"start":{"line":88,"column":1,"offset":2699},"end":{"line":88,"column":37,"offset":2735},"indent":[]}},{"type":"paragraph","children":[{"type":"inlineCode","value":"400","position":{"start":{"line":90,"column":1,"offset":2737},"end":{"line":90,"column":6,"offset":2742},"indent":[]}}],"position":{"start":{"line":90,"column":1,"offset":2737},"end":{"line":90,"column":6,"offset":2742},"indent":[]}},{"type":"heading","depth":4,"children":[{"type":"text","value":"HEADERS","position":{"start":{"line":92,"column":6,"offset":2749},"end":{"line":92,"column":13,"offset":2756},"indent":[]}}],"position":{"start":{"line":92,"column":1,"offset":2744},"end":{"line":92,"column":13,"offset":2756},"indent":[]}},{"type":"paragraph","children":[{"type":"inlineCode","value":"Content-Type:application/json","position":{"start":{"line":94,"column":1,"offset":2758},"end":{"line":94,"column":32,"offset":2789},"indent":[]}}],"position":{"start":{"line":94,"column":1,"offset":2758},"end":{"line":94,"column":32,"offset":2789},"indent":[]}},{"type":"heading","depth":3,"children":[{"type":"text","value":"Response","position":{"start":{"line":96,"column":5,"offset":2795},"end":{"line":96,"column":13,"offset":2803},"indent":[]}}],"position":{"start":{"line":96,"column":1,"offset":2791},"end":{"line":96,"column":13,"offset":2803},"indent":[]}},{"type":"paragraph","children":[{"type":"text","value":"JSON-RPC method is not a valid GET method","position":{"start":{"line":98,"column":1,"offset":2805},"end":{"line":98,"column":42,"offset":2846},"indent":[]}}],"position":{"start":{"line":98,"column":1,"offset":2805},"end":{"line":98,"column":42,"offset":2846},"indent":[]}},{"type":"paragraph","children":[{"type":"inlineCode","value":"404","position":{"start":{"line":100,"column":1,"offset":2848},"end":{"line":100,"column":6,"offset":2853},"indent":[]}}],"position":{"start":{"line":100,"column":1,"offset":2848},"end":{"line":100,"column":6,"offset":2853},"indent":[]}},{"type":"heading","depth":4,"children":[{"type":"text","value":"HEADERS","position":{"start":{"line":102,"column":6,"offset":2860},"end":{"line":102,"column":13,"offset":2867},"indent":[]}}],"position":{"start":{"line":102,"column":1,"offset":2855},"end":{"line":102,"column":13,"offset":2867},"indent":[]}},{"type":"paragraph","children":[{"type":"inlineCode","value":"Content-Type:application/json","position":{"start":{"line":104,"column":1,"offset":2869},"end":{"line":104,"column":32,"offset":2900},"indent":[]}}],"position":{"start":{"line":104,"column":1,"offset":2869},"end":{"line":104,"column":32,"offset":2900},"indent":[]}},{"type":"heading","depth":3,"children":[{"type":"text","value":"Response","position":{"start":{"line":106,"column":5,"offset":2906},"end":{"line":106,"column":13,"offset":2914},"indent":[]}}],"position":{"start":{"line":106,"column":1,"offset":2902},"end":{"line":106,"column":13,"offset":2914},"indent":[]}},{"type":"paragraph","children":[{"type":"text","value":"Server error","position":{"start":{"line":108,"column":1,"offset":2916},"end":{"line":108,"column":13,"offset":2928},"indent":[]}}],"position":{"start":{"line":108,"column":1,"offset":2916},"end":{"line":108,"column":13,"offset":2928},"indent":[]}},{"type":"paragraph","children":[{"type":"inlineCode","value":"500","position":{"start":{"line":110,"column":1,"offset":2930},"end":{"line":110,"column":6,"offset":2935},"indent":[]}}],"position":{"start":{"line":110,"column":1,"offset":2930},"end":{"line":110,"column":6,"offset":2935},"indent":[]}},{"type":"heading","depth":4,"children":[{"type":"text","value":"HEADERS","position":{"start":{"line":112,"column":6,"offset":2942},"end":{"line":112,"column":13,"offset":2949},"indent":[]}}],"position":{"start":{"line":112,"column":1,"offset":2937},"end":{"line":112,"column":13,"offset":2949},"indent":[]}},{"type":"paragraph","children":[{"type":"inlineCode","value":"Content-Type:application/json","position":{"start":{"line":114,"column":1,"offset":2951},"end":{"line":114,"column":32,"offset":2982},"indent":[]}}],"position":{"start":{"line":114,"column":1,"offset":2951},"end":{"line":114,"column":32,"offset":2982},"indent":[]}},{"type":"heading","depth":3,"children":[{"type":"text","value":"Response","position":{"start":{"line":116,"column":5,"offset":2988},"end":{"line":116,"column":13,"offset":2996},"indent":[]}}],"position":{"start":{"line":116,"column":1,"offset":2984},"end":{"line":116,"column":13,"offset":2996},"indent":[]}},{"type":"paragraph","children":[{"type":"text","value":"Ethereum client error","position":{"start":{"line":118,"column":1,"offset":2998},"end":{"line":118,"column":22,"offset":3019},"indent":[]}}],"position":{"start":{"line":118,"column":1,"offset":2998},"end":{"line":118,"column":22,"offset":3019},"indent":[]}},{"type":"paragraph","children":[{"type":"inlineCode","value":"502","position":{"start":{"line":120,"column":1,"offset":3021},"end":{"line":120,"column":6,"offset":3026},"indent":[]}}],"position":{"start":{"line":120,"column":1,"offset":3021},"end":{"line":120,"column":6,"offset":3026},"indent":[]}},{"type":"heading","depth":4,"children":[{"type":"text","value":"HEADERS","position":{"start":{"line":122,"column":6,"offset":3033},"end":{"line":122,"column":13,"offset":3040},"indent":[]}}],"position":{"start":{"line":122,"column":1,"offset":3028},"end":{"line":122,"column":13,"offset":3040},"indent":[]}},{"type":"paragraph","children":[{"type":"inlineCode","value":"Content-Type:application/json","position":{"start":{"line":124,"column":1,"offset":3042},"end":{"line":124,"column":32,"offset":3073},"indent":[]}}],"position":{"start":{"line":124,"column":1,"offset":3042},"end":{"line":124,"column":32,"offset":3073},"indent":[]}},{"type":"export","value":"export const _frontmatter = {}","position":{"start":{"line":127,"column":1,"offset":3076},"end":{"line":127,"column":31,"offset":3106},"indent":[]}}],"position":{"start":{"line":1,"column":1,"offset":0},"end":{"line":127,"column":31,"offset":3106}}},"scopeImports":["import * as React from 'react'"],"scopeIdentifiers":["React"],"body":"function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }\n\nfunction _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }\n\nfunction _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }\n\n/* @jsx mdx */\nvar _frontmatter = {};\nvar layoutProps = {\n  _frontmatter: _frontmatter\n};\nvar MDXLayout = \"wrapper\";\nreturn function MDXContent(_ref) {\n  var components = _ref.components,\n      props = _objectWithoutProperties(_ref, [\"components\"]);\n\n  return mdx(MDXLayout, _extends({}, layoutProps, props, {\n    components: components,\n    mdxType: \"MDXLayout\"\n  }), mdx(\"section\", null, mdx(\"h1\", {\n    parentName: \"section\"\n  }, \"method\")), mdx(\"section\", null, mdx(\"h2\", {\n    parentName: \"section\"\n  }, \"/v1/jsonrpc/network/method\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, \"A request using an \\\"HTTP GET-compatible\\\" (non-state-changing) JSON-RPC method. Most Ethereum JSON-RPC methods can be\\ndescribed in this way, since they query the blockchain for various pieces of information. Use the\\n\", mdx(\"inlineCode\", {\n    parentName: \"p\"\n  }, \"/v1/jsonrpc/{network}/methods\"), \" endpoint to get the list of permitted methods.\")), mdx(\"section\", null, mdx(\"h3\", {\n    parentName: \"section\"\n  }, \"GET\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"p\"\n  }, \"GET https://api.backbonecabal.xyz/v1/jsonrpc/network/method?params=\")), mdx(\"table\", {\n    parentName: \"section\"\n  }, mdx(\"thead\", {\n    parentName: \"table\"\n  }, mdx(\"tr\", {\n    parentName: \"thead\"\n  }, mdx(\"th\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  }), \"Parameters\"), mdx(\"th\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  })), mdx(\"th\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  })))), mdx(\"tbody\", {\n    parentName: \"table\"\n  }, mdx(\"tr\", {\n    parentName: \"tbody\"\n  }, mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  }), \"network\"), mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  }), \"Ethereum network in lowercase. Possible values: \", mdx(\"inlineCode\", {\n    parentName: \"td\"\n  }, \"mainnet\"), \", \", mdx(\"inlineCode\", {\n    parentName: \"td\"\n  }, \"ropsten\"), \", \", mdx(\"inlineCode\", {\n    parentName: \"td\"\n  }, \"kovan\"), \", \", mdx(\"inlineCode\", {\n    parentName: \"td\"\n  }, \"rinkeby\")), mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  }), \"Enum\")), mdx(\"tr\", {\n    parentName: \"tbody\"\n  }, mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  }), \"method\"), mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  }), \"JSON-RPC method. Use the \", mdx(\"inlineCode\", {\n    parentName: \"td\"\n  }, \"/v1/jsonrpc/{network}/methods\"), \" endpoint to get the list of permitted methods.\"), mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  }), \"String\")), mdx(\"tr\", {\n    parentName: \"tbody\"\n  }, mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  }), \"params\"), mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  }), \"This is the params field that would normally be part of the JSON-RPC POST body. Use the exact same format. If it's omitted, it will default to an empty array.\"), mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  }), \"Array\"))))), mdx(\"section\", null, mdx(\"h3\", {\n    parentName: \"section\"\n  }, \"Request\"), mdx(\"pre\", {\n    parentName: \"section\"\n  }, mdx(\"code\", _extends({\n    parentName: \"pre\"\n  }, {}), \"curl --include \\\\\\n    --header \\\"Content-Type: application/json\\\" \\\\\\n    --header \\\"Accept: application/json\\\" \\\\\\n  'https://api.backbonecabal.xyz/v1/jsonrpc/{network}/{method}?params='\\n\"))), mdx(\"section\", null, mdx(\"h3\", {\n    parentName: \"section\"\n  }, \"Response\"), mdx(\"table\", {\n    parentName: \"section\"\n  }, mdx(\"thead\", {\n    parentName: \"table\"\n  }, mdx(\"tr\", {\n    parentName: \"thead\"\n  }, mdx(\"th\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  }), \"Attributes\"), mdx(\"th\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  })), mdx(\"th\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  })))), mdx(\"tbody\", {\n    parentName: \"table\"\n  }, mdx(\"tr\", {\n    parentName: \"tbody\"\n  }, mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  }), mdx(\"inlineCode\", {\n    parentName: \"td\"\n  }, \"jsonrpc\")), mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  }), \"required\"), mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  }), \"enum\")), mdx(\"tr\", {\n    parentName: \"tbody\"\n  }, mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  }), \"JSON-RPC version\"), mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  }), mdx(\"inlineCode\", {\n    parentName: \"td\"\n  }, \"2.0\")), mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  }), \"string\")), mdx(\"tr\", {\n    parentName: \"tbody\"\n  }, mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  }), mdx(\"inlineCode\", {\n    parentName: \"td\"\n  }, \"id\")), mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  }), \"required\"), mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  }), \"number\")), mdx(\"tr\", {\n    parentName: \"tbody\"\n  }, mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  }), \"JSON-RPC request ID\"), mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  })), mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  }))), mdx(\"tr\", {\n    parentName: \"tbody\"\n  }, mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  }), mdx(\"inlineCode\", {\n    parentName: \"td\"\n  }, \"result\")), mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  })), mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  }), \"string\")), mdx(\"tr\", {\n    parentName: \"tbody\"\n  }, mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  }), \"JSON-RPC result (can also be an object)\"), mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  })), mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  })))))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"JSON-RPC Response\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"p\"\n  }, \"200\"))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"HEADERS\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"p\"\n  }, \"Content-Type:application/json\"))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"BODY\"), mdx(\"pre\", {\n    parentName: \"section\"\n  }, mdx(\"code\", _extends({\n    parentName: \"pre\"\n  }, {}), \"{\\n  \\\"jsonrpc\\\": \\\"2.0\\\",\\n  \\\"id\\\": -5294191,\\n  \\\"result\\\": \\\"sed dolor eu ullamco\\\"\\n}\\n\")), mdx(\"p\", {\n    parentName: \"section\"\n  }, mdx(\"strong\", {\n    parentName: \"p\"\n  }, \"JSON Schema\")), mdx(\"pre\", {\n    parentName: \"section\"\n  }, mdx(\"code\", _extends({\n    parentName: \"pre\"\n  }, {}), \"{\\n  \\\"type\\\": \\\"object\\\",\\n  \\\"properties\\\": {\\n    \\\"jsonrpc\\\": {\\n      \\\"type\\\": \\\"string\\\",\\n      \\\"description\\\": \\\"JSON-RPC version\\\",\\n      \\\"enum\\\": [\\n        \\\"2.0\\\"\\n      ]\\n    },\\n    \\\"id\\\": {\\n      \\\"type\\\": \\\"integer\\\",\\n      \\\"description\\\": \\\"JSON-RPC request ID\\\"\\n    },\\n    \\\"result\\\": {\\n      \\\"type\\\": \\\"string\\\",\\n      \\\"description\\\": \\\"JSON-RPC result (can also be an object)\\\"\\n    }\\n  },\\n  \\\"required\\\": [\\n    \\\"jsonrpc\\\",\\n    \\\"id\\\"\\n  ]\\n}\\n\"))), mdx(\"section\", null, mdx(\"h3\", {\n    parentName: \"section\"\n  }, \"Response\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, \"Bad JSON in \", mdx(\"inlineCode\", {\n    parentName: \"p\"\n  }, \"params\"), \" query parameter\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"p\"\n  }, \"400\"))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"HEADERS\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"p\"\n  }, \"Content-Type:application/json\"))), mdx(\"section\", null, mdx(\"h3\", {\n    parentName: \"section\"\n  }, \"Response\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, \"JSON-RPC method is not a valid GET method\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"p\"\n  }, \"404\"))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"HEADERS\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"p\"\n  }, \"Content-Type:application/json\"))), mdx(\"section\", null, mdx(\"h3\", {\n    parentName: \"section\"\n  }, \"Response\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, \"Server error\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"p\"\n  }, \"500\"))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"HEADERS\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"p\"\n  }, \"Content-Type:application/json\"))), mdx(\"section\", null, mdx(\"h3\", {\n    parentName: \"section\"\n  }, \"Response\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, \"Ethereum client error\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"p\"\n  }, \"502\"))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"HEADERS\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"p\"\n  }, \"Content-Type:application/json\"))));\n}\n;\nMDXContent.isMDXComponent = true;","rawMDXOutput":"/* @jsx mdx */\nimport { mdx } from '@mdx-js/react';\n/* @jsx mdx */\n\nexport const _frontmatter = {};\n\nconst layoutProps = {\n  _frontmatter\n};\nconst MDXLayout = \"wrapper\"\nexport default function MDXContent({\n  components,\n  ...props\n}) {\n  return <MDXLayout {...layoutProps} {...props} components={components} mdxType=\"MDXLayout\">\n    <section><h1 parentName=\"section\">{`method`}</h1></section>\n    <section><h2 parentName=\"section\">{`/v1/jsonrpc/network/method`}</h2><p parentName=\"section\">{`A request using an \"HTTP GET-compatible\" (non-state-changing) JSON-RPC method. Most Ethereum JSON-RPC methods can be\ndescribed in this way, since they query the blockchain for various pieces of information. Use the\n`}<inlineCode parentName=\"p\">{`/v1/jsonrpc/{network}/methods`}</inlineCode>{` endpoint to get the list of permitted methods.`}</p></section>\n    <section><h3 parentName=\"section\">{`GET`}</h3><p parentName=\"section\"><inlineCode parentName=\"p\">{`GET https://api.backbonecabal.xyz/v1/jsonrpc/network/method?params=`}</inlineCode></p><table parentName=\"section\">\n        <thead parentName=\"table\">\n          <tr parentName=\"thead\">\n            <th parentName=\"tr\" {...{\n              \"align\": null\n            }}>{`Parameters`}</th>\n            <th parentName=\"tr\" {...{\n              \"align\": null\n            }}></th>\n            <th parentName=\"tr\" {...{\n              \"align\": null\n            }}></th>\n          </tr>\n        </thead>\n        <tbody parentName=\"table\">\n          <tr parentName=\"tbody\">\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}>{`network`}</td>\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}>{`Ethereum network in lowercase. Possible values: `}<inlineCode parentName=\"td\">{`mainnet`}</inlineCode>{`, `}<inlineCode parentName=\"td\">{`ropsten`}</inlineCode>{`, `}<inlineCode parentName=\"td\">{`kovan`}</inlineCode>{`, `}<inlineCode parentName=\"td\">{`rinkeby`}</inlineCode></td>\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}>{`Enum`}</td>\n          </tr>\n          <tr parentName=\"tbody\">\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}>{`method`}</td>\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}>{`JSON-RPC method. Use the `}<inlineCode parentName=\"td\">{`/v1/jsonrpc/{network}/methods`}</inlineCode>{` endpoint to get the list of permitted methods.`}</td>\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}>{`String`}</td>\n          </tr>\n          <tr parentName=\"tbody\">\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}>{`params`}</td>\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}>{`This is the params field that would normally be part of the JSON-RPC POST body. Use the exact same format. If it's omitted, it will default to an empty array.`}</td>\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}>{`Array`}</td>\n          </tr>\n        </tbody>\n      </table></section>\n    <section><h3 parentName=\"section\">{`Request`}</h3><pre parentName=\"section\"><code parentName=\"pre\" {...{}}>{`curl --include \\\\\n    --header \"Content-Type: application/json\" \\\\\n    --header \"Accept: application/json\" \\\\\n  'https://api.backbonecabal.xyz/v1/jsonrpc/{network}/{method}?params='\n`}</code></pre></section>\n    <section><h3 parentName=\"section\">{`Response`}</h3><table parentName=\"section\">\n        <thead parentName=\"table\">\n          <tr parentName=\"thead\">\n            <th parentName=\"tr\" {...{\n              \"align\": null\n            }}>{`Attributes`}</th>\n            <th parentName=\"tr\" {...{\n              \"align\": null\n            }}></th>\n            <th parentName=\"tr\" {...{\n              \"align\": null\n            }}></th>\n          </tr>\n        </thead>\n        <tbody parentName=\"table\">\n          <tr parentName=\"tbody\">\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}><inlineCode parentName=\"td\">{`jsonrpc`}</inlineCode></td>\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}>{`required`}</td>\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}>{`enum`}</td>\n          </tr>\n          <tr parentName=\"tbody\">\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}>{`JSON-RPC version`}</td>\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}><inlineCode parentName=\"td\">{`2.0`}</inlineCode></td>\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}>{`string`}</td>\n          </tr>\n          <tr parentName=\"tbody\">\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}><inlineCode parentName=\"td\">{`id`}</inlineCode></td>\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}>{`required`}</td>\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}>{`number`}</td>\n          </tr>\n          <tr parentName=\"tbody\">\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}>{`JSON-RPC request ID`}</td>\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}></td>\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}></td>\n          </tr>\n          <tr parentName=\"tbody\">\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}><inlineCode parentName=\"td\">{`result`}</inlineCode></td>\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}></td>\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}>{`string`}</td>\n          </tr>\n          <tr parentName=\"tbody\">\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}>{`JSON-RPC result (can also be an object)`}</td>\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}></td>\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}></td>\n          </tr>\n        </tbody>\n      </table></section>\n    <section><h4 parentName=\"section\">{`JSON-RPC Response`}</h4><p parentName=\"section\"><inlineCode parentName=\"p\">{`200`}</inlineCode></p></section>\n    <section><h4 parentName=\"section\">{`HEADERS`}</h4><p parentName=\"section\"><inlineCode parentName=\"p\">{`Content-Type:application/json`}</inlineCode></p></section>\n    <section><h4 parentName=\"section\">{`BODY`}</h4><pre parentName=\"section\"><code parentName=\"pre\" {...{}}>{`{\n  \"jsonrpc\": \"2.0\",\n  \"id\": -5294191,\n  \"result\": \"sed dolor eu ullamco\"\n}\n`}</code></pre><p parentName=\"section\"><strong parentName=\"p\">{`JSON Schema`}</strong></p><pre parentName=\"section\"><code parentName=\"pre\" {...{}}>{`{\n  \"type\": \"object\",\n  \"properties\": {\n    \"jsonrpc\": {\n      \"type\": \"string\",\n      \"description\": \"JSON-RPC version\",\n      \"enum\": [\n        \"2.0\"\n      ]\n    },\n    \"id\": {\n      \"type\": \"integer\",\n      \"description\": \"JSON-RPC request ID\"\n    },\n    \"result\": {\n      \"type\": \"string\",\n      \"description\": \"JSON-RPC result (can also be an object)\"\n    }\n  },\n  \"required\": [\n    \"jsonrpc\",\n    \"id\"\n  ]\n}\n`}</code></pre></section>\n    <section><h3 parentName=\"section\">{`Response`}</h3><p parentName=\"section\">{`Bad JSON in `}<inlineCode parentName=\"p\">{`params`}</inlineCode>{` query parameter`}</p><p parentName=\"section\"><inlineCode parentName=\"p\">{`400`}</inlineCode></p></section>\n    <section><h4 parentName=\"section\">{`HEADERS`}</h4><p parentName=\"section\"><inlineCode parentName=\"p\">{`Content-Type:application/json`}</inlineCode></p></section>\n    <section><h3 parentName=\"section\">{`Response`}</h3><p parentName=\"section\">{`JSON-RPC method is not a valid GET method`}</p><p parentName=\"section\"><inlineCode parentName=\"p\">{`404`}</inlineCode></p></section>\n    <section><h4 parentName=\"section\">{`HEADERS`}</h4><p parentName=\"section\"><inlineCode parentName=\"p\">{`Content-Type:application/json`}</inlineCode></p></section>\n    <section><h3 parentName=\"section\">{`Response`}</h3><p parentName=\"section\">{`Server error`}</p><p parentName=\"section\"><inlineCode parentName=\"p\">{`500`}</inlineCode></p></section>\n    <section><h4 parentName=\"section\">{`HEADERS`}</h4><p parentName=\"section\"><inlineCode parentName=\"p\">{`Content-Type:application/json`}</inlineCode></p></section>\n    <section><h3 parentName=\"section\">{`Response`}</h3><p parentName=\"section\">{`Ethereum client error`}</p><p parentName=\"section\"><inlineCode parentName=\"p\">{`502`}</inlineCode></p></section>\n    <section><h4 parentName=\"section\">{`HEADERS`}</h4><p parentName=\"section\"><inlineCode parentName=\"p\">{`Content-Type:application/json`}</inlineCode></p></section>\n\n    </MDXLayout>;\n}\n\n;\nMDXContent.isMDXComponent = true;"}}
+{
+  "expireTime": 9007200869051275000,
+  "key": "gatsby-plugin-mdx-entire-payload-7f79b0b3a276834375837777aae7ede6-",
+  "val": {
+    "mdast": {
+      "type": "root",
+      "children": [
+        {
+          "type": "heading",
+          "depth": 1,
+          "children": [
+            {
+              "type": "text",
+              "value": "method",
+              "position": {
+                "start": { "line": 1, "column": 3, "offset": 2 },
+                "end": { "line": 1, "column": 9, "offset": 8 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 1, "column": 1, "offset": 0 },
+            "end": { "line": 1, "column": 9, "offset": 8 },
+            "indent": []
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 2,
+          "children": [
+            {
+              "type": "text",
+              "value": "/v1/jsonrpc/network/method",
+              "position": {
+                "start": { "line": 3, "column": 4, "offset": 13 },
+                "end": { "line": 3, "column": 30, "offset": 39 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 3, "column": 1, "offset": 10 },
+            "end": { "line": 3, "column": 30, "offset": 39 },
+            "indent": []
+          }
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "A request using an \"HTTP GET-compatible\" (non-state-changing) JSON-RPC method. Most Ethereum JSON-RPC methods can be\ndescribed in this way, since they query the blockchain for various pieces of information. Use the\n",
+              "position": {
+                "start": { "line": 5, "column": 1, "offset": 41 },
+                "end": { "line": 7, "column": 1, "offset": 256 },
+                "indent": [1, 1]
+              }
+            },
+            {
+              "type": "inlineCode",
+              "value": "/v1/jsonrpc/{network}/methods",
+              "position": {
+                "start": { "line": 7, "column": 1, "offset": 256 },
+                "end": { "line": 7, "column": 32, "offset": 287 },
+                "indent": []
+              }
+            },
+            {
+              "type": "text",
+              "value": " endpoint to get the list of permitted methods.",
+              "position": {
+                "start": { "line": 7, "column": 32, "offset": 287 },
+                "end": { "line": 7, "column": 79, "offset": 334 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 5, "column": 1, "offset": 41 },
+            "end": { "line": 7, "column": 79, "offset": 334 },
+            "indent": [1, 1]
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 3,
+          "children": [
+            {
+              "type": "text",
+              "value": "GET",
+              "position": {
+                "start": { "line": 9, "column": 5, "offset": 340 },
+                "end": { "line": 9, "column": 8, "offset": 343 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 9, "column": 1, "offset": 336 },
+            "end": { "line": 9, "column": 8, "offset": 343 },
+            "indent": []
+          }
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "inlineCode",
+              "value": "GET https://api.backbonecabal.xyz/v1/jsonrpc/network/method?params=",
+              "position": {
+                "start": { "line": 11, "column": 1, "offset": 345 },
+                "end": { "line": 11, "column": 70, "offset": 414 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 11, "column": 1, "offset": 345 },
+            "end": { "line": 11, "column": 70, "offset": 414 },
+            "indent": []
+          }
+        },
+        {
+          "type": "table",
+          "align": [null, null, null],
+          "children": [
+            {
+              "type": "tableRow",
+              "children": [
+                {
+                  "type": "tableCell",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Parameters",
+                      "position": {
+                        "start": { "line": 13, "column": 3, "offset": 418 },
+                        "end": { "line": 13, "column": 13, "offset": 428 },
+                        "indent": []
+                      }
+                    }
+                  ],
+                  "position": {
+                    "start": { "line": 13, "column": 3, "offset": 418 },
+                    "end": { "line": 13, "column": 13, "offset": 428 },
+                    "indent": []
+                  }
+                },
+                {
+                  "type": "tableCell",
+                  "children": [],
+                  "position": {
+                    "start": { "line": 13, "column": 175, "offset": 590 },
+                    "end": { "line": 13, "column": 175, "offset": 590 },
+                    "indent": []
+                  }
+                },
+                {
+                  "type": "tableCell",
+                  "children": [],
+                  "position": {
+                    "start": { "line": 13, "column": 184, "offset": 599 },
+                    "end": { "line": 13, "column": 184, "offset": 599 },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": { "line": 13, "column": 1, "offset": 416 },
+                "end": { "line": 13, "column": 185, "offset": 600 },
+                "indent": []
+              }
+            },
+            {
+              "type": "tableRow",
+              "children": [
+                {
+                  "type": "tableCell",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "network",
+                      "position": {
+                        "start": { "line": 15, "column": 3, "offset": 788 },
+                        "end": { "line": 15, "column": 10, "offset": 795 },
+                        "indent": []
+                      }
+                    }
+                  ],
+                  "position": {
+                    "start": { "line": 15, "column": 3, "offset": 788 },
+                    "end": { "line": 15, "column": 13, "offset": 798 },
+                    "indent": []
+                  }
+                },
+                {
+                  "type": "tableCell",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Ethereum network in lowercase. Possible values: ",
+                      "position": {
+                        "start": { "line": 15, "column": 16, "offset": 801 },
+                        "end": { "line": 15, "column": 64, "offset": 849 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "inlineCode",
+                      "value": "mainnet",
+                      "position": {
+                        "start": { "line": 15, "column": 64, "offset": 849 },
+                        "end": { "line": 15, "column": 73, "offset": 858 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "value": ", ",
+                      "position": {
+                        "start": { "line": 15, "column": 73, "offset": 858 },
+                        "end": { "line": 15, "column": 75, "offset": 860 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "inlineCode",
+                      "value": "ropsten",
+                      "position": {
+                        "start": { "line": 15, "column": 75, "offset": 860 },
+                        "end": { "line": 15, "column": 84, "offset": 869 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "value": ", ",
+                      "position": {
+                        "start": { "line": 15, "column": 84, "offset": 869 },
+                        "end": { "line": 15, "column": 86, "offset": 871 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "inlineCode",
+                      "value": "kovan",
+                      "position": {
+                        "start": { "line": 15, "column": 86, "offset": 871 },
+                        "end": { "line": 15, "column": 93, "offset": 878 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "value": ", ",
+                      "position": {
+                        "start": { "line": 15, "column": 93, "offset": 878 },
+                        "end": { "line": 15, "column": 95, "offset": 880 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "inlineCode",
+                      "value": "rinkeby",
+                      "position": {
+                        "start": { "line": 15, "column": 95, "offset": 880 },
+                        "end": { "line": 15, "column": 104, "offset": 889 },
+                        "indent": []
+                      }
+                    }
+                  ],
+                  "position": {
+                    "start": { "line": 15, "column": 16, "offset": 801 },
+                    "end": { "line": 15, "column": 174, "offset": 959 },
+                    "indent": []
+                  }
+                },
+                {
+                  "type": "tableCell",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Enum",
+                      "position": {
+                        "start": { "line": 15, "column": 177, "offset": 962 },
+                        "end": { "line": 15, "column": 181, "offset": 966 },
+                        "indent": []
+                      }
+                    }
+                  ],
+                  "position": {
+                    "start": { "line": 15, "column": 177, "offset": 962 },
+                    "end": { "line": 15, "column": 183, "offset": 968 },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": { "line": 15, "column": 1, "offset": 786 },
+                "end": { "line": 15, "column": 185, "offset": 970 },
+                "indent": []
+              }
+            },
+            {
+              "type": "tableRow",
+              "children": [
+                {
+                  "type": "tableCell",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "method",
+                      "position": {
+                        "start": { "line": 16, "column": 3, "offset": 973 },
+                        "end": { "line": 16, "column": 9, "offset": 979 },
+                        "indent": []
+                      }
+                    }
+                  ],
+                  "position": {
+                    "start": { "line": 16, "column": 3, "offset": 973 },
+                    "end": { "line": 16, "column": 13, "offset": 983 },
+                    "indent": []
+                  }
+                },
+                {
+                  "type": "tableCell",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "JSON-RPC method. Use the ",
+                      "position": {
+                        "start": { "line": 16, "column": 16, "offset": 986 },
+                        "end": { "line": 16, "column": 41, "offset": 1011 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "inlineCode",
+                      "value": "/v1/jsonrpc/{network}/methods",
+                      "position": {
+                        "start": { "line": 16, "column": 41, "offset": 1011 },
+                        "end": { "line": 16, "column": 72, "offset": 1042 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "value": " endpoint to get the list of permitted methods.",
+                      "position": {
+                        "start": { "line": 16, "column": 72, "offset": 1042 },
+                        "end": { "line": 16, "column": 119, "offset": 1089 },
+                        "indent": []
+                      }
+                    }
+                  ],
+                  "position": {
+                    "start": { "line": 16, "column": 16, "offset": 986 },
+                    "end": { "line": 16, "column": 174, "offset": 1144 },
+                    "indent": []
+                  }
+                },
+                {
+                  "type": "tableCell",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "String",
+                      "position": {
+                        "start": { "line": 16, "column": 177, "offset": 1147 },
+                        "end": { "line": 16, "column": 183, "offset": 1153 },
+                        "indent": []
+                      }
+                    }
+                  ],
+                  "position": {
+                    "start": { "line": 16, "column": 177, "offset": 1147 },
+                    "end": { "line": 16, "column": 183, "offset": 1153 },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": { "line": 16, "column": 1, "offset": 971 },
+                "end": { "line": 16, "column": 185, "offset": 1155 },
+                "indent": []
+              }
+            },
+            {
+              "type": "tableRow",
+              "children": [
+                {
+                  "type": "tableCell",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "params",
+                      "position": {
+                        "start": { "line": 17, "column": 3, "offset": 1158 },
+                        "end": { "line": 17, "column": 9, "offset": 1164 },
+                        "indent": []
+                      }
+                    }
+                  ],
+                  "position": {
+                    "start": { "line": 17, "column": 3, "offset": 1158 },
+                    "end": { "line": 17, "column": 13, "offset": 1168 },
+                    "indent": []
+                  }
+                },
+                {
+                  "type": "tableCell",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "This is the params field that would normally be part of the JSON-RPC POST body. Use the exact same format. If it's omitted, it will default to an empty array.",
+                      "position": {
+                        "start": { "line": 17, "column": 16, "offset": 1171 },
+                        "end": { "line": 17, "column": 174, "offset": 1329 },
+                        "indent": []
+                      }
+                    }
+                  ],
+                  "position": {
+                    "start": { "line": 17, "column": 16, "offset": 1171 },
+                    "end": { "line": 17, "column": 174, "offset": 1329 },
+                    "indent": []
+                  }
+                },
+                {
+                  "type": "tableCell",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Array",
+                      "position": {
+                        "start": { "line": 17, "column": 177, "offset": 1332 },
+                        "end": { "line": 17, "column": 182, "offset": 1337 },
+                        "indent": []
+                      }
+                    }
+                  ],
+                  "position": {
+                    "start": { "line": 17, "column": 177, "offset": 1332 },
+                    "end": { "line": 17, "column": 183, "offset": 1338 },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": { "line": 17, "column": 1, "offset": 1156 },
+                "end": { "line": 17, "column": 185, "offset": 1340 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 13, "column": 1, "offset": 416 },
+            "end": { "line": 17, "column": 185, "offset": 1340 },
+            "indent": [1, 1, 1, 1]
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 3,
+          "children": [
+            {
+              "type": "text",
+              "value": "Request",
+              "position": {
+                "start": { "line": 19, "column": 5, "offset": 1346 },
+                "end": { "line": 19, "column": 12, "offset": 1353 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 19, "column": 1, "offset": 1342 },
+            "end": { "line": 19, "column": 12, "offset": 1353 },
+            "indent": []
+          }
+        },
+        {
+          "type": "code",
+          "lang": null,
+          "meta": null,
+          "value": "curl --include \\\n    --header \"Content-Type: application/json\" \\\n    --header \"Accept: application/json\" \\\n  'https://api.backbonecabal.xyz/v1/jsonrpc/{network}/{method}?params='",
+          "position": {
+            "start": { "line": 21, "column": 1, "offset": 1355 },
+            "end": { "line": 26, "column": 4, "offset": 1541 },
+            "indent": [1, 1, 1, 1, 1]
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 3,
+          "children": [
+            {
+              "type": "text",
+              "value": "Response",
+              "position": {
+                "start": { "line": 28, "column": 5, "offset": 1547 },
+                "end": { "line": 28, "column": 13, "offset": 1555 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 28, "column": 1, "offset": 1543 },
+            "end": { "line": 28, "column": 13, "offset": 1555 },
+            "indent": []
+          }
+        },
+        {
+          "type": "table",
+          "align": [null, null, null],
+          "children": [
+            {
+              "type": "tableRow",
+              "children": [
+                {
+                  "type": "tableCell",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Attributes",
+                      "position": {
+                        "start": { "line": 30, "column": 3, "offset": 1559 },
+                        "end": { "line": 30, "column": 13, "offset": 1569 },
+                        "indent": []
+                      }
+                    }
+                  ],
+                  "position": {
+                    "start": { "line": 30, "column": 3, "offset": 1559 },
+                    "end": { "line": 30, "column": 42, "offset": 1598 },
+                    "indent": []
+                  }
+                },
+                {
+                  "type": "tableCell",
+                  "children": [],
+                  "position": {
+                    "start": { "line": 30, "column": 54, "offset": 1610 },
+                    "end": { "line": 30, "column": 54, "offset": 1610 },
+                    "indent": []
+                  }
+                },
+                {
+                  "type": "tableCell",
+                  "children": [],
+                  "position": {
+                    "start": { "line": 30, "column": 63, "offset": 1619 },
+                    "end": { "line": 30, "column": 63, "offset": 1619 },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": { "line": 30, "column": 1, "offset": 1557 },
+                "end": { "line": 30, "column": 64, "offset": 1620 },
+                "indent": []
+              }
+            },
+            {
+              "type": "tableRow",
+              "children": [
+                {
+                  "type": "tableCell",
+                  "children": [
+                    {
+                      "type": "inlineCode",
+                      "value": "jsonrpc",
+                      "position": {
+                        "start": { "line": 32, "column": 3, "offset": 1687 },
+                        "end": { "line": 32, "column": 12, "offset": 1696 },
+                        "indent": []
+                      }
+                    }
+                  ],
+                  "position": {
+                    "start": { "line": 32, "column": 3, "offset": 1687 },
+                    "end": { "line": 32, "column": 42, "offset": 1726 },
+                    "indent": []
+                  }
+                },
+                {
+                  "type": "tableCell",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "required",
+                      "position": {
+                        "start": { "line": 32, "column": 45, "offset": 1729 },
+                        "end": { "line": 32, "column": 53, "offset": 1737 },
+                        "indent": []
+                      }
+                    }
+                  ],
+                  "position": {
+                    "start": { "line": 32, "column": 45, "offset": 1729 },
+                    "end": { "line": 32, "column": 53, "offset": 1737 },
+                    "indent": []
+                  }
+                },
+                {
+                  "type": "tableCell",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "enum",
+                      "position": {
+                        "start": { "line": 32, "column": 56, "offset": 1740 },
+                        "end": { "line": 32, "column": 60, "offset": 1744 },
+                        "indent": []
+                      }
+                    }
+                  ],
+                  "position": {
+                    "start": { "line": 32, "column": 56, "offset": 1740 },
+                    "end": { "line": 32, "column": 62, "offset": 1746 },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": { "line": 32, "column": 1, "offset": 1685 },
+                "end": { "line": 32, "column": 64, "offset": 1748 },
+                "indent": []
+              }
+            },
+            {
+              "type": "tableRow",
+              "children": [
+                {
+                  "type": "tableCell",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "JSON-RPC version",
+                      "position": {
+                        "start": { "line": 33, "column": 3, "offset": 1751 },
+                        "end": { "line": 33, "column": 19, "offset": 1767 },
+                        "indent": []
+                      }
+                    }
+                  ],
+                  "position": {
+                    "start": { "line": 33, "column": 3, "offset": 1751 },
+                    "end": { "line": 33, "column": 42, "offset": 1790 },
+                    "indent": []
+                  }
+                },
+                {
+                  "type": "tableCell",
+                  "children": [
+                    {
+                      "type": "inlineCode",
+                      "value": "2.0",
+                      "position": {
+                        "start": { "line": 33, "column": 45, "offset": 1793 },
+                        "end": { "line": 33, "column": 50, "offset": 1798 },
+                        "indent": []
+                      }
+                    }
+                  ],
+                  "position": {
+                    "start": { "line": 33, "column": 45, "offset": 1793 },
+                    "end": { "line": 33, "column": 53, "offset": 1801 },
+                    "indent": []
+                  }
+                },
+                {
+                  "type": "tableCell",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "string",
+                      "position": {
+                        "start": { "line": 33, "column": 56, "offset": 1804 },
+                        "end": { "line": 33, "column": 62, "offset": 1810 },
+                        "indent": []
+                      }
+                    }
+                  ],
+                  "position": {
+                    "start": { "line": 33, "column": 56, "offset": 1804 },
+                    "end": { "line": 33, "column": 62, "offset": 1810 },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": { "line": 33, "column": 1, "offset": 1749 },
+                "end": { "line": 33, "column": 64, "offset": 1812 },
+                "indent": []
+              }
+            },
+            {
+              "type": "tableRow",
+              "children": [
+                {
+                  "type": "tableCell",
+                  "children": [
+                    {
+                      "type": "inlineCode",
+                      "value": "id",
+                      "position": {
+                        "start": { "line": 34, "column": 3, "offset": 1815 },
+                        "end": { "line": 34, "column": 7, "offset": 1819 },
+                        "indent": []
+                      }
+                    }
+                  ],
+                  "position": {
+                    "start": { "line": 34, "column": 3, "offset": 1815 },
+                    "end": { "line": 34, "column": 42, "offset": 1854 },
+                    "indent": []
+                  }
+                },
+                {
+                  "type": "tableCell",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "required",
+                      "position": {
+                        "start": { "line": 34, "column": 45, "offset": 1857 },
+                        "end": { "line": 34, "column": 53, "offset": 1865 },
+                        "indent": []
+                      }
+                    }
+                  ],
+                  "position": {
+                    "start": { "line": 34, "column": 45, "offset": 1857 },
+                    "end": { "line": 34, "column": 53, "offset": 1865 },
+                    "indent": []
+                  }
+                },
+                {
+                  "type": "tableCell",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "number",
+                      "position": {
+                        "start": { "line": 34, "column": 56, "offset": 1868 },
+                        "end": { "line": 34, "column": 62, "offset": 1874 },
+                        "indent": []
+                      }
+                    }
+                  ],
+                  "position": {
+                    "start": { "line": 34, "column": 56, "offset": 1868 },
+                    "end": { "line": 34, "column": 62, "offset": 1874 },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": { "line": 34, "column": 1, "offset": 1813 },
+                "end": { "line": 34, "column": 64, "offset": 1876 },
+                "indent": []
+              }
+            },
+            {
+              "type": "tableRow",
+              "children": [
+                {
+                  "type": "tableCell",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "JSON-RPC request ID",
+                      "position": {
+                        "start": { "line": 35, "column": 3, "offset": 1879 },
+                        "end": { "line": 35, "column": 22, "offset": 1898 },
+                        "indent": []
+                      }
+                    }
+                  ],
+                  "position": {
+                    "start": { "line": 35, "column": 3, "offset": 1879 },
+                    "end": { "line": 35, "column": 42, "offset": 1918 },
+                    "indent": []
+                  }
+                },
+                {
+                  "type": "tableCell",
+                  "children": [],
+                  "position": {
+                    "start": { "line": 35, "column": 54, "offset": 1930 },
+                    "end": { "line": 35, "column": 54, "offset": 1930 },
+                    "indent": []
+                  }
+                },
+                {
+                  "type": "tableCell",
+                  "children": [],
+                  "position": {
+                    "start": { "line": 35, "column": 63, "offset": 1939 },
+                    "end": { "line": 35, "column": 63, "offset": 1939 },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": { "line": 35, "column": 1, "offset": 1877 },
+                "end": { "line": 35, "column": 64, "offset": 1940 },
+                "indent": []
+              }
+            },
+            {
+              "type": "tableRow",
+              "children": [
+                {
+                  "type": "tableCell",
+                  "children": [
+                    {
+                      "type": "inlineCode",
+                      "value": "result",
+                      "position": {
+                        "start": { "line": 36, "column": 3, "offset": 1943 },
+                        "end": { "line": 36, "column": 11, "offset": 1951 },
+                        "indent": []
+                      }
+                    }
+                  ],
+                  "position": {
+                    "start": { "line": 36, "column": 3, "offset": 1943 },
+                    "end": { "line": 36, "column": 42, "offset": 1982 },
+                    "indent": []
+                  }
+                },
+                {
+                  "type": "tableCell",
+                  "children": [],
+                  "position": {
+                    "start": { "line": 36, "column": 54, "offset": 1994 },
+                    "end": { "line": 36, "column": 54, "offset": 1994 },
+                    "indent": []
+                  }
+                },
+                {
+                  "type": "tableCell",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "string",
+                      "position": {
+                        "start": { "line": 36, "column": 56, "offset": 1996 },
+                        "end": { "line": 36, "column": 62, "offset": 2002 },
+                        "indent": []
+                      }
+                    }
+                  ],
+                  "position": {
+                    "start": { "line": 36, "column": 56, "offset": 1996 },
+                    "end": { "line": 36, "column": 62, "offset": 2002 },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": { "line": 36, "column": 1, "offset": 1941 },
+                "end": { "line": 36, "column": 64, "offset": 2004 },
+                "indent": []
+              }
+            },
+            {
+              "type": "tableRow",
+              "children": [
+                {
+                  "type": "tableCell",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "JSON-RPC result (can also be an object)",
+                      "position": {
+                        "start": { "line": 37, "column": 3, "offset": 2007 },
+                        "end": { "line": 37, "column": 42, "offset": 2046 },
+                        "indent": []
+                      }
+                    }
+                  ],
+                  "position": {
+                    "start": { "line": 37, "column": 3, "offset": 2007 },
+                    "end": { "line": 37, "column": 42, "offset": 2046 },
+                    "indent": []
+                  }
+                },
+                {
+                  "type": "tableCell",
+                  "children": [],
+                  "position": {
+                    "start": { "line": 37, "column": 54, "offset": 2058 },
+                    "end": { "line": 37, "column": 54, "offset": 2058 },
+                    "indent": []
+                  }
+                },
+                {
+                  "type": "tableCell",
+                  "children": [],
+                  "position": {
+                    "start": { "line": 37, "column": 63, "offset": 2067 },
+                    "end": { "line": 37, "column": 63, "offset": 2067 },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": { "line": 37, "column": 1, "offset": 2005 },
+                "end": { "line": 37, "column": 64, "offset": 2068 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 30, "column": 1, "offset": 1557 },
+            "end": { "line": 37, "column": 64, "offset": 2068 },
+            "indent": [1, 1, 1, 1, 1, 1, 1]
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 4,
+          "children": [
+            {
+              "type": "text",
+              "value": "JSON-RPC Response",
+              "position": {
+                "start": { "line": 39, "column": 6, "offset": 2075 },
+                "end": { "line": 39, "column": 23, "offset": 2092 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 39, "column": 1, "offset": 2070 },
+            "end": { "line": 39, "column": 23, "offset": 2092 },
+            "indent": []
+          }
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "inlineCode",
+              "value": "200",
+              "position": {
+                "start": { "line": 41, "column": 1, "offset": 2094 },
+                "end": { "line": 41, "column": 6, "offset": 2099 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 41, "column": 1, "offset": 2094 },
+            "end": { "line": 41, "column": 6, "offset": 2099 },
+            "indent": []
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 4,
+          "children": [
+            {
+              "type": "text",
+              "value": "HEADERS",
+              "position": {
+                "start": { "line": 43, "column": 6, "offset": 2106 },
+                "end": { "line": 43, "column": 13, "offset": 2113 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 43, "column": 1, "offset": 2101 },
+            "end": { "line": 43, "column": 13, "offset": 2113 },
+            "indent": []
+          }
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "inlineCode",
+              "value": "Content-Type:application/json",
+              "position": {
+                "start": { "line": 45, "column": 1, "offset": 2115 },
+                "end": { "line": 45, "column": 32, "offset": 2146 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 45, "column": 1, "offset": 2115 },
+            "end": { "line": 45, "column": 32, "offset": 2146 },
+            "indent": []
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 4,
+          "children": [
+            {
+              "type": "text",
+              "value": "BODY",
+              "position": {
+                "start": { "line": 47, "column": 6, "offset": 2153 },
+                "end": { "line": 47, "column": 10, "offset": 2157 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 47, "column": 1, "offset": 2148 },
+            "end": { "line": 47, "column": 10, "offset": 2157 },
+            "indent": []
+          }
+        },
+        {
+          "type": "code",
+          "lang": null,
+          "meta": null,
+          "value": "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": -5294191,\n  \"result\": \"sed dolor eu ullamco\"\n}",
+          "position": {
+            "start": { "line": 49, "column": 1, "offset": 2159 },
+            "end": { "line": 55, "column": 4, "offset": 2243 },
+            "indent": [1, 1, 1, 1, 1, 1]
+          }
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "strong",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "JSON Schema",
+                  "position": {
+                    "start": { "line": 57, "column": 3, "offset": 2247 },
+                    "end": { "line": 57, "column": 14, "offset": 2258 },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": { "line": 57, "column": 1, "offset": 2245 },
+                "end": { "line": 57, "column": 16, "offset": 2260 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 57, "column": 1, "offset": 2245 },
+            "end": { "line": 57, "column": 16, "offset": 2260 },
+            "indent": []
+          }
+        },
+        {
+          "type": "code",
+          "lang": null,
+          "meta": null,
+          "value": "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"jsonrpc\": {\n      \"type\": \"string\",\n      \"description\": \"JSON-RPC version\",\n      \"enum\": [\n        \"2.0\"\n      ]\n    },\n    \"id\": {\n      \"type\": \"integer\",\n      \"description\": \"JSON-RPC request ID\"\n    },\n    \"result\": {\n      \"type\": \"string\",\n      \"description\": \"JSON-RPC result (can also be an object)\"\n    }\n  },\n  \"required\": [\n    \"jsonrpc\",\n    \"id\"\n  ]\n}",
+          "position": {
+            "start": { "line": 59, "column": 1, "offset": 2262 },
+            "end": { "line": 84, "column": 4, "offset": 2683 },
+            "indent": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 3,
+          "children": [
+            {
+              "type": "text",
+              "value": "Response",
+              "position": {
+                "start": { "line": 86, "column": 5, "offset": 2689 },
+                "end": { "line": 86, "column": 13, "offset": 2697 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 86, "column": 1, "offset": 2685 },
+            "end": { "line": 86, "column": 13, "offset": 2697 },
+            "indent": []
+          }
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "Bad JSON in ",
+              "position": {
+                "start": { "line": 88, "column": 1, "offset": 2699 },
+                "end": { "line": 88, "column": 13, "offset": 2711 },
+                "indent": []
+              }
+            },
+            {
+              "type": "inlineCode",
+              "value": "params",
+              "position": {
+                "start": { "line": 88, "column": 13, "offset": 2711 },
+                "end": { "line": 88, "column": 21, "offset": 2719 },
+                "indent": []
+              }
+            },
+            {
+              "type": "text",
+              "value": " query parameter",
+              "position": {
+                "start": { "line": 88, "column": 21, "offset": 2719 },
+                "end": { "line": 88, "column": 37, "offset": 2735 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 88, "column": 1, "offset": 2699 },
+            "end": { "line": 88, "column": 37, "offset": 2735 },
+            "indent": []
+          }
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "inlineCode",
+              "value": "400",
+              "position": {
+                "start": { "line": 90, "column": 1, "offset": 2737 },
+                "end": { "line": 90, "column": 6, "offset": 2742 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 90, "column": 1, "offset": 2737 },
+            "end": { "line": 90, "column": 6, "offset": 2742 },
+            "indent": []
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 4,
+          "children": [
+            {
+              "type": "text",
+              "value": "HEADERS",
+              "position": {
+                "start": { "line": 92, "column": 6, "offset": 2749 },
+                "end": { "line": 92, "column": 13, "offset": 2756 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 92, "column": 1, "offset": 2744 },
+            "end": { "line": 92, "column": 13, "offset": 2756 },
+            "indent": []
+          }
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "inlineCode",
+              "value": "Content-Type:application/json",
+              "position": {
+                "start": { "line": 94, "column": 1, "offset": 2758 },
+                "end": { "line": 94, "column": 32, "offset": 2789 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 94, "column": 1, "offset": 2758 },
+            "end": { "line": 94, "column": 32, "offset": 2789 },
+            "indent": []
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 3,
+          "children": [
+            {
+              "type": "text",
+              "value": "Response",
+              "position": {
+                "start": { "line": 96, "column": 5, "offset": 2795 },
+                "end": { "line": 96, "column": 13, "offset": 2803 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 96, "column": 1, "offset": 2791 },
+            "end": { "line": 96, "column": 13, "offset": 2803 },
+            "indent": []
+          }
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "JSON-RPC method is not a valid GET method",
+              "position": {
+                "start": { "line": 98, "column": 1, "offset": 2805 },
+                "end": { "line": 98, "column": 42, "offset": 2846 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 98, "column": 1, "offset": 2805 },
+            "end": { "line": 98, "column": 42, "offset": 2846 },
+            "indent": []
+          }
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "inlineCode",
+              "value": "404",
+              "position": {
+                "start": { "line": 100, "column": 1, "offset": 2848 },
+                "end": { "line": 100, "column": 6, "offset": 2853 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 100, "column": 1, "offset": 2848 },
+            "end": { "line": 100, "column": 6, "offset": 2853 },
+            "indent": []
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 4,
+          "children": [
+            {
+              "type": "text",
+              "value": "HEADERS",
+              "position": {
+                "start": { "line": 102, "column": 6, "offset": 2860 },
+                "end": { "line": 102, "column": 13, "offset": 2867 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 102, "column": 1, "offset": 2855 },
+            "end": { "line": 102, "column": 13, "offset": 2867 },
+            "indent": []
+          }
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "inlineCode",
+              "value": "Content-Type:application/json",
+              "position": {
+                "start": { "line": 104, "column": 1, "offset": 2869 },
+                "end": { "line": 104, "column": 32, "offset": 2900 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 104, "column": 1, "offset": 2869 },
+            "end": { "line": 104, "column": 32, "offset": 2900 },
+            "indent": []
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 3,
+          "children": [
+            {
+              "type": "text",
+              "value": "Response",
+              "position": {
+                "start": { "line": 106, "column": 5, "offset": 2906 },
+                "end": { "line": 106, "column": 13, "offset": 2914 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 106, "column": 1, "offset": 2902 },
+            "end": { "line": 106, "column": 13, "offset": 2914 },
+            "indent": []
+          }
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "Server error",
+              "position": {
+                "start": { "line": 108, "column": 1, "offset": 2916 },
+                "end": { "line": 108, "column": 13, "offset": 2928 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 108, "column": 1, "offset": 2916 },
+            "end": { "line": 108, "column": 13, "offset": 2928 },
+            "indent": []
+          }
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "inlineCode",
+              "value": "500",
+              "position": {
+                "start": { "line": 110, "column": 1, "offset": 2930 },
+                "end": { "line": 110, "column": 6, "offset": 2935 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 110, "column": 1, "offset": 2930 },
+            "end": { "line": 110, "column": 6, "offset": 2935 },
+            "indent": []
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 4,
+          "children": [
+            {
+              "type": "text",
+              "value": "HEADERS",
+              "position": {
+                "start": { "line": 112, "column": 6, "offset": 2942 },
+                "end": { "line": 112, "column": 13, "offset": 2949 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 112, "column": 1, "offset": 2937 },
+            "end": { "line": 112, "column": 13, "offset": 2949 },
+            "indent": []
+          }
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "inlineCode",
+              "value": "Content-Type:application/json",
+              "position": {
+                "start": { "line": 114, "column": 1, "offset": 2951 },
+                "end": { "line": 114, "column": 32, "offset": 2982 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 114, "column": 1, "offset": 2951 },
+            "end": { "line": 114, "column": 32, "offset": 2982 },
+            "indent": []
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 3,
+          "children": [
+            {
+              "type": "text",
+              "value": "Response",
+              "position": {
+                "start": { "line": 116, "column": 5, "offset": 2988 },
+                "end": { "line": 116, "column": 13, "offset": 2996 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 116, "column": 1, "offset": 2984 },
+            "end": { "line": 116, "column": 13, "offset": 2996 },
+            "indent": []
+          }
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "Ethereum client error",
+              "position": {
+                "start": { "line": 118, "column": 1, "offset": 2998 },
+                "end": { "line": 118, "column": 22, "offset": 3019 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 118, "column": 1, "offset": 2998 },
+            "end": { "line": 118, "column": 22, "offset": 3019 },
+            "indent": []
+          }
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "inlineCode",
+              "value": "502",
+              "position": {
+                "start": { "line": 120, "column": 1, "offset": 3021 },
+                "end": { "line": 120, "column": 6, "offset": 3026 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 120, "column": 1, "offset": 3021 },
+            "end": { "line": 120, "column": 6, "offset": 3026 },
+            "indent": []
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 4,
+          "children": [
+            {
+              "type": "text",
+              "value": "HEADERS",
+              "position": {
+                "start": { "line": 122, "column": 6, "offset": 3033 },
+                "end": { "line": 122, "column": 13, "offset": 3040 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 122, "column": 1, "offset": 3028 },
+            "end": { "line": 122, "column": 13, "offset": 3040 },
+            "indent": []
+          }
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "inlineCode",
+              "value": "Content-Type:application/json",
+              "position": {
+                "start": { "line": 124, "column": 1, "offset": 3042 },
+                "end": { "line": 124, "column": 32, "offset": 3073 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 124, "column": 1, "offset": 3042 },
+            "end": { "line": 124, "column": 32, "offset": 3073 },
+            "indent": []
+          }
+        },
+        {
+          "type": "export",
+          "value": "export const _frontmatter = {}",
+          "position": {
+            "start": { "line": 127, "column": 1, "offset": 3076 },
+            "end": { "line": 127, "column": 31, "offset": 3106 },
+            "indent": []
+          }
+        }
+      ],
+      "position": {
+        "start": { "line": 1, "column": 1, "offset": 0 },
+        "end": { "line": 127, "column": 31, "offset": 3106 }
+      }
+    },
+    "scopeImports": ["import * as React from 'react'"],
+    "scopeIdentifiers": ["React"],
+    "body": "function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }\n\nfunction _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }\n\nfunction _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }\n\n/* @jsx mdx */\nvar _frontmatter = {};\nvar layoutProps = {\n  _frontmatter: _frontmatter\n};\nvar MDXLayout = \"wrapper\";\nreturn function MDXContent(_ref) {\n  var components = _ref.components,\n      props = _objectWithoutProperties(_ref, [\"components\"]);\n\n  return mdx(MDXLayout, _extends({}, layoutProps, props, {\n    components: components,\n    mdxType: \"MDXLayout\"\n  }), mdx(\"section\", null, mdx(\"h1\", {\n    parentName: \"section\"\n  }, \"method\")), mdx(\"section\", null, mdx(\"h2\", {\n    parentName: \"section\"\n  }, \"/v1/jsonrpc/network/method\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, \"A request using an \\\"HTTP GET-compatible\\\" (non-state-changing) JSON-RPC method. Most Ethereum JSON-RPC methods can be\\ndescribed in this way, since they query the blockchain for various pieces of information. Use the\\n\", mdx(\"inlineCode\", {\n    parentName: \"p\"\n  }, \"/v1/jsonrpc/{network}/methods\"), \" endpoint to get the list of permitted methods.\")), mdx(\"section\", null, mdx(\"h3\", {\n    parentName: \"section\"\n  }, \"GET\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"p\"\n  }, \"GET https://api.backbonecabal.xyz/v1/jsonrpc/network/method?params=\")), mdx(\"table\", {\n    parentName: \"section\"\n  }, mdx(\"thead\", {\n    parentName: \"table\"\n  }, mdx(\"tr\", {\n    parentName: \"thead\"\n  }, mdx(\"th\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  }), \"Parameters\"), mdx(\"th\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  })), mdx(\"th\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  })))), mdx(\"tbody\", {\n    parentName: \"table\"\n  }, mdx(\"tr\", {\n    parentName: \"tbody\"\n  }, mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  }), \"network\"), mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  }), \"Ethereum network in lowercase. Possible values: \", mdx(\"inlineCode\", {\n    parentName: \"td\"\n  }, \"mainnet\"), \", \", mdx(\"inlineCode\", {\n    parentName: \"td\"\n  }, \"ropsten\"), \", \", mdx(\"inlineCode\", {\n    parentName: \"td\"\n  }, \"kovan\"), \", \", mdx(\"inlineCode\", {\n    parentName: \"td\"\n  }, \"rinkeby\")), mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  }), \"Enum\")), mdx(\"tr\", {\n    parentName: \"tbody\"\n  }, mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  }), \"method\"), mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  }), \"JSON-RPC method. Use the \", mdx(\"inlineCode\", {\n    parentName: \"td\"\n  }, \"/v1/jsonrpc/{network}/methods\"), \" endpoint to get the list of permitted methods.\"), mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  }), \"String\")), mdx(\"tr\", {\n    parentName: \"tbody\"\n  }, mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  }), \"params\"), mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  }), \"This is the params field that would normally be part of the JSON-RPC POST body. Use the exact same format. If it's omitted, it will default to an empty array.\"), mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  }), \"Array\"))))), mdx(\"section\", null, mdx(\"h3\", {\n    parentName: \"section\"\n  }, \"Request\"), mdx(\"pre\", {\n    parentName: \"section\"\n  }, mdx(\"code\", _extends({\n    parentName: \"pre\"\n  }, {}), \"curl --include \\\\\\n    --header \\\"Content-Type: application/json\\\" \\\\\\n    --header \\\"Accept: application/json\\\" \\\\\\n  'https://api.backbonecabal.xyz/v1/jsonrpc/{network}/{method}?params='\\n\"))), mdx(\"section\", null, mdx(\"h3\", {\n    parentName: \"section\"\n  }, \"Response\"), mdx(\"table\", {\n    parentName: \"section\"\n  }, mdx(\"thead\", {\n    parentName: \"table\"\n  }, mdx(\"tr\", {\n    parentName: \"thead\"\n  }, mdx(\"th\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  }), \"Attributes\"), mdx(\"th\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  })), mdx(\"th\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  })))), mdx(\"tbody\", {\n    parentName: \"table\"\n  }, mdx(\"tr\", {\n    parentName: \"tbody\"\n  }, mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  }), mdx(\"inlineCode\", {\n    parentName: \"td\"\n  }, \"jsonrpc\")), mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  }), \"required\"), mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  }), \"enum\")), mdx(\"tr\", {\n    parentName: \"tbody\"\n  }, mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  }), \"JSON-RPC version\"), mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  }), mdx(\"inlineCode\", {\n    parentName: \"td\"\n  }, \"2.0\")), mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  }), \"string\")), mdx(\"tr\", {\n    parentName: \"tbody\"\n  }, mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  }), mdx(\"inlineCode\", {\n    parentName: \"td\"\n  }, \"id\")), mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  }), \"required\"), mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  }), \"number\")), mdx(\"tr\", {\n    parentName: \"tbody\"\n  }, mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  }), \"JSON-RPC request ID\"), mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  })), mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  }))), mdx(\"tr\", {\n    parentName: \"tbody\"\n  }, mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  }), mdx(\"inlineCode\", {\n    parentName: \"td\"\n  }, \"result\")), mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  })), mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  }), \"string\")), mdx(\"tr\", {\n    parentName: \"tbody\"\n  }, mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  }), \"JSON-RPC result (can also be an object)\"), mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  })), mdx(\"td\", _extends({\n    parentName: \"tr\"\n  }, {\n    \"align\": null\n  })))))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"JSON-RPC Response\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"p\"\n  }, \"200\"))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"HEADERS\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"p\"\n  }, \"Content-Type:application/json\"))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"BODY\"), mdx(\"pre\", {\n    parentName: \"section\"\n  }, mdx(\"code\", _extends({\n    parentName: \"pre\"\n  }, {}), \"{\\n  \\\"jsonrpc\\\": \\\"2.0\\\",\\n  \\\"id\\\": -5294191,\\n  \\\"result\\\": \\\"sed dolor eu ullamco\\\"\\n}\\n\")), mdx(\"p\", {\n    parentName: \"section\"\n  }, mdx(\"strong\", {\n    parentName: \"p\"\n  }, \"JSON Schema\")), mdx(\"pre\", {\n    parentName: \"section\"\n  }, mdx(\"code\", _extends({\n    parentName: \"pre\"\n  }, {}), \"{\\n  \\\"type\\\": \\\"object\\\",\\n  \\\"properties\\\": {\\n    \\\"jsonrpc\\\": {\\n      \\\"type\\\": \\\"string\\\",\\n      \\\"description\\\": \\\"JSON-RPC version\\\",\\n      \\\"enum\\\": [\\n        \\\"2.0\\\"\\n      ]\\n    },\\n    \\\"id\\\": {\\n      \\\"type\\\": \\\"integer\\\",\\n      \\\"description\\\": \\\"JSON-RPC request ID\\\"\\n    },\\n    \\\"result\\\": {\\n      \\\"type\\\": \\\"string\\\",\\n      \\\"description\\\": \\\"JSON-RPC result (can also be an object)\\\"\\n    }\\n  },\\n  \\\"required\\\": [\\n    \\\"jsonrpc\\\",\\n    \\\"id\\\"\\n  ]\\n}\\n\"))), mdx(\"section\", null, mdx(\"h3\", {\n    parentName: \"section\"\n  }, \"Response\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, \"Bad JSON in \", mdx(\"inlineCode\", {\n    parentName: \"p\"\n  }, \"params\"), \" query parameter\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"p\"\n  }, \"400\"))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"HEADERS\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"p\"\n  }, \"Content-Type:application/json\"))), mdx(\"section\", null, mdx(\"h3\", {\n    parentName: \"section\"\n  }, \"Response\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, \"JSON-RPC method is not a valid GET method\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"p\"\n  }, \"404\"))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"HEADERS\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"p\"\n  }, \"Content-Type:application/json\"))), mdx(\"section\", null, mdx(\"h3\", {\n    parentName: \"section\"\n  }, \"Response\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, \"Server error\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"p\"\n  }, \"500\"))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"HEADERS\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"p\"\n  }, \"Content-Type:application/json\"))), mdx(\"section\", null, mdx(\"h3\", {\n    parentName: \"section\"\n  }, \"Response\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, \"Ethereum client error\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"p\"\n  }, \"502\"))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"HEADERS\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"p\"\n  }, \"Content-Type:application/json\"))));\n}\n;\nMDXContent.isMDXComponent = true;",
+    "rawMDXOutput": "/* @jsx mdx */\nimport { mdx } from '@mdx-js/react';\n/* @jsx mdx */\n\nexport const _frontmatter = {};\n\nconst layoutProps = {\n  _frontmatter\n};\nconst MDXLayout = \"wrapper\"\nexport default function MDXContent({\n  components,\n  ...props\n}) {\n  return <MDXLayout {...layoutProps} {...props} components={components} mdxType=\"MDXLayout\">\n    <section><h1 parentName=\"section\">{`method`}</h1></section>\n    <section><h2 parentName=\"section\">{`/v1/jsonrpc/network/method`}</h2><p parentName=\"section\">{`A request using an \"HTTP GET-compatible\" (non-state-changing) JSON-RPC method. Most Ethereum JSON-RPC methods can be\ndescribed in this way, since they query the blockchain for various pieces of information. Use the\n`}<inlineCode parentName=\"p\">{`/v1/jsonrpc/{network}/methods`}</inlineCode>{` endpoint to get the list of permitted methods.`}</p></section>\n    <section><h3 parentName=\"section\">{`GET`}</h3><p parentName=\"section\"><inlineCode parentName=\"p\">{`GET https://api.backbonecabal.xyz/v1/jsonrpc/network/method?params=`}</inlineCode></p><table parentName=\"section\">\n        <thead parentName=\"table\">\n          <tr parentName=\"thead\">\n            <th parentName=\"tr\" {...{\n              \"align\": null\n            }}>{`Parameters`}</th>\n            <th parentName=\"tr\" {...{\n              \"align\": null\n            }}></th>\n            <th parentName=\"tr\" {...{\n              \"align\": null\n            }}></th>\n          </tr>\n        </thead>\n        <tbody parentName=\"table\">\n          <tr parentName=\"tbody\">\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}>{`network`}</td>\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}>{`Ethereum network in lowercase. Possible values: `}<inlineCode parentName=\"td\">{`mainnet`}</inlineCode>{`, `}<inlineCode parentName=\"td\">{`ropsten`}</inlineCode>{`, `}<inlineCode parentName=\"td\">{`kovan`}</inlineCode>{`, `}<inlineCode parentName=\"td\">{`rinkeby`}</inlineCode></td>\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}>{`Enum`}</td>\n          </tr>\n          <tr parentName=\"tbody\">\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}>{`method`}</td>\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}>{`JSON-RPC method. Use the `}<inlineCode parentName=\"td\">{`/v1/jsonrpc/{network}/methods`}</inlineCode>{` endpoint to get the list of permitted methods.`}</td>\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}>{`String`}</td>\n          </tr>\n          <tr parentName=\"tbody\">\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}>{`params`}</td>\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}>{`This is the params field that would normally be part of the JSON-RPC POST body. Use the exact same format. If it's omitted, it will default to an empty array.`}</td>\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}>{`Array`}</td>\n          </tr>\n        </tbody>\n      </table></section>\n    <section><h3 parentName=\"section\">{`Request`}</h3><pre parentName=\"section\"><code parentName=\"pre\" {...{}}>{`curl --include \\\\\n    --header \"Content-Type: application/json\" \\\\\n    --header \"Accept: application/json\" \\\\\n  'https://api.backbonecabal.xyz/v1/jsonrpc/{network}/{method}?params='\n`}</code></pre></section>\n    <section><h3 parentName=\"section\">{`Response`}</h3><table parentName=\"section\">\n        <thead parentName=\"table\">\n          <tr parentName=\"thead\">\n            <th parentName=\"tr\" {...{\n              \"align\": null\n            }}>{`Attributes`}</th>\n            <th parentName=\"tr\" {...{\n              \"align\": null\n            }}></th>\n            <th parentName=\"tr\" {...{\n              \"align\": null\n            }}></th>\n          </tr>\n        </thead>\n        <tbody parentName=\"table\">\n          <tr parentName=\"tbody\">\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}><inlineCode parentName=\"td\">{`jsonrpc`}</inlineCode></td>\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}>{`required`}</td>\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}>{`enum`}</td>\n          </tr>\n          <tr parentName=\"tbody\">\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}>{`JSON-RPC version`}</td>\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}><inlineCode parentName=\"td\">{`2.0`}</inlineCode></td>\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}>{`string`}</td>\n          </tr>\n          <tr parentName=\"tbody\">\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}><inlineCode parentName=\"td\">{`id`}</inlineCode></td>\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}>{`required`}</td>\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}>{`number`}</td>\n          </tr>\n          <tr parentName=\"tbody\">\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}>{`JSON-RPC request ID`}</td>\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}></td>\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}></td>\n          </tr>\n          <tr parentName=\"tbody\">\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}><inlineCode parentName=\"td\">{`result`}</inlineCode></td>\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}></td>\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}>{`string`}</td>\n          </tr>\n          <tr parentName=\"tbody\">\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}>{`JSON-RPC result (can also be an object)`}</td>\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}></td>\n            <td parentName=\"tr\" {...{\n              \"align\": null\n            }}></td>\n          </tr>\n        </tbody>\n      </table></section>\n    <section><h4 parentName=\"section\">{`JSON-RPC Response`}</h4><p parentName=\"section\"><inlineCode parentName=\"p\">{`200`}</inlineCode></p></section>\n    <section><h4 parentName=\"section\">{`HEADERS`}</h4><p parentName=\"section\"><inlineCode parentName=\"p\">{`Content-Type:application/json`}</inlineCode></p></section>\n    <section><h4 parentName=\"section\">{`BODY`}</h4><pre parentName=\"section\"><code parentName=\"pre\" {...{}}>{`{\n  \"jsonrpc\": \"2.0\",\n  \"id\": -5294191,\n  \"result\": \"sed dolor eu ullamco\"\n}\n`}</code></pre><p parentName=\"section\"><strong parentName=\"p\">{`JSON Schema`}</strong></p><pre parentName=\"section\"><code parentName=\"pre\" {...{}}>{`{\n  \"type\": \"object\",\n  \"properties\": {\n    \"jsonrpc\": {\n      \"type\": \"string\",\n      \"description\": \"JSON-RPC version\",\n      \"enum\": [\n        \"2.0\"\n      ]\n    },\n    \"id\": {\n      \"type\": \"integer\",\n      \"description\": \"JSON-RPC request ID\"\n    },\n    \"result\": {\n      \"type\": \"string\",\n      \"description\": \"JSON-RPC result (can also be an object)\"\n    }\n  },\n  \"required\": [\n    \"jsonrpc\",\n    \"id\"\n  ]\n}\n`}</code></pre></section>\n    <section><h3 parentName=\"section\">{`Response`}</h3><p parentName=\"section\">{`Bad JSON in `}<inlineCode parentName=\"p\">{`params`}</inlineCode>{` query parameter`}</p><p parentName=\"section\"><inlineCode parentName=\"p\">{`400`}</inlineCode></p></section>\n    <section><h4 parentName=\"section\">{`HEADERS`}</h4><p parentName=\"section\"><inlineCode parentName=\"p\">{`Content-Type:application/json`}</inlineCode></p></section>\n    <section><h3 parentName=\"section\">{`Response`}</h3><p parentName=\"section\">{`JSON-RPC method is not a valid GET method`}</p><p parentName=\"section\"><inlineCode parentName=\"p\">{`404`}</inlineCode></p></section>\n    <section><h4 parentName=\"section\">{`HEADERS`}</h4><p parentName=\"section\"><inlineCode parentName=\"p\">{`Content-Type:application/json`}</inlineCode></p></section>\n    <section><h3 parentName=\"section\">{`Response`}</h3><p parentName=\"section\">{`Server error`}</p><p parentName=\"section\"><inlineCode parentName=\"p\">{`500`}</inlineCode></p></section>\n    <section><h4 parentName=\"section\">{`HEADERS`}</h4><p parentName=\"section\"><inlineCode parentName=\"p\">{`Content-Type:application/json`}</inlineCode></p></section>\n    <section><h3 parentName=\"section\">{`Response`}</h3><p parentName=\"section\">{`Ethereum client error`}</p><p parentName=\"section\"><inlineCode parentName=\"p\">{`502`}</inlineCode></p></section>\n    <section><h4 parentName=\"section\">{`HEADERS`}</h4><p parentName=\"section\"><inlineCode parentName=\"p\">{`Content-Type:application/json`}</inlineCode></p></section>\n\n    </MDXLayout>;\n}\n\n;\nMDXContent.isMDXComponent = true;"
+  }
+}

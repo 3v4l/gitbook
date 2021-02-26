@@ -1,5 +1,5 @@
-import styled from '@emotion/styled';
-import { paddingLeftRight } from './styles';
+import styled from "@emotion/styled";
+import { paddingLeftRight } from "./styles";
 
 const Token = styled.span`
   font-weight: bold;

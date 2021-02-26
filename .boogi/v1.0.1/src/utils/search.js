@@ -40,16 +40,16 @@ const algolia = (indexName, excerptSize) => {
 const localsearch = (excerptSize) => ({
   query: query(excerptSize),
   normalizer: transformer,
-  name: 'Boogi',
-  ref: 'objectID',
-  index: ['title', 'description', 'excerpt'],
-  store: ['slug', 'title', 'excerpt'],
+  name: "Boogi",
+  ref: "objectID",
+  index: ["title", "description", "excerpt"],
+  store: ["slug", "title", "excerpt"],
 });
 
 const disableLocalSearchPlugin = {
   resolve: require.resolve(`../../plugins/gatsby-plugin-disable-localsearch`),
   options: {
-    name: 'Boogi',
+    name: "Boogi",
   },
 };
 
@@ -68,7 +68,7 @@ const buildAlgoliaPluginConfig = (searchConfig) => {
       disableLocalSearchPlugin,
     ];
   }
-  console.warn('Algolia App ID or Admin Key are not set!');
+  console.warn("Algolia App ID or Admin Key are not set!");
   return [disableLocalSearchPlugin];
 };
 
@@ -76,9 +76,9 @@ const buildLocalsearchPluginConfig = (searchConfig) => {
   const conf = localsearch(searchConfig.excerptSize);
   return [
     {
-      resolve: 'gatsby-plugin-local-search',
+      resolve: "gatsby-plugin-local-search",
       options: {
-        engine: 'flexsearch',
+        engine: "flexsearch",
         engineOptions: searchConfig.localSearchEngine,
         ...conf,
       },
@@ -91,9 +91,9 @@ module.exports.getSearchPlugins = (searchConfig) => {
     return [disableLocalSearchPlugin];
   }
   switch (searchConfig.engine.toLowerCase()) {
-    case 'localsearch':
+    case "localsearch":
       return buildLocalsearchPluginConfig(searchConfig);
-    case 'algolia':
+    case "algolia":
       return buildAlgoliaPluginConfig(searchConfig);
     default:
       console.warn(`Unsupported search engine: ${searchConfig.engine}`);

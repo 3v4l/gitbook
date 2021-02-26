@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from '@emotion/styled';
-import { useTheme } from 'emotion-theming';
-import { ArrowRight } from 'react-feather';
-import { shadowAround } from '../../styles';
+import React from "react";
+import styled from "@emotion/styled";
+import { useTheme } from "emotion-theming";
+import { ArrowRight } from "react-feather";
+import { shadowAround } from "../../styles";
 
 const Card = styled.div`
   display: flex;

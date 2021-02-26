@@ -1,22 +1,25 @@
-import React from 'react';
-import styled from '@emotion/styled';
-import { ChevronLeft, ChevronRight } from 'react-feather';
-import { onMobile } from '../../styles/responsive';
+import React from "react";
+import styled from "@emotion/styled";
+import { ChevronLeft, ChevronRight } from "react-feather";
+import { onMobile } from "../../styles/responsive";
 
-const Button = styled(({ refine, page, show, isCurrent,  children, ...props }) => {
-  const changePage = (event) => {
-    event.preventDefault();
-    refine(page);
-  };
-  return (
-    <button href="#" onClick={changePage} {...props}>
-      {children}
-    </button>
-  );
-})`
+const Button = styled(
+  ({ refine, page, show, isCurrent, children, ...props }) => {
+    const changePage = (event) => {
+      event.preventDefault();
+      refine(page);
+    };
+    return (
+      <button href="#" onClick={changePage} {...props}>
+        {children}
+      </button>
+    );
+  }
+)`
   width: 32px;
   height: 32px;
-  visibility: ${(props) => (props.show || props.show === undefined ? 'visible' : 'hidden')};
+  visibility: ${(props) =>
+    props.show || props.show === undefined ? "visible" : "hidden"};
   vertical-align: middle;
   transition: ${(props) => props.theme.transitions.hover};
   background-color: ${(props) =>
@@ -69,9 +72,16 @@ const PagesListWrapper = styled.div`
   box-shadow: 0 -2px 4px 0 ${(props) => props.theme.colors.shadow};
 `;
 
-const leftRightMargin = '12px';
+const leftRightMargin = "12px";
 
-const Pagination = ({ totalPages, nbPages, currentPage, refine, showPrevious, showNext }) => {
+const Pagination = ({
+  totalPages,
+  nbPages,
+  currentPage,
+  refine,
+  showPrevious,
+  showNext,
+}) => {
   const pagesToShow = totalPages && nbPages > totalPages ? totalPages : nbPages;
   const previousPage = currentPage > 1 ? currentPage - 1 : 1;
   const nextPage = currentPage === pagesToShow ? currentPage : currentPage + 1;
@@ -99,12 +109,16 @@ const Pagination = ({ totalPages, nbPages, currentPage, refine, showPrevious, sh
         })}
         {showNext ? (
           <li style={{ marginLeft: leftRightMargin }}>
-            <Button show={currentPage !== pagesToShow} refine={refine} page={nextPage}>
+            <Button
+              show={currentPage !== pagesToShow}
+              refine={refine}
+              page={nextPage}
+            >
               <ChevronRight />
             </Button>
           </li>
         ) : (
-          ''
+          ""
         )}
       </PagesList>
     </PagesListWrapper>

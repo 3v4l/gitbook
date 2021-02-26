@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from '@emotion/styled';
-import { useTheme } from 'emotion-theming';
-import Card from './card';
-import { onMobile } from '../../styles/responsive';
+import React from "react";
+import styled from "@emotion/styled";
+import { useTheme } from "emotion-theming";
+import Card from "./card";
+import { onMobile } from "../../styles/responsive";
 
 const ImageCard = styled(Card)`
   width: ${(props) => props.width};
@@ -14,29 +14,28 @@ const ImageCard = styled(Card)`
 `;
 
 const Image = styled.img`
-align-self: center;
-border-radius: 4px; 
+  align-self: center;
+  border-radius: 4px;
 `;
-
 
 const Text = styled.p`
-margin-top: 15px;
-& > p:first-child {
+  margin-top: 15px;
+  & > p:first-child {
     margin-top: 0;
-}
-& > p:last-child {
+  }
+  & > p:last-child {
     margin-bottom: 0;
-}
+  }
 `;
 
-export default ({ children, width, height, src}) => {
+export default ({ children, width, height, src }) => {
   const theme = useTheme();
-  const imgWidth = width ? width : '50%';
-  const imgHeight = width ? width : '50%';
+  const imgWidth = width ? width : "50%";
+  const imgHeight = width ? width : "50%";
   return (
-      <ImageCard width={imgWidth} height={imgHeight}>
-        <Image src={src} />
-        <Text>{children}</Text>
-      </ImageCard>
+    <ImageCard width={imgWidth} height={imgHeight}>
+      <Image src={src} />
+      <Text>{children}</Text>
+    </ImageCard>
   );
 };

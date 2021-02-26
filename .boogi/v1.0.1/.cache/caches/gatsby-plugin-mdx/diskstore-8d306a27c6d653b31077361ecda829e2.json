@@ -1,1 +1,1263 @@
-{"expireTime":9007200869051275000,"key":"gatsby-plugin-mdx-entire-payload-1f7e4bda8b8f49695b9a4b3ca7d0d67a-","val":{"mdast":{"type":"root","children":[{"type":"heading","depth":1,"children":[{"type":"text","value":"eth_getTransactionByBlockNumberAndIndex","position":{"start":{"line":1,"column":3,"offset":2},"end":{"line":1,"column":42,"offset":41},"indent":[]}}],"position":{"start":{"line":1,"column":1,"offset":0},"end":{"line":1,"column":42,"offset":41},"indent":[]}},{"type":"heading","depth":2,"children":[{"type":"text","value":"/v1/jsonrpc/:network/eth_getTransactionByBlockNumberAndIndex","position":{"start":{"line":3,"column":4,"offset":46},"end":{"line":3,"column":64,"offset":106},"indent":[]}}],"position":{"start":{"line":3,"column":1,"offset":43},"end":{"line":3,"column":64,"offset":106},"indent":[]}},{"type":"paragraph","children":[{"type":"text","value":"Returns information about a transaction by block number and transaction index position.","position":{"start":{"line":5,"column":1,"offset":108},"end":{"line":5,"column":88,"offset":195},"indent":[]}}],"position":{"start":{"line":5,"column":1,"offset":108},"end":{"line":5,"column":88,"offset":195},"indent":[]}},{"type":"heading","depth":3,"children":[{"type":"text","value":"REQUEST","position":{"start":{"line":7,"column":5,"offset":201},"end":{"line":7,"column":12,"offset":208},"indent":[]}}],"position":{"start":{"line":7,"column":1,"offset":197},"end":{"line":7,"column":12,"offset":208},"indent":[]}},{"type":"paragraph","children":[{"type":"inlineCode","value":"GET https://api.backbonecabal.xyz/v1/jsonrpc/:network/eth_getTransactionByBlockNumberAndIndex?params=:paramsJSONArray","position":{"start":{"line":9,"column":1,"offset":210},"end":{"line":9,"column":120,"offset":329},"indent":[]}}],"position":{"start":{"line":9,"column":1,"offset":210},"end":{"line":9,"column":120,"offset":329},"indent":[]}},{"type":"heading","depth":4,"children":[{"type":"text","value":"HEADERS","position":{"start":{"line":11,"column":6,"offset":336},"end":{"line":11,"column":13,"offset":343},"indent":[]}}],"position":{"start":{"line":11,"column":1,"offset":331},"end":{"line":11,"column":13,"offset":343},"indent":[]}},{"type":"paragraph","children":[{"type":"inlineCode","value":"Content-Type: application/json","position":{"start":{"line":13,"column":1,"offset":345},"end":{"line":13,"column":33,"offset":377},"indent":[]}}],"position":{"start":{"line":13,"column":1,"offset":345},"end":{"line":13,"column":33,"offset":377},"indent":[]}},{"type":"heading","depth":4,"children":[{"type":"text","value":"REQUEST PARAMS","position":{"start":{"line":15,"column":6,"offset":384},"end":{"line":15,"column":20,"offset":398},"indent":[]}}],"position":{"start":{"line":15,"column":1,"offset":379},"end":{"line":15,"column":20,"offset":398},"indent":[]}},{"type":"list","ordered":false,"start":null,"spread":false,"children":[{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"inlineCode","value":"BLOCK PARAMETER","position":{"start":{"line":17,"column":5,"offset":404},"end":{"line":17,"column":22,"offset":421},"indent":[]}},{"type":"text","value":" ","position":{"start":{"line":17,"column":22,"offset":421},"end":{"line":17,"column":23,"offset":422},"indent":[]}},{"type":"emphasis","children":[{"type":"linkReference","identifier":"required","label":"required","referenceType":"shortcut","children":[{"type":"text","value":"required","position":{"start":{"line":17,"column":25,"offset":424},"end":{"line":17,"column":33,"offset":432},"indent":[]}}],"position":{"start":{"line":17,"column":24,"offset":423},"end":{"line":17,"column":34,"offset":433},"indent":[]}}],"position":{"start":{"line":17,"column":23,"offset":422},"end":{"line":17,"column":35,"offset":434},"indent":[]}},{"type":"text","value":" - an integer block number, or the string \"latest\", \"earliest\" or \"pending\", see the\n","position":{"start":{"line":17,"column":35,"offset":434},"end":{"line":18,"column":5,"offset":523},"indent":[5]}},{"type":"link","title":null,"url":"https://github.com/ethereum/wiki/wiki/JSON-RPC#the-default-block-parameter","children":[{"type":"text","value":"default block parameter","position":{"start":{"line":18,"column":6,"offset":524},"end":{"line":18,"column":29,"offset":547},"indent":[]}}],"position":{"start":{"line":18,"column":5,"offset":523},"end":{"line":18,"column":106,"offset":624},"indent":[]}}],"position":{"start":{"line":17,"column":5,"offset":404},"end":{"line":18,"column":106,"offset":624},"indent":[5]}}],"position":{"start":{"line":17,"column":1,"offset":400},"end":{"line":18,"column":106,"offset":624},"indent":[1]}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"inlineCode","value":"TRANSACTION INDEX POSITION","position":{"start":{"line":19,"column":5,"offset":629},"end":{"line":19,"column":33,"offset":657},"indent":[]}},{"type":"text","value":" ","position":{"start":{"line":19,"column":33,"offset":657},"end":{"line":19,"column":34,"offset":658},"indent":[]}},{"type":"emphasis","children":[{"type":"linkReference","identifier":"required","label":"required","referenceType":"shortcut","children":[{"type":"text","value":"required","position":{"start":{"line":19,"column":36,"offset":660},"end":{"line":19,"column":44,"offset":668},"indent":[]}}],"position":{"start":{"line":19,"column":35,"offset":659},"end":{"line":19,"column":45,"offset":669},"indent":[]}}],"position":{"start":{"line":19,"column":34,"offset":658},"end":{"line":19,"column":46,"offset":670},"indent":[]}},{"type":"text","value":" - a hex of the integer representing the position in the block","position":{"start":{"line":19,"column":46,"offset":670},"end":{"line":19,"column":108,"offset":732},"indent":[]}}],"position":{"start":{"line":19,"column":5,"offset":629},"end":{"line":19,"column":108,"offset":732},"indent":[]}}],"position":{"start":{"line":19,"column":1,"offset":625},"end":{"line":19,"column":108,"offset":732},"indent":[]}}],"position":{"start":{"line":17,"column":1,"offset":400},"end":{"line":19,"column":108,"offset":732},"indent":[1,1]}},{"type":"heading","depth":4,"children":[{"type":"text","value":"EXAMPLE","position":{"start":{"line":21,"column":6,"offset":739},"end":{"line":21,"column":13,"offset":746},"indent":[]}}],"position":{"start":{"line":21,"column":1,"offset":734},"end":{"line":21,"column":13,"offset":746},"indent":[]}},{"type":"code","lang":"bash","meta":null,"value":"// HTTP GET\ncurl -G https://api.backbonecabal.xyz/v1/jsonrpc/mainnet/eth_getTransactionByBlockNumberAndIndex --data-urlencode 'params=[\"0x5BAD55\",\"0x0\"]'\n\n// HTTP POST\ncurl https://mainnet.backbonecabal.xyz/ \\\n    -X POST \\\n    -H \"Content-Type: application/json\" \\\n    -d '{\"jsonrpc\":\"2.0\",\"method\":\"eth_getTransactionByBlockNumberAndIndex\",\"params\": [\"0x5BAD55\",\"0x0\"],\"id\":1}'\n\n// WEBSOCKETS\n>wscat -c wss://mainnet.backbonecabal.xyz/ws\n>{\"jsonrpc\":\"2.0\",\"method\":\"eth_getTransactionByBlockNumberAndIndex\",\"params\": [\"0x5BAD55\",\"0x0\"],\"id\":1}","position":{"start":{"line":23,"column":1,"offset":748},"end":{"line":36,"column":4,"offset":1305},"indent":[1,1,1,1,1,1,1,1,1,1,1,1,1]}},{"type":"heading","depth":3,"children":[{"type":"text","value":"RESPONSE","position":{"start":{"line":38,"column":5,"offset":1311},"end":{"line":38,"column":13,"offset":1319},"indent":[]}}],"position":{"start":{"line":38,"column":1,"offset":1307},"end":{"line":38,"column":13,"offset":1319},"indent":[]}},{"type":"heading","depth":4,"children":[{"type":"text","value":"RESULT FIELDS","position":{"start":{"line":40,"column":6,"offset":1326},"end":{"line":40,"column":19,"offset":1339},"indent":[]}}],"position":{"start":{"line":40,"column":1,"offset":1321},"end":{"line":40,"column":19,"offset":1339},"indent":[]}},{"type":"list","ordered":false,"start":null,"spread":false,"children":[{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"inlineCode","value":"TRANSACTION","position":{"start":{"line":42,"column":5,"offset":1345},"end":{"line":42,"column":18,"offset":1358},"indent":[]}},{"type":"text","value":" - A transaction object, or null when no transaction was found","position":{"start":{"line":42,"column":18,"offset":1358},"end":{"line":42,"column":80,"offset":1420},"indent":[]}}],"position":{"start":{"line":42,"column":5,"offset":1345},"end":{"line":42,"column":80,"offset":1420},"indent":[]}},{"type":"list","ordered":false,"start":null,"spread":false,"children":[{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"inlineCode","value":"hash","position":{"start":{"line":43,"column":9,"offset":1429},"end":{"line":43,"column":15,"offset":1435},"indent":[]}},{"type":"text","value":": 32 Bytes - hash of the transaction.","position":{"start":{"line":43,"column":15,"offset":1435},"end":{"line":43,"column":52,"offset":1472},"indent":[]}}],"position":{"start":{"line":43,"column":9,"offset":1429},"end":{"line":43,"column":52,"offset":1472},"indent":[]}}],"position":{"start":{"line":43,"column":5,"offset":1425},"end":{"line":43,"column":52,"offset":1472},"indent":[]}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"inlineCode","value":"nonce","position":{"start":{"line":44,"column":9,"offset":1481},"end":{"line":44,"column":16,"offset":1488},"indent":[]}},{"type":"text","value":": the number of transactions made by the sender prior to this one.","position":{"start":{"line":44,"column":16,"offset":1488},"end":{"line":44,"column":82,"offset":1554},"indent":[]}}],"position":{"start":{"line":44,"column":9,"offset":1481},"end":{"line":44,"column":82,"offset":1554},"indent":[]}}],"position":{"start":{"line":44,"column":5,"offset":1477},"end":{"line":44,"column":82,"offset":1554},"indent":[]}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"inlineCode","value":"blockHash","position":{"start":{"line":45,"column":9,"offset":1563},"end":{"line":45,"column":20,"offset":1574},"indent":[]}},{"type":"text","value":": 32 Bytes - hash of the block where this transaction was in. null when its pending.","position":{"start":{"line":45,"column":20,"offset":1574},"end":{"line":45,"column":104,"offset":1658},"indent":[]}}],"position":{"start":{"line":45,"column":9,"offset":1563},"end":{"line":45,"column":104,"offset":1658},"indent":[]}}],"position":{"start":{"line":45,"column":5,"offset":1559},"end":{"line":45,"column":104,"offset":1658},"indent":[]}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"inlineCode","value":"blockNumber","position":{"start":{"line":46,"column":9,"offset":1667},"end":{"line":46,"column":22,"offset":1680},"indent":[]}},{"type":"text","value":": block number where this transaction was in. null when its pending.","position":{"start":{"line":46,"column":22,"offset":1680},"end":{"line":46,"column":90,"offset":1748},"indent":[]}}],"position":{"start":{"line":46,"column":9,"offset":1667},"end":{"line":46,"column":90,"offset":1748},"indent":[]}}],"position":{"start":{"line":46,"column":5,"offset":1663},"end":{"line":46,"column":90,"offset":1748},"indent":[]}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"inlineCode","value":"transactionIndex","position":{"start":{"line":47,"column":9,"offset":1757},"end":{"line":47,"column":27,"offset":1775},"indent":[]}},{"type":"text","value":": integer of the transactions index position in the block. null when its pending.","position":{"start":{"line":47,"column":27,"offset":1775},"end":{"line":47,"column":108,"offset":1856},"indent":[]}}],"position":{"start":{"line":47,"column":9,"offset":1757},"end":{"line":47,"column":108,"offset":1856},"indent":[]}}],"position":{"start":{"line":47,"column":5,"offset":1753},"end":{"line":47,"column":108,"offset":1856},"indent":[]}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"inlineCode","value":"from","position":{"start":{"line":48,"column":9,"offset":1865},"end":{"line":48,"column":15,"offset":1871},"indent":[]}},{"type":"text","value":": 20 Bytes - address of the sender.","position":{"start":{"line":48,"column":15,"offset":1871},"end":{"line":48,"column":50,"offset":1906},"indent":[]}}],"position":{"start":{"line":48,"column":9,"offset":1865},"end":{"line":48,"column":50,"offset":1906},"indent":[]}}],"position":{"start":{"line":48,"column":5,"offset":1861},"end":{"line":48,"column":50,"offset":1906},"indent":[]}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"inlineCode","value":"to","position":{"start":{"line":49,"column":9,"offset":1915},"end":{"line":49,"column":13,"offset":1919},"indent":[]}},{"type":"text","value":": 20 Bytes - address of the receiver. null when its a contract creation transaction.","position":{"start":{"line":49,"column":13,"offset":1919},"end":{"line":49,"column":97,"offset":2003},"indent":[]}}],"position":{"start":{"line":49,"column":9,"offset":1915},"end":{"line":49,"column":97,"offset":2003},"indent":[]}}],"position":{"start":{"line":49,"column":5,"offset":1911},"end":{"line":49,"column":97,"offset":2003},"indent":[]}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"inlineCode","value":"value","position":{"start":{"line":50,"column":9,"offset":2012},"end":{"line":50,"column":16,"offset":2019},"indent":[]}},{"type":"text","value":": value transferred in Wei.","position":{"start":{"line":50,"column":16,"offset":2019},"end":{"line":50,"column":43,"offset":2046},"indent":[]}}],"position":{"start":{"line":50,"column":9,"offset":2012},"end":{"line":50,"column":43,"offset":2046},"indent":[]}}],"position":{"start":{"line":50,"column":5,"offset":2008},"end":{"line":50,"column":43,"offset":2046},"indent":[]}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"inlineCode","value":"gasPrice","position":{"start":{"line":51,"column":9,"offset":2055},"end":{"line":51,"column":19,"offset":2065},"indent":[]}},{"type":"text","value":": gas price provided by the sender in Wei.","position":{"start":{"line":51,"column":19,"offset":2065},"end":{"line":51,"column":61,"offset":2107},"indent":[]}}],"position":{"start":{"line":51,"column":9,"offset":2055},"end":{"line":51,"column":61,"offset":2107},"indent":[]}}],"position":{"start":{"line":51,"column":5,"offset":2051},"end":{"line":51,"column":61,"offset":2107},"indent":[]}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"inlineCode","value":"gas","position":{"start":{"line":52,"column":9,"offset":2116},"end":{"line":52,"column":14,"offset":2121},"indent":[]}},{"type":"text","value":": gas provided by the sender.","position":{"start":{"line":52,"column":14,"offset":2121},"end":{"line":52,"column":43,"offset":2150},"indent":[]}}],"position":{"start":{"line":52,"column":9,"offset":2116},"end":{"line":52,"column":43,"offset":2150},"indent":[]}}],"position":{"start":{"line":52,"column":5,"offset":2112},"end":{"line":52,"column":43,"offset":2150},"indent":[]}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"inlineCode","value":"input","position":{"start":{"line":53,"column":9,"offset":2159},"end":{"line":53,"column":16,"offset":2166},"indent":[]}},{"type":"text","value":": the data send along with the transaction.","position":{"start":{"line":53,"column":16,"offset":2166},"end":{"line":53,"column":59,"offset":2209},"indent":[]}}],"position":{"start":{"line":53,"column":9,"offset":2159},"end":{"line":53,"column":59,"offset":2209},"indent":[]}}],"position":{"start":{"line":53,"column":5,"offset":2155},"end":{"line":53,"column":59,"offset":2209},"indent":[]}}],"position":{"start":{"line":43,"column":5,"offset":1425},"end":{"line":53,"column":59,"offset":2209},"indent":[5,5,5,5,5,5,5,5,5,5]}}],"position":{"start":{"line":42,"column":1,"offset":1341},"end":{"line":53,"column":59,"offset":2209},"indent":[1,1,1,1,1,1,1,1,1,1,1]}}],"position":{"start":{"line":42,"column":1,"offset":1341},"end":{"line":53,"column":59,"offset":2209},"indent":[1,1,1,1,1,1,1,1,1,1,1]}},{"type":"heading","depth":4,"children":[{"type":"text","value":"BODY","position":{"start":{"line":55,"column":6,"offset":2216},"end":{"line":55,"column":10,"offset":2220},"indent":[]}}],"position":{"start":{"line":55,"column":1,"offset":2211},"end":{"line":55,"column":10,"offset":2220},"indent":[]}},{"type":"code","lang":"js","meta":null,"value":"{\n    jsonrpc: \"2.0\",\n    id: 1,\n    result: {\n        blockHash: \"0xb3b20624f8f0f86eb50dd04688409e5cea4bd02d700bf6e79e9384d47d6a5a35\",\n        blockNumber: \"0x5bad55\",\n        from: \"0x398137383b3d25c92898c656696e41950e47316b\",\n        gas: \"0x1d45e\",\n        gasPrice: \"0xfa56ea00\",\n        hash: \"0xbb3a336e3f823ec18197f1e13ee875700f08f03e2cab75f0d0b118dabb44cba0\",\n        input: \"0xf7d8c88300000000000000000000000000000000000000000000000000000000000cee6100000000000000000000000000000000000000000000000000000000000ac3e1\",\n        nonce: \"0x18\",\n        to: \"0x06012c8cf97bead5deae237070f9587f8e7a266d\",\n        transactionIndex: \"0x11\",\n        value: \"0x1c6bf526340000\",\n        v: \"0x25\",\n        r: \"0x2a378831cf81d99a3f06a18ae1b6ca366817ab4d88a70053c41d7a8f0368e031\",\n        s: \"0x450d831a05b6e418724436c05c155e0a1b7b921015d0fbc2f667aed709ac4fb5\"\n    }\n}","position":{"start":{"line":57,"column":1,"offset":2222},"end":{"line":78,"column":4,"offset":3095},"indent":[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]}},{"type":"export","value":"export const _frontmatter = {}","position":{"start":{"line":81,"column":1,"offset":3098},"end":{"line":81,"column":31,"offset":3128},"indent":[]}}],"position":{"start":{"line":1,"column":1,"offset":0},"end":{"line":81,"column":31,"offset":3128}}},"scopeImports":["import * as React from 'react'"],"scopeIdentifiers":["React"],"body":"function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }\n\nfunction _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }\n\nfunction _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }\n\n/* @jsx mdx */\nvar _frontmatter = {};\nvar layoutProps = {\n  _frontmatter: _frontmatter\n};\nvar MDXLayout = \"wrapper\";\nreturn function MDXContent(_ref) {\n  var components = _ref.components,\n      props = _objectWithoutProperties(_ref, [\"components\"]);\n\n  return mdx(MDXLayout, _extends({}, layoutProps, props, {\n    components: components,\n    mdxType: \"MDXLayout\"\n  }), mdx(\"section\", null, mdx(\"h1\", {\n    parentName: \"section\"\n  }, \"eth_getTransactionByBlockNumberAndIndex\")), mdx(\"section\", null, mdx(\"h2\", {\n    parentName: \"section\"\n  }, \"/v1/jsonrpc/:network/eth_getTransactionByBlockNumberAndIndex\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, \"Returns information about a transaction by block number and transaction index position.\")), mdx(\"section\", null, mdx(\"h3\", {\n    parentName: \"section\"\n  }, \"REQUEST\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"p\"\n  }, \"GET https://api.backbonecabal.xyz/v1/jsonrpc/:network/eth_getTransactionByBlockNumberAndIndex?params=:paramsJSONArray\"))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"HEADERS\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"p\"\n  }, \"Content-Type: application/json\"))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"REQUEST PARAMS\"), mdx(\"ul\", {\n    parentName: \"section\"\n  }, mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"BLOCK PARAMETER\"), \" \", mdx(\"em\", {\n    parentName: \"li\"\n  }, \"[required]\"), \" - an integer block number, or the string \\\"latest\\\", \\\"earliest\\\" or \\\"pending\\\", see the\\n\", mdx(\"a\", _extends({\n    parentName: \"li\"\n  }, {\n    \"href\": \"https://github.com/ethereum/wiki/wiki/JSON-RPC#the-default-block-parameter\"\n  }), \"default block parameter\")), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"TRANSACTION INDEX POSITION\"), \" \", mdx(\"em\", {\n    parentName: \"li\"\n  }, \"[required]\"), \" - a hex of the integer representing the position in the block\"))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"EXAMPLE\"), mdx(\"pre\", {\n    parentName: \"section\"\n  }, mdx(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-bash\"\n  }), \"// HTTP GET\\ncurl -G https://api.backbonecabal.xyz/v1/jsonrpc/mainnet/eth_getTransactionByBlockNumberAndIndex --data-urlencode 'params=[\\\"0x5BAD55\\\",\\\"0x0\\\"]'\\n\\n// HTTP POST\\ncurl https://mainnet.backbonecabal.xyz/ \\\\\\n    -X POST \\\\\\n    -H \\\"Content-Type: application/json\\\" \\\\\\n    -d '{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"method\\\":\\\"eth_getTransactionByBlockNumberAndIndex\\\",\\\"params\\\": [\\\"0x5BAD55\\\",\\\"0x0\\\"],\\\"id\\\":1}'\\n\\n// WEBSOCKETS\\n>wscat -c wss://mainnet.backbonecabal.xyz/ws\\n>{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"method\\\":\\\"eth_getTransactionByBlockNumberAndIndex\\\",\\\"params\\\": [\\\"0x5BAD55\\\",\\\"0x0\\\"],\\\"id\\\":1}\\n\"))), mdx(\"section\", null, mdx(\"h3\", {\n    parentName: \"section\"\n  }, \"RESPONSE\")), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"RESULT FIELDS\"), mdx(\"ul\", {\n    parentName: \"section\"\n  }, mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"TRANSACTION\"), \" - A transaction object, or null when no transaction was found\", mdx(\"ul\", {\n    parentName: \"li\"\n  }, mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"hash\"), \": 32 Bytes - hash of the transaction.\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"nonce\"), \": the number of transactions made by the sender prior to this one.\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"blockHash\"), \": 32 Bytes - hash of the block where this transaction was in. null when its pending.\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"blockNumber\"), \": block number where this transaction was in. null when its pending.\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"transactionIndex\"), \": integer of the transactions index position in the block. null when its pending.\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"from\"), \": 20 Bytes - address of the sender.\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"to\"), \": 20 Bytes - address of the receiver. null when its a contract creation transaction.\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"value\"), \": value transferred in Wei.\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"gasPrice\"), \": gas price provided by the sender in Wei.\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"gas\"), \": gas provided by the sender.\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"input\"), \": the data send along with the transaction.\"))))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"BODY\"), mdx(\"pre\", {\n    parentName: \"section\"\n  }, mdx(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-js\"\n  }), \"{\\n    jsonrpc: \\\"2.0\\\",\\n    id: 1,\\n    result: {\\n        blockHash: \\\"0xb3b20624f8f0f86eb50dd04688409e5cea4bd02d700bf6e79e9384d47d6a5a35\\\",\\n        blockNumber: \\\"0x5bad55\\\",\\n        from: \\\"0x398137383b3d25c92898c656696e41950e47316b\\\",\\n        gas: \\\"0x1d45e\\\",\\n        gasPrice: \\\"0xfa56ea00\\\",\\n        hash: \\\"0xbb3a336e3f823ec18197f1e13ee875700f08f03e2cab75f0d0b118dabb44cba0\\\",\\n        input: \\\"0xf7d8c88300000000000000000000000000000000000000000000000000000000000cee6100000000000000000000000000000000000000000000000000000000000ac3e1\\\",\\n        nonce: \\\"0x18\\\",\\n        to: \\\"0x06012c8cf97bead5deae237070f9587f8e7a266d\\\",\\n        transactionIndex: \\\"0x11\\\",\\n        value: \\\"0x1c6bf526340000\\\",\\n        v: \\\"0x25\\\",\\n        r: \\\"0x2a378831cf81d99a3f06a18ae1b6ca366817ab4d88a70053c41d7a8f0368e031\\\",\\n        s: \\\"0x450d831a05b6e418724436c05c155e0a1b7b921015d0fbc2f667aed709ac4fb5\\\"\\n    }\\n}\\n\"))));\n}\n;\nMDXContent.isMDXComponent = true;","rawMDXOutput":"/* @jsx mdx */\nimport { mdx } from '@mdx-js/react';\n/* @jsx mdx */\n\nexport const _frontmatter = {};\n\nconst layoutProps = {\n  _frontmatter\n};\nconst MDXLayout = \"wrapper\"\nexport default function MDXContent({\n  components,\n  ...props\n}) {\n  return <MDXLayout {...layoutProps} {...props} components={components} mdxType=\"MDXLayout\">\n    <section><h1 parentName=\"section\">{`eth_getTransactionByBlockNumberAndIndex`}</h1></section>\n    <section><h2 parentName=\"section\">{`/v1/jsonrpc/:network/eth_getTransactionByBlockNumberAndIndex`}</h2><p parentName=\"section\">{`Returns information about a transaction by block number and transaction index position.`}</p></section>\n    <section><h3 parentName=\"section\">{`REQUEST`}</h3><p parentName=\"section\"><inlineCode parentName=\"p\">{`GET https://api.backbonecabal.xyz/v1/jsonrpc/:network/eth_getTransactionByBlockNumberAndIndex?params=:paramsJSONArray`}</inlineCode></p></section>\n    <section><h4 parentName=\"section\">{`HEADERS`}</h4><p parentName=\"section\"><inlineCode parentName=\"p\">{`Content-Type: application/json`}</inlineCode></p></section>\n    <section><h4 parentName=\"section\">{`REQUEST PARAMS`}</h4><ul parentName=\"section\">\n        <li parentName=\"ul\"><inlineCode parentName=\"li\">{`BLOCK PARAMETER`}</inlineCode>{` `}<em parentName=\"li\">{`[required]`}</em>{` - an integer block number, or the string \"latest\", \"earliest\" or \"pending\", see the\n`}<a parentName=\"li\" {...{\n            \"href\": \"https://github.com/ethereum/wiki/wiki/JSON-RPC#the-default-block-parameter\"\n          }}>{`default block parameter`}</a></li>\n        <li parentName=\"ul\"><inlineCode parentName=\"li\">{`TRANSACTION INDEX POSITION`}</inlineCode>{` `}<em parentName=\"li\">{`[required]`}</em>{` - a hex of the integer representing the position in the block`}</li>\n      </ul></section>\n    <section><h4 parentName=\"section\">{`EXAMPLE`}</h4><pre parentName=\"section\"><code parentName=\"pre\" {...{\n          \"className\": \"language-bash\"\n        }}>{`// HTTP GET\ncurl -G https://api.backbonecabal.xyz/v1/jsonrpc/mainnet/eth_getTransactionByBlockNumberAndIndex --data-urlencode 'params=[\"0x5BAD55\",\"0x0\"]'\n\n// HTTP POST\ncurl https://mainnet.backbonecabal.xyz/ \\\\\n    -X POST \\\\\n    -H \"Content-Type: application/json\" \\\\\n    -d '{\"jsonrpc\":\"2.0\",\"method\":\"eth_getTransactionByBlockNumberAndIndex\",\"params\": [\"0x5BAD55\",\"0x0\"],\"id\":1}'\n\n// WEBSOCKETS\n>wscat -c wss://mainnet.backbonecabal.xyz/ws\n>{\"jsonrpc\":\"2.0\",\"method\":\"eth_getTransactionByBlockNumberAndIndex\",\"params\": [\"0x5BAD55\",\"0x0\"],\"id\":1}\n`}</code></pre></section>\n    <section><h3 parentName=\"section\">{`RESPONSE`}</h3></section>\n    <section><h4 parentName=\"section\">{`RESULT FIELDS`}</h4><ul parentName=\"section\">\n        <li parentName=\"ul\"><inlineCode parentName=\"li\">{`TRANSACTION`}</inlineCode>{` - A transaction object, or null when no transaction was found`}<ul parentName=\"li\">\n            <li parentName=\"ul\"><inlineCode parentName=\"li\">{`hash`}</inlineCode>{`: 32 Bytes - hash of the transaction.`}</li>\n            <li parentName=\"ul\"><inlineCode parentName=\"li\">{`nonce`}</inlineCode>{`: the number of transactions made by the sender prior to this one.`}</li>\n            <li parentName=\"ul\"><inlineCode parentName=\"li\">{`blockHash`}</inlineCode>{`: 32 Bytes - hash of the block where this transaction was in. null when its pending.`}</li>\n            <li parentName=\"ul\"><inlineCode parentName=\"li\">{`blockNumber`}</inlineCode>{`: block number where this transaction was in. null when its pending.`}</li>\n            <li parentName=\"ul\"><inlineCode parentName=\"li\">{`transactionIndex`}</inlineCode>{`: integer of the transactions index position in the block. null when its pending.`}</li>\n            <li parentName=\"ul\"><inlineCode parentName=\"li\">{`from`}</inlineCode>{`: 20 Bytes - address of the sender.`}</li>\n            <li parentName=\"ul\"><inlineCode parentName=\"li\">{`to`}</inlineCode>{`: 20 Bytes - address of the receiver. null when its a contract creation transaction.`}</li>\n            <li parentName=\"ul\"><inlineCode parentName=\"li\">{`value`}</inlineCode>{`: value transferred in Wei.`}</li>\n            <li parentName=\"ul\"><inlineCode parentName=\"li\">{`gasPrice`}</inlineCode>{`: gas price provided by the sender in Wei.`}</li>\n            <li parentName=\"ul\"><inlineCode parentName=\"li\">{`gas`}</inlineCode>{`: gas provided by the sender.`}</li>\n            <li parentName=\"ul\"><inlineCode parentName=\"li\">{`input`}</inlineCode>{`: the data send along with the transaction.`}</li>\n          </ul></li>\n      </ul></section>\n    <section><h4 parentName=\"section\">{`BODY`}</h4><pre parentName=\"section\"><code parentName=\"pre\" {...{\n          \"className\": \"language-js\"\n        }}>{`{\n    jsonrpc: \"2.0\",\n    id: 1,\n    result: {\n        blockHash: \"0xb3b20624f8f0f86eb50dd04688409e5cea4bd02d700bf6e79e9384d47d6a5a35\",\n        blockNumber: \"0x5bad55\",\n        from: \"0x398137383b3d25c92898c656696e41950e47316b\",\n        gas: \"0x1d45e\",\n        gasPrice: \"0xfa56ea00\",\n        hash: \"0xbb3a336e3f823ec18197f1e13ee875700f08f03e2cab75f0d0b118dabb44cba0\",\n        input: \"0xf7d8c88300000000000000000000000000000000000000000000000000000000000cee6100000000000000000000000000000000000000000000000000000000000ac3e1\",\n        nonce: \"0x18\",\n        to: \"0x06012c8cf97bead5deae237070f9587f8e7a266d\",\n        transactionIndex: \"0x11\",\n        value: \"0x1c6bf526340000\",\n        v: \"0x25\",\n        r: \"0x2a378831cf81d99a3f06a18ae1b6ca366817ab4d88a70053c41d7a8f0368e031\",\n        s: \"0x450d831a05b6e418724436c05c155e0a1b7b921015d0fbc2f667aed709ac4fb5\"\n    }\n}\n`}</code></pre></section>\n\n    </MDXLayout>;\n}\n\n;\nMDXContent.isMDXComponent = true;"}}
+{
+  "expireTime": 9007200869051275000,
+  "key": "gatsby-plugin-mdx-entire-payload-1f7e4bda8b8f49695b9a4b3ca7d0d67a-",
+  "val": {
+    "mdast": {
+      "type": "root",
+      "children": [
+        {
+          "type": "heading",
+          "depth": 1,
+          "children": [
+            {
+              "type": "text",
+              "value": "eth_getTransactionByBlockNumberAndIndex",
+              "position": {
+                "start": { "line": 1, "column": 3, "offset": 2 },
+                "end": { "line": 1, "column": 42, "offset": 41 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 1, "column": 1, "offset": 0 },
+            "end": { "line": 1, "column": 42, "offset": 41 },
+            "indent": []
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 2,
+          "children": [
+            {
+              "type": "text",
+              "value": "/v1/jsonrpc/:network/eth_getTransactionByBlockNumberAndIndex",
+              "position": {
+                "start": { "line": 3, "column": 4, "offset": 46 },
+                "end": { "line": 3, "column": 64, "offset": 106 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 3, "column": 1, "offset": 43 },
+            "end": { "line": 3, "column": 64, "offset": 106 },
+            "indent": []
+          }
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "Returns information about a transaction by block number and transaction index position.",
+              "position": {
+                "start": { "line": 5, "column": 1, "offset": 108 },
+                "end": { "line": 5, "column": 88, "offset": 195 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 5, "column": 1, "offset": 108 },
+            "end": { "line": 5, "column": 88, "offset": 195 },
+            "indent": []
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 3,
+          "children": [
+            {
+              "type": "text",
+              "value": "REQUEST",
+              "position": {
+                "start": { "line": 7, "column": 5, "offset": 201 },
+                "end": { "line": 7, "column": 12, "offset": 208 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 7, "column": 1, "offset": 197 },
+            "end": { "line": 7, "column": 12, "offset": 208 },
+            "indent": []
+          }
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "inlineCode",
+              "value": "GET https://api.backbonecabal.xyz/v1/jsonrpc/:network/eth_getTransactionByBlockNumberAndIndex?params=:paramsJSONArray",
+              "position": {
+                "start": { "line": 9, "column": 1, "offset": 210 },
+                "end": { "line": 9, "column": 120, "offset": 329 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 9, "column": 1, "offset": 210 },
+            "end": { "line": 9, "column": 120, "offset": 329 },
+            "indent": []
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 4,
+          "children": [
+            {
+              "type": "text",
+              "value": "HEADERS",
+              "position": {
+                "start": { "line": 11, "column": 6, "offset": 336 },
+                "end": { "line": 11, "column": 13, "offset": 343 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 11, "column": 1, "offset": 331 },
+            "end": { "line": 11, "column": 13, "offset": 343 },
+            "indent": []
+          }
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "inlineCode",
+              "value": "Content-Type: application/json",
+              "position": {
+                "start": { "line": 13, "column": 1, "offset": 345 },
+                "end": { "line": 13, "column": 33, "offset": 377 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 13, "column": 1, "offset": 345 },
+            "end": { "line": 13, "column": 33, "offset": 377 },
+            "indent": []
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 4,
+          "children": [
+            {
+              "type": "text",
+              "value": "REQUEST PARAMS",
+              "position": {
+                "start": { "line": 15, "column": 6, "offset": 384 },
+                "end": { "line": 15, "column": 20, "offset": 398 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 15, "column": 1, "offset": 379 },
+            "end": { "line": 15, "column": 20, "offset": 398 },
+            "indent": []
+          }
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "start": null,
+          "spread": false,
+          "children": [
+            {
+              "type": "listItem",
+              "spread": false,
+              "checked": null,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "inlineCode",
+                      "value": "BLOCK PARAMETER",
+                      "position": {
+                        "start": { "line": 17, "column": 5, "offset": 404 },
+                        "end": { "line": 17, "column": 22, "offset": 421 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "value": " ",
+                      "position": {
+                        "start": { "line": 17, "column": 22, "offset": 421 },
+                        "end": { "line": 17, "column": 23, "offset": 422 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "emphasis",
+                      "children": [
+                        {
+                          "type": "linkReference",
+                          "identifier": "required",
+                          "label": "required",
+                          "referenceType": "shortcut",
+                          "children": [
+                            {
+                              "type": "text",
+                              "value": "required",
+                              "position": {
+                                "start": {
+                                  "line": 17,
+                                  "column": 25,
+                                  "offset": 424
+                                },
+                                "end": {
+                                  "line": 17,
+                                  "column": 33,
+                                  "offset": 432
+                                },
+                                "indent": []
+                              }
+                            }
+                          ],
+                          "position": {
+                            "start": {
+                              "line": 17,
+                              "column": 24,
+                              "offset": 423
+                            },
+                            "end": { "line": 17, "column": 34, "offset": 433 },
+                            "indent": []
+                          }
+                        }
+                      ],
+                      "position": {
+                        "start": { "line": 17, "column": 23, "offset": 422 },
+                        "end": { "line": 17, "column": 35, "offset": 434 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "value": " - an integer block number, or the string \"latest\", \"earliest\" or \"pending\", see the\n",
+                      "position": {
+                        "start": { "line": 17, "column": 35, "offset": 434 },
+                        "end": { "line": 18, "column": 5, "offset": 523 },
+                        "indent": [5]
+                      }
+                    },
+                    {
+                      "type": "link",
+                      "title": null,
+                      "url": "https://github.com/ethereum/wiki/wiki/JSON-RPC#the-default-block-parameter",
+                      "children": [
+                        {
+                          "type": "text",
+                          "value": "default block parameter",
+                          "position": {
+                            "start": { "line": 18, "column": 6, "offset": 524 },
+                            "end": { "line": 18, "column": 29, "offset": 547 },
+                            "indent": []
+                          }
+                        }
+                      ],
+                      "position": {
+                        "start": { "line": 18, "column": 5, "offset": 523 },
+                        "end": { "line": 18, "column": 106, "offset": 624 },
+                        "indent": []
+                      }
+                    }
+                  ],
+                  "position": {
+                    "start": { "line": 17, "column": 5, "offset": 404 },
+                    "end": { "line": 18, "column": 106, "offset": 624 },
+                    "indent": [5]
+                  }
+                }
+              ],
+              "position": {
+                "start": { "line": 17, "column": 1, "offset": 400 },
+                "end": { "line": 18, "column": 106, "offset": 624 },
+                "indent": [1]
+              }
+            },
+            {
+              "type": "listItem",
+              "spread": false,
+              "checked": null,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "inlineCode",
+                      "value": "TRANSACTION INDEX POSITION",
+                      "position": {
+                        "start": { "line": 19, "column": 5, "offset": 629 },
+                        "end": { "line": 19, "column": 33, "offset": 657 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "value": " ",
+                      "position": {
+                        "start": { "line": 19, "column": 33, "offset": 657 },
+                        "end": { "line": 19, "column": 34, "offset": 658 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "emphasis",
+                      "children": [
+                        {
+                          "type": "linkReference",
+                          "identifier": "required",
+                          "label": "required",
+                          "referenceType": "shortcut",
+                          "children": [
+                            {
+                              "type": "text",
+                              "value": "required",
+                              "position": {
+                                "start": {
+                                  "line": 19,
+                                  "column": 36,
+                                  "offset": 660
+                                },
+                                "end": {
+                                  "line": 19,
+                                  "column": 44,
+                                  "offset": 668
+                                },
+                                "indent": []
+                              }
+                            }
+                          ],
+                          "position": {
+                            "start": {
+                              "line": 19,
+                              "column": 35,
+                              "offset": 659
+                            },
+                            "end": { "line": 19, "column": 45, "offset": 669 },
+                            "indent": []
+                          }
+                        }
+                      ],
+                      "position": {
+                        "start": { "line": 19, "column": 34, "offset": 658 },
+                        "end": { "line": 19, "column": 46, "offset": 670 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "value": " - a hex of the integer representing the position in the block",
+                      "position": {
+                        "start": { "line": 19, "column": 46, "offset": 670 },
+                        "end": { "line": 19, "column": 108, "offset": 732 },
+                        "indent": []
+                      }
+                    }
+                  ],
+                  "position": {
+                    "start": { "line": 19, "column": 5, "offset": 629 },
+                    "end": { "line": 19, "column": 108, "offset": 732 },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": { "line": 19, "column": 1, "offset": 625 },
+                "end": { "line": 19, "column": 108, "offset": 732 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 17, "column": 1, "offset": 400 },
+            "end": { "line": 19, "column": 108, "offset": 732 },
+            "indent": [1, 1]
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 4,
+          "children": [
+            {
+              "type": "text",
+              "value": "EXAMPLE",
+              "position": {
+                "start": { "line": 21, "column": 6, "offset": 739 },
+                "end": { "line": 21, "column": 13, "offset": 746 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 21, "column": 1, "offset": 734 },
+            "end": { "line": 21, "column": 13, "offset": 746 },
+            "indent": []
+          }
+        },
+        {
+          "type": "code",
+          "lang": "bash",
+          "meta": null,
+          "value": "// HTTP GET\ncurl -G https://api.backbonecabal.xyz/v1/jsonrpc/mainnet/eth_getTransactionByBlockNumberAndIndex --data-urlencode 'params=[\"0x5BAD55\",\"0x0\"]'\n\n// HTTP POST\ncurl https://mainnet.backbonecabal.xyz/ \\\n    -X POST \\\n    -H \"Content-Type: application/json\" \\\n    -d '{\"jsonrpc\":\"2.0\",\"method\":\"eth_getTransactionByBlockNumberAndIndex\",\"params\": [\"0x5BAD55\",\"0x0\"],\"id\":1}'\n\n// WEBSOCKETS\n>wscat -c wss://mainnet.backbonecabal.xyz/ws\n>{\"jsonrpc\":\"2.0\",\"method\":\"eth_getTransactionByBlockNumberAndIndex\",\"params\": [\"0x5BAD55\",\"0x0\"],\"id\":1}",
+          "position": {
+            "start": { "line": 23, "column": 1, "offset": 748 },
+            "end": { "line": 36, "column": 4, "offset": 1305 },
+            "indent": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 3,
+          "children": [
+            {
+              "type": "text",
+              "value": "RESPONSE",
+              "position": {
+                "start": { "line": 38, "column": 5, "offset": 1311 },
+                "end": { "line": 38, "column": 13, "offset": 1319 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 38, "column": 1, "offset": 1307 },
+            "end": { "line": 38, "column": 13, "offset": 1319 },
+            "indent": []
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 4,
+          "children": [
+            {
+              "type": "text",
+              "value": "RESULT FIELDS",
+              "position": {
+                "start": { "line": 40, "column": 6, "offset": 1326 },
+                "end": { "line": 40, "column": 19, "offset": 1339 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 40, "column": 1, "offset": 1321 },
+            "end": { "line": 40, "column": 19, "offset": 1339 },
+            "indent": []
+          }
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "start": null,
+          "spread": false,
+          "children": [
+            {
+              "type": "listItem",
+              "spread": false,
+              "checked": null,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "inlineCode",
+                      "value": "TRANSACTION",
+                      "position": {
+                        "start": { "line": 42, "column": 5, "offset": 1345 },
+                        "end": { "line": 42, "column": 18, "offset": 1358 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "value": " - A transaction object, or null when no transaction was found",
+                      "position": {
+                        "start": { "line": 42, "column": 18, "offset": 1358 },
+                        "end": { "line": 42, "column": 80, "offset": 1420 },
+                        "indent": []
+                      }
+                    }
+                  ],
+                  "position": {
+                    "start": { "line": 42, "column": 5, "offset": 1345 },
+                    "end": { "line": 42, "column": 80, "offset": 1420 },
+                    "indent": []
+                  }
+                },
+                {
+                  "type": "list",
+                  "ordered": false,
+                  "start": null,
+                  "spread": false,
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "spread": false,
+                      "checked": null,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "inlineCode",
+                              "value": "hash",
+                              "position": {
+                                "start": {
+                                  "line": 43,
+                                  "column": 9,
+                                  "offset": 1429
+                                },
+                                "end": {
+                                  "line": 43,
+                                  "column": 15,
+                                  "offset": 1435
+                                },
+                                "indent": []
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "value": ": 32 Bytes - hash of the transaction.",
+                              "position": {
+                                "start": {
+                                  "line": 43,
+                                  "column": 15,
+                                  "offset": 1435
+                                },
+                                "end": {
+                                  "line": 43,
+                                  "column": 52,
+                                  "offset": 1472
+                                },
+                                "indent": []
+                              }
+                            }
+                          ],
+                          "position": {
+                            "start": {
+                              "line": 43,
+                              "column": 9,
+                              "offset": 1429
+                            },
+                            "end": { "line": 43, "column": 52, "offset": 1472 },
+                            "indent": []
+                          }
+                        }
+                      ],
+                      "position": {
+                        "start": { "line": 43, "column": 5, "offset": 1425 },
+                        "end": { "line": 43, "column": 52, "offset": 1472 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "listItem",
+                      "spread": false,
+                      "checked": null,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "inlineCode",
+                              "value": "nonce",
+                              "position": {
+                                "start": {
+                                  "line": 44,
+                                  "column": 9,
+                                  "offset": 1481
+                                },
+                                "end": {
+                                  "line": 44,
+                                  "column": 16,
+                                  "offset": 1488
+                                },
+                                "indent": []
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "value": ": the number of transactions made by the sender prior to this one.",
+                              "position": {
+                                "start": {
+                                  "line": 44,
+                                  "column": 16,
+                                  "offset": 1488
+                                },
+                                "end": {
+                                  "line": 44,
+                                  "column": 82,
+                                  "offset": 1554
+                                },
+                                "indent": []
+                              }
+                            }
+                          ],
+                          "position": {
+                            "start": {
+                              "line": 44,
+                              "column": 9,
+                              "offset": 1481
+                            },
+                            "end": { "line": 44, "column": 82, "offset": 1554 },
+                            "indent": []
+                          }
+                        }
+                      ],
+                      "position": {
+                        "start": { "line": 44, "column": 5, "offset": 1477 },
+                        "end": { "line": 44, "column": 82, "offset": 1554 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "listItem",
+                      "spread": false,
+                      "checked": null,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "inlineCode",
+                              "value": "blockHash",
+                              "position": {
+                                "start": {
+                                  "line": 45,
+                                  "column": 9,
+                                  "offset": 1563
+                                },
+                                "end": {
+                                  "line": 45,
+                                  "column": 20,
+                                  "offset": 1574
+                                },
+                                "indent": []
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "value": ": 32 Bytes - hash of the block where this transaction was in. null when its pending.",
+                              "position": {
+                                "start": {
+                                  "line": 45,
+                                  "column": 20,
+                                  "offset": 1574
+                                },
+                                "end": {
+                                  "line": 45,
+                                  "column": 104,
+                                  "offset": 1658
+                                },
+                                "indent": []
+                              }
+                            }
+                          ],
+                          "position": {
+                            "start": {
+                              "line": 45,
+                              "column": 9,
+                              "offset": 1563
+                            },
+                            "end": {
+                              "line": 45,
+                              "column": 104,
+                              "offset": 1658
+                            },
+                            "indent": []
+                          }
+                        }
+                      ],
+                      "position": {
+                        "start": { "line": 45, "column": 5, "offset": 1559 },
+                        "end": { "line": 45, "column": 104, "offset": 1658 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "listItem",
+                      "spread": false,
+                      "checked": null,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "inlineCode",
+                              "value": "blockNumber",
+                              "position": {
+                                "start": {
+                                  "line": 46,
+                                  "column": 9,
+                                  "offset": 1667
+                                },
+                                "end": {
+                                  "line": 46,
+                                  "column": 22,
+                                  "offset": 1680
+                                },
+                                "indent": []
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "value": ": block number where this transaction was in. null when its pending.",
+                              "position": {
+                                "start": {
+                                  "line": 46,
+                                  "column": 22,
+                                  "offset": 1680
+                                },
+                                "end": {
+                                  "line": 46,
+                                  "column": 90,
+                                  "offset": 1748
+                                },
+                                "indent": []
+                              }
+                            }
+                          ],
+                          "position": {
+                            "start": {
+                              "line": 46,
+                              "column": 9,
+                              "offset": 1667
+                            },
+                            "end": { "line": 46, "column": 90, "offset": 1748 },
+                            "indent": []
+                          }
+                        }
+                      ],
+                      "position": {
+                        "start": { "line": 46, "column": 5, "offset": 1663 },
+                        "end": { "line": 46, "column": 90, "offset": 1748 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "listItem",
+                      "spread": false,
+                      "checked": null,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "inlineCode",
+                              "value": "transactionIndex",
+                              "position": {
+                                "start": {
+                                  "line": 47,
+                                  "column": 9,
+                                  "offset": 1757
+                                },
+                                "end": {
+                                  "line": 47,
+                                  "column": 27,
+                                  "offset": 1775
+                                },
+                                "indent": []
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "value": ": integer of the transactions index position in the block. null when its pending.",
+                              "position": {
+                                "start": {
+                                  "line": 47,
+                                  "column": 27,
+                                  "offset": 1775
+                                },
+                                "end": {
+                                  "line": 47,
+                                  "column": 108,
+                                  "offset": 1856
+                                },
+                                "indent": []
+                              }
+                            }
+                          ],
+                          "position": {
+                            "start": {
+                              "line": 47,
+                              "column": 9,
+                              "offset": 1757
+                            },
+                            "end": {
+                              "line": 47,
+                              "column": 108,
+                              "offset": 1856
+                            },
+                            "indent": []
+                          }
+                        }
+                      ],
+                      "position": {
+                        "start": { "line": 47, "column": 5, "offset": 1753 },
+                        "end": { "line": 47, "column": 108, "offset": 1856 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "listItem",
+                      "spread": false,
+                      "checked": null,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "inlineCode",
+                              "value": "from",
+                              "position": {
+                                "start": {
+                                  "line": 48,
+                                  "column": 9,
+                                  "offset": 1865
+                                },
+                                "end": {
+                                  "line": 48,
+                                  "column": 15,
+                                  "offset": 1871
+                                },
+                                "indent": []
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "value": ": 20 Bytes - address of the sender.",
+                              "position": {
+                                "start": {
+                                  "line": 48,
+                                  "column": 15,
+                                  "offset": 1871
+                                },
+                                "end": {
+                                  "line": 48,
+                                  "column": 50,
+                                  "offset": 1906
+                                },
+                                "indent": []
+                              }
+                            }
+                          ],
+                          "position": {
+                            "start": {
+                              "line": 48,
+                              "column": 9,
+                              "offset": 1865
+                            },
+                            "end": { "line": 48, "column": 50, "offset": 1906 },
+                            "indent": []
+                          }
+                        }
+                      ],
+                      "position": {
+                        "start": { "line": 48, "column": 5, "offset": 1861 },
+                        "end": { "line": 48, "column": 50, "offset": 1906 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "listItem",
+                      "spread": false,
+                      "checked": null,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "inlineCode",
+                              "value": "to",
+                              "position": {
+                                "start": {
+                                  "line": 49,
+                                  "column": 9,
+                                  "offset": 1915
+                                },
+                                "end": {
+                                  "line": 49,
+                                  "column": 13,
+                                  "offset": 1919
+                                },
+                                "indent": []
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "value": ": 20 Bytes - address of the receiver. null when its a contract creation transaction.",
+                              "position": {
+                                "start": {
+                                  "line": 49,
+                                  "column": 13,
+                                  "offset": 1919
+                                },
+                                "end": {
+                                  "line": 49,
+                                  "column": 97,
+                                  "offset": 2003
+                                },
+                                "indent": []
+                              }
+                            }
+                          ],
+                          "position": {
+                            "start": {
+                              "line": 49,
+                              "column": 9,
+                              "offset": 1915
+                            },
+                            "end": { "line": 49, "column": 97, "offset": 2003 },
+                            "indent": []
+                          }
+                        }
+                      ],
+                      "position": {
+                        "start": { "line": 49, "column": 5, "offset": 1911 },
+                        "end": { "line": 49, "column": 97, "offset": 2003 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "listItem",
+                      "spread": false,
+                      "checked": null,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "inlineCode",
+                              "value": "value",
+                              "position": {
+                                "start": {
+                                  "line": 50,
+                                  "column": 9,
+                                  "offset": 2012
+                                },
+                                "end": {
+                                  "line": 50,
+                                  "column": 16,
+                                  "offset": 2019
+                                },
+                                "indent": []
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "value": ": value transferred in Wei.",
+                              "position": {
+                                "start": {
+                                  "line": 50,
+                                  "column": 16,
+                                  "offset": 2019
+                                },
+                                "end": {
+                                  "line": 50,
+                                  "column": 43,
+                                  "offset": 2046
+                                },
+                                "indent": []
+                              }
+                            }
+                          ],
+                          "position": {
+                            "start": {
+                              "line": 50,
+                              "column": 9,
+                              "offset": 2012
+                            },
+                            "end": { "line": 50, "column": 43, "offset": 2046 },
+                            "indent": []
+                          }
+                        }
+                      ],
+                      "position": {
+                        "start": { "line": 50, "column": 5, "offset": 2008 },
+                        "end": { "line": 50, "column": 43, "offset": 2046 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "listItem",
+                      "spread": false,
+                      "checked": null,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "inlineCode",
+                              "value": "gasPrice",
+                              "position": {
+                                "start": {
+                                  "line": 51,
+                                  "column": 9,
+                                  "offset": 2055
+                                },
+                                "end": {
+                                  "line": 51,
+                                  "column": 19,
+                                  "offset": 2065
+                                },
+                                "indent": []
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "value": ": gas price provided by the sender in Wei.",
+                              "position": {
+                                "start": {
+                                  "line": 51,
+                                  "column": 19,
+                                  "offset": 2065
+                                },
+                                "end": {
+                                  "line": 51,
+                                  "column": 61,
+                                  "offset": 2107
+                                },
+                                "indent": []
+                              }
+                            }
+                          ],
+                          "position": {
+                            "start": {
+                              "line": 51,
+                              "column": 9,
+                              "offset": 2055
+                            },
+                            "end": { "line": 51, "column": 61, "offset": 2107 },
+                            "indent": []
+                          }
+                        }
+                      ],
+                      "position": {
+                        "start": { "line": 51, "column": 5, "offset": 2051 },
+                        "end": { "line": 51, "column": 61, "offset": 2107 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "listItem",
+                      "spread": false,
+                      "checked": null,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "inlineCode",
+                              "value": "gas",
+                              "position": {
+                                "start": {
+                                  "line": 52,
+                                  "column": 9,
+                                  "offset": 2116
+                                },
+                                "end": {
+                                  "line": 52,
+                                  "column": 14,
+                                  "offset": 2121
+                                },
+                                "indent": []
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "value": ": gas provided by the sender.",
+                              "position": {
+                                "start": {
+                                  "line": 52,
+                                  "column": 14,
+                                  "offset": 2121
+                                },
+                                "end": {
+                                  "line": 52,
+                                  "column": 43,
+                                  "offset": 2150
+                                },
+                                "indent": []
+                              }
+                            }
+                          ],
+                          "position": {
+                            "start": {
+                              "line": 52,
+                              "column": 9,
+                              "offset": 2116
+                            },
+                            "end": { "line": 52, "column": 43, "offset": 2150 },
+                            "indent": []
+                          }
+                        }
+                      ],
+                      "position": {
+                        "start": { "line": 52, "column": 5, "offset": 2112 },
+                        "end": { "line": 52, "column": 43, "offset": 2150 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "listItem",
+                      "spread": false,
+                      "checked": null,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "inlineCode",
+                              "value": "input",
+                              "position": {
+                                "start": {
+                                  "line": 53,
+                                  "column": 9,
+                                  "offset": 2159
+                                },
+                                "end": {
+                                  "line": 53,
+                                  "column": 16,
+                                  "offset": 2166
+                                },
+                                "indent": []
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "value": ": the data send along with the transaction.",
+                              "position": {
+                                "start": {
+                                  "line": 53,
+                                  "column": 16,
+                                  "offset": 2166
+                                },
+                                "end": {
+                                  "line": 53,
+                                  "column": 59,
+                                  "offset": 2209
+                                },
+                                "indent": []
+                              }
+                            }
+                          ],
+                          "position": {
+                            "start": {
+                              "line": 53,
+                              "column": 9,
+                              "offset": 2159
+                            },
+                            "end": { "line": 53, "column": 59, "offset": 2209 },
+                            "indent": []
+                          }
+                        }
+                      ],
+                      "position": {
+                        "start": { "line": 53, "column": 5, "offset": 2155 },
+                        "end": { "line": 53, "column": 59, "offset": 2209 },
+                        "indent": []
+                      }
+                    }
+                  ],
+                  "position": {
+                    "start": { "line": 43, "column": 5, "offset": 1425 },
+                    "end": { "line": 53, "column": 59, "offset": 2209 },
+                    "indent": [5, 5, 5, 5, 5, 5, 5, 5, 5, 5]
+                  }
+                }
+              ],
+              "position": {
+                "start": { "line": 42, "column": 1, "offset": 1341 },
+                "end": { "line": 53, "column": 59, "offset": 2209 },
+                "indent": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 42, "column": 1, "offset": 1341 },
+            "end": { "line": 53, "column": 59, "offset": 2209 },
+            "indent": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 4,
+          "children": [
+            {
+              "type": "text",
+              "value": "BODY",
+              "position": {
+                "start": { "line": 55, "column": 6, "offset": 2216 },
+                "end": { "line": 55, "column": 10, "offset": 2220 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 55, "column": 1, "offset": 2211 },
+            "end": { "line": 55, "column": 10, "offset": 2220 },
+            "indent": []
+          }
+        },
+        {
+          "type": "code",
+          "lang": "js",
+          "meta": null,
+          "value": "{\n    jsonrpc: \"2.0\",\n    id: 1,\n    result: {\n        blockHash: \"0xb3b20624f8f0f86eb50dd04688409e5cea4bd02d700bf6e79e9384d47d6a5a35\",\n        blockNumber: \"0x5bad55\",\n        from: \"0x398137383b3d25c92898c656696e41950e47316b\",\n        gas: \"0x1d45e\",\n        gasPrice: \"0xfa56ea00\",\n        hash: \"0xbb3a336e3f823ec18197f1e13ee875700f08f03e2cab75f0d0b118dabb44cba0\",\n        input: \"0xf7d8c88300000000000000000000000000000000000000000000000000000000000cee6100000000000000000000000000000000000000000000000000000000000ac3e1\",\n        nonce: \"0x18\",\n        to: \"0x06012c8cf97bead5deae237070f9587f8e7a266d\",\n        transactionIndex: \"0x11\",\n        value: \"0x1c6bf526340000\",\n        v: \"0x25\",\n        r: \"0x2a378831cf81d99a3f06a18ae1b6ca366817ab4d88a70053c41d7a8f0368e031\",\n        s: \"0x450d831a05b6e418724436c05c155e0a1b7b921015d0fbc2f667aed709ac4fb5\"\n    }\n}",
+          "position": {
+            "start": { "line": 57, "column": 1, "offset": 2222 },
+            "end": { "line": 78, "column": 4, "offset": 3095 },
+            "indent": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "type": "export",
+          "value": "export const _frontmatter = {}",
+          "position": {
+            "start": { "line": 81, "column": 1, "offset": 3098 },
+            "end": { "line": 81, "column": 31, "offset": 3128 },
+            "indent": []
+          }
+        }
+      ],
+      "position": {
+        "start": { "line": 1, "column": 1, "offset": 0 },
+        "end": { "line": 81, "column": 31, "offset": 3128 }
+      }
+    },
+    "scopeImports": ["import * as React from 'react'"],
+    "scopeIdentifiers": ["React"],
+    "body": "function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }\n\nfunction _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }\n\nfunction _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }\n\n/* @jsx mdx */\nvar _frontmatter = {};\nvar layoutProps = {\n  _frontmatter: _frontmatter\n};\nvar MDXLayout = \"wrapper\";\nreturn function MDXContent(_ref) {\n  var components = _ref.components,\n      props = _objectWithoutProperties(_ref, [\"components\"]);\n\n  return mdx(MDXLayout, _extends({}, layoutProps, props, {\n    components: components,\n    mdxType: \"MDXLayout\"\n  }), mdx(\"section\", null, mdx(\"h1\", {\n    parentName: \"section\"\n  }, \"eth_getTransactionByBlockNumberAndIndex\")), mdx(\"section\", null, mdx(\"h2\", {\n    parentName: \"section\"\n  }, \"/v1/jsonrpc/:network/eth_getTransactionByBlockNumberAndIndex\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, \"Returns information about a transaction by block number and transaction index position.\")), mdx(\"section\", null, mdx(\"h3\", {\n    parentName: \"section\"\n  }, \"REQUEST\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"p\"\n  }, \"GET https://api.backbonecabal.xyz/v1/jsonrpc/:network/eth_getTransactionByBlockNumberAndIndex?params=:paramsJSONArray\"))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"HEADERS\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"p\"\n  }, \"Content-Type: application/json\"))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"REQUEST PARAMS\"), mdx(\"ul\", {\n    parentName: \"section\"\n  }, mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"BLOCK PARAMETER\"), \" \", mdx(\"em\", {\n    parentName: \"li\"\n  }, \"[required]\"), \" - an integer block number, or the string \\\"latest\\\", \\\"earliest\\\" or \\\"pending\\\", see the\\n\", mdx(\"a\", _extends({\n    parentName: \"li\"\n  }, {\n    \"href\": \"https://github.com/ethereum/wiki/wiki/JSON-RPC#the-default-block-parameter\"\n  }), \"default block parameter\")), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"TRANSACTION INDEX POSITION\"), \" \", mdx(\"em\", {\n    parentName: \"li\"\n  }, \"[required]\"), \" - a hex of the integer representing the position in the block\"))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"EXAMPLE\"), mdx(\"pre\", {\n    parentName: \"section\"\n  }, mdx(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-bash\"\n  }), \"// HTTP GET\\ncurl -G https://api.backbonecabal.xyz/v1/jsonrpc/mainnet/eth_getTransactionByBlockNumberAndIndex --data-urlencode 'params=[\\\"0x5BAD55\\\",\\\"0x0\\\"]'\\n\\n// HTTP POST\\ncurl https://mainnet.backbonecabal.xyz/ \\\\\\n    -X POST \\\\\\n    -H \\\"Content-Type: application/json\\\" \\\\\\n    -d '{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"method\\\":\\\"eth_getTransactionByBlockNumberAndIndex\\\",\\\"params\\\": [\\\"0x5BAD55\\\",\\\"0x0\\\"],\\\"id\\\":1}'\\n\\n// WEBSOCKETS\\n>wscat -c wss://mainnet.backbonecabal.xyz/ws\\n>{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"method\\\":\\\"eth_getTransactionByBlockNumberAndIndex\\\",\\\"params\\\": [\\\"0x5BAD55\\\",\\\"0x0\\\"],\\\"id\\\":1}\\n\"))), mdx(\"section\", null, mdx(\"h3\", {\n    parentName: \"section\"\n  }, \"RESPONSE\")), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"RESULT FIELDS\"), mdx(\"ul\", {\n    parentName: \"section\"\n  }, mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"TRANSACTION\"), \" - A transaction object, or null when no transaction was found\", mdx(\"ul\", {\n    parentName: \"li\"\n  }, mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"hash\"), \": 32 Bytes - hash of the transaction.\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"nonce\"), \": the number of transactions made by the sender prior to this one.\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"blockHash\"), \": 32 Bytes - hash of the block where this transaction was in. null when its pending.\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"blockNumber\"), \": block number where this transaction was in. null when its pending.\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"transactionIndex\"), \": integer of the transactions index position in the block. null when its pending.\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"from\"), \": 20 Bytes - address of the sender.\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"to\"), \": 20 Bytes - address of the receiver. null when its a contract creation transaction.\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"value\"), \": value transferred in Wei.\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"gasPrice\"), \": gas price provided by the sender in Wei.\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"gas\"), \": gas provided by the sender.\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"input\"), \": the data send along with the transaction.\"))))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"BODY\"), mdx(\"pre\", {\n    parentName: \"section\"\n  }, mdx(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-js\"\n  }), \"{\\n    jsonrpc: \\\"2.0\\\",\\n    id: 1,\\n    result: {\\n        blockHash: \\\"0xb3b20624f8f0f86eb50dd04688409e5cea4bd02d700bf6e79e9384d47d6a5a35\\\",\\n        blockNumber: \\\"0x5bad55\\\",\\n        from: \\\"0x398137383b3d25c92898c656696e41950e47316b\\\",\\n        gas: \\\"0x1d45e\\\",\\n        gasPrice: \\\"0xfa56ea00\\\",\\n        hash: \\\"0xbb3a336e3f823ec18197f1e13ee875700f08f03e2cab75f0d0b118dabb44cba0\\\",\\n        input: \\\"0xf7d8c88300000000000000000000000000000000000000000000000000000000000cee6100000000000000000000000000000000000000000000000000000000000ac3e1\\\",\\n        nonce: \\\"0x18\\\",\\n        to: \\\"0x06012c8cf97bead5deae237070f9587f8e7a266d\\\",\\n        transactionIndex: \\\"0x11\\\",\\n        value: \\\"0x1c6bf526340000\\\",\\n        v: \\\"0x25\\\",\\n        r: \\\"0x2a378831cf81d99a3f06a18ae1b6ca366817ab4d88a70053c41d7a8f0368e031\\\",\\n        s: \\\"0x450d831a05b6e418724436c05c155e0a1b7b921015d0fbc2f667aed709ac4fb5\\\"\\n    }\\n}\\n\"))));\n}\n;\nMDXContent.isMDXComponent = true;",
+    "rawMDXOutput": "/* @jsx mdx */\nimport { mdx } from '@mdx-js/react';\n/* @jsx mdx */\n\nexport const _frontmatter = {};\n\nconst layoutProps = {\n  _frontmatter\n};\nconst MDXLayout = \"wrapper\"\nexport default function MDXContent({\n  components,\n  ...props\n}) {\n  return <MDXLayout {...layoutProps} {...props} components={components} mdxType=\"MDXLayout\">\n    <section><h1 parentName=\"section\">{`eth_getTransactionByBlockNumberAndIndex`}</h1></section>\n    <section><h2 parentName=\"section\">{`/v1/jsonrpc/:network/eth_getTransactionByBlockNumberAndIndex`}</h2><p parentName=\"section\">{`Returns information about a transaction by block number and transaction index position.`}</p></section>\n    <section><h3 parentName=\"section\">{`REQUEST`}</h3><p parentName=\"section\"><inlineCode parentName=\"p\">{`GET https://api.backbonecabal.xyz/v1/jsonrpc/:network/eth_getTransactionByBlockNumberAndIndex?params=:paramsJSONArray`}</inlineCode></p></section>\n    <section><h4 parentName=\"section\">{`HEADERS`}</h4><p parentName=\"section\"><inlineCode parentName=\"p\">{`Content-Type: application/json`}</inlineCode></p></section>\n    <section><h4 parentName=\"section\">{`REQUEST PARAMS`}</h4><ul parentName=\"section\">\n        <li parentName=\"ul\"><inlineCode parentName=\"li\">{`BLOCK PARAMETER`}</inlineCode>{` `}<em parentName=\"li\">{`[required]`}</em>{` - an integer block number, or the string \"latest\", \"earliest\" or \"pending\", see the\n`}<a parentName=\"li\" {...{\n            \"href\": \"https://github.com/ethereum/wiki/wiki/JSON-RPC#the-default-block-parameter\"\n          }}>{`default block parameter`}</a></li>\n        <li parentName=\"ul\"><inlineCode parentName=\"li\">{`TRANSACTION INDEX POSITION`}</inlineCode>{` `}<em parentName=\"li\">{`[required]`}</em>{` - a hex of the integer representing the position in the block`}</li>\n      </ul></section>\n    <section><h4 parentName=\"section\">{`EXAMPLE`}</h4><pre parentName=\"section\"><code parentName=\"pre\" {...{\n          \"className\": \"language-bash\"\n        }}>{`// HTTP GET\ncurl -G https://api.backbonecabal.xyz/v1/jsonrpc/mainnet/eth_getTransactionByBlockNumberAndIndex --data-urlencode 'params=[\"0x5BAD55\",\"0x0\"]'\n\n// HTTP POST\ncurl https://mainnet.backbonecabal.xyz/ \\\\\n    -X POST \\\\\n    -H \"Content-Type: application/json\" \\\\\n    -d '{\"jsonrpc\":\"2.0\",\"method\":\"eth_getTransactionByBlockNumberAndIndex\",\"params\": [\"0x5BAD55\",\"0x0\"],\"id\":1}'\n\n// WEBSOCKETS\n>wscat -c wss://mainnet.backbonecabal.xyz/ws\n>{\"jsonrpc\":\"2.0\",\"method\":\"eth_getTransactionByBlockNumberAndIndex\",\"params\": [\"0x5BAD55\",\"0x0\"],\"id\":1}\n`}</code></pre></section>\n    <section><h3 parentName=\"section\">{`RESPONSE`}</h3></section>\n    <section><h4 parentName=\"section\">{`RESULT FIELDS`}</h4><ul parentName=\"section\">\n        <li parentName=\"ul\"><inlineCode parentName=\"li\">{`TRANSACTION`}</inlineCode>{` - A transaction object, or null when no transaction was found`}<ul parentName=\"li\">\n            <li parentName=\"ul\"><inlineCode parentName=\"li\">{`hash`}</inlineCode>{`: 32 Bytes - hash of the transaction.`}</li>\n            <li parentName=\"ul\"><inlineCode parentName=\"li\">{`nonce`}</inlineCode>{`: the number of transactions made by the sender prior to this one.`}</li>\n            <li parentName=\"ul\"><inlineCode parentName=\"li\">{`blockHash`}</inlineCode>{`: 32 Bytes - hash of the block where this transaction was in. null when its pending.`}</li>\n            <li parentName=\"ul\"><inlineCode parentName=\"li\">{`blockNumber`}</inlineCode>{`: block number where this transaction was in. null when its pending.`}</li>\n            <li parentName=\"ul\"><inlineCode parentName=\"li\">{`transactionIndex`}</inlineCode>{`: integer of the transactions index position in the block. null when its pending.`}</li>\n            <li parentName=\"ul\"><inlineCode parentName=\"li\">{`from`}</inlineCode>{`: 20 Bytes - address of the sender.`}</li>\n            <li parentName=\"ul\"><inlineCode parentName=\"li\">{`to`}</inlineCode>{`: 20 Bytes - address of the receiver. null when its a contract creation transaction.`}</li>\n            <li parentName=\"ul\"><inlineCode parentName=\"li\">{`value`}</inlineCode>{`: value transferred in Wei.`}</li>\n            <li parentName=\"ul\"><inlineCode parentName=\"li\">{`gasPrice`}</inlineCode>{`: gas price provided by the sender in Wei.`}</li>\n            <li parentName=\"ul\"><inlineCode parentName=\"li\">{`gas`}</inlineCode>{`: gas provided by the sender.`}</li>\n            <li parentName=\"ul\"><inlineCode parentName=\"li\">{`input`}</inlineCode>{`: the data send along with the transaction.`}</li>\n          </ul></li>\n      </ul></section>\n    <section><h4 parentName=\"section\">{`BODY`}</h4><pre parentName=\"section\"><code parentName=\"pre\" {...{\n          \"className\": \"language-js\"\n        }}>{`{\n    jsonrpc: \"2.0\",\n    id: 1,\n    result: {\n        blockHash: \"0xb3b20624f8f0f86eb50dd04688409e5cea4bd02d700bf6e79e9384d47d6a5a35\",\n        blockNumber: \"0x5bad55\",\n        from: \"0x398137383b3d25c92898c656696e41950e47316b\",\n        gas: \"0x1d45e\",\n        gasPrice: \"0xfa56ea00\",\n        hash: \"0xbb3a336e3f823ec18197f1e13ee875700f08f03e2cab75f0d0b118dabb44cba0\",\n        input: \"0xf7d8c88300000000000000000000000000000000000000000000000000000000000cee6100000000000000000000000000000000000000000000000000000000000ac3e1\",\n        nonce: \"0x18\",\n        to: \"0x06012c8cf97bead5deae237070f9587f8e7a266d\",\n        transactionIndex: \"0x11\",\n        value: \"0x1c6bf526340000\",\n        v: \"0x25\",\n        r: \"0x2a378831cf81d99a3f06a18ae1b6ca366817ab4d88a70053c41d7a8f0368e031\",\n        s: \"0x450d831a05b6e418724436c05c155e0a1b7b921015d0fbc2f667aed709ac4fb5\"\n    }\n}\n`}</code></pre></section>\n\n    </MDXLayout>;\n}\n\n;\nMDXContent.isMDXComponent = true;"
+  }
+}

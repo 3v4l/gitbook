@@ -1,1 +1,150 @@
-{"expireTime":9007200869045516000,"key":"gatsby-plugin-mdx-entire-payload-d8dcc03affb445f76d9388e66f84070f-","val":{"mdast":{"type":"root","children":[{"type":"paragraph","children":[{"type":"text","value":":wave: Hello!","position":{"start":{"line":2,"column":1,"offset":1},"end":{"line":2,"column":14,"offset":14},"indent":[]}}],"position":{"start":{"line":2,"column":1,"offset":1},"end":{"line":2,"column":14,"offset":14},"indent":[]}},{"type":"paragraph","children":[{"type":"text","value":"You successfully initialized your BooGi page :smile:.","position":{"start":{"line":4,"column":1,"offset":16},"end":{"line":4,"column":54,"offset":69},"indent":[]}}],"position":{"start":{"line":4,"column":1,"offset":16},"end":{"line":4,"column":54,"offset":69},"indent":[]}},{"type":"paragraph","children":[{"type":"text","value":"Manifold Finance Documentation and Wiki","position":{"start":{"line":6,"column":1,"offset":71},"end":{"line":6,"column":40,"offset":110},"indent":[]}}],"position":{"start":{"line":6,"column":1,"offset":71},"end":{"line":6,"column":40,"offset":110},"indent":[]}},{"type":"jsx","value":"<Error>","position":{"start":{"line":8,"column":1,"offset":112},"end":{"line":8,"column":8,"offset":119},"indent":[]}},{"type":"paragraph","children":[{"type":"text","value":"Please ","position":{"start":{"line":10,"column":1,"offset":121},"end":{"line":10,"column":8,"offset":128},"indent":[]}},{"type":"strong","children":[{"type":"text","value":"do not remove this file","position":{"start":{"line":10,"column":10,"offset":130},"end":{"line":10,"column":33,"offset":153},"indent":[]}}],"position":{"start":{"line":10,"column":8,"offset":128},"end":{"line":10,"column":35,"offset":155},"indent":[]}},{"type":"text","value":" as it is required for app\nto work properly -- this is your page root (index).","position":{"start":{"line":10,"column":35,"offset":155},"end":{"line":11,"column":52,"offset":233},"indent":[1]}}],"position":{"start":{"line":10,"column":1,"offset":121},"end":{"line":11,"column":52,"offset":233},"indent":[1]}},{"type":"jsx","value":"</Error>","position":{"start":{"line":13,"column":1,"offset":235},"end":{"line":13,"column":9,"offset":243},"indent":[]}},{"type":"export","value":"export const _frontmatter = {\"title\":\"About manifoldfinance\"}","position":{"start":{"line":15,"column":1,"offset":245},"end":{"line":15,"column":62,"offset":306},"indent":[]}}],"position":{"start":{"line":1,"column":1,"offset":0},"end":{"line":15,"column":62,"offset":306}}},"scopeImports":["import * as React from 'react'"],"scopeIdentifiers":["React"],"body":"function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }\n\nfunction _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }\n\nfunction _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }\n\n/* @jsx mdx */\nvar _frontmatter = {\n  \"title\": \"About manifoldfinance\"\n};\n\nvar makeShortcode = function makeShortcode(name) {\n  return function MDXDefaultShortcode(props) {\n    console.warn(\"Component \" + name + \" was not imported, exported, or provided by MDXProvider as global scope\");\n    return mdx(\"div\", props);\n  };\n};\n\nvar Error = makeShortcode(\"Error\");\nvar layoutProps = {\n  _frontmatter: _frontmatter\n};\nvar MDXLayout = \"wrapper\";\nreturn function MDXContent(_ref) {\n  var components = _ref.components,\n      props = _objectWithoutProperties(_ref, [\"components\"]);\n\n  return mdx(MDXLayout, _extends({}, layoutProps, props, {\n    components: components,\n    mdxType: \"MDXLayout\"\n  }), mdx(\"p\", null, \"\\uD83D\\uDC4B Hello!\"), mdx(\"p\", null, \"You successfully initialized your BooGi page \\uD83D\\uDE04.\"), mdx(\"p\", null, \"Manifold Finance Documentation and Wiki\"), mdx(Error, {\n    mdxType: \"Error\"\n  }, mdx(\"p\", null, \"Please \", mdx(\"strong\", {\n    parentName: \"p\"\n  }, \"do not remove this file\"), \" as it is required for app\\nto work properly -- this is your page root (index).\")));\n}\n;\nMDXContent.isMDXComponent = true;","rawMDXOutput":"/* @jsx mdx */\nimport { mdx } from '@mdx-js/react';\n/* @jsx mdx */\n\nexport const _frontmatter = {\n  \"title\": \"About manifoldfinance\"\n};\nconst makeShortcode = name => function MDXDefaultShortcode(props) {\n      console.warn(\"Component \" + name + \" was not imported, exported, or provided by MDXProvider as global scope\")\n      return <div {...props}/>\n    };\nconst Error = makeShortcode(\"Error\");\nconst layoutProps = {\n  _frontmatter\n};\nconst MDXLayout = \"wrapper\"\nexport default function MDXContent({\n  components,\n  ...props\n}) {\n  return <MDXLayout {...layoutProps} {...props} components={components} mdxType=\"MDXLayout\">\n    <p>{`👋 Hello!`}</p>\n    <p>{`You successfully initialized your BooGi page 😄.`}</p>\n    <p>{`Manifold Finance Documentation and Wiki`}</p>\n    <Error mdxType=\"Error\">\n      <p>{`Please `}<strong parentName=\"p\">{`do not remove this file`}</strong>{` as it is required for app\nto work properly -- this is your page root (index).`}</p>\n    </Error>\n\n    </MDXLayout>;\n}\n\n;\nMDXContent.isMDXComponent = true;"}}
+{
+  "expireTime": 9007200869045516000,
+  "key": "gatsby-plugin-mdx-entire-payload-d8dcc03affb445f76d9388e66f84070f-",
+  "val": {
+    "mdast": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": ":wave: Hello!",
+              "position": {
+                "start": { "line": 2, "column": 1, "offset": 1 },
+                "end": { "line": 2, "column": 14, "offset": 14 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 2, "column": 1, "offset": 1 },
+            "end": { "line": 2, "column": 14, "offset": 14 },
+            "indent": []
+          }
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "You successfully initialized your BooGi page :smile:.",
+              "position": {
+                "start": { "line": 4, "column": 1, "offset": 16 },
+                "end": { "line": 4, "column": 54, "offset": 69 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 4, "column": 1, "offset": 16 },
+            "end": { "line": 4, "column": 54, "offset": 69 },
+            "indent": []
+          }
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "Manifold Finance Documentation and Wiki",
+              "position": {
+                "start": { "line": 6, "column": 1, "offset": 71 },
+                "end": { "line": 6, "column": 40, "offset": 110 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 6, "column": 1, "offset": 71 },
+            "end": { "line": 6, "column": 40, "offset": 110 },
+            "indent": []
+          }
+        },
+        {
+          "type": "jsx",
+          "value": "<Error>",
+          "position": {
+            "start": { "line": 8, "column": 1, "offset": 112 },
+            "end": { "line": 8, "column": 8, "offset": 119 },
+            "indent": []
+          }
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "Please ",
+              "position": {
+                "start": { "line": 10, "column": 1, "offset": 121 },
+                "end": { "line": 10, "column": 8, "offset": 128 },
+                "indent": []
+              }
+            },
+            {
+              "type": "strong",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "do not remove this file",
+                  "position": {
+                    "start": { "line": 10, "column": 10, "offset": 130 },
+                    "end": { "line": 10, "column": 33, "offset": 153 },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": { "line": 10, "column": 8, "offset": 128 },
+                "end": { "line": 10, "column": 35, "offset": 155 },
+                "indent": []
+              }
+            },
+            {
+              "type": "text",
+              "value": " as it is required for app\nto work properly -- this is your page root (index).",
+              "position": {
+                "start": { "line": 10, "column": 35, "offset": 155 },
+                "end": { "line": 11, "column": 52, "offset": 233 },
+                "indent": [1]
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 10, "column": 1, "offset": 121 },
+            "end": { "line": 11, "column": 52, "offset": 233 },
+            "indent": [1]
+          }
+        },
+        {
+          "type": "jsx",
+          "value": "</Error>",
+          "position": {
+            "start": { "line": 13, "column": 1, "offset": 235 },
+            "end": { "line": 13, "column": 9, "offset": 243 },
+            "indent": []
+          }
+        },
+        {
+          "type": "export",
+          "value": "export const _frontmatter = {\"title\":\"About manifoldfinance\"}",
+          "position": {
+            "start": { "line": 15, "column": 1, "offset": 245 },
+            "end": { "line": 15, "column": 62, "offset": 306 },
+            "indent": []
+          }
+        }
+      ],
+      "position": {
+        "start": { "line": 1, "column": 1, "offset": 0 },
+        "end": { "line": 15, "column": 62, "offset": 306 }
+      }
+    },
+    "scopeImports": ["import * as React from 'react'"],
+    "scopeIdentifiers": ["React"],
+    "body": "function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }\n\nfunction _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }\n\nfunction _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }\n\n/* @jsx mdx */\nvar _frontmatter = {\n  \"title\": \"About manifoldfinance\"\n};\n\nvar makeShortcode = function makeShortcode(name) {\n  return function MDXDefaultShortcode(props) {\n    console.warn(\"Component \" + name + \" was not imported, exported, or provided by MDXProvider as global scope\");\n    return mdx(\"div\", props);\n  };\n};\n\nvar Error = makeShortcode(\"Error\");\nvar layoutProps = {\n  _frontmatter: _frontmatter\n};\nvar MDXLayout = \"wrapper\";\nreturn function MDXContent(_ref) {\n  var components = _ref.components,\n      props = _objectWithoutProperties(_ref, [\"components\"]);\n\n  return mdx(MDXLayout, _extends({}, layoutProps, props, {\n    components: components,\n    mdxType: \"MDXLayout\"\n  }), mdx(\"p\", null, \"\\uD83D\\uDC4B Hello!\"), mdx(\"p\", null, \"You successfully initialized your BooGi page \\uD83D\\uDE04.\"), mdx(\"p\", null, \"Manifold Finance Documentation and Wiki\"), mdx(Error, {\n    mdxType: \"Error\"\n  }, mdx(\"p\", null, \"Please \", mdx(\"strong\", {\n    parentName: \"p\"\n  }, \"do not remove this file\"), \" as it is required for app\\nto work properly -- this is your page root (index).\")));\n}\n;\nMDXContent.isMDXComponent = true;",
+    "rawMDXOutput": "/* @jsx mdx */\nimport { mdx } from '@mdx-js/react';\n/* @jsx mdx */\n\nexport const _frontmatter = {\n  \"title\": \"About manifoldfinance\"\n};\nconst makeShortcode = name => function MDXDefaultShortcode(props) {\n      console.warn(\"Component \" + name + \" was not imported, exported, or provided by MDXProvider as global scope\")\n      return <div {...props}/>\n    };\nconst Error = makeShortcode(\"Error\");\nconst layoutProps = {\n  _frontmatter\n};\nconst MDXLayout = \"wrapper\"\nexport default function MDXContent({\n  components,\n  ...props\n}) {\n  return <MDXLayout {...layoutProps} {...props} components={components} mdxType=\"MDXLayout\">\n    <p>{`👋 Hello!`}</p>\n    <p>{`You successfully initialized your BooGi page 😄.`}</p>\n    <p>{`Manifold Finance Documentation and Wiki`}</p>\n    <Error mdxType=\"Error\">\n      <p>{`Please `}<strong parentName=\"p\">{`do not remove this file`}</strong>{` as it is required for app\nto work properly -- this is your page root (index).`}</p>\n    </Error>\n\n    </MDXLayout>;\n}\n\n;\nMDXContent.isMDXComponent = true;"
+  }
+}

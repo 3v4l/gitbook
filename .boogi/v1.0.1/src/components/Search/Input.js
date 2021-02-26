@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import styled from '@emotion/styled';
-import { shadowAround } from '../../styles';
-import { useTheme } from 'emotion-theming';
-import { Search, Trash } from 'react-feather';
-import useDebounce from '../../utils/useDebounce';
-import config from 'config';
-import { marginLeftRight } from './styles';
-import { onMobile } from '../../styles/responsive';
+import React, { useState, useEffect } from "react";
+import styled from "@emotion/styled";
+import { shadowAround } from "../../styles";
+import { useTheme } from "emotion-theming";
+import { Search, Trash } from "react-feather";
+import useDebounce from "../../utils/useDebounce";
+import config from "config";
+import { marginLeftRight } from "./styles";
+import { onMobile } from "../../styles/responsive";
 
 const SearchIcon = styled(Search)`
   width: 1.2em;
@@ -15,13 +15,13 @@ const SearchIcon = styled(Search)`
 `;
 
 const CleanSearch = styled(({ ...props }) => (
-  <div {...props} role={'button'} aria-label="clean search">
+  <div {...props} role={"button"} aria-label="clean search">
     <Trash />
   </div>
 ))`
   cursor: pointer;
   margin: 0 10px;
-  svg{
+  svg {
     width: 1.2em;
   }
   &:hover {
@@ -82,16 +82,21 @@ const Form = styled.form`
 `;
 
 const SidebarSearchInputWrapper = styled.div`
-position: sticky;
-top: 0;
-background: ${(props) => props.theme.colors.background};
-width: 100%;
-padding: 0 24px;
+  position: sticky;
+  top: 0;
+  background: ${(props) => props.theme.colors.background};
+  width: 100%;
+  padding: 0 24px;
 `;
 
 const SidebarSearchInput = ({ search, inputRef, showClean, ...props }) => (
   <SidebarSearchInputWrapper>
-    <SearchInput search={search} inputRef={inputRef} showClean={showClean} {...props} />
+    <SearchInput
+      search={search}
+      inputRef={inputRef}
+      showClean={showClean}
+      {...props}
+    />
   </SidebarSearchInputWrapper>
 );
 
@@ -100,8 +105,11 @@ const SearchInput = ({ search, inputRef, showClean, style, ...props }) => {
   const preventSubmit = (e) => {
     e.preventDefault();
   };
-  const [searchTerm, setSearchTerm] = useState('');
-  const debouncedSearchTerm = useDebounce(searchTerm, config.features.search.debounceTime);
+  const [searchTerm, setSearchTerm] = useState("");
+  const debouncedSearchTerm = useDebounce(
+    searchTerm,
+    config.features.search.debounceTime
+  );
 
   useEffect(() => {
     if (search && debouncedSearchTerm !== null) {
@@ -111,16 +119,16 @@ const SearchInput = ({ search, inputRef, showClean, style, ...props }) => {
 
   const clean = (e) => {
     e.preventDefault();
-    setSearchTerm('');
-    inputRef.current.value = '';
+    setSearchTerm("");
+    inputRef.current.value = "";
   };
 
   return (
-    <Form css={shadowAround(theme)} onSubmit={preventSubmit} style={style} >
+    <Form css={shadowAround(theme)} onSubmit={preventSubmit} style={style}>
       <SearchIcon />
       <Input
         ref={inputRef}
-        className={'searchInput '}
+        className={"searchInput "}
         type="text"
         placeholder={config.features.search.placeholder}
         aria-label="Search"
@@ -132,7 +140,7 @@ const SearchInput = ({ search, inputRef, showClean, style, ...props }) => {
         }}
         {...props}
       />
-      {showClean ? <CleanSearch onClick={clean} /> : ''}
+      {showClean ? <CleanSearch onClick={clean} /> : ""}
     </Form>
   );
 };

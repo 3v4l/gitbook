@@ -1,11 +1,11 @@
-import React from 'react';
-import { graphql } from 'gatsby';
-import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer';
-import styled from '@emotion/styled';
-import { Layout, EditOnRepo, PreviousNext, Seo } from '$components';
-import config from 'config';
-import emoji from '../utils/emoji';
-import { onMobile, onTablet } from '../styles/responsive';
+import React from "react";
+import { graphql } from "gatsby";
+import MDXRenderer from "gatsby-plugin-mdx/mdx-renderer";
+import styled from "@emotion/styled";
+import { Layout, EditOnRepo, PreviousNext, Seo } from "$components";
+import config from "config";
+import emoji from "../utils/emoji";
+import { onMobile, onTablet } from "../styles/responsive";
 
 const Title = styled.h1`
   font-size: 24pt
@@ -86,10 +86,10 @@ const ReadingTime = styled(({ className, time }) => (
 const LastUpdated = styled(({ className, time, name }) => {
   return (
     <span className={className}>
-      Last update:{' '}
+      Last update:{" "}
       <i>
         <b>{time}</b>
-      </i>{' '}
+      </i>{" "}
       by
       <i>
         <b> {name}</b>
@@ -104,7 +104,9 @@ const LastUpdated = styled(({ className, time, name }) => {
 export default class MDXRuntimeTest extends React.Component {
   componentDidMount() {
     if (window.location.hash) {
-      const element = document.getElementById(window.location.hash.substring(1));
+      const element = document.getElementById(
+        window.location.hash.substring(1)
+      );
       element.scrollIntoView(true);
     }
   }
@@ -128,11 +130,17 @@ export default class MDXRuntimeTest extends React.Component {
     const headTitle = metaTitle ? metaTitle : emoji.clean(docTitle);
     return (
       <Layout {...this.props}>
-        <Seo frontmatter={mdx.frontmatter} url={this.props.location.href} title={headTitle} />
+        <Seo
+          frontmatter={mdx.frontmatter}
+          url={this.props.location.href}
+          title={headTitle}
+        />
         <PageTitle>
           <TitleWrapper>
             <Title>{docTitle}</Title>
-            {docsLocation && ((editable && mdx.frontmatter.editable !== false) || mdx.frontmatter.editable === true) ? (
+            {docsLocation &&
+            ((editable && mdx.frontmatter.editable !== false) ||
+              mdx.frontmatter.editable === true) ? (
               <EditOnRepo
                 location={docsLocation}
                 branch={gitBranch.name}
@@ -140,12 +148,13 @@ export default class MDXRuntimeTest extends React.Component {
                 repoType={docsLocationType}
               />
             ) : (
-              ''
+              ""
             )}
           </TitleWrapper>
-          {(config.features.showMetadata === true && mdx.frontmatter.showMetadata !== false) ||
+          {(config.features.showMetadata === true &&
+            mdx.frontmatter.showMetadata !== false) ||
           mdx.frontmatter.showMetadata === true ? (
-            <div css={{ display: 'block' }}>
+            <div css={{ display: "block" }}>
               {mdx.parent.fields ? (
                 <LastUpdated
                   time={mdx.parent.fields.gitLogLatestDate}
@@ -153,12 +162,12 @@ export default class MDXRuntimeTest extends React.Component {
                   email={mdx.parent.fields.gitLogLatestAuthorEmail}
                 />
               ) : (
-                ''
+                ""
               )}
               <ReadingTime time={mdx.timeToRead * 2} />
             </div>
           ) : (
-            ''
+            ""
           )}
         </PageTitle>
         <ContentWrapper>
@@ -167,11 +176,11 @@ export default class MDXRuntimeTest extends React.Component {
         {(config.features.previousNext.enabled === true &&
           mdx.frontmatter.showPreviousNext !== false) ||
         mdx.frontmatter.showPreviousNext ? (
-          <div css={{ padding: '30px 0' }}>
+          <div css={{ padding: "30px 0" }}>
             <PreviousNext mdx={mdx} />
           </div>
         ) : (
-          ''
+          ""
         )}
       </Layout>
     );

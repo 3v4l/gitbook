@@ -1,24 +1,26 @@
-import React, { useState } from 'react';
-import { HitsWrapper } from '../Hits';
-import config from 'config';
-import Input from './input';
-import { PageHit } from './hitComps';
-import SearchStatus from '../Status';
-import Pagination from './pagination';
-import Stats from './stats';
-import { useFlexSearch } from 'react-use-flexsearch';
-import { StaticQuery, graphql } from 'gatsby';
+import React, { useState } from "react";
+import { HitsWrapper } from "../Hits";
+import config from "config";
+import Input from "./input";
+import { PageHit } from "./hitComps";
+import SearchStatus from "../Status";
+import Pagination from "./pagination";
+import Stats from "./stats";
+import { useFlexSearch } from "react-use-flexsearch";
+import { StaticQuery, graphql } from "gatsby";
 
-const Results = ({ q }) => <SearchStatus noHits={true} searching={false} query={q} />;
+const Results = ({ q }) => (
+  <SearchStatus noHits={true} searching={false} query={q} />
+);
 
 const getPerformance = () => {
   if (typeof window !== `undefined` && window.performance) {
     return window.performance;
   }
   return {
-    now: () => new Date().getMilliseconds()
-  }
-}
+    now: () => new Date().getMilliseconds(),
+  };
+};
 
 const calculatePage = (results, page) => {
   const hitsPerPage = config.features.search.hitsPerPage;
@@ -36,7 +38,8 @@ const search = (query, index, store, page) => {
     results = useFlexSearch(query, index, parsedStore);
   }
   const maxResults =
-    config.features.search.pagination.totalPages * config.features.search.hitsPerPage;
+    config.features.search.pagination.totalPages *
+    config.features.search.hitsPerPage;
   const nbHits = results.length > maxResults ? maxResults : results.length;
 
   const pages = Math.ceil(results.length / config.features.search.hitsPerPage);
@@ -79,7 +82,7 @@ const LocalSearch = ({ inputRef }) => (
             onFocus={() => setFocus(true)}
             {...{ focus }}
           />
-          <div style={{ flex: '1' }}>
+          <div style={{ flex: "1" }}>
             {showResults && config.features.search.showStats ? (
               <Stats
                 nbHits={searchResult.nbHits}

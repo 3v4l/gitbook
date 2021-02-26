@@ -1,13 +1,13 @@
-import React from 'react';
-import { useTheme } from 'emotion-theming';
-import styled from '@emotion/styled';
+import React from "react";
+import { useTheme } from "emotion-theming";
+import styled from "@emotion/styled";
 
 const JargonWrapper = styled.em`
   display: inline-block;
   .jargon-term {
     text-decoration: underline dotted ${(props) => props.theme.colors.primary};
     &::after {
-      content: '?';
+      content: "?";
       font-weight: bold;
       display: inline-block;
       transform: translate(0, -0.5em);
@@ -42,7 +42,7 @@ const JargonWrapper = styled.em`
           display: inline-block;
           position: relative;
           &::after {
-            content: '';
+            content: "";
             position: absolute;
             bottom: 0;
             left: 0;

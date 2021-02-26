@@ -1,5 +1,5 @@
 "use strict";
 
 module.exports = {
-  fetch: global.fetch
+  fetch: global.fetch,
 };

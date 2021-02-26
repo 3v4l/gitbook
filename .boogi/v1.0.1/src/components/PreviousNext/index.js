@@ -1,1 +1,1 @@
-export { default } from './PreviousNext';
+export { default } from "./PreviousNext";

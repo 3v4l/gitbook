@@ -1,7 +1,7 @@
-import base from './base';
-import lightTheme from './light';
-import darkTheme from './dark';
-import _ from 'lodash';
+import base from "./base";
+import lightTheme from "./light";
+import darkTheme from "./dark";
+import _ from "lodash";
 
 class ThemeBuilder {
   constructor(base) {
@@ -9,13 +9,13 @@ class ThemeBuilder {
   }
 
   applyColors(colors) {
-    this.result['colors'] = _.merge(this.result.colors, colors);
+    this.result["colors"] = _.merge(this.result.colors, colors);
     return this;
   }
 
   initialize() {
     for (let [key, value] of Object.entries(this.result)) {
-      if (typeof value === 'function') {
+      if (typeof value === "function") {
         this.result[key] = value(this.result.colors);
       } else {
         this.result[key] = value;

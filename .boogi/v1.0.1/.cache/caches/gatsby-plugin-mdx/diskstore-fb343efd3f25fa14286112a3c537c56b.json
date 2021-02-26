@@ -1,1 +1,1234 @@
-{"expireTime":9007200869051275000,"key":"gatsby-plugin-mdx-entire-payload-1bd3e29f19411f4e2554591aef025188-","val":{"mdast":{"type":"root","children":[{"type":"heading","depth":1,"children":[{"type":"text","value":"eth_getTransactionReceipt","position":{"start":{"line":1,"column":3,"offset":2},"end":{"line":1,"column":28,"offset":27},"indent":[]}}],"position":{"start":{"line":1,"column":1,"offset":0},"end":{"line":1,"column":28,"offset":27},"indent":[]}},{"type":"heading","depth":2,"children":[{"type":"text","value":"/v1/jsonrpc/:network/eth_getTransactionReceipt","position":{"start":{"line":3,"column":4,"offset":32},"end":{"line":3,"column":50,"offset":78},"indent":[]}}],"position":{"start":{"line":3,"column":1,"offset":29},"end":{"line":3,"column":50,"offset":78},"indent":[]}},{"type":"paragraph","children":[{"type":"text","value":"Returns the receipt of a transaction by transaction hash. ","position":{"start":{"line":5,"column":1,"offset":80},"end":{"line":5,"column":59,"offset":138},"indent":[]}},{"type":"strong","children":[{"type":"text","value":"Note","position":{"start":{"line":5,"column":61,"offset":140},"end":{"line":5,"column":65,"offset":144},"indent":[]}}],"position":{"start":{"line":5,"column":59,"offset":138},"end":{"line":5,"column":67,"offset":146},"indent":[]}},{"type":"text","value":" that the receipt is not available for pending\ntransactions.","position":{"start":{"line":5,"column":67,"offset":146},"end":{"line":6,"column":14,"offset":206},"indent":[1]}}],"position":{"start":{"line":5,"column":1,"offset":80},"end":{"line":6,"column":14,"offset":206},"indent":[1]}},{"type":"heading","depth":3,"children":[{"type":"text","value":"REQUEST","position":{"start":{"line":8,"column":5,"offset":212},"end":{"line":8,"column":12,"offset":219},"indent":[]}}],"position":{"start":{"line":8,"column":1,"offset":208},"end":{"line":8,"column":12,"offset":219},"indent":[]}},{"type":"paragraph","children":[{"type":"inlineCode","value":"GET https://api.backbonecabal.xyz/v1/jsonrpc/:network/eth_getTransactionReceipt?params=:paramsJSONArray","position":{"start":{"line":10,"column":1,"offset":221},"end":{"line":10,"column":106,"offset":326},"indent":[]}}],"position":{"start":{"line":10,"column":1,"offset":221},"end":{"line":10,"column":106,"offset":326},"indent":[]}},{"type":"heading","depth":4,"children":[{"type":"text","value":"HEADERS","position":{"start":{"line":12,"column":6,"offset":333},"end":{"line":12,"column":13,"offset":340},"indent":[]}}],"position":{"start":{"line":12,"column":1,"offset":328},"end":{"line":12,"column":13,"offset":340},"indent":[]}},{"type":"paragraph","children":[{"type":"inlineCode","value":"Content-Type: application/json","position":{"start":{"line":14,"column":1,"offset":342},"end":{"line":14,"column":33,"offset":374},"indent":[]}}],"position":{"start":{"line":14,"column":1,"offset":342},"end":{"line":14,"column":33,"offset":374},"indent":[]}},{"type":"heading","depth":4,"children":[{"type":"text","value":"REQUEST PARAMS","position":{"start":{"line":16,"column":6,"offset":381},"end":{"line":16,"column":20,"offset":395},"indent":[]}}],"position":{"start":{"line":16,"column":1,"offset":376},"end":{"line":16,"column":20,"offset":395},"indent":[]}},{"type":"list","ordered":false,"start":null,"spread":false,"children":[{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"inlineCode","value":"TRANSACTION HASH","position":{"start":{"line":18,"column":5,"offset":401},"end":{"line":18,"column":23,"offset":419},"indent":[]}},{"type":"text","value":" ","position":{"start":{"line":18,"column":23,"offset":419},"end":{"line":18,"column":24,"offset":420},"indent":[]}},{"type":"emphasis","children":[{"type":"linkReference","identifier":"required","label":"required","referenceType":"shortcut","children":[{"type":"text","value":"required","position":{"start":{"line":18,"column":26,"offset":422},"end":{"line":18,"column":34,"offset":430},"indent":[]}}],"position":{"start":{"line":18,"column":25,"offset":421},"end":{"line":18,"column":35,"offset":431},"indent":[]}}],"position":{"start":{"line":18,"column":24,"offset":420},"end":{"line":18,"column":36,"offset":432},"indent":[]}},{"type":"text","value":" - a string representing the hash (32 bytes) of a transaction","position":{"start":{"line":18,"column":36,"offset":432},"end":{"line":18,"column":97,"offset":493},"indent":[]}}],"position":{"start":{"line":18,"column":5,"offset":401},"end":{"line":18,"column":97,"offset":493},"indent":[]}}],"position":{"start":{"line":18,"column":1,"offset":397},"end":{"line":18,"column":97,"offset":493},"indent":[]}}],"position":{"start":{"line":18,"column":1,"offset":397},"end":{"line":18,"column":97,"offset":493},"indent":[]}},{"type":"heading","depth":4,"children":[{"type":"text","value":"EXAMPLE","position":{"start":{"line":20,"column":6,"offset":500},"end":{"line":20,"column":13,"offset":507},"indent":[]}}],"position":{"start":{"line":20,"column":1,"offset":495},"end":{"line":20,"column":13,"offset":507},"indent":[]}},{"type":"code","lang":"bash","meta":null,"value":"// HTTP GET\ncurl -G https://api.backbonecabal.xyz/v1/jsonrpc/mainnet/eth_getTransactionReceipt --data-urlencode 'params=[\"0xbb3a336e3f823ec18197f1e13ee875700f08f03e2cab75f0d0b118dabb44cba0\"]'\n\n// HTTP POST\ncurl https://mainnet.backbonecabal.xyz/ \\\n    -X POST \\\n    -H \"Content-Type: application/json\" \\\n    -d '{\"jsonrpc\":\"2.0\",\"method\":\"eth_getTransactionReceipt\",\"params\": [\"0xbb3a336e3f823ec18197f1e13ee875700f08f03e2cab75f0d0b118dabb44cba0\"],\"id\":1}'\n\n// WEBSOCKETS\n>wscat -c wss://mainnet.backbonecabal.xyz/ws\n>{\"jsonrpc\":\"2.0\",\"method\":\"eth_getTransactionReceipt\",\"params\": [\"0xbb3a336e3f823ec18197f1e13ee875700f08f03e2cab75f0d0b118dabb44cba0\"],\"id\":1}","position":{"start":{"line":22,"column":1,"offset":509},"end":{"line":35,"column":4,"offset":1180},"indent":[1,1,1,1,1,1,1,1,1,1,1,1,1]}},{"type":"heading","depth":3,"children":[{"type":"text","value":"RESPONSE","position":{"start":{"line":37,"column":5,"offset":1186},"end":{"line":37,"column":13,"offset":1194},"indent":[]}}],"position":{"start":{"line":37,"column":1,"offset":1182},"end":{"line":37,"column":13,"offset":1194},"indent":[]}},{"type":"heading","depth":4,"children":[{"type":"text","value":"RESULT FIELDS","position":{"start":{"line":39,"column":6,"offset":1201},"end":{"line":39,"column":19,"offset":1214},"indent":[]}}],"position":{"start":{"line":39,"column":1,"offset":1196},"end":{"line":39,"column":19,"offset":1214},"indent":[]}},{"type":"list","ordered":false,"start":null,"spread":false,"children":[{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"inlineCode","value":"TRANSACTION RECEIPT","position":{"start":{"line":41,"column":5,"offset":1220},"end":{"line":41,"column":26,"offset":1241},"indent":[]}},{"type":"text","value":" - A transaction receipt object, or null when no receipt was found:","position":{"start":{"line":41,"column":26,"offset":1241},"end":{"line":41,"column":93,"offset":1308},"indent":[]}}],"position":{"start":{"line":41,"column":5,"offset":1220},"end":{"line":41,"column":93,"offset":1308},"indent":[]}},{"type":"list","ordered":false,"start":null,"spread":false,"children":[{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"inlineCode","value":"transactionHash","position":{"start":{"line":42,"column":9,"offset":1317},"end":{"line":42,"column":26,"offset":1334},"indent":[]}},{"type":"text","value":": 32 Bytes - hash of the transaction.","position":{"start":{"line":42,"column":26,"offset":1334},"end":{"line":42,"column":63,"offset":1371},"indent":[]}}],"position":{"start":{"line":42,"column":9,"offset":1317},"end":{"line":42,"column":63,"offset":1371},"indent":[]}}],"position":{"start":{"line":42,"column":5,"offset":1313},"end":{"line":42,"column":63,"offset":1371},"indent":[]}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"inlineCode","value":"transactionIndex","position":{"start":{"line":43,"column":9,"offset":1380},"end":{"line":43,"column":27,"offset":1398},"indent":[]}},{"type":"text","value":": integer of the transactions index position in the block.","position":{"start":{"line":43,"column":27,"offset":1398},"end":{"line":43,"column":85,"offset":1456},"indent":[]}}],"position":{"start":{"line":43,"column":9,"offset":1380},"end":{"line":43,"column":85,"offset":1456},"indent":[]}}],"position":{"start":{"line":43,"column":5,"offset":1376},"end":{"line":43,"column":85,"offset":1456},"indent":[]}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"inlineCode","value":"blockHash","position":{"start":{"line":44,"column":9,"offset":1465},"end":{"line":44,"column":20,"offset":1476},"indent":[]}},{"type":"text","value":": 32 Bytes - hash of the block where this transaction was in.","position":{"start":{"line":44,"column":20,"offset":1476},"end":{"line":44,"column":81,"offset":1537},"indent":[]}}],"position":{"start":{"line":44,"column":9,"offset":1465},"end":{"line":44,"column":81,"offset":1537},"indent":[]}}],"position":{"start":{"line":44,"column":5,"offset":1461},"end":{"line":44,"column":81,"offset":1537},"indent":[]}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"inlineCode","value":"blockNumber","position":{"start":{"line":45,"column":9,"offset":1546},"end":{"line":45,"column":22,"offset":1559},"indent":[]}},{"type":"text","value":": block number where this transaction was in.","position":{"start":{"line":45,"column":22,"offset":1559},"end":{"line":45,"column":67,"offset":1604},"indent":[]}}],"position":{"start":{"line":45,"column":9,"offset":1546},"end":{"line":45,"column":67,"offset":1604},"indent":[]}}],"position":{"start":{"line":45,"column":5,"offset":1542},"end":{"line":45,"column":67,"offset":1604},"indent":[]}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"inlineCode","value":"from","position":{"start":{"line":46,"column":9,"offset":1613},"end":{"line":46,"column":15,"offset":1619},"indent":[]}},{"type":"text","value":": 20 Bytes - address of the sender.","position":{"start":{"line":46,"column":15,"offset":1619},"end":{"line":46,"column":50,"offset":1654},"indent":[]}}],"position":{"start":{"line":46,"column":9,"offset":1613},"end":{"line":46,"column":50,"offset":1654},"indent":[]}}],"position":{"start":{"line":46,"column":5,"offset":1609},"end":{"line":46,"column":50,"offset":1654},"indent":[]}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"inlineCode","value":"to","position":{"start":{"line":47,"column":9,"offset":1663},"end":{"line":47,"column":13,"offset":1667},"indent":[]}},{"type":"text","value":": 20 Bytes - address of the receiver. null when its a contract creation transaction.","position":{"start":{"line":47,"column":13,"offset":1667},"end":{"line":47,"column":97,"offset":1751},"indent":[]}}],"position":{"start":{"line":47,"column":9,"offset":1663},"end":{"line":47,"column":97,"offset":1751},"indent":[]}}],"position":{"start":{"line":47,"column":5,"offset":1659},"end":{"line":47,"column":97,"offset":1751},"indent":[]}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"inlineCode","value":"cumulativeGasUsed","position":{"start":{"line":48,"column":9,"offset":1760},"end":{"line":48,"column":28,"offset":1779},"indent":[]}},{"type":"text","value":": the total amount of gas used when this transaction was executed in the block.","position":{"start":{"line":48,"column":28,"offset":1779},"end":{"line":48,"column":107,"offset":1858},"indent":[]}}],"position":{"start":{"line":48,"column":9,"offset":1760},"end":{"line":48,"column":107,"offset":1858},"indent":[]}}],"position":{"start":{"line":48,"column":5,"offset":1756},"end":{"line":48,"column":107,"offset":1858},"indent":[]}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"inlineCode","value":"gasUsed","position":{"start":{"line":49,"column":9,"offset":1867},"end":{"line":49,"column":18,"offset":1876},"indent":[]}},{"type":"text","value":": the amount of gas used by this specific transaction alone.","position":{"start":{"line":49,"column":18,"offset":1876},"end":{"line":49,"column":78,"offset":1936},"indent":[]}}],"position":{"start":{"line":49,"column":9,"offset":1867},"end":{"line":49,"column":78,"offset":1936},"indent":[]}}],"position":{"start":{"line":49,"column":5,"offset":1863},"end":{"line":49,"column":78,"offset":1936},"indent":[]}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"inlineCode","value":"contractAddress","position":{"start":{"line":50,"column":9,"offset":1945},"end":{"line":50,"column":26,"offset":1962},"indent":[]}},{"type":"text","value":": 20 Bytes - the contract address created, if the transaction was a contract creation,\notherwise - null.","position":{"start":{"line":50,"column":26,"offset":1962},"end":{"line":51,"column":26,"offset":2074},"indent":[9]}}],"position":{"start":{"line":50,"column":9,"offset":1945},"end":{"line":51,"column":26,"offset":2074},"indent":[9]}}],"position":{"start":{"line":50,"column":5,"offset":1941},"end":{"line":51,"column":26,"offset":2074},"indent":[5]}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"inlineCode","value":"logs","position":{"start":{"line":52,"column":9,"offset":2083},"end":{"line":52,"column":15,"offset":2089},"indent":[]}},{"type":"text","value":": Array - Array of log objects, which this transaction generated.","position":{"start":{"line":52,"column":15,"offset":2089},"end":{"line":52,"column":80,"offset":2154},"indent":[]}}],"position":{"start":{"line":52,"column":9,"offset":2083},"end":{"line":52,"column":80,"offset":2154},"indent":[]}}],"position":{"start":{"line":52,"column":5,"offset":2079},"end":{"line":52,"column":80,"offset":2154},"indent":[]}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"inlineCode","value":"logsBloom","position":{"start":{"line":53,"column":9,"offset":2163},"end":{"line":53,"column":20,"offset":2174},"indent":[]}},{"type":"text","value":": 256 Bytes - Bloom filter for light clients to quickly retrieve related logs.","position":{"start":{"line":53,"column":20,"offset":2174},"end":{"line":53,"column":98,"offset":2252},"indent":[]}}],"position":{"start":{"line":53,"column":9,"offset":2163},"end":{"line":53,"column":98,"offset":2252},"indent":[]}}],"position":{"start":{"line":53,"column":5,"offset":2159},"end":{"line":53,"column":98,"offset":2252},"indent":[]}}],"position":{"start":{"line":42,"column":5,"offset":1313},"end":{"line":53,"column":98,"offset":2252},"indent":[5,5,5,5,5,5,5,5,5,5,5]}}],"position":{"start":{"line":41,"column":1,"offset":1216},"end":{"line":53,"column":98,"offset":2252},"indent":[1,1,1,1,1,1,1,1,1,1,1,1]}}],"position":{"start":{"line":41,"column":1,"offset":1216},"end":{"line":53,"column":98,"offset":2252},"indent":[1,1,1,1,1,1,1,1,1,1,1,1]}},{"type":"paragraph","children":[{"type":"text","value":"It also returns ","position":{"start":{"line":55,"column":1,"offset":2254},"end":{"line":55,"column":17,"offset":2270},"indent":[]}},{"type":"emphasis","children":[{"type":"text","value":"either","position":{"start":{"line":55,"column":18,"offset":2271},"end":{"line":55,"column":24,"offset":2277},"indent":[]}}],"position":{"start":{"line":55,"column":17,"offset":2270},"end":{"line":55,"column":25,"offset":2278},"indent":[]}},{"type":"text","value":": - ","position":{"start":{"line":55,"column":25,"offset":2278},"end":{"line":55,"column":29,"offset":2282},"indent":[]}},{"type":"inlineCode","value":"root","position":{"start":{"line":55,"column":29,"offset":2282},"end":{"line":55,"column":35,"offset":2288},"indent":[]}},{"type":"text","value":" : 32 bytes of post-transaction stateroot (pre Byzantium) - ","position":{"start":{"line":55,"column":35,"offset":2288},"end":{"line":55,"column":95,"offset":2348},"indent":[]}},{"type":"inlineCode","value":"status","position":{"start":{"line":55,"column":95,"offset":2348},"end":{"line":55,"column":103,"offset":2356},"indent":[]}},{"type":"text","value":": either 1\n(success) or 0 (failure)","position":{"start":{"line":55,"column":103,"offset":2356},"end":{"line":56,"column":25,"offset":2391},"indent":[1]}}],"position":{"start":{"line":55,"column":1,"offset":2254},"end":{"line":56,"column":25,"offset":2391},"indent":[1]}},{"type":"heading","depth":4,"children":[{"type":"text","value":"BODY","position":{"start":{"line":58,"column":6,"offset":2398},"end":{"line":58,"column":10,"offset":2402},"indent":[]}}],"position":{"start":{"line":58,"column":1,"offset":2393},"end":{"line":58,"column":10,"offset":2402},"indent":[]}},{"type":"code","lang":"js","meta":null,"value":"{\n\"id\":1,\n\"jsonrpc\":\"2.0\",\n\"result\": {\n     transactionHash: '0xb903239f8543d04b5dc1ba6579132b143087c68db1b2168786408fcbce568238',\n     transactionIndex:  '0x1', // 1\n     blockNumber: '0xb', // 11\n     blockHash: '0xc6ef2fc5426d6ad6fd9e2a26abeab0aa2411b7ab17f30a99d3cb96aed1d1055b',\n     cumulativeGasUsed: '0x33bc', // 13244\n     gasUsed: '0x4dc', // 1244\n     contractAddress: '0xb60e8dd61c5d32be8058bb8eb970870f07233155', // or null, if none was created\n     logs: [{\n         // logs as returned by getFilterLogs, etc.\n     }, ...],\n     logsBloom: \"0x00...0\", // 256 byte bloom filter\n     status: '0x1'\n  }\n}","position":{"start":{"line":60,"column":1,"offset":2404},"end":{"line":79,"column":4,"offset":3029},"indent":[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]}},{"type":"export","value":"export const _frontmatter = {}","position":{"start":{"line":82,"column":1,"offset":3032},"end":{"line":82,"column":31,"offset":3062},"indent":[]}}],"position":{"start":{"line":1,"column":1,"offset":0},"end":{"line":82,"column":31,"offset":3062}}},"scopeImports":["import * as React from 'react'"],"scopeIdentifiers":["React"],"body":"function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }\n\nfunction _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }\n\nfunction _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }\n\n/* @jsx mdx */\nvar _frontmatter = {};\nvar layoutProps = {\n  _frontmatter: _frontmatter\n};\nvar MDXLayout = \"wrapper\";\nreturn function MDXContent(_ref) {\n  var components = _ref.components,\n      props = _objectWithoutProperties(_ref, [\"components\"]);\n\n  return mdx(MDXLayout, _extends({}, layoutProps, props, {\n    components: components,\n    mdxType: \"MDXLayout\"\n  }), mdx(\"section\", null, mdx(\"h1\", {\n    parentName: \"section\"\n  }, \"eth_getTransactionReceipt\")), mdx(\"section\", null, mdx(\"h2\", {\n    parentName: \"section\"\n  }, \"/v1/jsonrpc/:network/eth_getTransactionReceipt\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, \"Returns the receipt of a transaction by transaction hash. \", mdx(\"strong\", {\n    parentName: \"p\"\n  }, \"Note\"), \" that the receipt is not available for pending\\ntransactions.\")), mdx(\"section\", null, mdx(\"h3\", {\n    parentName: \"section\"\n  }, \"REQUEST\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"p\"\n  }, \"GET https://api.backbonecabal.xyz/v1/jsonrpc/:network/eth_getTransactionReceipt?params=:paramsJSONArray\"))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"HEADERS\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"p\"\n  }, \"Content-Type: application/json\"))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"REQUEST PARAMS\"), mdx(\"ul\", {\n    parentName: \"section\"\n  }, mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"TRANSACTION HASH\"), \" \", mdx(\"em\", {\n    parentName: \"li\"\n  }, \"[required]\"), \" - a string representing the hash (32 bytes) of a transaction\"))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"EXAMPLE\"), mdx(\"pre\", {\n    parentName: \"section\"\n  }, mdx(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-bash\"\n  }), \"// HTTP GET\\ncurl -G https://api.backbonecabal.xyz/v1/jsonrpc/mainnet/eth_getTransactionReceipt --data-urlencode 'params=[\\\"0xbb3a336e3f823ec18197f1e13ee875700f08f03e2cab75f0d0b118dabb44cba0\\\"]'\\n\\n// HTTP POST\\ncurl https://mainnet.backbonecabal.xyz/ \\\\\\n    -X POST \\\\\\n    -H \\\"Content-Type: application/json\\\" \\\\\\n    -d '{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"method\\\":\\\"eth_getTransactionReceipt\\\",\\\"params\\\": [\\\"0xbb3a336e3f823ec18197f1e13ee875700f08f03e2cab75f0d0b118dabb44cba0\\\"],\\\"id\\\":1}'\\n\\n// WEBSOCKETS\\n>wscat -c wss://mainnet.backbonecabal.xyz/ws\\n>{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"method\\\":\\\"eth_getTransactionReceipt\\\",\\\"params\\\": [\\\"0xbb3a336e3f823ec18197f1e13ee875700f08f03e2cab75f0d0b118dabb44cba0\\\"],\\\"id\\\":1}\\n\"))), mdx(\"section\", null, mdx(\"h3\", {\n    parentName: \"section\"\n  }, \"RESPONSE\")), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"RESULT FIELDS\"), mdx(\"ul\", {\n    parentName: \"section\"\n  }, mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"TRANSACTION RECEIPT\"), \" - A transaction receipt object, or null when no receipt was found:\", mdx(\"ul\", {\n    parentName: \"li\"\n  }, mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"transactionHash\"), \": 32 Bytes - hash of the transaction.\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"transactionIndex\"), \": integer of the transactions index position in the block.\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"blockHash\"), \": 32 Bytes - hash of the block where this transaction was in.\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"blockNumber\"), \": block number where this transaction was in.\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"from\"), \": 20 Bytes - address of the sender.\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"to\"), \": 20 Bytes - address of the receiver. null when its a contract creation transaction.\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"cumulativeGasUsed\"), \": the total amount of gas used when this transaction was executed in the block.\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"gasUsed\"), \": the amount of gas used by this specific transaction alone.\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"contractAddress\"), \": 20 Bytes - the contract address created, if the transaction was a contract creation,\\notherwise - null.\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"logs\"), \": Array - Array of log objects, which this transaction generated.\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"logsBloom\"), \": 256 Bytes - Bloom filter for light clients to quickly retrieve related logs.\")))), mdx(\"p\", {\n    parentName: \"section\"\n  }, \"It also returns \", mdx(\"em\", {\n    parentName: \"p\"\n  }, \"either\"), \": - \", mdx(\"inlineCode\", {\n    parentName: \"p\"\n  }, \"root\"), \" : 32 bytes of post-transaction stateroot (pre Byzantium) - \", mdx(\"inlineCode\", {\n    parentName: \"p\"\n  }, \"status\"), \": either 1\\n(success) or 0 (failure)\")), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"BODY\"), mdx(\"pre\", {\n    parentName: \"section\"\n  }, mdx(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-js\"\n  }), \"{\\n\\\"id\\\":1,\\n\\\"jsonrpc\\\":\\\"2.0\\\",\\n\\\"result\\\": {\\n     transactionHash: '0xb903239f8543d04b5dc1ba6579132b143087c68db1b2168786408fcbce568238',\\n     transactionIndex:  '0x1', // 1\\n     blockNumber: '0xb', // 11\\n     blockHash: '0xc6ef2fc5426d6ad6fd9e2a26abeab0aa2411b7ab17f30a99d3cb96aed1d1055b',\\n     cumulativeGasUsed: '0x33bc', // 13244\\n     gasUsed: '0x4dc', // 1244\\n     contractAddress: '0xb60e8dd61c5d32be8058bb8eb970870f07233155', // or null, if none was created\\n     logs: [{\\n         // logs as returned by getFilterLogs, etc.\\n     }, ...],\\n     logsBloom: \\\"0x00...0\\\", // 256 byte bloom filter\\n     status: '0x1'\\n  }\\n}\\n\"))));\n}\n;\nMDXContent.isMDXComponent = true;","rawMDXOutput":"/* @jsx mdx */\nimport { mdx } from '@mdx-js/react';\n/* @jsx mdx */\n\nexport const _frontmatter = {};\n\nconst layoutProps = {\n  _frontmatter\n};\nconst MDXLayout = \"wrapper\"\nexport default function MDXContent({\n  components,\n  ...props\n}) {\n  return <MDXLayout {...layoutProps} {...props} components={components} mdxType=\"MDXLayout\">\n    <section><h1 parentName=\"section\">{`eth_getTransactionReceipt`}</h1></section>\n    <section><h2 parentName=\"section\">{`/v1/jsonrpc/:network/eth_getTransactionReceipt`}</h2><p parentName=\"section\">{`Returns the receipt of a transaction by transaction hash. `}<strong parentName=\"p\">{`Note`}</strong>{` that the receipt is not available for pending\ntransactions.`}</p></section>\n    <section><h3 parentName=\"section\">{`REQUEST`}</h3><p parentName=\"section\"><inlineCode parentName=\"p\">{`GET https://api.backbonecabal.xyz/v1/jsonrpc/:network/eth_getTransactionReceipt?params=:paramsJSONArray`}</inlineCode></p></section>\n    <section><h4 parentName=\"section\">{`HEADERS`}</h4><p parentName=\"section\"><inlineCode parentName=\"p\">{`Content-Type: application/json`}</inlineCode></p></section>\n    <section><h4 parentName=\"section\">{`REQUEST PARAMS`}</h4><ul parentName=\"section\">\n        <li parentName=\"ul\"><inlineCode parentName=\"li\">{`TRANSACTION HASH`}</inlineCode>{` `}<em parentName=\"li\">{`[required]`}</em>{` - a string representing the hash (32 bytes) of a transaction`}</li>\n      </ul></section>\n    <section><h4 parentName=\"section\">{`EXAMPLE`}</h4><pre parentName=\"section\"><code parentName=\"pre\" {...{\n          \"className\": \"language-bash\"\n        }}>{`// HTTP GET\ncurl -G https://api.backbonecabal.xyz/v1/jsonrpc/mainnet/eth_getTransactionReceipt --data-urlencode 'params=[\"0xbb3a336e3f823ec18197f1e13ee875700f08f03e2cab75f0d0b118dabb44cba0\"]'\n\n// HTTP POST\ncurl https://mainnet.backbonecabal.xyz/ \\\\\n    -X POST \\\\\n    -H \"Content-Type: application/json\" \\\\\n    -d '{\"jsonrpc\":\"2.0\",\"method\":\"eth_getTransactionReceipt\",\"params\": [\"0xbb3a336e3f823ec18197f1e13ee875700f08f03e2cab75f0d0b118dabb44cba0\"],\"id\":1}'\n\n// WEBSOCKETS\n>wscat -c wss://mainnet.backbonecabal.xyz/ws\n>{\"jsonrpc\":\"2.0\",\"method\":\"eth_getTransactionReceipt\",\"params\": [\"0xbb3a336e3f823ec18197f1e13ee875700f08f03e2cab75f0d0b118dabb44cba0\"],\"id\":1}\n`}</code></pre></section>\n    <section><h3 parentName=\"section\">{`RESPONSE`}</h3></section>\n    <section><h4 parentName=\"section\">{`RESULT FIELDS`}</h4><ul parentName=\"section\">\n        <li parentName=\"ul\"><inlineCode parentName=\"li\">{`TRANSACTION RECEIPT`}</inlineCode>{` - A transaction receipt object, or null when no receipt was found:`}<ul parentName=\"li\">\n            <li parentName=\"ul\"><inlineCode parentName=\"li\">{`transactionHash`}</inlineCode>{`: 32 Bytes - hash of the transaction.`}</li>\n            <li parentName=\"ul\"><inlineCode parentName=\"li\">{`transactionIndex`}</inlineCode>{`: integer of the transactions index position in the block.`}</li>\n            <li parentName=\"ul\"><inlineCode parentName=\"li\">{`blockHash`}</inlineCode>{`: 32 Bytes - hash of the block where this transaction was in.`}</li>\n            <li parentName=\"ul\"><inlineCode parentName=\"li\">{`blockNumber`}</inlineCode>{`: block number where this transaction was in.`}</li>\n            <li parentName=\"ul\"><inlineCode parentName=\"li\">{`from`}</inlineCode>{`: 20 Bytes - address of the sender.`}</li>\n            <li parentName=\"ul\"><inlineCode parentName=\"li\">{`to`}</inlineCode>{`: 20 Bytes - address of the receiver. null when its a contract creation transaction.`}</li>\n            <li parentName=\"ul\"><inlineCode parentName=\"li\">{`cumulativeGasUsed`}</inlineCode>{`: the total amount of gas used when this transaction was executed in the block.`}</li>\n            <li parentName=\"ul\"><inlineCode parentName=\"li\">{`gasUsed`}</inlineCode>{`: the amount of gas used by this specific transaction alone.`}</li>\n            <li parentName=\"ul\"><inlineCode parentName=\"li\">{`contractAddress`}</inlineCode>{`: 20 Bytes - the contract address created, if the transaction was a contract creation,\notherwise - null.`}</li>\n            <li parentName=\"ul\"><inlineCode parentName=\"li\">{`logs`}</inlineCode>{`: Array - Array of log objects, which this transaction generated.`}</li>\n            <li parentName=\"ul\"><inlineCode parentName=\"li\">{`logsBloom`}</inlineCode>{`: 256 Bytes - Bloom filter for light clients to quickly retrieve related logs.`}</li>\n          </ul></li>\n      </ul><p parentName=\"section\">{`It also returns `}<em parentName=\"p\">{`either`}</em>{`: - `}<inlineCode parentName=\"p\">{`root`}</inlineCode>{` : 32 bytes of post-transaction stateroot (pre Byzantium) - `}<inlineCode parentName=\"p\">{`status`}</inlineCode>{`: either 1\n(success) or 0 (failure)`}</p></section>\n    <section><h4 parentName=\"section\">{`BODY`}</h4><pre parentName=\"section\"><code parentName=\"pre\" {...{\n          \"className\": \"language-js\"\n        }}>{`{\n\"id\":1,\n\"jsonrpc\":\"2.0\",\n\"result\": {\n     transactionHash: '0xb903239f8543d04b5dc1ba6579132b143087c68db1b2168786408fcbce568238',\n     transactionIndex:  '0x1', // 1\n     blockNumber: '0xb', // 11\n     blockHash: '0xc6ef2fc5426d6ad6fd9e2a26abeab0aa2411b7ab17f30a99d3cb96aed1d1055b',\n     cumulativeGasUsed: '0x33bc', // 13244\n     gasUsed: '0x4dc', // 1244\n     contractAddress: '0xb60e8dd61c5d32be8058bb8eb970870f07233155', // or null, if none was created\n     logs: [{\n         // logs as returned by getFilterLogs, etc.\n     }, ...],\n     logsBloom: \"0x00...0\", // 256 byte bloom filter\n     status: '0x1'\n  }\n}\n`}</code></pre></section>\n\n    </MDXLayout>;\n}\n\n;\nMDXContent.isMDXComponent = true;"}}
+{
+  "expireTime": 9007200869051275000,
+  "key": "gatsby-plugin-mdx-entire-payload-1bd3e29f19411f4e2554591aef025188-",
+  "val": {
+    "mdast": {
+      "type": "root",
+      "children": [
+        {
+          "type": "heading",
+          "depth": 1,
+          "children": [
+            {
+              "type": "text",
+              "value": "eth_getTransactionReceipt",
+              "position": {
+                "start": { "line": 1, "column": 3, "offset": 2 },
+                "end": { "line": 1, "column": 28, "offset": 27 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 1, "column": 1, "offset": 0 },
+            "end": { "line": 1, "column": 28, "offset": 27 },
+            "indent": []
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 2,
+          "children": [
+            {
+              "type": "text",
+              "value": "/v1/jsonrpc/:network/eth_getTransactionReceipt",
+              "position": {
+                "start": { "line": 3, "column": 4, "offset": 32 },
+                "end": { "line": 3, "column": 50, "offset": 78 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 3, "column": 1, "offset": 29 },
+            "end": { "line": 3, "column": 50, "offset": 78 },
+            "indent": []
+          }
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "Returns the receipt of a transaction by transaction hash. ",
+              "position": {
+                "start": { "line": 5, "column": 1, "offset": 80 },
+                "end": { "line": 5, "column": 59, "offset": 138 },
+                "indent": []
+              }
+            },
+            {
+              "type": "strong",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Note",
+                  "position": {
+                    "start": { "line": 5, "column": 61, "offset": 140 },
+                    "end": { "line": 5, "column": 65, "offset": 144 },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": { "line": 5, "column": 59, "offset": 138 },
+                "end": { "line": 5, "column": 67, "offset": 146 },
+                "indent": []
+              }
+            },
+            {
+              "type": "text",
+              "value": " that the receipt is not available for pending\ntransactions.",
+              "position": {
+                "start": { "line": 5, "column": 67, "offset": 146 },
+                "end": { "line": 6, "column": 14, "offset": 206 },
+                "indent": [1]
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 5, "column": 1, "offset": 80 },
+            "end": { "line": 6, "column": 14, "offset": 206 },
+            "indent": [1]
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 3,
+          "children": [
+            {
+              "type": "text",
+              "value": "REQUEST",
+              "position": {
+                "start": { "line": 8, "column": 5, "offset": 212 },
+                "end": { "line": 8, "column": 12, "offset": 219 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 8, "column": 1, "offset": 208 },
+            "end": { "line": 8, "column": 12, "offset": 219 },
+            "indent": []
+          }
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "inlineCode",
+              "value": "GET https://api.backbonecabal.xyz/v1/jsonrpc/:network/eth_getTransactionReceipt?params=:paramsJSONArray",
+              "position": {
+                "start": { "line": 10, "column": 1, "offset": 221 },
+                "end": { "line": 10, "column": 106, "offset": 326 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 10, "column": 1, "offset": 221 },
+            "end": { "line": 10, "column": 106, "offset": 326 },
+            "indent": []
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 4,
+          "children": [
+            {
+              "type": "text",
+              "value": "HEADERS",
+              "position": {
+                "start": { "line": 12, "column": 6, "offset": 333 },
+                "end": { "line": 12, "column": 13, "offset": 340 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 12, "column": 1, "offset": 328 },
+            "end": { "line": 12, "column": 13, "offset": 340 },
+            "indent": []
+          }
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "inlineCode",
+              "value": "Content-Type: application/json",
+              "position": {
+                "start": { "line": 14, "column": 1, "offset": 342 },
+                "end": { "line": 14, "column": 33, "offset": 374 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 14, "column": 1, "offset": 342 },
+            "end": { "line": 14, "column": 33, "offset": 374 },
+            "indent": []
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 4,
+          "children": [
+            {
+              "type": "text",
+              "value": "REQUEST PARAMS",
+              "position": {
+                "start": { "line": 16, "column": 6, "offset": 381 },
+                "end": { "line": 16, "column": 20, "offset": 395 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 16, "column": 1, "offset": 376 },
+            "end": { "line": 16, "column": 20, "offset": 395 },
+            "indent": []
+          }
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "start": null,
+          "spread": false,
+          "children": [
+            {
+              "type": "listItem",
+              "spread": false,
+              "checked": null,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "inlineCode",
+                      "value": "TRANSACTION HASH",
+                      "position": {
+                        "start": { "line": 18, "column": 5, "offset": 401 },
+                        "end": { "line": 18, "column": 23, "offset": 419 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "value": " ",
+                      "position": {
+                        "start": { "line": 18, "column": 23, "offset": 419 },
+                        "end": { "line": 18, "column": 24, "offset": 420 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "emphasis",
+                      "children": [
+                        {
+                          "type": "linkReference",
+                          "identifier": "required",
+                          "label": "required",
+                          "referenceType": "shortcut",
+                          "children": [
+                            {
+                              "type": "text",
+                              "value": "required",
+                              "position": {
+                                "start": {
+                                  "line": 18,
+                                  "column": 26,
+                                  "offset": 422
+                                },
+                                "end": {
+                                  "line": 18,
+                                  "column": 34,
+                                  "offset": 430
+                                },
+                                "indent": []
+                              }
+                            }
+                          ],
+                          "position": {
+                            "start": {
+                              "line": 18,
+                              "column": 25,
+                              "offset": 421
+                            },
+                            "end": { "line": 18, "column": 35, "offset": 431 },
+                            "indent": []
+                          }
+                        }
+                      ],
+                      "position": {
+                        "start": { "line": 18, "column": 24, "offset": 420 },
+                        "end": { "line": 18, "column": 36, "offset": 432 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "value": " - a string representing the hash (32 bytes) of a transaction",
+                      "position": {
+                        "start": { "line": 18, "column": 36, "offset": 432 },
+                        "end": { "line": 18, "column": 97, "offset": 493 },
+                        "indent": []
+                      }
+                    }
+                  ],
+                  "position": {
+                    "start": { "line": 18, "column": 5, "offset": 401 },
+                    "end": { "line": 18, "column": 97, "offset": 493 },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": { "line": 18, "column": 1, "offset": 397 },
+                "end": { "line": 18, "column": 97, "offset": 493 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 18, "column": 1, "offset": 397 },
+            "end": { "line": 18, "column": 97, "offset": 493 },
+            "indent": []
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 4,
+          "children": [
+            {
+              "type": "text",
+              "value": "EXAMPLE",
+              "position": {
+                "start": { "line": 20, "column": 6, "offset": 500 },
+                "end": { "line": 20, "column": 13, "offset": 507 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 20, "column": 1, "offset": 495 },
+            "end": { "line": 20, "column": 13, "offset": 507 },
+            "indent": []
+          }
+        },
+        {
+          "type": "code",
+          "lang": "bash",
+          "meta": null,
+          "value": "// HTTP GET\ncurl -G https://api.backbonecabal.xyz/v1/jsonrpc/mainnet/eth_getTransactionReceipt --data-urlencode 'params=[\"0xbb3a336e3f823ec18197f1e13ee875700f08f03e2cab75f0d0b118dabb44cba0\"]'\n\n// HTTP POST\ncurl https://mainnet.backbonecabal.xyz/ \\\n    -X POST \\\n    -H \"Content-Type: application/json\" \\\n    -d '{\"jsonrpc\":\"2.0\",\"method\":\"eth_getTransactionReceipt\",\"params\": [\"0xbb3a336e3f823ec18197f1e13ee875700f08f03e2cab75f0d0b118dabb44cba0\"],\"id\":1}'\n\n// WEBSOCKETS\n>wscat -c wss://mainnet.backbonecabal.xyz/ws\n>{\"jsonrpc\":\"2.0\",\"method\":\"eth_getTransactionReceipt\",\"params\": [\"0xbb3a336e3f823ec18197f1e13ee875700f08f03e2cab75f0d0b118dabb44cba0\"],\"id\":1}",
+          "position": {
+            "start": { "line": 22, "column": 1, "offset": 509 },
+            "end": { "line": 35, "column": 4, "offset": 1180 },
+            "indent": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 3,
+          "children": [
+            {
+              "type": "text",
+              "value": "RESPONSE",
+              "position": {
+                "start": { "line": 37, "column": 5, "offset": 1186 },
+                "end": { "line": 37, "column": 13, "offset": 1194 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 37, "column": 1, "offset": 1182 },
+            "end": { "line": 37, "column": 13, "offset": 1194 },
+            "indent": []
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 4,
+          "children": [
+            {
+              "type": "text",
+              "value": "RESULT FIELDS",
+              "position": {
+                "start": { "line": 39, "column": 6, "offset": 1201 },
+                "end": { "line": 39, "column": 19, "offset": 1214 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 39, "column": 1, "offset": 1196 },
+            "end": { "line": 39, "column": 19, "offset": 1214 },
+            "indent": []
+          }
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "start": null,
+          "spread": false,
+          "children": [
+            {
+              "type": "listItem",
+              "spread": false,
+              "checked": null,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "inlineCode",
+                      "value": "TRANSACTION RECEIPT",
+                      "position": {
+                        "start": { "line": 41, "column": 5, "offset": 1220 },
+                        "end": { "line": 41, "column": 26, "offset": 1241 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "value": " - A transaction receipt object, or null when no receipt was found:",
+                      "position": {
+                        "start": { "line": 41, "column": 26, "offset": 1241 },
+                        "end": { "line": 41, "column": 93, "offset": 1308 },
+                        "indent": []
+                      }
+                    }
+                  ],
+                  "position": {
+                    "start": { "line": 41, "column": 5, "offset": 1220 },
+                    "end": { "line": 41, "column": 93, "offset": 1308 },
+                    "indent": []
+                  }
+                },
+                {
+                  "type": "list",
+                  "ordered": false,
+                  "start": null,
+                  "spread": false,
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "spread": false,
+                      "checked": null,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "inlineCode",
+                              "value": "transactionHash",
+                              "position": {
+                                "start": {
+                                  "line": 42,
+                                  "column": 9,
+                                  "offset": 1317
+                                },
+                                "end": {
+                                  "line": 42,
+                                  "column": 26,
+                                  "offset": 1334
+                                },
+                                "indent": []
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "value": ": 32 Bytes - hash of the transaction.",
+                              "position": {
+                                "start": {
+                                  "line": 42,
+                                  "column": 26,
+                                  "offset": 1334
+                                },
+                                "end": {
+                                  "line": 42,
+                                  "column": 63,
+                                  "offset": 1371
+                                },
+                                "indent": []
+                              }
+                            }
+                          ],
+                          "position": {
+                            "start": {
+                              "line": 42,
+                              "column": 9,
+                              "offset": 1317
+                            },
+                            "end": { "line": 42, "column": 63, "offset": 1371 },
+                            "indent": []
+                          }
+                        }
+                      ],
+                      "position": {
+                        "start": { "line": 42, "column": 5, "offset": 1313 },
+                        "end": { "line": 42, "column": 63, "offset": 1371 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "listItem",
+                      "spread": false,
+                      "checked": null,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "inlineCode",
+                              "value": "transactionIndex",
+                              "position": {
+                                "start": {
+                                  "line": 43,
+                                  "column": 9,
+                                  "offset": 1380
+                                },
+                                "end": {
+                                  "line": 43,
+                                  "column": 27,
+                                  "offset": 1398
+                                },
+                                "indent": []
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "value": ": integer of the transactions index position in the block.",
+                              "position": {
+                                "start": {
+                                  "line": 43,
+                                  "column": 27,
+                                  "offset": 1398
+                                },
+                                "end": {
+                                  "line": 43,
+                                  "column": 85,
+                                  "offset": 1456
+                                },
+                                "indent": []
+                              }
+                            }
+                          ],
+                          "position": {
+                            "start": {
+                              "line": 43,
+                              "column": 9,
+                              "offset": 1380
+                            },
+                            "end": { "line": 43, "column": 85, "offset": 1456 },
+                            "indent": []
+                          }
+                        }
+                      ],
+                      "position": {
+                        "start": { "line": 43, "column": 5, "offset": 1376 },
+                        "end": { "line": 43, "column": 85, "offset": 1456 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "listItem",
+                      "spread": false,
+                      "checked": null,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "inlineCode",
+                              "value": "blockHash",
+                              "position": {
+                                "start": {
+                                  "line": 44,
+                                  "column": 9,
+                                  "offset": 1465
+                                },
+                                "end": {
+                                  "line": 44,
+                                  "column": 20,
+                                  "offset": 1476
+                                },
+                                "indent": []
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "value": ": 32 Bytes - hash of the block where this transaction was in.",
+                              "position": {
+                                "start": {
+                                  "line": 44,
+                                  "column": 20,
+                                  "offset": 1476
+                                },
+                                "end": {
+                                  "line": 44,
+                                  "column": 81,
+                                  "offset": 1537
+                                },
+                                "indent": []
+                              }
+                            }
+                          ],
+                          "position": {
+                            "start": {
+                              "line": 44,
+                              "column": 9,
+                              "offset": 1465
+                            },
+                            "end": { "line": 44, "column": 81, "offset": 1537 },
+                            "indent": []
+                          }
+                        }
+                      ],
+                      "position": {
+                        "start": { "line": 44, "column": 5, "offset": 1461 },
+                        "end": { "line": 44, "column": 81, "offset": 1537 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "listItem",
+                      "spread": false,
+                      "checked": null,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "inlineCode",
+                              "value": "blockNumber",
+                              "position": {
+                                "start": {
+                                  "line": 45,
+                                  "column": 9,
+                                  "offset": 1546
+                                },
+                                "end": {
+                                  "line": 45,
+                                  "column": 22,
+                                  "offset": 1559
+                                },
+                                "indent": []
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "value": ": block number where this transaction was in.",
+                              "position": {
+                                "start": {
+                                  "line": 45,
+                                  "column": 22,
+                                  "offset": 1559
+                                },
+                                "end": {
+                                  "line": 45,
+                                  "column": 67,
+                                  "offset": 1604
+                                },
+                                "indent": []
+                              }
+                            }
+                          ],
+                          "position": {
+                            "start": {
+                              "line": 45,
+                              "column": 9,
+                              "offset": 1546
+                            },
+                            "end": { "line": 45, "column": 67, "offset": 1604 },
+                            "indent": []
+                          }
+                        }
+                      ],
+                      "position": {
+                        "start": { "line": 45, "column": 5, "offset": 1542 },
+                        "end": { "line": 45, "column": 67, "offset": 1604 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "listItem",
+                      "spread": false,
+                      "checked": null,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "inlineCode",
+                              "value": "from",
+                              "position": {
+                                "start": {
+                                  "line": 46,
+                                  "column": 9,
+                                  "offset": 1613
+                                },
+                                "end": {
+                                  "line": 46,
+                                  "column": 15,
+                                  "offset": 1619
+                                },
+                                "indent": []
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "value": ": 20 Bytes - address of the sender.",
+                              "position": {
+                                "start": {
+                                  "line": 46,
+                                  "column": 15,
+                                  "offset": 1619
+                                },
+                                "end": {
+                                  "line": 46,
+                                  "column": 50,
+                                  "offset": 1654
+                                },
+                                "indent": []
+                              }
+                            }
+                          ],
+                          "position": {
+                            "start": {
+                              "line": 46,
+                              "column": 9,
+                              "offset": 1613
+                            },
+                            "end": { "line": 46, "column": 50, "offset": 1654 },
+                            "indent": []
+                          }
+                        }
+                      ],
+                      "position": {
+                        "start": { "line": 46, "column": 5, "offset": 1609 },
+                        "end": { "line": 46, "column": 50, "offset": 1654 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "listItem",
+                      "spread": false,
+                      "checked": null,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "inlineCode",
+                              "value": "to",
+                              "position": {
+                                "start": {
+                                  "line": 47,
+                                  "column": 9,
+                                  "offset": 1663
+                                },
+                                "end": {
+                                  "line": 47,
+                                  "column": 13,
+                                  "offset": 1667
+                                },
+                                "indent": []
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "value": ": 20 Bytes - address of the receiver. null when its a contract creation transaction.",
+                              "position": {
+                                "start": {
+                                  "line": 47,
+                                  "column": 13,
+                                  "offset": 1667
+                                },
+                                "end": {
+                                  "line": 47,
+                                  "column": 97,
+                                  "offset": 1751
+                                },
+                                "indent": []
+                              }
+                            }
+                          ],
+                          "position": {
+                            "start": {
+                              "line": 47,
+                              "column": 9,
+                              "offset": 1663
+                            },
+                            "end": { "line": 47, "column": 97, "offset": 1751 },
+                            "indent": []
+                          }
+                        }
+                      ],
+                      "position": {
+                        "start": { "line": 47, "column": 5, "offset": 1659 },
+                        "end": { "line": 47, "column": 97, "offset": 1751 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "listItem",
+                      "spread": false,
+                      "checked": null,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "inlineCode",
+                              "value": "cumulativeGasUsed",
+                              "position": {
+                                "start": {
+                                  "line": 48,
+                                  "column": 9,
+                                  "offset": 1760
+                                },
+                                "end": {
+                                  "line": 48,
+                                  "column": 28,
+                                  "offset": 1779
+                                },
+                                "indent": []
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "value": ": the total amount of gas used when this transaction was executed in the block.",
+                              "position": {
+                                "start": {
+                                  "line": 48,
+                                  "column": 28,
+                                  "offset": 1779
+                                },
+                                "end": {
+                                  "line": 48,
+                                  "column": 107,
+                                  "offset": 1858
+                                },
+                                "indent": []
+                              }
+                            }
+                          ],
+                          "position": {
+                            "start": {
+                              "line": 48,
+                              "column": 9,
+                              "offset": 1760
+                            },
+                            "end": {
+                              "line": 48,
+                              "column": 107,
+                              "offset": 1858
+                            },
+                            "indent": []
+                          }
+                        }
+                      ],
+                      "position": {
+                        "start": { "line": 48, "column": 5, "offset": 1756 },
+                        "end": { "line": 48, "column": 107, "offset": 1858 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "listItem",
+                      "spread": false,
+                      "checked": null,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "inlineCode",
+                              "value": "gasUsed",
+                              "position": {
+                                "start": {
+                                  "line": 49,
+                                  "column": 9,
+                                  "offset": 1867
+                                },
+                                "end": {
+                                  "line": 49,
+                                  "column": 18,
+                                  "offset": 1876
+                                },
+                                "indent": []
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "value": ": the amount of gas used by this specific transaction alone.",
+                              "position": {
+                                "start": {
+                                  "line": 49,
+                                  "column": 18,
+                                  "offset": 1876
+                                },
+                                "end": {
+                                  "line": 49,
+                                  "column": 78,
+                                  "offset": 1936
+                                },
+                                "indent": []
+                              }
+                            }
+                          ],
+                          "position": {
+                            "start": {
+                              "line": 49,
+                              "column": 9,
+                              "offset": 1867
+                            },
+                            "end": { "line": 49, "column": 78, "offset": 1936 },
+                            "indent": []
+                          }
+                        }
+                      ],
+                      "position": {
+                        "start": { "line": 49, "column": 5, "offset": 1863 },
+                        "end": { "line": 49, "column": 78, "offset": 1936 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "listItem",
+                      "spread": false,
+                      "checked": null,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "inlineCode",
+                              "value": "contractAddress",
+                              "position": {
+                                "start": {
+                                  "line": 50,
+                                  "column": 9,
+                                  "offset": 1945
+                                },
+                                "end": {
+                                  "line": 50,
+                                  "column": 26,
+                                  "offset": 1962
+                                },
+                                "indent": []
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "value": ": 20 Bytes - the contract address created, if the transaction was a contract creation,\notherwise - null.",
+                              "position": {
+                                "start": {
+                                  "line": 50,
+                                  "column": 26,
+                                  "offset": 1962
+                                },
+                                "end": {
+                                  "line": 51,
+                                  "column": 26,
+                                  "offset": 2074
+                                },
+                                "indent": [9]
+                              }
+                            }
+                          ],
+                          "position": {
+                            "start": {
+                              "line": 50,
+                              "column": 9,
+                              "offset": 1945
+                            },
+                            "end": { "line": 51, "column": 26, "offset": 2074 },
+                            "indent": [9]
+                          }
+                        }
+                      ],
+                      "position": {
+                        "start": { "line": 50, "column": 5, "offset": 1941 },
+                        "end": { "line": 51, "column": 26, "offset": 2074 },
+                        "indent": [5]
+                      }
+                    },
+                    {
+                      "type": "listItem",
+                      "spread": false,
+                      "checked": null,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "inlineCode",
+                              "value": "logs",
+                              "position": {
+                                "start": {
+                                  "line": 52,
+                                  "column": 9,
+                                  "offset": 2083
+                                },
+                                "end": {
+                                  "line": 52,
+                                  "column": 15,
+                                  "offset": 2089
+                                },
+                                "indent": []
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "value": ": Array - Array of log objects, which this transaction generated.",
+                              "position": {
+                                "start": {
+                                  "line": 52,
+                                  "column": 15,
+                                  "offset": 2089
+                                },
+                                "end": {
+                                  "line": 52,
+                                  "column": 80,
+                                  "offset": 2154
+                                },
+                                "indent": []
+                              }
+                            }
+                          ],
+                          "position": {
+                            "start": {
+                              "line": 52,
+                              "column": 9,
+                              "offset": 2083
+                            },
+                            "end": { "line": 52, "column": 80, "offset": 2154 },
+                            "indent": []
+                          }
+                        }
+                      ],
+                      "position": {
+                        "start": { "line": 52, "column": 5, "offset": 2079 },
+                        "end": { "line": 52, "column": 80, "offset": 2154 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "listItem",
+                      "spread": false,
+                      "checked": null,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "inlineCode",
+                              "value": "logsBloom",
+                              "position": {
+                                "start": {
+                                  "line": 53,
+                                  "column": 9,
+                                  "offset": 2163
+                                },
+                                "end": {
+                                  "line": 53,
+                                  "column": 20,
+                                  "offset": 2174
+                                },
+                                "indent": []
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "value": ": 256 Bytes - Bloom filter for light clients to quickly retrieve related logs.",
+                              "position": {
+                                "start": {
+                                  "line": 53,
+                                  "column": 20,
+                                  "offset": 2174
+                                },
+                                "end": {
+                                  "line": 53,
+                                  "column": 98,
+                                  "offset": 2252
+                                },
+                                "indent": []
+                              }
+                            }
+                          ],
+                          "position": {
+                            "start": {
+                              "line": 53,
+                              "column": 9,
+                              "offset": 2163
+                            },
+                            "end": { "line": 53, "column": 98, "offset": 2252 },
+                            "indent": []
+                          }
+                        }
+                      ],
+                      "position": {
+                        "start": { "line": 53, "column": 5, "offset": 2159 },
+                        "end": { "line": 53, "column": 98, "offset": 2252 },
+                        "indent": []
+                      }
+                    }
+                  ],
+                  "position": {
+                    "start": { "line": 42, "column": 5, "offset": 1313 },
+                    "end": { "line": 53, "column": 98, "offset": 2252 },
+                    "indent": [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5]
+                  }
+                }
+              ],
+              "position": {
+                "start": { "line": 41, "column": 1, "offset": 1216 },
+                "end": { "line": 53, "column": 98, "offset": 2252 },
+                "indent": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 41, "column": 1, "offset": 1216 },
+            "end": { "line": 53, "column": 98, "offset": 2252 },
+            "indent": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+          }
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "It also returns ",
+              "position": {
+                "start": { "line": 55, "column": 1, "offset": 2254 },
+                "end": { "line": 55, "column": 17, "offset": 2270 },
+                "indent": []
+              }
+            },
+            {
+              "type": "emphasis",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "either",
+                  "position": {
+                    "start": { "line": 55, "column": 18, "offset": 2271 },
+                    "end": { "line": 55, "column": 24, "offset": 2277 },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": { "line": 55, "column": 17, "offset": 2270 },
+                "end": { "line": 55, "column": 25, "offset": 2278 },
+                "indent": []
+              }
+            },
+            {
+              "type": "text",
+              "value": ": - ",
+              "position": {
+                "start": { "line": 55, "column": 25, "offset": 2278 },
+                "end": { "line": 55, "column": 29, "offset": 2282 },
+                "indent": []
+              }
+            },
+            {
+              "type": "inlineCode",
+              "value": "root",
+              "position": {
+                "start": { "line": 55, "column": 29, "offset": 2282 },
+                "end": { "line": 55, "column": 35, "offset": 2288 },
+                "indent": []
+              }
+            },
+            {
+              "type": "text",
+              "value": " : 32 bytes of post-transaction stateroot (pre Byzantium) - ",
+              "position": {
+                "start": { "line": 55, "column": 35, "offset": 2288 },
+                "end": { "line": 55, "column": 95, "offset": 2348 },
+                "indent": []
+              }
+            },
+            {
+              "type": "inlineCode",
+              "value": "status",
+              "position": {
+                "start": { "line": 55, "column": 95, "offset": 2348 },
+                "end": { "line": 55, "column": 103, "offset": 2356 },
+                "indent": []
+              }
+            },
+            {
+              "type": "text",
+              "value": ": either 1\n(success) or 0 (failure)",
+              "position": {
+                "start": { "line": 55, "column": 103, "offset": 2356 },
+                "end": { "line": 56, "column": 25, "offset": 2391 },
+                "indent": [1]
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 55, "column": 1, "offset": 2254 },
+            "end": { "line": 56, "column": 25, "offset": 2391 },
+            "indent": [1]
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 4,
+          "children": [
+            {
+              "type": "text",
+              "value": "BODY",
+              "position": {
+                "start": { "line": 58, "column": 6, "offset": 2398 },
+                "end": { "line": 58, "column": 10, "offset": 2402 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 58, "column": 1, "offset": 2393 },
+            "end": { "line": 58, "column": 10, "offset": 2402 },
+            "indent": []
+          }
+        },
+        {
+          "type": "code",
+          "lang": "js",
+          "meta": null,
+          "value": "{\n\"id\":1,\n\"jsonrpc\":\"2.0\",\n\"result\": {\n     transactionHash: '0xb903239f8543d04b5dc1ba6579132b143087c68db1b2168786408fcbce568238',\n     transactionIndex:  '0x1', // 1\n     blockNumber: '0xb', // 11\n     blockHash: '0xc6ef2fc5426d6ad6fd9e2a26abeab0aa2411b7ab17f30a99d3cb96aed1d1055b',\n     cumulativeGasUsed: '0x33bc', // 13244\n     gasUsed: '0x4dc', // 1244\n     contractAddress: '0xb60e8dd61c5d32be8058bb8eb970870f07233155', // or null, if none was created\n     logs: [{\n         // logs as returned by getFilterLogs, etc.\n     }, ...],\n     logsBloom: \"0x00...0\", // 256 byte bloom filter\n     status: '0x1'\n  }\n}",
+          "position": {
+            "start": { "line": 60, "column": 1, "offset": 2404 },
+            "end": { "line": 79, "column": 4, "offset": 3029 },
+            "indent": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+          }
+        },
+        {
+          "type": "export",
+          "value": "export const _frontmatter = {}",
+          "position": {
+            "start": { "line": 82, "column": 1, "offset": 3032 },
+            "end": { "line": 82, "column": 31, "offset": 3062 },
+            "indent": []
+          }
+        }
+      ],
+      "position": {
+        "start": { "line": 1, "column": 1, "offset": 0 },
+        "end": { "line": 82, "column": 31, "offset": 3062 }
+      }
+    },
+    "scopeImports": ["import * as React from 'react'"],
+    "scopeIdentifiers": ["React"],
+    "body": "function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }\n\nfunction _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }\n\nfunction _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }\n\n/* @jsx mdx */\nvar _frontmatter = {};\nvar layoutProps = {\n  _frontmatter: _frontmatter\n};\nvar MDXLayout = \"wrapper\";\nreturn function MDXContent(_ref) {\n  var components = _ref.components,\n      props = _objectWithoutProperties(_ref, [\"components\"]);\n\n  return mdx(MDXLayout, _extends({}, layoutProps, props, {\n    components: components,\n    mdxType: \"MDXLayout\"\n  }), mdx(\"section\", null, mdx(\"h1\", {\n    parentName: \"section\"\n  }, \"eth_getTransactionReceipt\")), mdx(\"section\", null, mdx(\"h2\", {\n    parentName: \"section\"\n  }, \"/v1/jsonrpc/:network/eth_getTransactionReceipt\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, \"Returns the receipt of a transaction by transaction hash. \", mdx(\"strong\", {\n    parentName: \"p\"\n  }, \"Note\"), \" that the receipt is not available for pending\\ntransactions.\")), mdx(\"section\", null, mdx(\"h3\", {\n    parentName: \"section\"\n  }, \"REQUEST\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"p\"\n  }, \"GET https://api.backbonecabal.xyz/v1/jsonrpc/:network/eth_getTransactionReceipt?params=:paramsJSONArray\"))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"HEADERS\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"p\"\n  }, \"Content-Type: application/json\"))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"REQUEST PARAMS\"), mdx(\"ul\", {\n    parentName: \"section\"\n  }, mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"TRANSACTION HASH\"), \" \", mdx(\"em\", {\n    parentName: \"li\"\n  }, \"[required]\"), \" - a string representing the hash (32 bytes) of a transaction\"))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"EXAMPLE\"), mdx(\"pre\", {\n    parentName: \"section\"\n  }, mdx(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-bash\"\n  }), \"// HTTP GET\\ncurl -G https://api.backbonecabal.xyz/v1/jsonrpc/mainnet/eth_getTransactionReceipt --data-urlencode 'params=[\\\"0xbb3a336e3f823ec18197f1e13ee875700f08f03e2cab75f0d0b118dabb44cba0\\\"]'\\n\\n// HTTP POST\\ncurl https://mainnet.backbonecabal.xyz/ \\\\\\n    -X POST \\\\\\n    -H \\\"Content-Type: application/json\\\" \\\\\\n    -d '{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"method\\\":\\\"eth_getTransactionReceipt\\\",\\\"params\\\": [\\\"0xbb3a336e3f823ec18197f1e13ee875700f08f03e2cab75f0d0b118dabb44cba0\\\"],\\\"id\\\":1}'\\n\\n// WEBSOCKETS\\n>wscat -c wss://mainnet.backbonecabal.xyz/ws\\n>{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"method\\\":\\\"eth_getTransactionReceipt\\\",\\\"params\\\": [\\\"0xbb3a336e3f823ec18197f1e13ee875700f08f03e2cab75f0d0b118dabb44cba0\\\"],\\\"id\\\":1}\\n\"))), mdx(\"section\", null, mdx(\"h3\", {\n    parentName: \"section\"\n  }, \"RESPONSE\")), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"RESULT FIELDS\"), mdx(\"ul\", {\n    parentName: \"section\"\n  }, mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"TRANSACTION RECEIPT\"), \" - A transaction receipt object, or null when no receipt was found:\", mdx(\"ul\", {\n    parentName: \"li\"\n  }, mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"transactionHash\"), \": 32 Bytes - hash of the transaction.\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"transactionIndex\"), \": integer of the transactions index position in the block.\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"blockHash\"), \": 32 Bytes - hash of the block where this transaction was in.\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"blockNumber\"), \": block number where this transaction was in.\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"from\"), \": 20 Bytes - address of the sender.\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"to\"), \": 20 Bytes - address of the receiver. null when its a contract creation transaction.\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"cumulativeGasUsed\"), \": the total amount of gas used when this transaction was executed in the block.\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"gasUsed\"), \": the amount of gas used by this specific transaction alone.\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"contractAddress\"), \": 20 Bytes - the contract address created, if the transaction was a contract creation,\\notherwise - null.\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"logs\"), \": Array - Array of log objects, which this transaction generated.\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"logsBloom\"), \": 256 Bytes - Bloom filter for light clients to quickly retrieve related logs.\")))), mdx(\"p\", {\n    parentName: \"section\"\n  }, \"It also returns \", mdx(\"em\", {\n    parentName: \"p\"\n  }, \"either\"), \": - \", mdx(\"inlineCode\", {\n    parentName: \"p\"\n  }, \"root\"), \" : 32 bytes of post-transaction stateroot (pre Byzantium) - \", mdx(\"inlineCode\", {\n    parentName: \"p\"\n  }, \"status\"), \": either 1\\n(success) or 0 (failure)\")), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"BODY\"), mdx(\"pre\", {\n    parentName: \"section\"\n  }, mdx(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-js\"\n  }), \"{\\n\\\"id\\\":1,\\n\\\"jsonrpc\\\":\\\"2.0\\\",\\n\\\"result\\\": {\\n     transactionHash: '0xb903239f8543d04b5dc1ba6579132b143087c68db1b2168786408fcbce568238',\\n     transactionIndex:  '0x1', // 1\\n     blockNumber: '0xb', // 11\\n     blockHash: '0xc6ef2fc5426d6ad6fd9e2a26abeab0aa2411b7ab17f30a99d3cb96aed1d1055b',\\n     cumulativeGasUsed: '0x33bc', // 13244\\n     gasUsed: '0x4dc', // 1244\\n     contractAddress: '0xb60e8dd61c5d32be8058bb8eb970870f07233155', // or null, if none was created\\n     logs: [{\\n         // logs as returned by getFilterLogs, etc.\\n     }, ...],\\n     logsBloom: \\\"0x00...0\\\", // 256 byte bloom filter\\n     status: '0x1'\\n  }\\n}\\n\"))));\n}\n;\nMDXContent.isMDXComponent = true;",
+    "rawMDXOutput": "/* @jsx mdx */\nimport { mdx } from '@mdx-js/react';\n/* @jsx mdx */\n\nexport const _frontmatter = {};\n\nconst layoutProps = {\n  _frontmatter\n};\nconst MDXLayout = \"wrapper\"\nexport default function MDXContent({\n  components,\n  ...props\n}) {\n  return <MDXLayout {...layoutProps} {...props} components={components} mdxType=\"MDXLayout\">\n    <section><h1 parentName=\"section\">{`eth_getTransactionReceipt`}</h1></section>\n    <section><h2 parentName=\"section\">{`/v1/jsonrpc/:network/eth_getTransactionReceipt`}</h2><p parentName=\"section\">{`Returns the receipt of a transaction by transaction hash. `}<strong parentName=\"p\">{`Note`}</strong>{` that the receipt is not available for pending\ntransactions.`}</p></section>\n    <section><h3 parentName=\"section\">{`REQUEST`}</h3><p parentName=\"section\"><inlineCode parentName=\"p\">{`GET https://api.backbonecabal.xyz/v1/jsonrpc/:network/eth_getTransactionReceipt?params=:paramsJSONArray`}</inlineCode></p></section>\n    <section><h4 parentName=\"section\">{`HEADERS`}</h4><p parentName=\"section\"><inlineCode parentName=\"p\">{`Content-Type: application/json`}</inlineCode></p></section>\n    <section><h4 parentName=\"section\">{`REQUEST PARAMS`}</h4><ul parentName=\"section\">\n        <li parentName=\"ul\"><inlineCode parentName=\"li\">{`TRANSACTION HASH`}</inlineCode>{` `}<em parentName=\"li\">{`[required]`}</em>{` - a string representing the hash (32 bytes) of a transaction`}</li>\n      </ul></section>\n    <section><h4 parentName=\"section\">{`EXAMPLE`}</h4><pre parentName=\"section\"><code parentName=\"pre\" {...{\n          \"className\": \"language-bash\"\n        }}>{`// HTTP GET\ncurl -G https://api.backbonecabal.xyz/v1/jsonrpc/mainnet/eth_getTransactionReceipt --data-urlencode 'params=[\"0xbb3a336e3f823ec18197f1e13ee875700f08f03e2cab75f0d0b118dabb44cba0\"]'\n\n// HTTP POST\ncurl https://mainnet.backbonecabal.xyz/ \\\\\n    -X POST \\\\\n    -H \"Content-Type: application/json\" \\\\\n    -d '{\"jsonrpc\":\"2.0\",\"method\":\"eth_getTransactionReceipt\",\"params\": [\"0xbb3a336e3f823ec18197f1e13ee875700f08f03e2cab75f0d0b118dabb44cba0\"],\"id\":1}'\n\n// WEBSOCKETS\n>wscat -c wss://mainnet.backbonecabal.xyz/ws\n>{\"jsonrpc\":\"2.0\",\"method\":\"eth_getTransactionReceipt\",\"params\": [\"0xbb3a336e3f823ec18197f1e13ee875700f08f03e2cab75f0d0b118dabb44cba0\"],\"id\":1}\n`}</code></pre></section>\n    <section><h3 parentName=\"section\">{`RESPONSE`}</h3></section>\n    <section><h4 parentName=\"section\">{`RESULT FIELDS`}</h4><ul parentName=\"section\">\n        <li parentName=\"ul\"><inlineCode parentName=\"li\">{`TRANSACTION RECEIPT`}</inlineCode>{` - A transaction receipt object, or null when no receipt was found:`}<ul parentName=\"li\">\n            <li parentName=\"ul\"><inlineCode parentName=\"li\">{`transactionHash`}</inlineCode>{`: 32 Bytes - hash of the transaction.`}</li>\n            <li parentName=\"ul\"><inlineCode parentName=\"li\">{`transactionIndex`}</inlineCode>{`: integer of the transactions index position in the block.`}</li>\n            <li parentName=\"ul\"><inlineCode parentName=\"li\">{`blockHash`}</inlineCode>{`: 32 Bytes - hash of the block where this transaction was in.`}</li>\n            <li parentName=\"ul\"><inlineCode parentName=\"li\">{`blockNumber`}</inlineCode>{`: block number where this transaction was in.`}</li>\n            <li parentName=\"ul\"><inlineCode parentName=\"li\">{`from`}</inlineCode>{`: 20 Bytes - address of the sender.`}</li>\n            <li parentName=\"ul\"><inlineCode parentName=\"li\">{`to`}</inlineCode>{`: 20 Bytes - address of the receiver. null when its a contract creation transaction.`}</li>\n            <li parentName=\"ul\"><inlineCode parentName=\"li\">{`cumulativeGasUsed`}</inlineCode>{`: the total amount of gas used when this transaction was executed in the block.`}</li>\n            <li parentName=\"ul\"><inlineCode parentName=\"li\">{`gasUsed`}</inlineCode>{`: the amount of gas used by this specific transaction alone.`}</li>\n            <li parentName=\"ul\"><inlineCode parentName=\"li\">{`contractAddress`}</inlineCode>{`: 20 Bytes - the contract address created, if the transaction was a contract creation,\notherwise - null.`}</li>\n            <li parentName=\"ul\"><inlineCode parentName=\"li\">{`logs`}</inlineCode>{`: Array - Array of log objects, which this transaction generated.`}</li>\n            <li parentName=\"ul\"><inlineCode parentName=\"li\">{`logsBloom`}</inlineCode>{`: 256 Bytes - Bloom filter for light clients to quickly retrieve related logs.`}</li>\n          </ul></li>\n      </ul><p parentName=\"section\">{`It also returns `}<em parentName=\"p\">{`either`}</em>{`: - `}<inlineCode parentName=\"p\">{`root`}</inlineCode>{` : 32 bytes of post-transaction stateroot (pre Byzantium) - `}<inlineCode parentName=\"p\">{`status`}</inlineCode>{`: either 1\n(success) or 0 (failure)`}</p></section>\n    <section><h4 parentName=\"section\">{`BODY`}</h4><pre parentName=\"section\"><code parentName=\"pre\" {...{\n          \"className\": \"language-js\"\n        }}>{`{\n\"id\":1,\n\"jsonrpc\":\"2.0\",\n\"result\": {\n     transactionHash: '0xb903239f8543d04b5dc1ba6579132b143087c68db1b2168786408fcbce568238',\n     transactionIndex:  '0x1', // 1\n     blockNumber: '0xb', // 11\n     blockHash: '0xc6ef2fc5426d6ad6fd9e2a26abeab0aa2411b7ab17f30a99d3cb96aed1d1055b',\n     cumulativeGasUsed: '0x33bc', // 13244\n     gasUsed: '0x4dc', // 1244\n     contractAddress: '0xb60e8dd61c5d32be8058bb8eb970870f07233155', // or null, if none was created\n     logs: [{\n         // logs as returned by getFilterLogs, etc.\n     }, ...],\n     logsBloom: \"0x00...0\", // 256 byte bloom filter\n     status: '0x1'\n  }\n}\n`}</code></pre></section>\n\n    </MDXLayout>;\n}\n\n;\nMDXContent.isMDXComponent = true;"
+  }
+}

@@ -1,1 +1,76 @@
-{"expireTime":9007200869051276000,"key":"gatsby-plugin-mdx-entire-payload-ad19ded5f65766be4ff032ea2d400889-","val":{"mdast":{"type":"root","children":[{"type":"jsx","value":"<!-- order:285 -->","position":{"start":{"line":1,"column":1,"offset":0},"end":{"line":1,"column":19,"offset":18},"indent":[]}},{"type":"heading","depth":3,"children":[{"type":"text","value":"36. eth_protocolVersion","position":{"start":{"line":3,"column":5,"offset":24},"end":{"line":3,"column":28,"offset":47},"indent":[]}}],"position":{"start":{"line":3,"column":1,"offset":20},"end":{"line":3,"column":28,"offset":47},"indent":[]}},{"type":"paragraph","children":[{"type":"text","value":"Returns current Ethereum protocol version.","position":{"start":{"line":5,"column":1,"offset":49},"end":{"line":5,"column":43,"offset":91},"indent":[]}}],"position":{"start":{"line":5,"column":1,"offset":49},"end":{"line":5,"column":43,"offset":91},"indent":[]}},{"type":"export","value":"export const _frontmatter = {}","position":{"start":{"line":8,"column":1,"offset":94},"end":{"line":8,"column":31,"offset":124},"indent":[]}}],"position":{"start":{"line":1,"column":1,"offset":0},"end":{"line":8,"column":31,"offset":124}}},"scopeImports":["import * as React from 'react'"],"scopeIdentifiers":["React"],"body":"function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }\n\nfunction _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }\n\nfunction _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }\n\n/* @jsx mdx */\nvar _frontmatter = {};\nvar layoutProps = {\n  _frontmatter: _frontmatter\n};\nvar MDXLayout = \"wrapper\";\nreturn function MDXContent(_ref) {\n  var components = _ref.components,\n      props = _objectWithoutProperties(_ref, [\"components\"]);\n\n  return mdx(MDXLayout, _extends({}, layoutProps, props, {\n    components: components,\n    mdxType: \"MDXLayout\"\n  }), mdx(\"section\", null, mdx(\"h3\", {\n    parentName: \"section\"\n  }, \"36. eth_protocolVersion\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, \"Returns current Ethereum protocol version.\")));\n}\n;\nMDXContent.isMDXComponent = true;","rawMDXOutput":"/* @jsx mdx */\nimport { mdx } from '@mdx-js/react';\n/* @jsx mdx */\n\nexport const _frontmatter = {};\n\nconst layoutProps = {\n  _frontmatter\n};\nconst MDXLayout = \"wrapper\"\nexport default function MDXContent({\n  components,\n  ...props\n}) {\n  return <MDXLayout {...layoutProps} {...props} components={components} mdxType=\"MDXLayout\">\n    {\n      /* order:285 */\n    }\n    <section><h3 parentName=\"section\">{`36. eth_protocolVersion`}</h3><p parentName=\"section\">{`Returns current Ethereum protocol version.`}</p></section>\n\n    </MDXLayout>;\n}\n\n;\nMDXContent.isMDXComponent = true;"}}
+{
+  "expireTime": 9007200869051276000,
+  "key": "gatsby-plugin-mdx-entire-payload-ad19ded5f65766be4ff032ea2d400889-",
+  "val": {
+    "mdast": {
+      "type": "root",
+      "children": [
+        {
+          "type": "jsx",
+          "value": "<!-- order:285 -->",
+          "position": {
+            "start": { "line": 1, "column": 1, "offset": 0 },
+            "end": { "line": 1, "column": 19, "offset": 18 },
+            "indent": []
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 3,
+          "children": [
+            {
+              "type": "text",
+              "value": "36. eth_protocolVersion",
+              "position": {
+                "start": { "line": 3, "column": 5, "offset": 24 },
+                "end": { "line": 3, "column": 28, "offset": 47 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 3, "column": 1, "offset": 20 },
+            "end": { "line": 3, "column": 28, "offset": 47 },
+            "indent": []
+          }
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "Returns current Ethereum protocol version.",
+              "position": {
+                "start": { "line": 5, "column": 1, "offset": 49 },
+                "end": { "line": 5, "column": 43, "offset": 91 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 5, "column": 1, "offset": 49 },
+            "end": { "line": 5, "column": 43, "offset": 91 },
+            "indent": []
+          }
+        },
+        {
+          "type": "export",
+          "value": "export const _frontmatter = {}",
+          "position": {
+            "start": { "line": 8, "column": 1, "offset": 94 },
+            "end": { "line": 8, "column": 31, "offset": 124 },
+            "indent": []
+          }
+        }
+      ],
+      "position": {
+        "start": { "line": 1, "column": 1, "offset": 0 },
+        "end": { "line": 8, "column": 31, "offset": 124 }
+      }
+    },
+    "scopeImports": ["import * as React from 'react'"],
+    "scopeIdentifiers": ["React"],
+    "body": "function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }\n\nfunction _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }\n\nfunction _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }\n\n/* @jsx mdx */\nvar _frontmatter = {};\nvar layoutProps = {\n  _frontmatter: _frontmatter\n};\nvar MDXLayout = \"wrapper\";\nreturn function MDXContent(_ref) {\n  var components = _ref.components,\n      props = _objectWithoutProperties(_ref, [\"components\"]);\n\n  return mdx(MDXLayout, _extends({}, layoutProps, props, {\n    components: components,\n    mdxType: \"MDXLayout\"\n  }), mdx(\"section\", null, mdx(\"h3\", {\n    parentName: \"section\"\n  }, \"36. eth_protocolVersion\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, \"Returns current Ethereum protocol version.\")));\n}\n;\nMDXContent.isMDXComponent = true;",
+    "rawMDXOutput": "/* @jsx mdx */\nimport { mdx } from '@mdx-js/react';\n/* @jsx mdx */\n\nexport const _frontmatter = {};\n\nconst layoutProps = {\n  _frontmatter\n};\nconst MDXLayout = \"wrapper\"\nexport default function MDXContent({\n  components,\n  ...props\n}) {\n  return <MDXLayout {...layoutProps} {...props} components={components} mdxType=\"MDXLayout\">\n    {\n      /* order:285 */\n    }\n    <section><h3 parentName=\"section\">{`36. eth_protocolVersion`}</h3><p parentName=\"section\">{`Returns current Ethereum protocol version.`}</p></section>\n\n    </MDXLayout>;\n}\n\n;\nMDXContent.isMDXComponent = true;"
+  }
+}

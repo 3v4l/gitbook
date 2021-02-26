@@ -1,9 +1,9 @@
-const fs = require('fs');
+const fs = require("fs");
 
-const _ = require('lodash');
-const defaults = require('../../config/default');
-const { readYamlOrJson } = require('./fileUtils');
-const processPwa = require('./config-pwa');
+const _ = require("lodash");
+const defaults = require("../../config/default");
+const { readYamlOrJson } = require("./fileUtils");
+const processPwa = require("./config-pwa");
 
 const generate = (path, config) => {
   const generated = `module.exports = ${JSON.stringify(config, undefined, 4)};`;
@@ -25,7 +25,10 @@ class ConfigReader {
 
 class FileReader extends ConfigReader {
   getPath() {
-    return readEnvOrDefault('CONFIG_PATH', __dirname + '/../../config/config.yml');
+    return readEnvOrDefault(
+      "CONFIG_PATH",
+      __dirname + "/../../config/config.yml"
+    );
   }
 
   read() {
@@ -38,7 +41,7 @@ class EnvReader extends ConfigReader {
   readArray(key) {
     const value = this.readValue(key);
     if (value) {
-      return value.split(',').map(String.trim);
+      return value.split(",").map(String.trim);
     }
     return value;
   }
@@ -47,11 +50,11 @@ class EnvReader extends ConfigReader {
     if (key in process.env) {
       const value = process.env[key];
       try {
-        if (value === 'true') {
+        if (value === "true") {
           return true;
-        } else if (value === 'false') {
+        } else if (value === "false") {
           return false;
-        } else if (typeof value === 'number') {
+        } else if (typeof value === "number") {
           return parseFloat(value);
         }
         return value;
@@ -66,24 +69,24 @@ class EnvReader extends ConfigReader {
     const suffix = key
       .split(/(?=[A-Z])/)
       .map((str) => str.toUpperCase())
-      .join('_');
-    return prefix !== '' ? `${prefix}_${suffix}` : suffix;
+      .join("_");
+    return prefix !== "" ? `${prefix}_${suffix}` : suffix;
   }
 
   readObject(obj, config, prefix) {
     for (let [key, value] of Object.entries(obj)) {
       const newPrefix = this.generatePrefix(prefix, key);
       if (
-        typeof value === 'string' ||
-        typeof value === 'number' ||
-        typeof value === 'boolean' ||
+        typeof value === "string" ||
+        typeof value === "number" ||
+        typeof value === "boolean" ||
         value === null
       ) {
         const value = this.readValue(newPrefix);
         if (value !== undefined) {
           config[key] = value;
         }
-      } else if (typeof value === 'object') {
+      } else if (typeof value === "object") {
         if (Array.isArray(value)) {
           const value = this.readArray(newPrefix);
           if (value !== undefined) {
@@ -100,7 +103,7 @@ class EnvReader extends ConfigReader {
 
   read() {
     const config = {};
-    this.readObject(defaults, config, '');
+    this.readObject(defaults, config, "");
     return config;
   }
 }
@@ -113,16 +116,19 @@ class NetlifyEnvReader extends ConfigReader {
 
   read() {
     let result = {};
-    if (this.allowNetlifyEnvPropagation && readEnvOrDefault('NETLIFY', false)) {
-      const context = readEnvOrDefault('CONTEXT');
-      const repositoryUrl = readEnvOrDefault('REPOSITORY_URL');
-      const url = readEnvOrDefault('URL');
-      const deployUrl = context === 'production' ? url : readEnvOrDefault('DEPLOY_PRIME_URL', url);
+    if (this.allowNetlifyEnvPropagation && readEnvOrDefault("NETLIFY", false)) {
+      const context = readEnvOrDefault("CONTEXT");
+      const repositoryUrl = readEnvOrDefault("REPOSITORY_URL");
+      const url = readEnvOrDefault("URL");
+      const deployUrl =
+        context === "production"
+          ? url
+          : readEnvOrDefault("DEPLOY_PRIME_URL", url);
       console.log(
-        'Setting up Netlify variables.',
-        'URL:',
+        "Setting up Netlify variables.",
+        "URL:",
         deployUrl,
-        'Docs Location:',
+        "Docs Location:",
         repositoryUrl
       );
       result = {
@@ -147,7 +153,9 @@ const read = () => {
 
   let config = _.merge(def, fileConfig);
   config = _.merge(config, envConfig);
-  const netlifyConfig = new NetlifyEnvReader(config.features.propagateNetlifyEnv).read();
+  const netlifyConfig = new NetlifyEnvReader(
+    config.features.propagateNetlifyEnv
+  ).read();
   config = _.merge(config, netlifyConfig);
   postProcessConfig(config);
   return config;

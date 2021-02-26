@@ -1,1 +1,320 @@
-{"expireTime":9007200869051275000,"key":"gatsby-plugin-mdx-entire-payload-5849e86d3f6a51e15673798adc955428-","val":{"mdast":{"type":"root","children":[{"type":"heading","depth":1,"children":[{"type":"text","value":"net_listening","position":{"start":{"line":1,"column":3,"offset":2},"end":{"line":1,"column":16,"offset":15},"indent":[]}}],"position":{"start":{"line":1,"column":1,"offset":0},"end":{"line":1,"column":16,"offset":15},"indent":[]}},{"type":"heading","depth":2,"children":[{"type":"text","value":"/v1/jsonrpc/:network/net_listening","position":{"start":{"line":3,"column":4,"offset":20},"end":{"line":3,"column":38,"offset":54},"indent":[]}}],"position":{"start":{"line":3,"column":1,"offset":17},"end":{"line":3,"column":38,"offset":54},"indent":[]}},{"type":"paragraph","children":[{"type":"text","value":"Returns true if client is actively listening for network connections.","position":{"start":{"line":5,"column":1,"offset":56},"end":{"line":5,"column":70,"offset":125},"indent":[]}}],"position":{"start":{"line":5,"column":1,"offset":56},"end":{"line":5,"column":70,"offset":125},"indent":[]}},{"type":"heading","depth":3,"children":[{"type":"text","value":"REQUEST","position":{"start":{"line":7,"column":5,"offset":131},"end":{"line":7,"column":12,"offset":138},"indent":[]}}],"position":{"start":{"line":7,"column":1,"offset":127},"end":{"line":7,"column":12,"offset":138},"indent":[]}},{"type":"paragraph","children":[{"type":"inlineCode","value":"GET https://api.backbonecabal.xyz/v1/jsonrpc/:network/net_listening","position":{"start":{"line":9,"column":1,"offset":140},"end":{"line":9,"column":70,"offset":209},"indent":[]}}],"position":{"start":{"line":9,"column":1,"offset":140},"end":{"line":9,"column":70,"offset":209},"indent":[]}},{"type":"heading","depth":4,"children":[{"type":"text","value":"HEADERS","position":{"start":{"line":11,"column":6,"offset":216},"end":{"line":11,"column":13,"offset":223},"indent":[]}}],"position":{"start":{"line":11,"column":1,"offset":211},"end":{"line":11,"column":13,"offset":223},"indent":[]}},{"type":"paragraph","children":[{"type":"inlineCode","value":"Content-Type: application/json","position":{"start":{"line":13,"column":1,"offset":225},"end":{"line":13,"column":33,"offset":257},"indent":[]}}],"position":{"start":{"line":13,"column":1,"offset":225},"end":{"line":13,"column":33,"offset":257},"indent":[]}},{"type":"heading","depth":4,"children":[{"type":"text","value":"EXAMPLE","position":{"start":{"line":15,"column":6,"offset":264},"end":{"line":15,"column":13,"offset":271},"indent":[]}}],"position":{"start":{"line":15,"column":1,"offset":259},"end":{"line":15,"column":13,"offset":271},"indent":[]}},{"type":"code","lang":"bash","meta":null,"value":"// HTTP GET\ncurl -G https://api.backbonecabal.xyz/v1/jsonrpc/mainnet/net_listening\n\n// HTTP POST\ncurl https://mainnet.backbonecabal.xyz/ \\\n    -X POST \\\n    -H \"Content-Type: application/json\" \\\n    -d '{\"jsonrpc\":\"2.0\",\"method\":\"net_listening\",\"params\": [],\"id\":1}'\n\n// WEBSOCKETS\n>wscat -c wss://mainnet.backbonecabal.xyz/ws\n>{\"jsonrpc\":\"2.0\",\"method\":\"net_listening\",\"params\": [],\"id\":1}","position":{"start":{"line":17,"column":1,"offset":273},"end":{"line":30,"column":4,"offset":675},"indent":[1,1,1,1,1,1,1,1,1,1,1,1,1]}},{"type":"heading","depth":3,"children":[{"type":"text","value":"RESPONSE","position":{"start":{"line":32,"column":5,"offset":681},"end":{"line":32,"column":13,"offset":689},"indent":[]}}],"position":{"start":{"line":32,"column":1,"offset":677},"end":{"line":32,"column":13,"offset":689},"indent":[]}},{"type":"heading","depth":4,"children":[{"type":"text","value":"RESULT FIELDS","position":{"start":{"line":34,"column":6,"offset":696},"end":{"line":34,"column":19,"offset":709},"indent":[]}}],"position":{"start":{"line":34,"column":1,"offset":691},"end":{"line":34,"column":19,"offset":709},"indent":[]}},{"type":"list","ordered":false,"start":null,"spread":false,"children":[{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"inlineCode","value":"LISTENING FLAG","position":{"start":{"line":36,"column":5,"offset":715},"end":{"line":36,"column":21,"offset":731},"indent":[]}},{"type":"text","value":" - a boolean indicating whether the client is actively listening for network connections","position":{"start":{"line":36,"column":21,"offset":731},"end":{"line":36,"column":109,"offset":819},"indent":[]}}],"position":{"start":{"line":36,"column":5,"offset":715},"end":{"line":36,"column":109,"offset":819},"indent":[]}}],"position":{"start":{"line":36,"column":1,"offset":711},"end":{"line":36,"column":109,"offset":819},"indent":[]}}],"position":{"start":{"line":36,"column":1,"offset":711},"end":{"line":36,"column":109,"offset":819},"indent":[]}},{"type":"heading","depth":4,"children":[{"type":"text","value":"BODY","position":{"start":{"line":38,"column":6,"offset":826},"end":{"line":38,"column":10,"offset":830},"indent":[]}}],"position":{"start":{"line":38,"column":1,"offset":821},"end":{"line":38,"column":10,"offset":830},"indent":[]}},{"type":"code","lang":"js","meta":null,"value":"{\n    jsonrpc: \"2.0\",\n    id: 1,\n    result: true\n}","position":{"start":{"line":40,"column":1,"offset":832},"end":{"line":46,"column":4,"offset":893},"indent":[1,1,1,1,1,1]}},{"type":"export","value":"export const _frontmatter = {}","position":{"start":{"line":49,"column":1,"offset":896},"end":{"line":49,"column":31,"offset":926},"indent":[]}}],"position":{"start":{"line":1,"column":1,"offset":0},"end":{"line":49,"column":31,"offset":926}}},"scopeImports":["import * as React from 'react'"],"scopeIdentifiers":["React"],"body":"function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }\n\nfunction _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }\n\nfunction _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }\n\n/* @jsx mdx */\nvar _frontmatter = {};\nvar layoutProps = {\n  _frontmatter: _frontmatter\n};\nvar MDXLayout = \"wrapper\";\nreturn function MDXContent(_ref) {\n  var components = _ref.components,\n      props = _objectWithoutProperties(_ref, [\"components\"]);\n\n  return mdx(MDXLayout, _extends({}, layoutProps, props, {\n    components: components,\n    mdxType: \"MDXLayout\"\n  }), mdx(\"section\", null, mdx(\"h1\", {\n    parentName: \"section\"\n  }, \"net_listening\")), mdx(\"section\", null, mdx(\"h2\", {\n    parentName: \"section\"\n  }, \"/v1/jsonrpc/:network/net_listening\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, \"Returns true if client is actively listening for network connections.\")), mdx(\"section\", null, mdx(\"h3\", {\n    parentName: \"section\"\n  }, \"REQUEST\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"p\"\n  }, \"GET https://api.backbonecabal.xyz/v1/jsonrpc/:network/net_listening\"))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"HEADERS\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"p\"\n  }, \"Content-Type: application/json\"))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"EXAMPLE\"), mdx(\"pre\", {\n    parentName: \"section\"\n  }, mdx(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-bash\"\n  }), \"// HTTP GET\\ncurl -G https://api.backbonecabal.xyz/v1/jsonrpc/mainnet/net_listening\\n\\n// HTTP POST\\ncurl https://mainnet.backbonecabal.xyz/ \\\\\\n    -X POST \\\\\\n    -H \\\"Content-Type: application/json\\\" \\\\\\n    -d '{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"method\\\":\\\"net_listening\\\",\\\"params\\\": [],\\\"id\\\":1}'\\n\\n// WEBSOCKETS\\n>wscat -c wss://mainnet.backbonecabal.xyz/ws\\n>{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"method\\\":\\\"net_listening\\\",\\\"params\\\": [],\\\"id\\\":1}\\n\"))), mdx(\"section\", null, mdx(\"h3\", {\n    parentName: \"section\"\n  }, \"RESPONSE\")), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"RESULT FIELDS\"), mdx(\"ul\", {\n    parentName: \"section\"\n  }, mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"LISTENING FLAG\"), \" - a boolean indicating whether the client is actively listening for network connections\"))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"BODY\"), mdx(\"pre\", {\n    parentName: \"section\"\n  }, mdx(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-js\"\n  }), \"{\\n    jsonrpc: \\\"2.0\\\",\\n    id: 1,\\n    result: true\\n}\\n\"))));\n}\n;\nMDXContent.isMDXComponent = true;","rawMDXOutput":"/* @jsx mdx */\nimport { mdx } from '@mdx-js/react';\n/* @jsx mdx */\n\nexport const _frontmatter = {};\n\nconst layoutProps = {\n  _frontmatter\n};\nconst MDXLayout = \"wrapper\"\nexport default function MDXContent({\n  components,\n  ...props\n}) {\n  return <MDXLayout {...layoutProps} {...props} components={components} mdxType=\"MDXLayout\">\n    <section><h1 parentName=\"section\">{`net_listening`}</h1></section>\n    <section><h2 parentName=\"section\">{`/v1/jsonrpc/:network/net_listening`}</h2><p parentName=\"section\">{`Returns true if client is actively listening for network connections.`}</p></section>\n    <section><h3 parentName=\"section\">{`REQUEST`}</h3><p parentName=\"section\"><inlineCode parentName=\"p\">{`GET https://api.backbonecabal.xyz/v1/jsonrpc/:network/net_listening`}</inlineCode></p></section>\n    <section><h4 parentName=\"section\">{`HEADERS`}</h4><p parentName=\"section\"><inlineCode parentName=\"p\">{`Content-Type: application/json`}</inlineCode></p></section>\n    <section><h4 parentName=\"section\">{`EXAMPLE`}</h4><pre parentName=\"section\"><code parentName=\"pre\" {...{\n          \"className\": \"language-bash\"\n        }}>{`// HTTP GET\ncurl -G https://api.backbonecabal.xyz/v1/jsonrpc/mainnet/net_listening\n\n// HTTP POST\ncurl https://mainnet.backbonecabal.xyz/ \\\\\n    -X POST \\\\\n    -H \"Content-Type: application/json\" \\\\\n    -d '{\"jsonrpc\":\"2.0\",\"method\":\"net_listening\",\"params\": [],\"id\":1}'\n\n// WEBSOCKETS\n>wscat -c wss://mainnet.backbonecabal.xyz/ws\n>{\"jsonrpc\":\"2.0\",\"method\":\"net_listening\",\"params\": [],\"id\":1}\n`}</code></pre></section>\n    <section><h3 parentName=\"section\">{`RESPONSE`}</h3></section>\n    <section><h4 parentName=\"section\">{`RESULT FIELDS`}</h4><ul parentName=\"section\">\n        <li parentName=\"ul\"><inlineCode parentName=\"li\">{`LISTENING FLAG`}</inlineCode>{` - a boolean indicating whether the client is actively listening for network connections`}</li>\n      </ul></section>\n    <section><h4 parentName=\"section\">{`BODY`}</h4><pre parentName=\"section\"><code parentName=\"pre\" {...{\n          \"className\": \"language-js\"\n        }}>{`{\n    jsonrpc: \"2.0\",\n    id: 1,\n    result: true\n}\n`}</code></pre></section>\n\n    </MDXLayout>;\n}\n\n;\nMDXContent.isMDXComponent = true;"}}
+{
+  "expireTime": 9007200869051275000,
+  "key": "gatsby-plugin-mdx-entire-payload-5849e86d3f6a51e15673798adc955428-",
+  "val": {
+    "mdast": {
+      "type": "root",
+      "children": [
+        {
+          "type": "heading",
+          "depth": 1,
+          "children": [
+            {
+              "type": "text",
+              "value": "net_listening",
+              "position": {
+                "start": { "line": 1, "column": 3, "offset": 2 },
+                "end": { "line": 1, "column": 16, "offset": 15 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 1, "column": 1, "offset": 0 },
+            "end": { "line": 1, "column": 16, "offset": 15 },
+            "indent": []
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 2,
+          "children": [
+            {
+              "type": "text",
+              "value": "/v1/jsonrpc/:network/net_listening",
+              "position": {
+                "start": { "line": 3, "column": 4, "offset": 20 },
+                "end": { "line": 3, "column": 38, "offset": 54 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 3, "column": 1, "offset": 17 },
+            "end": { "line": 3, "column": 38, "offset": 54 },
+            "indent": []
+          }
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "Returns true if client is actively listening for network connections.",
+              "position": {
+                "start": { "line": 5, "column": 1, "offset": 56 },
+                "end": { "line": 5, "column": 70, "offset": 125 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 5, "column": 1, "offset": 56 },
+            "end": { "line": 5, "column": 70, "offset": 125 },
+            "indent": []
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 3,
+          "children": [
+            {
+              "type": "text",
+              "value": "REQUEST",
+              "position": {
+                "start": { "line": 7, "column": 5, "offset": 131 },
+                "end": { "line": 7, "column": 12, "offset": 138 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 7, "column": 1, "offset": 127 },
+            "end": { "line": 7, "column": 12, "offset": 138 },
+            "indent": []
+          }
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "inlineCode",
+              "value": "GET https://api.backbonecabal.xyz/v1/jsonrpc/:network/net_listening",
+              "position": {
+                "start": { "line": 9, "column": 1, "offset": 140 },
+                "end": { "line": 9, "column": 70, "offset": 209 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 9, "column": 1, "offset": 140 },
+            "end": { "line": 9, "column": 70, "offset": 209 },
+            "indent": []
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 4,
+          "children": [
+            {
+              "type": "text",
+              "value": "HEADERS",
+              "position": {
+                "start": { "line": 11, "column": 6, "offset": 216 },
+                "end": { "line": 11, "column": 13, "offset": 223 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 11, "column": 1, "offset": 211 },
+            "end": { "line": 11, "column": 13, "offset": 223 },
+            "indent": []
+          }
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "inlineCode",
+              "value": "Content-Type: application/json",
+              "position": {
+                "start": { "line": 13, "column": 1, "offset": 225 },
+                "end": { "line": 13, "column": 33, "offset": 257 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 13, "column": 1, "offset": 225 },
+            "end": { "line": 13, "column": 33, "offset": 257 },
+            "indent": []
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 4,
+          "children": [
+            {
+              "type": "text",
+              "value": "EXAMPLE",
+              "position": {
+                "start": { "line": 15, "column": 6, "offset": 264 },
+                "end": { "line": 15, "column": 13, "offset": 271 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 15, "column": 1, "offset": 259 },
+            "end": { "line": 15, "column": 13, "offset": 271 },
+            "indent": []
+          }
+        },
+        {
+          "type": "code",
+          "lang": "bash",
+          "meta": null,
+          "value": "// HTTP GET\ncurl -G https://api.backbonecabal.xyz/v1/jsonrpc/mainnet/net_listening\n\n// HTTP POST\ncurl https://mainnet.backbonecabal.xyz/ \\\n    -X POST \\\n    -H \"Content-Type: application/json\" \\\n    -d '{\"jsonrpc\":\"2.0\",\"method\":\"net_listening\",\"params\": [],\"id\":1}'\n\n// WEBSOCKETS\n>wscat -c wss://mainnet.backbonecabal.xyz/ws\n>{\"jsonrpc\":\"2.0\",\"method\":\"net_listening\",\"params\": [],\"id\":1}",
+          "position": {
+            "start": { "line": 17, "column": 1, "offset": 273 },
+            "end": { "line": 30, "column": 4, "offset": 675 },
+            "indent": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 3,
+          "children": [
+            {
+              "type": "text",
+              "value": "RESPONSE",
+              "position": {
+                "start": { "line": 32, "column": 5, "offset": 681 },
+                "end": { "line": 32, "column": 13, "offset": 689 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 32, "column": 1, "offset": 677 },
+            "end": { "line": 32, "column": 13, "offset": 689 },
+            "indent": []
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 4,
+          "children": [
+            {
+              "type": "text",
+              "value": "RESULT FIELDS",
+              "position": {
+                "start": { "line": 34, "column": 6, "offset": 696 },
+                "end": { "line": 34, "column": 19, "offset": 709 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 34, "column": 1, "offset": 691 },
+            "end": { "line": 34, "column": 19, "offset": 709 },
+            "indent": []
+          }
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "start": null,
+          "spread": false,
+          "children": [
+            {
+              "type": "listItem",
+              "spread": false,
+              "checked": null,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "inlineCode",
+                      "value": "LISTENING FLAG",
+                      "position": {
+                        "start": { "line": 36, "column": 5, "offset": 715 },
+                        "end": { "line": 36, "column": 21, "offset": 731 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "value": " - a boolean indicating whether the client is actively listening for network connections",
+                      "position": {
+                        "start": { "line": 36, "column": 21, "offset": 731 },
+                        "end": { "line": 36, "column": 109, "offset": 819 },
+                        "indent": []
+                      }
+                    }
+                  ],
+                  "position": {
+                    "start": { "line": 36, "column": 5, "offset": 715 },
+                    "end": { "line": 36, "column": 109, "offset": 819 },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": { "line": 36, "column": 1, "offset": 711 },
+                "end": { "line": 36, "column": 109, "offset": 819 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 36, "column": 1, "offset": 711 },
+            "end": { "line": 36, "column": 109, "offset": 819 },
+            "indent": []
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 4,
+          "children": [
+            {
+              "type": "text",
+              "value": "BODY",
+              "position": {
+                "start": { "line": 38, "column": 6, "offset": 826 },
+                "end": { "line": 38, "column": 10, "offset": 830 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 38, "column": 1, "offset": 821 },
+            "end": { "line": 38, "column": 10, "offset": 830 },
+            "indent": []
+          }
+        },
+        {
+          "type": "code",
+          "lang": "js",
+          "meta": null,
+          "value": "{\n    jsonrpc: \"2.0\",\n    id: 1,\n    result: true\n}",
+          "position": {
+            "start": { "line": 40, "column": 1, "offset": 832 },
+            "end": { "line": 46, "column": 4, "offset": 893 },
+            "indent": [1, 1, 1, 1, 1, 1]
+          }
+        },
+        {
+          "type": "export",
+          "value": "export const _frontmatter = {}",
+          "position": {
+            "start": { "line": 49, "column": 1, "offset": 896 },
+            "end": { "line": 49, "column": 31, "offset": 926 },
+            "indent": []
+          }
+        }
+      ],
+      "position": {
+        "start": { "line": 1, "column": 1, "offset": 0 },
+        "end": { "line": 49, "column": 31, "offset": 926 }
+      }
+    },
+    "scopeImports": ["import * as React from 'react'"],
+    "scopeIdentifiers": ["React"],
+    "body": "function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }\n\nfunction _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }\n\nfunction _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }\n\n/* @jsx mdx */\nvar _frontmatter = {};\nvar layoutProps = {\n  _frontmatter: _frontmatter\n};\nvar MDXLayout = \"wrapper\";\nreturn function MDXContent(_ref) {\n  var components = _ref.components,\n      props = _objectWithoutProperties(_ref, [\"components\"]);\n\n  return mdx(MDXLayout, _extends({}, layoutProps, props, {\n    components: components,\n    mdxType: \"MDXLayout\"\n  }), mdx(\"section\", null, mdx(\"h1\", {\n    parentName: \"section\"\n  }, \"net_listening\")), mdx(\"section\", null, mdx(\"h2\", {\n    parentName: \"section\"\n  }, \"/v1/jsonrpc/:network/net_listening\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, \"Returns true if client is actively listening for network connections.\")), mdx(\"section\", null, mdx(\"h3\", {\n    parentName: \"section\"\n  }, \"REQUEST\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"p\"\n  }, \"GET https://api.backbonecabal.xyz/v1/jsonrpc/:network/net_listening\"))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"HEADERS\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"p\"\n  }, \"Content-Type: application/json\"))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"EXAMPLE\"), mdx(\"pre\", {\n    parentName: \"section\"\n  }, mdx(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-bash\"\n  }), \"// HTTP GET\\ncurl -G https://api.backbonecabal.xyz/v1/jsonrpc/mainnet/net_listening\\n\\n// HTTP POST\\ncurl https://mainnet.backbonecabal.xyz/ \\\\\\n    -X POST \\\\\\n    -H \\\"Content-Type: application/json\\\" \\\\\\n    -d '{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"method\\\":\\\"net_listening\\\",\\\"params\\\": [],\\\"id\\\":1}'\\n\\n// WEBSOCKETS\\n>wscat -c wss://mainnet.backbonecabal.xyz/ws\\n>{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"method\\\":\\\"net_listening\\\",\\\"params\\\": [],\\\"id\\\":1}\\n\"))), mdx(\"section\", null, mdx(\"h3\", {\n    parentName: \"section\"\n  }, \"RESPONSE\")), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"RESULT FIELDS\"), mdx(\"ul\", {\n    parentName: \"section\"\n  }, mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"LISTENING FLAG\"), \" - a boolean indicating whether the client is actively listening for network connections\"))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"BODY\"), mdx(\"pre\", {\n    parentName: \"section\"\n  }, mdx(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-js\"\n  }), \"{\\n    jsonrpc: \\\"2.0\\\",\\n    id: 1,\\n    result: true\\n}\\n\"))));\n}\n;\nMDXContent.isMDXComponent = true;",
+    "rawMDXOutput": "/* @jsx mdx */\nimport { mdx } from '@mdx-js/react';\n/* @jsx mdx */\n\nexport const _frontmatter = {};\n\nconst layoutProps = {\n  _frontmatter\n};\nconst MDXLayout = \"wrapper\"\nexport default function MDXContent({\n  components,\n  ...props\n}) {\n  return <MDXLayout {...layoutProps} {...props} components={components} mdxType=\"MDXLayout\">\n    <section><h1 parentName=\"section\">{`net_listening`}</h1></section>\n    <section><h2 parentName=\"section\">{`/v1/jsonrpc/:network/net_listening`}</h2><p parentName=\"section\">{`Returns true if client is actively listening for network connections.`}</p></section>\n    <section><h3 parentName=\"section\">{`REQUEST`}</h3><p parentName=\"section\"><inlineCode parentName=\"p\">{`GET https://api.backbonecabal.xyz/v1/jsonrpc/:network/net_listening`}</inlineCode></p></section>\n    <section><h4 parentName=\"section\">{`HEADERS`}</h4><p parentName=\"section\"><inlineCode parentName=\"p\">{`Content-Type: application/json`}</inlineCode></p></section>\n    <section><h4 parentName=\"section\">{`EXAMPLE`}</h4><pre parentName=\"section\"><code parentName=\"pre\" {...{\n          \"className\": \"language-bash\"\n        }}>{`// HTTP GET\ncurl -G https://api.backbonecabal.xyz/v1/jsonrpc/mainnet/net_listening\n\n// HTTP POST\ncurl https://mainnet.backbonecabal.xyz/ \\\\\n    -X POST \\\\\n    -H \"Content-Type: application/json\" \\\\\n    -d '{\"jsonrpc\":\"2.0\",\"method\":\"net_listening\",\"params\": [],\"id\":1}'\n\n// WEBSOCKETS\n>wscat -c wss://mainnet.backbonecabal.xyz/ws\n>{\"jsonrpc\":\"2.0\",\"method\":\"net_listening\",\"params\": [],\"id\":1}\n`}</code></pre></section>\n    <section><h3 parentName=\"section\">{`RESPONSE`}</h3></section>\n    <section><h4 parentName=\"section\">{`RESULT FIELDS`}</h4><ul parentName=\"section\">\n        <li parentName=\"ul\"><inlineCode parentName=\"li\">{`LISTENING FLAG`}</inlineCode>{` - a boolean indicating whether the client is actively listening for network connections`}</li>\n      </ul></section>\n    <section><h4 parentName=\"section\">{`BODY`}</h4><pre parentName=\"section\"><code parentName=\"pre\" {...{\n          \"className\": \"language-js\"\n        }}>{`{\n    jsonrpc: \"2.0\",\n    id: 1,\n    result: true\n}\n`}</code></pre></section>\n\n    </MDXLayout>;\n}\n\n;\nMDXContent.isMDXComponent = true;"
+  }
+}

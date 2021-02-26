@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from '@emotion/styled';
-import { useTheme } from 'emotion-theming';
-import { AlertCircle, AlertOctagon, AlertTriangle } from 'react-feather';
-import { css } from '@emotion/core';
+import React from "react";
+import styled from "@emotion/styled";
+import { useTheme } from "emotion-theming";
+import { AlertCircle, AlertOctagon, AlertTriangle } from "react-feather";
+import { css } from "@emotion/core";
 
 const skipParagraph = css`
   .paragraph {
@@ -38,7 +38,7 @@ const Highlight = ({ children, color, icon, ...props }) => {
       font={highlightColor.font}
       {...props}
     >
-      <div css={{ marginRight: '16px', lineHeight: 0 }}>
+      <div css={{ marginRight: "16px", lineHeight: 0 }}>
         {icon.render({ color: highlightColor.border, size: 24 })}
       </div>
       <div css={skipParagraph}>{children}</div>
@@ -49,25 +49,25 @@ const Highlight = ({ children, color, icon, ...props }) => {
 export default {
   Warning: (props) =>
     Highlight({
-      color: 'warning',
+      color: "warning",
       icon: AlertTriangle,
       ...props,
     }),
   Error: (props) =>
     Highlight({
-      color: 'error',
+      color: "error",
       icon: AlertOctagon,
       ...props,
     }),
   Info: (props) =>
     Highlight({
-      color: 'info',
+      color: "info",
       icon: AlertCircle,
       ...props,
     }),
   Tip: (props) =>
     Highlight({
-      color: 'tip',
+      color: "tip",
       icon: AlertCircle,
       ...props,
     }),

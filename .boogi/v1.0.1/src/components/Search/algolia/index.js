@@ -1,20 +1,20 @@
-import React, { createRef } from 'react';
+import React, { createRef } from "react";
 import {
   InstantSearch,
   Index,
   Hits,
   Configure,
   connectStateResults,
-} from 'react-instantsearch-dom';
-import algoliasearch from 'algoliasearch/lite';
-import { HitsWrapper } from '../Hits';
-import config from 'config';
-import Input from './input';
-import { PageHit } from './hitComps';
-import styled from '@emotion/styled';
-import SearchStatus from '../Status';
-import Pagination from './pagination';
-import Stats from './stats';
+} from "react-instantsearch-dom";
+import algoliasearch from "algoliasearch/lite";
+import { HitsWrapper } from "../Hits";
+import config from "config";
+import Input from "./input";
+import { PageHit } from "./hitComps";
+import styled from "@emotion/styled";
+import SearchStatus from "../Status";
+import Pagination from "./pagination";
+import Stats from "./stats";
 
 const Root = styled.div`
   position: relative;
@@ -30,13 +30,19 @@ const Root = styled.div`
 //     (searching && `Searching...`) || (res && res.nbHits === 0 && `No results for '${state.query}'`)
 // );
 
-const Results = connectStateResults(({ searching, searchState: state, searchResults: res }) => (
-  <SearchStatus noHits={res && res.nbHits === 0} searching={searching} query={state.query} />
-));
+const Results = connectStateResults(
+  ({ searching, searchState: state, searchResults: res }) => (
+    <SearchStatus
+      noHits={res && res.nbHits === 0}
+      searching={searching}
+      query={state.query}
+    />
+  )
+);
 
 class Algolia extends React.Component {
   state = {
-    query: '',
+    query: "",
     focus: false,
   };
 
@@ -68,7 +74,7 @@ class Algolia extends React.Component {
           {...{ focus }}
         />
 
-        <div style={{ flex: '1' }}>
+        <div style={{ flex: "1" }}>
           {showResults && config.features.search.showStats ? (
             <div>
               <Stats />
@@ -82,7 +88,7 @@ class Algolia extends React.Component {
                   <Hits hitComponent={PageHit} />
                 </>
               ) : (
-                ''
+                ""
               )}
             </Index>
           </HitsWrapper>
@@ -96,8 +102,10 @@ class Algolia extends React.Component {
         ) : null}
         <Configure
           hitsPerPage={config.features.search.hitsPerPage}
-          attributesToSnippet={[`excerpt:${config.features.search.snippetLength}`]}
-          snippetEllipsisText={'...'}
+          attributesToSnippet={[
+            `excerpt:${config.features.search.snippetLength}`,
+          ]}
+          snippetEllipsisText={"..."}
         />
       </InstantSearch>
     );

@@ -1,5 +1,5 @@
-import { css } from '@emotion/core';
-import { onMobile, onTablet } from './responsive';
+import { css } from "@emotion/core";
+import { onMobile, onTablet } from "./responsive";
 
 export const show = css`
   display: block;
@@ -49,7 +49,7 @@ export const blockquote = (theme) => css`
   background: ${theme.colors.border};
 
   &::before {
-    content: '\\201C';
+    content: "\\201C";
     color: ${theme.colors.primary};
     font-size: 4em;
     position: absolute;
@@ -58,7 +58,7 @@ export const blockquote = (theme) => css`
   }
 
   &::after {
-    content: '';
+    content: "";
   }
   p {
     font-size: 16px;
@@ -204,27 +204,27 @@ export const list = css`
 `;
 
 export const hiddenMobile = css`
-${onMobile} {
-  display: none;
-}
+  ${onMobile} {
+    display: none;
+  }
 `;
 
 export const hiddenTablet = css`
-${onTablet} {
-  display: none;
-}
+  ${onTablet} {
+    display: none;
+  }
 `;
 
 export const visibleMobile = css`
-display: none;
-${onMobile} {
-  display: flex;
-}
+  display: none;
+  ${onMobile} {
+    display: flex;
+  }
 `;
 
 export const visibleTablet = css`
-display: none;
-${onTablet} {
-  display: flex;
-}
+  display: none;
+  ${onTablet} {
+    display: flex;
+  }
 `;

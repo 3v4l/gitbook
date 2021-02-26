@@ -1,1 +1,467 @@
-{"expireTime":9007200869051275000,"key":"gatsby-plugin-mdx-entire-payload-b3e4d67688228dfd5ffe21ecf478743c-","val":{"mdast":{"type":"root","children":[{"type":"heading","depth":1,"children":[{"type":"text","value":"eth_getUncleCountByBlockNumber","position":{"start":{"line":1,"column":3,"offset":2},"end":{"line":1,"column":33,"offset":32},"indent":[]}}],"position":{"start":{"line":1,"column":1,"offset":0},"end":{"line":1,"column":33,"offset":32},"indent":[]}},{"type":"heading","depth":2,"children":[{"type":"text","value":"/v1/jsonrpc/:network/eth_getUncleCountByBlockNumber","position":{"start":{"line":3,"column":4,"offset":37},"end":{"line":3,"column":55,"offset":88},"indent":[]}}],"position":{"start":{"line":3,"column":1,"offset":34},"end":{"line":3,"column":55,"offset":88},"indent":[]}},{"type":"paragraph","children":[{"type":"text","value":"Returns the number of uncles in a block from a block matching the given block number.","position":{"start":{"line":5,"column":1,"offset":90},"end":{"line":5,"column":86,"offset":175},"indent":[]}}],"position":{"start":{"line":5,"column":1,"offset":90},"end":{"line":5,"column":86,"offset":175},"indent":[]}},{"type":"heading","depth":3,"children":[{"type":"text","value":"REQUEST","position":{"start":{"line":7,"column":5,"offset":181},"end":{"line":7,"column":12,"offset":188},"indent":[]}}],"position":{"start":{"line":7,"column":1,"offset":177},"end":{"line":7,"column":12,"offset":188},"indent":[]}},{"type":"paragraph","children":[{"type":"inlineCode","value":"GET https://api.backbonecabal.xyz/v1/jsonrpc/:network/eth_getUncleCountByBlockNumber?params=:paramsJSONArray","position":{"start":{"line":9,"column":1,"offset":190},"end":{"line":9,"column":111,"offset":300},"indent":[]}}],"position":{"start":{"line":9,"column":1,"offset":190},"end":{"line":9,"column":111,"offset":300},"indent":[]}},{"type":"heading","depth":4,"children":[{"type":"text","value":"HEADERS","position":{"start":{"line":11,"column":6,"offset":307},"end":{"line":11,"column":13,"offset":314},"indent":[]}}],"position":{"start":{"line":11,"column":1,"offset":302},"end":{"line":11,"column":13,"offset":314},"indent":[]}},{"type":"paragraph","children":[{"type":"inlineCode","value":"Content-Type: application/json","position":{"start":{"line":13,"column":1,"offset":316},"end":{"line":13,"column":33,"offset":348},"indent":[]}}],"position":{"start":{"line":13,"column":1,"offset":316},"end":{"line":13,"column":33,"offset":348},"indent":[]}},{"type":"heading","depth":4,"children":[{"type":"text","value":"REQUEST PARAMS","position":{"start":{"line":15,"column":6,"offset":355},"end":{"line":15,"column":20,"offset":369},"indent":[]}}],"position":{"start":{"line":15,"column":1,"offset":350},"end":{"line":15,"column":20,"offset":369},"indent":[]}},{"type":"list","ordered":false,"start":null,"spread":false,"children":[{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"inlineCode","value":"BLOCK PARAMETER","position":{"start":{"line":17,"column":5,"offset":375},"end":{"line":17,"column":22,"offset":392},"indent":[]}},{"type":"text","value":" ","position":{"start":{"line":17,"column":22,"offset":392},"end":{"line":17,"column":23,"offset":393},"indent":[]}},{"type":"emphasis","children":[{"type":"linkReference","identifier":"required","label":"required","referenceType":"shortcut","children":[{"type":"text","value":"required","position":{"start":{"line":17,"column":25,"offset":395},"end":{"line":17,"column":33,"offset":403},"indent":[]}}],"position":{"start":{"line":17,"column":24,"offset":394},"end":{"line":17,"column":34,"offset":404},"indent":[]}}],"position":{"start":{"line":17,"column":23,"offset":393},"end":{"line":17,"column":35,"offset":405},"indent":[]}},{"type":"text","value":" - an integer block number, or the string \"latest\", \"earliest\" or \"pending\", see the\n","position":{"start":{"line":17,"column":35,"offset":405},"end":{"line":18,"column":5,"offset":494},"indent":[5]}},{"type":"link","title":null,"url":"https://github.com/ethereum/wiki/wiki/JSON-RPC#the-default-block-parameter","children":[{"type":"text","value":"default block parameter","position":{"start":{"line":18,"column":6,"offset":495},"end":{"line":18,"column":29,"offset":518},"indent":[]}}],"position":{"start":{"line":18,"column":5,"offset":494},"end":{"line":18,"column":106,"offset":595},"indent":[]}}],"position":{"start":{"line":17,"column":5,"offset":375},"end":{"line":18,"column":106,"offset":595},"indent":[5]}}],"position":{"start":{"line":17,"column":1,"offset":371},"end":{"line":18,"column":106,"offset":595},"indent":[1]}}],"position":{"start":{"line":17,"column":1,"offset":371},"end":{"line":18,"column":106,"offset":595},"indent":[1]}},{"type":"heading","depth":4,"children":[{"type":"text","value":"EXAMPLE","position":{"start":{"line":20,"column":6,"offset":602},"end":{"line":20,"column":13,"offset":609},"indent":[]}}],"position":{"start":{"line":20,"column":1,"offset":597},"end":{"line":20,"column":13,"offset":609},"indent":[]}},{"type":"code","lang":"bash","meta":null,"value":"// HTTP GET\ncurl -G https://api.backbonecabal.xyz/v1/jsonrpc/mainnet/eth_getUncleCountByBlockNumber --data-urlencode 'params=[\"latest\"]'\n\n// HTTP POST\ncurl https://mainnet.backbonecabal.xyz/ \\\n    -X POST \\\n    -H \"Content-Type: application/json\" \\\n    -d '{\"jsonrpc\":\"2.0\",\"method\":\"eth_getUncleCountByBlockNumber\",\"params\": [\"latest\"],\"id\":1}'\n\n// WEBSOCKETS\n>wscat -c wss://mainnet.backbonecabal.xyz/ws\n>{\"jsonrpc\":\"2.0\",\"method\":\"eth_getUncleCountByBlockNumber\",\"params\": [\"latest\"],\"id\":1}","position":{"start":{"line":22,"column":1,"offset":611},"end":{"line":35,"column":4,"offset":1117},"indent":[1,1,1,1,1,1,1,1,1,1,1,1,1]}},{"type":"heading","depth":3,"children":[{"type":"text","value":"RESPONSE","position":{"start":{"line":37,"column":5,"offset":1123},"end":{"line":37,"column":13,"offset":1131},"indent":[]}}],"position":{"start":{"line":37,"column":1,"offset":1119},"end":{"line":37,"column":13,"offset":1131},"indent":[]}},{"type":"heading","depth":4,"children":[{"type":"text","value":"RESULT FIELDS","position":{"start":{"line":39,"column":6,"offset":1138},"end":{"line":39,"column":19,"offset":1151},"indent":[]}}],"position":{"start":{"line":39,"column":1,"offset":1133},"end":{"line":39,"column":19,"offset":1151},"indent":[]}},{"type":"list","ordered":false,"start":null,"spread":false,"children":[{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"inlineCode","value":"BLOCK TRANSACTION COUNT","position":{"start":{"line":41,"column":5,"offset":1157},"end":{"line":41,"column":30,"offset":1182},"indent":[]}},{"type":"text","value":" - a hex code of the integer representing the number of uncles in the provided block","position":{"start":{"line":41,"column":30,"offset":1182},"end":{"line":41,"column":114,"offset":1266},"indent":[]}}],"position":{"start":{"line":41,"column":5,"offset":1157},"end":{"line":41,"column":114,"offset":1266},"indent":[]}}],"position":{"start":{"line":41,"column":1,"offset":1153},"end":{"line":41,"column":114,"offset":1266},"indent":[]}}],"position":{"start":{"line":41,"column":1,"offset":1153},"end":{"line":41,"column":114,"offset":1266},"indent":[]}},{"type":"heading","depth":4,"children":[{"type":"text","value":"BODY","position":{"start":{"line":43,"column":6,"offset":1273},"end":{"line":43,"column":10,"offset":1277},"indent":[]}}],"position":{"start":{"line":43,"column":1,"offset":1268},"end":{"line":43,"column":10,"offset":1277},"indent":[]}},{"type":"code","lang":"json","meta":null,"value":"{\n\t\"jsonrpc\": \"2.0\",\n\t\"id\": 1,\n\t\"result\": \"0x57\"\n}","position":{"start":{"line":45,"column":1,"offset":1279},"end":{"line":51,"column":4,"offset":1341},"indent":[1,1,1,1,1,1]}},{"type":"export","value":"export const _frontmatter = {}","position":{"start":{"line":54,"column":1,"offset":1344},"end":{"line":54,"column":31,"offset":1374},"indent":[]}}],"position":{"start":{"line":1,"column":1,"offset":0},"end":{"line":54,"column":31,"offset":1374}}},"scopeImports":["import * as React from 'react'"],"scopeIdentifiers":["React"],"body":"function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }\n\nfunction _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }\n\nfunction _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }\n\n/* @jsx mdx */\nvar _frontmatter = {};\nvar layoutProps = {\n  _frontmatter: _frontmatter\n};\nvar MDXLayout = \"wrapper\";\nreturn function MDXContent(_ref) {\n  var components = _ref.components,\n      props = _objectWithoutProperties(_ref, [\"components\"]);\n\n  return mdx(MDXLayout, _extends({}, layoutProps, props, {\n    components: components,\n    mdxType: \"MDXLayout\"\n  }), mdx(\"section\", null, mdx(\"h1\", {\n    parentName: \"section\"\n  }, \"eth_getUncleCountByBlockNumber\")), mdx(\"section\", null, mdx(\"h2\", {\n    parentName: \"section\"\n  }, \"/v1/jsonrpc/:network/eth_getUncleCountByBlockNumber\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, \"Returns the number of uncles in a block from a block matching the given block number.\")), mdx(\"section\", null, mdx(\"h3\", {\n    parentName: \"section\"\n  }, \"REQUEST\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"p\"\n  }, \"GET https://api.backbonecabal.xyz/v1/jsonrpc/:network/eth_getUncleCountByBlockNumber?params=:paramsJSONArray\"))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"HEADERS\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"p\"\n  }, \"Content-Type: application/json\"))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"REQUEST PARAMS\"), mdx(\"ul\", {\n    parentName: \"section\"\n  }, mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"BLOCK PARAMETER\"), \" \", mdx(\"em\", {\n    parentName: \"li\"\n  }, \"[required]\"), \" - an integer block number, or the string \\\"latest\\\", \\\"earliest\\\" or \\\"pending\\\", see the\\n\", mdx(\"a\", _extends({\n    parentName: \"li\"\n  }, {\n    \"href\": \"https://github.com/ethereum/wiki/wiki/JSON-RPC#the-default-block-parameter\"\n  }), \"default block parameter\")))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"EXAMPLE\"), mdx(\"pre\", {\n    parentName: \"section\"\n  }, mdx(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-bash\"\n  }), \"// HTTP GET\\ncurl -G https://api.backbonecabal.xyz/v1/jsonrpc/mainnet/eth_getUncleCountByBlockNumber --data-urlencode 'params=[\\\"latest\\\"]'\\n\\n// HTTP POST\\ncurl https://mainnet.backbonecabal.xyz/ \\\\\\n    -X POST \\\\\\n    -H \\\"Content-Type: application/json\\\" \\\\\\n    -d '{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"method\\\":\\\"eth_getUncleCountByBlockNumber\\\",\\\"params\\\": [\\\"latest\\\"],\\\"id\\\":1}'\\n\\n// WEBSOCKETS\\n>wscat -c wss://mainnet.backbonecabal.xyz/ws\\n>{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"method\\\":\\\"eth_getUncleCountByBlockNumber\\\",\\\"params\\\": [\\\"latest\\\"],\\\"id\\\":1}\\n\"))), mdx(\"section\", null, mdx(\"h3\", {\n    parentName: \"section\"\n  }, \"RESPONSE\")), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"RESULT FIELDS\"), mdx(\"ul\", {\n    parentName: \"section\"\n  }, mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"BLOCK TRANSACTION COUNT\"), \" - a hex code of the integer representing the number of uncles in the provided block\"))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"BODY\"), mdx(\"pre\", {\n    parentName: \"section\"\n  }, mdx(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-json\"\n  }), \"{\\n    \\\"jsonrpc\\\": \\\"2.0\\\",\\n    \\\"id\\\": 1,\\n    \\\"result\\\": \\\"0x57\\\"\\n}\\n\"))));\n}\n;\nMDXContent.isMDXComponent = true;","rawMDXOutput":"/* @jsx mdx */\nimport { mdx } from '@mdx-js/react';\n/* @jsx mdx */\n\nexport const _frontmatter = {};\n\nconst layoutProps = {\n  _frontmatter\n};\nconst MDXLayout = \"wrapper\"\nexport default function MDXContent({\n  components,\n  ...props\n}) {\n  return <MDXLayout {...layoutProps} {...props} components={components} mdxType=\"MDXLayout\">\n    <section><h1 parentName=\"section\">{`eth_getUncleCountByBlockNumber`}</h1></section>\n    <section><h2 parentName=\"section\">{`/v1/jsonrpc/:network/eth_getUncleCountByBlockNumber`}</h2><p parentName=\"section\">{`Returns the number of uncles in a block from a block matching the given block number.`}</p></section>\n    <section><h3 parentName=\"section\">{`REQUEST`}</h3><p parentName=\"section\"><inlineCode parentName=\"p\">{`GET https://api.backbonecabal.xyz/v1/jsonrpc/:network/eth_getUncleCountByBlockNumber?params=:paramsJSONArray`}</inlineCode></p></section>\n    <section><h4 parentName=\"section\">{`HEADERS`}</h4><p parentName=\"section\"><inlineCode parentName=\"p\">{`Content-Type: application/json`}</inlineCode></p></section>\n    <section><h4 parentName=\"section\">{`REQUEST PARAMS`}</h4><ul parentName=\"section\">\n        <li parentName=\"ul\"><inlineCode parentName=\"li\">{`BLOCK PARAMETER`}</inlineCode>{` `}<em parentName=\"li\">{`[required]`}</em>{` - an integer block number, or the string \"latest\", \"earliest\" or \"pending\", see the\n`}<a parentName=\"li\" {...{\n            \"href\": \"https://github.com/ethereum/wiki/wiki/JSON-RPC#the-default-block-parameter\"\n          }}>{`default block parameter`}</a></li>\n      </ul></section>\n    <section><h4 parentName=\"section\">{`EXAMPLE`}</h4><pre parentName=\"section\"><code parentName=\"pre\" {...{\n          \"className\": \"language-bash\"\n        }}>{`// HTTP GET\ncurl -G https://api.backbonecabal.xyz/v1/jsonrpc/mainnet/eth_getUncleCountByBlockNumber --data-urlencode 'params=[\"latest\"]'\n\n// HTTP POST\ncurl https://mainnet.backbonecabal.xyz/ \\\\\n    -X POST \\\\\n    -H \"Content-Type: application/json\" \\\\\n    -d '{\"jsonrpc\":\"2.0\",\"method\":\"eth_getUncleCountByBlockNumber\",\"params\": [\"latest\"],\"id\":1}'\n\n// WEBSOCKETS\n>wscat -c wss://mainnet.backbonecabal.xyz/ws\n>{\"jsonrpc\":\"2.0\",\"method\":\"eth_getUncleCountByBlockNumber\",\"params\": [\"latest\"],\"id\":1}\n`}</code></pre></section>\n    <section><h3 parentName=\"section\">{`RESPONSE`}</h3></section>\n    <section><h4 parentName=\"section\">{`RESULT FIELDS`}</h4><ul parentName=\"section\">\n        <li parentName=\"ul\"><inlineCode parentName=\"li\">{`BLOCK TRANSACTION COUNT`}</inlineCode>{` - a hex code of the integer representing the number of uncles in the provided block`}</li>\n      </ul></section>\n    <section><h4 parentName=\"section\">{`BODY`}</h4><pre parentName=\"section\"><code parentName=\"pre\" {...{\n          \"className\": \"language-json\"\n        }}>{`{\n    \"jsonrpc\": \"2.0\",\n    \"id\": 1,\n    \"result\": \"0x57\"\n}\n`}</code></pre></section>\n\n    </MDXLayout>;\n}\n\n;\nMDXContent.isMDXComponent = true;"}}
+{
+  "expireTime": 9007200869051275000,
+  "key": "gatsby-plugin-mdx-entire-payload-b3e4d67688228dfd5ffe21ecf478743c-",
+  "val": {
+    "mdast": {
+      "type": "root",
+      "children": [
+        {
+          "type": "heading",
+          "depth": 1,
+          "children": [
+            {
+              "type": "text",
+              "value": "eth_getUncleCountByBlockNumber",
+              "position": {
+                "start": { "line": 1, "column": 3, "offset": 2 },
+                "end": { "line": 1, "column": 33, "offset": 32 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 1, "column": 1, "offset": 0 },
+            "end": { "line": 1, "column": 33, "offset": 32 },
+            "indent": []
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 2,
+          "children": [
+            {
+              "type": "text",
+              "value": "/v1/jsonrpc/:network/eth_getUncleCountByBlockNumber",
+              "position": {
+                "start": { "line": 3, "column": 4, "offset": 37 },
+                "end": { "line": 3, "column": 55, "offset": 88 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 3, "column": 1, "offset": 34 },
+            "end": { "line": 3, "column": 55, "offset": 88 },
+            "indent": []
+          }
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "Returns the number of uncles in a block from a block matching the given block number.",
+              "position": {
+                "start": { "line": 5, "column": 1, "offset": 90 },
+                "end": { "line": 5, "column": 86, "offset": 175 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 5, "column": 1, "offset": 90 },
+            "end": { "line": 5, "column": 86, "offset": 175 },
+            "indent": []
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 3,
+          "children": [
+            {
+              "type": "text",
+              "value": "REQUEST",
+              "position": {
+                "start": { "line": 7, "column": 5, "offset": 181 },
+                "end": { "line": 7, "column": 12, "offset": 188 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 7, "column": 1, "offset": 177 },
+            "end": { "line": 7, "column": 12, "offset": 188 },
+            "indent": []
+          }
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "inlineCode",
+              "value": "GET https://api.backbonecabal.xyz/v1/jsonrpc/:network/eth_getUncleCountByBlockNumber?params=:paramsJSONArray",
+              "position": {
+                "start": { "line": 9, "column": 1, "offset": 190 },
+                "end": { "line": 9, "column": 111, "offset": 300 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 9, "column": 1, "offset": 190 },
+            "end": { "line": 9, "column": 111, "offset": 300 },
+            "indent": []
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 4,
+          "children": [
+            {
+              "type": "text",
+              "value": "HEADERS",
+              "position": {
+                "start": { "line": 11, "column": 6, "offset": 307 },
+                "end": { "line": 11, "column": 13, "offset": 314 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 11, "column": 1, "offset": 302 },
+            "end": { "line": 11, "column": 13, "offset": 314 },
+            "indent": []
+          }
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "inlineCode",
+              "value": "Content-Type: application/json",
+              "position": {
+                "start": { "line": 13, "column": 1, "offset": 316 },
+                "end": { "line": 13, "column": 33, "offset": 348 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 13, "column": 1, "offset": 316 },
+            "end": { "line": 13, "column": 33, "offset": 348 },
+            "indent": []
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 4,
+          "children": [
+            {
+              "type": "text",
+              "value": "REQUEST PARAMS",
+              "position": {
+                "start": { "line": 15, "column": 6, "offset": 355 },
+                "end": { "line": 15, "column": 20, "offset": 369 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 15, "column": 1, "offset": 350 },
+            "end": { "line": 15, "column": 20, "offset": 369 },
+            "indent": []
+          }
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "start": null,
+          "spread": false,
+          "children": [
+            {
+              "type": "listItem",
+              "spread": false,
+              "checked": null,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "inlineCode",
+                      "value": "BLOCK PARAMETER",
+                      "position": {
+                        "start": { "line": 17, "column": 5, "offset": 375 },
+                        "end": { "line": 17, "column": 22, "offset": 392 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "value": " ",
+                      "position": {
+                        "start": { "line": 17, "column": 22, "offset": 392 },
+                        "end": { "line": 17, "column": 23, "offset": 393 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "emphasis",
+                      "children": [
+                        {
+                          "type": "linkReference",
+                          "identifier": "required",
+                          "label": "required",
+                          "referenceType": "shortcut",
+                          "children": [
+                            {
+                              "type": "text",
+                              "value": "required",
+                              "position": {
+                                "start": {
+                                  "line": 17,
+                                  "column": 25,
+                                  "offset": 395
+                                },
+                                "end": {
+                                  "line": 17,
+                                  "column": 33,
+                                  "offset": 403
+                                },
+                                "indent": []
+                              }
+                            }
+                          ],
+                          "position": {
+                            "start": {
+                              "line": 17,
+                              "column": 24,
+                              "offset": 394
+                            },
+                            "end": { "line": 17, "column": 34, "offset": 404 },
+                            "indent": []
+                          }
+                        }
+                      ],
+                      "position": {
+                        "start": { "line": 17, "column": 23, "offset": 393 },
+                        "end": { "line": 17, "column": 35, "offset": 405 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "value": " - an integer block number, or the string \"latest\", \"earliest\" or \"pending\", see the\n",
+                      "position": {
+                        "start": { "line": 17, "column": 35, "offset": 405 },
+                        "end": { "line": 18, "column": 5, "offset": 494 },
+                        "indent": [5]
+                      }
+                    },
+                    {
+                      "type": "link",
+                      "title": null,
+                      "url": "https://github.com/ethereum/wiki/wiki/JSON-RPC#the-default-block-parameter",
+                      "children": [
+                        {
+                          "type": "text",
+                          "value": "default block parameter",
+                          "position": {
+                            "start": { "line": 18, "column": 6, "offset": 495 },
+                            "end": { "line": 18, "column": 29, "offset": 518 },
+                            "indent": []
+                          }
+                        }
+                      ],
+                      "position": {
+                        "start": { "line": 18, "column": 5, "offset": 494 },
+                        "end": { "line": 18, "column": 106, "offset": 595 },
+                        "indent": []
+                      }
+                    }
+                  ],
+                  "position": {
+                    "start": { "line": 17, "column": 5, "offset": 375 },
+                    "end": { "line": 18, "column": 106, "offset": 595 },
+                    "indent": [5]
+                  }
+                }
+              ],
+              "position": {
+                "start": { "line": 17, "column": 1, "offset": 371 },
+                "end": { "line": 18, "column": 106, "offset": 595 },
+                "indent": [1]
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 17, "column": 1, "offset": 371 },
+            "end": { "line": 18, "column": 106, "offset": 595 },
+            "indent": [1]
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 4,
+          "children": [
+            {
+              "type": "text",
+              "value": "EXAMPLE",
+              "position": {
+                "start": { "line": 20, "column": 6, "offset": 602 },
+                "end": { "line": 20, "column": 13, "offset": 609 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 20, "column": 1, "offset": 597 },
+            "end": { "line": 20, "column": 13, "offset": 609 },
+            "indent": []
+          }
+        },
+        {
+          "type": "code",
+          "lang": "bash",
+          "meta": null,
+          "value": "// HTTP GET\ncurl -G https://api.backbonecabal.xyz/v1/jsonrpc/mainnet/eth_getUncleCountByBlockNumber --data-urlencode 'params=[\"latest\"]'\n\n// HTTP POST\ncurl https://mainnet.backbonecabal.xyz/ \\\n    -X POST \\\n    -H \"Content-Type: application/json\" \\\n    -d '{\"jsonrpc\":\"2.0\",\"method\":\"eth_getUncleCountByBlockNumber\",\"params\": [\"latest\"],\"id\":1}'\n\n// WEBSOCKETS\n>wscat -c wss://mainnet.backbonecabal.xyz/ws\n>{\"jsonrpc\":\"2.0\",\"method\":\"eth_getUncleCountByBlockNumber\",\"params\": [\"latest\"],\"id\":1}",
+          "position": {
+            "start": { "line": 22, "column": 1, "offset": 611 },
+            "end": { "line": 35, "column": 4, "offset": 1117 },
+            "indent": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 3,
+          "children": [
+            {
+              "type": "text",
+              "value": "RESPONSE",
+              "position": {
+                "start": { "line": 37, "column": 5, "offset": 1123 },
+                "end": { "line": 37, "column": 13, "offset": 1131 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 37, "column": 1, "offset": 1119 },
+            "end": { "line": 37, "column": 13, "offset": 1131 },
+            "indent": []
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 4,
+          "children": [
+            {
+              "type": "text",
+              "value": "RESULT FIELDS",
+              "position": {
+                "start": { "line": 39, "column": 6, "offset": 1138 },
+                "end": { "line": 39, "column": 19, "offset": 1151 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 39, "column": 1, "offset": 1133 },
+            "end": { "line": 39, "column": 19, "offset": 1151 },
+            "indent": []
+          }
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "start": null,
+          "spread": false,
+          "children": [
+            {
+              "type": "listItem",
+              "spread": false,
+              "checked": null,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "inlineCode",
+                      "value": "BLOCK TRANSACTION COUNT",
+                      "position": {
+                        "start": { "line": 41, "column": 5, "offset": 1157 },
+                        "end": { "line": 41, "column": 30, "offset": 1182 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "value": " - a hex code of the integer representing the number of uncles in the provided block",
+                      "position": {
+                        "start": { "line": 41, "column": 30, "offset": 1182 },
+                        "end": { "line": 41, "column": 114, "offset": 1266 },
+                        "indent": []
+                      }
+                    }
+                  ],
+                  "position": {
+                    "start": { "line": 41, "column": 5, "offset": 1157 },
+                    "end": { "line": 41, "column": 114, "offset": 1266 },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": { "line": 41, "column": 1, "offset": 1153 },
+                "end": { "line": 41, "column": 114, "offset": 1266 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 41, "column": 1, "offset": 1153 },
+            "end": { "line": 41, "column": 114, "offset": 1266 },
+            "indent": []
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 4,
+          "children": [
+            {
+              "type": "text",
+              "value": "BODY",
+              "position": {
+                "start": { "line": 43, "column": 6, "offset": 1273 },
+                "end": { "line": 43, "column": 10, "offset": 1277 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 43, "column": 1, "offset": 1268 },
+            "end": { "line": 43, "column": 10, "offset": 1277 },
+            "indent": []
+          }
+        },
+        {
+          "type": "code",
+          "lang": "json",
+          "meta": null,
+          "value": "{\n\t\"jsonrpc\": \"2.0\",\n\t\"id\": 1,\n\t\"result\": \"0x57\"\n}",
+          "position": {
+            "start": { "line": 45, "column": 1, "offset": 1279 },
+            "end": { "line": 51, "column": 4, "offset": 1341 },
+            "indent": [1, 1, 1, 1, 1, 1]
+          }
+        },
+        {
+          "type": "export",
+          "value": "export const _frontmatter = {}",
+          "position": {
+            "start": { "line": 54, "column": 1, "offset": 1344 },
+            "end": { "line": 54, "column": 31, "offset": 1374 },
+            "indent": []
+          }
+        }
+      ],
+      "position": {
+        "start": { "line": 1, "column": 1, "offset": 0 },
+        "end": { "line": 54, "column": 31, "offset": 1374 }
+      }
+    },
+    "scopeImports": ["import * as React from 'react'"],
+    "scopeIdentifiers": ["React"],
+    "body": "function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }\n\nfunction _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }\n\nfunction _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }\n\n/* @jsx mdx */\nvar _frontmatter = {};\nvar layoutProps = {\n  _frontmatter: _frontmatter\n};\nvar MDXLayout = \"wrapper\";\nreturn function MDXContent(_ref) {\n  var components = _ref.components,\n      props = _objectWithoutProperties(_ref, [\"components\"]);\n\n  return mdx(MDXLayout, _extends({}, layoutProps, props, {\n    components: components,\n    mdxType: \"MDXLayout\"\n  }), mdx(\"section\", null, mdx(\"h1\", {\n    parentName: \"section\"\n  }, \"eth_getUncleCountByBlockNumber\")), mdx(\"section\", null, mdx(\"h2\", {\n    parentName: \"section\"\n  }, \"/v1/jsonrpc/:network/eth_getUncleCountByBlockNumber\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, \"Returns the number of uncles in a block from a block matching the given block number.\")), mdx(\"section\", null, mdx(\"h3\", {\n    parentName: \"section\"\n  }, \"REQUEST\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"p\"\n  }, \"GET https://api.backbonecabal.xyz/v1/jsonrpc/:network/eth_getUncleCountByBlockNumber?params=:paramsJSONArray\"))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"HEADERS\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"p\"\n  }, \"Content-Type: application/json\"))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"REQUEST PARAMS\"), mdx(\"ul\", {\n    parentName: \"section\"\n  }, mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"BLOCK PARAMETER\"), \" \", mdx(\"em\", {\n    parentName: \"li\"\n  }, \"[required]\"), \" - an integer block number, or the string \\\"latest\\\", \\\"earliest\\\" or \\\"pending\\\", see the\\n\", mdx(\"a\", _extends({\n    parentName: \"li\"\n  }, {\n    \"href\": \"https://github.com/ethereum/wiki/wiki/JSON-RPC#the-default-block-parameter\"\n  }), \"default block parameter\")))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"EXAMPLE\"), mdx(\"pre\", {\n    parentName: \"section\"\n  }, mdx(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-bash\"\n  }), \"// HTTP GET\\ncurl -G https://api.backbonecabal.xyz/v1/jsonrpc/mainnet/eth_getUncleCountByBlockNumber --data-urlencode 'params=[\\\"latest\\\"]'\\n\\n// HTTP POST\\ncurl https://mainnet.backbonecabal.xyz/ \\\\\\n    -X POST \\\\\\n    -H \\\"Content-Type: application/json\\\" \\\\\\n    -d '{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"method\\\":\\\"eth_getUncleCountByBlockNumber\\\",\\\"params\\\": [\\\"latest\\\"],\\\"id\\\":1}'\\n\\n// WEBSOCKETS\\n>wscat -c wss://mainnet.backbonecabal.xyz/ws\\n>{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"method\\\":\\\"eth_getUncleCountByBlockNumber\\\",\\\"params\\\": [\\\"latest\\\"],\\\"id\\\":1}\\n\"))), mdx(\"section\", null, mdx(\"h3\", {\n    parentName: \"section\"\n  }, \"RESPONSE\")), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"RESULT FIELDS\"), mdx(\"ul\", {\n    parentName: \"section\"\n  }, mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"BLOCK TRANSACTION COUNT\"), \" - a hex code of the integer representing the number of uncles in the provided block\"))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"BODY\"), mdx(\"pre\", {\n    parentName: \"section\"\n  }, mdx(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-json\"\n  }), \"{\\n    \\\"jsonrpc\\\": \\\"2.0\\\",\\n    \\\"id\\\": 1,\\n    \\\"result\\\": \\\"0x57\\\"\\n}\\n\"))));\n}\n;\nMDXContent.isMDXComponent = true;",
+    "rawMDXOutput": "/* @jsx mdx */\nimport { mdx } from '@mdx-js/react';\n/* @jsx mdx */\n\nexport const _frontmatter = {};\n\nconst layoutProps = {\n  _frontmatter\n};\nconst MDXLayout = \"wrapper\"\nexport default function MDXContent({\n  components,\n  ...props\n}) {\n  return <MDXLayout {...layoutProps} {...props} components={components} mdxType=\"MDXLayout\">\n    <section><h1 parentName=\"section\">{`eth_getUncleCountByBlockNumber`}</h1></section>\n    <section><h2 parentName=\"section\">{`/v1/jsonrpc/:network/eth_getUncleCountByBlockNumber`}</h2><p parentName=\"section\">{`Returns the number of uncles in a block from a block matching the given block number.`}</p></section>\n    <section><h3 parentName=\"section\">{`REQUEST`}</h3><p parentName=\"section\"><inlineCode parentName=\"p\">{`GET https://api.backbonecabal.xyz/v1/jsonrpc/:network/eth_getUncleCountByBlockNumber?params=:paramsJSONArray`}</inlineCode></p></section>\n    <section><h4 parentName=\"section\">{`HEADERS`}</h4><p parentName=\"section\"><inlineCode parentName=\"p\">{`Content-Type: application/json`}</inlineCode></p></section>\n    <section><h4 parentName=\"section\">{`REQUEST PARAMS`}</h4><ul parentName=\"section\">\n        <li parentName=\"ul\"><inlineCode parentName=\"li\">{`BLOCK PARAMETER`}</inlineCode>{` `}<em parentName=\"li\">{`[required]`}</em>{` - an integer block number, or the string \"latest\", \"earliest\" or \"pending\", see the\n`}<a parentName=\"li\" {...{\n            \"href\": \"https://github.com/ethereum/wiki/wiki/JSON-RPC#the-default-block-parameter\"\n          }}>{`default block parameter`}</a></li>\n      </ul></section>\n    <section><h4 parentName=\"section\">{`EXAMPLE`}</h4><pre parentName=\"section\"><code parentName=\"pre\" {...{\n          \"className\": \"language-bash\"\n        }}>{`// HTTP GET\ncurl -G https://api.backbonecabal.xyz/v1/jsonrpc/mainnet/eth_getUncleCountByBlockNumber --data-urlencode 'params=[\"latest\"]'\n\n// HTTP POST\ncurl https://mainnet.backbonecabal.xyz/ \\\\\n    -X POST \\\\\n    -H \"Content-Type: application/json\" \\\\\n    -d '{\"jsonrpc\":\"2.0\",\"method\":\"eth_getUncleCountByBlockNumber\",\"params\": [\"latest\"],\"id\":1}'\n\n// WEBSOCKETS\n>wscat -c wss://mainnet.backbonecabal.xyz/ws\n>{\"jsonrpc\":\"2.0\",\"method\":\"eth_getUncleCountByBlockNumber\",\"params\": [\"latest\"],\"id\":1}\n`}</code></pre></section>\n    <section><h3 parentName=\"section\">{`RESPONSE`}</h3></section>\n    <section><h4 parentName=\"section\">{`RESULT FIELDS`}</h4><ul parentName=\"section\">\n        <li parentName=\"ul\"><inlineCode parentName=\"li\">{`BLOCK TRANSACTION COUNT`}</inlineCode>{` - a hex code of the integer representing the number of uncles in the provided block`}</li>\n      </ul></section>\n    <section><h4 parentName=\"section\">{`BODY`}</h4><pre parentName=\"section\"><code parentName=\"pre\" {...{\n          \"className\": \"language-json\"\n        }}>{`{\n    \"jsonrpc\": \"2.0\",\n    \"id\": 1,\n    \"result\": \"0x57\"\n}\n`}</code></pre></section>\n\n    </MDXLayout>;\n}\n\n;\nMDXContent.isMDXComponent = true;"
+  }
+}

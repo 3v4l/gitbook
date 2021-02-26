@@ -1,7 +1,7 @@
-const path = require('path');
-const startCase = require('lodash.startcase');
+const path = require("path");
+const startCase = require("lodash.startcase");
 const chokidar = require(`chokidar`);
-const { touch } = require('./src/utils/fileUtils');
+const { touch } = require("./src/utils/fileUtils");
 
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions;
@@ -47,7 +47,7 @@ exports.createPages = ({ graphql, actions }) => {
       graphql(
         `
           {
-            allMdx(filter: {fields: {draft: {ne: true}}}) {
+            allMdx(filter: { fields: { draft: { ne: true } } }) {
               edges {
                 node {
                   fields {
@@ -66,14 +66,14 @@ exports.createPages = ({ graphql, actions }) => {
         }
         actions.createPage({
           path: `/404.html`,
-          component: path.join(process.cwd(), 'src/pages/404.js'),
+          component: path.join(process.cwd(), "src/pages/404.js"),
         });
 
         // Create pages.
         result.data.allMdx.edges.forEach(({ node }) => {
           createPage({
-            path: node.fields.slug ? node.fields.slug : '/',
-            component: path.resolve('./src/templates/docs.js'),
+            path: node.fields.slug ? node.fields.slug : "/",
+            component: path.resolve("./src/templates/docs.js"),
             context: {
               id: node.fields.id,
             },
@@ -87,10 +87,10 @@ exports.createPages = ({ graphql, actions }) => {
 exports.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
     resolve: {
-      modules: [path.resolve(__dirname, 'src'), 'node_modules'],
+      modules: [path.resolve(__dirname, "src"), "node_modules"],
       alias: {
-        $components: path.resolve(__dirname, 'src/components'),
-        buble: '@philpl/buble', // to reduce bundle size
+        $components: path.resolve(__dirname, "src/components"),
+        buble: "@philpl/buble", // to reduce bundle size
       },
     },
   });
@@ -98,7 +98,7 @@ exports.onCreateWebpackConfig = ({ actions }) => {
 
 exports.onCreateBabelConfig = ({ actions }) => {
   actions.setBabelPlugin({
-    name: '@babel/plugin-proposal-export-default-from',
+    name: "@babel/plugin-proposal-export-default-from",
   });
 };
 
@@ -107,10 +107,10 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 
   if (node.internal.type === `Mdx`) {
     const parent = getNode(node.parent);
-    let value = parent.relativePath.replace(parent.ext, '');
+    let value = parent.relativePath.replace(parent.ext, "");
 
-    if (value === 'index') {
-      value = '';
+    if (value === "index") {
+      value = "";
     }
 
     createNodeField({
@@ -120,13 +120,13 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     });
 
     createNodeField({
-      name: 'id',
+      name: "id",
       node,
       value: node.id,
     });
 
     createNodeField({
-      name: 'title',
+      name: "title",
       node,
       value: node.frontmatter.title || startCase(parent.name),
     });
@@ -134,10 +134,10 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 };
 
 exports.onPreBootstrap = () => {
-  const watcher = chokidar.watch('./config', {
-    ignored: ['jargon*'],
+  const watcher = chokidar.watch("./config", {
+    ignored: ["jargon*"],
   });
   watcher.on(`change`, () => {
-    touch('./gatsby-config.js');
+    touch("./gatsby-config.js");
   });
 };

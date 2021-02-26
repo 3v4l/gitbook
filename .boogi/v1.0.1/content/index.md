@@ -1,5 +1,5 @@
 ---
-title: 'About manifoldfinance'
+title: "About manifoldfinance"
 ---
 
 :wave: Hello!

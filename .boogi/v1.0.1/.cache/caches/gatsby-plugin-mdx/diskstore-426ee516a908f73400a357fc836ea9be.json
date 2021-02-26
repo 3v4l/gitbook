@@ -1,1 +1,1171 @@
-{"expireTime":9007200869051277000,"key":"gatsby-plugin-mdx-entire-payload-396eb9571375b41d12ee89ba1e96a401-","val":{"mdast":{"type":"root","children":[{"type":"heading","depth":1,"children":[{"type":"text","value":"eth_newFilter","position":{"start":{"line":1,"column":3,"offset":2},"end":{"line":1,"column":16,"offset":15},"indent":[]}}],"position":{"start":{"line":1,"column":1,"offset":0},"end":{"line":1,"column":16,"offset":15},"indent":[]}},{"type":"paragraph","children":[{"type":"text","value":"Creates a filter object, based on filter options, to notify when the state changes (logs). To check if the state has\nchanged, call eth_getFilterChanges","position":{"start":{"line":3,"column":1,"offset":17},"end":{"line":4,"column":35,"offset":168},"indent":[1]}}],"position":{"start":{"line":3,"column":1,"offset":17},"end":{"line":4,"column":35,"offset":168},"indent":[1]}},{"type":"heading","depth":4,"children":[{"type":"text","value":"REQUEST PAYLOAD","position":{"start":{"line":6,"column":6,"offset":175},"end":{"line":6,"column":21,"offset":190},"indent":[]}}],"position":{"start":{"line":6,"column":1,"offset":170},"end":{"line":6,"column":21,"offset":190},"indent":[]}},{"type":"list","ordered":false,"start":null,"spread":false,"children":[{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"inlineCode","value":"FILTER OBJECT","position":{"start":{"line":8,"column":5,"offset":196},"end":{"line":8,"column":20,"offset":211},"indent":[]}}],"position":{"start":{"line":8,"column":5,"offset":196},"end":{"line":8,"column":20,"offset":211},"indent":[]}},{"type":"list","ordered":false,"start":null,"spread":false,"children":[{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"inlineCode","value":"address","position":{"start":{"line":9,"column":9,"offset":220},"end":{"line":9,"column":18,"offset":229},"indent":[]}},{"type":"text","value":" ","position":{"start":{"line":9,"column":18,"offset":229},"end":{"line":9,"column":19,"offset":230},"indent":[]}},{"type":"emphasis","children":[{"type":"linkReference","identifier":"optional","label":"optional","referenceType":"shortcut","children":[{"type":"text","value":"optional","position":{"start":{"line":9,"column":21,"offset":232},"end":{"line":9,"column":29,"offset":240},"indent":[]}}],"position":{"start":{"line":9,"column":20,"offset":231},"end":{"line":9,"column":30,"offset":241},"indent":[]}}],"position":{"start":{"line":9,"column":19,"offset":230},"end":{"line":9,"column":31,"offset":242},"indent":[]}},{"type":"text","value":" - a string representing the address (20 bytes) to check for balance","position":{"start":{"line":9,"column":31,"offset":242},"end":{"line":9,"column":99,"offset":310},"indent":[]}}],"position":{"start":{"line":9,"column":9,"offset":220},"end":{"line":9,"column":99,"offset":310},"indent":[]}}],"position":{"start":{"line":9,"column":5,"offset":216},"end":{"line":9,"column":99,"offset":310},"indent":[]}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"inlineCode","value":"fromBlock","position":{"start":{"line":10,"column":9,"offset":319},"end":{"line":10,"column":20,"offset":330},"indent":[]}},{"type":"text","value":" ","position":{"start":{"line":10,"column":20,"offset":330},"end":{"line":10,"column":21,"offset":331},"indent":[]}},{"type":"emphasis","children":[{"type":"linkReference","identifier":"optional, default is \"latest\"","label":"optional, default is \"latest\"","referenceType":"shortcut","children":[{"type":"text","value":"optional, default is \"latest\"","position":{"start":{"line":10,"column":23,"offset":333},"end":{"line":10,"column":52,"offset":362},"indent":[]}}],"position":{"start":{"line":10,"column":22,"offset":332},"end":{"line":10,"column":53,"offset":363},"indent":[]}}],"position":{"start":{"line":10,"column":21,"offset":331},"end":{"line":10,"column":54,"offset":364},"indent":[]}},{"type":"text","value":" - an integer block number, or the string \"latest\", \"earliest\" or\n\"pending\"","position":{"start":{"line":10,"column":54,"offset":364},"end":{"line":11,"column":18,"offset":447},"indent":[9]}}],"position":{"start":{"line":10,"column":9,"offset":319},"end":{"line":11,"column":18,"offset":447},"indent":[9]}}],"position":{"start":{"line":10,"column":5,"offset":315},"end":{"line":11,"column":18,"offset":447},"indent":[5]}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"inlineCode","value":"toBlock","position":{"start":{"line":12,"column":9,"offset":456},"end":{"line":12,"column":18,"offset":465},"indent":[]}},{"type":"text","value":" ","position":{"start":{"line":12,"column":18,"offset":465},"end":{"line":12,"column":19,"offset":466},"indent":[]}},{"type":"emphasis","children":[{"type":"linkReference","identifier":"optional, default is \"latest\"","label":"optional, default is \"latest\"","referenceType":"shortcut","children":[{"type":"text","value":"optional, default is \"latest\"","position":{"start":{"line":12,"column":21,"offset":468},"end":{"line":12,"column":50,"offset":497},"indent":[]}}],"position":{"start":{"line":12,"column":20,"offset":467},"end":{"line":12,"column":51,"offset":498},"indent":[]}}],"position":{"start":{"line":12,"column":19,"offset":466},"end":{"line":12,"column":52,"offset":499},"indent":[]}},{"type":"text","value":" - an integer block number, or the string \"latest\", \"earliest\" or\n\"pending\"","position":{"start":{"line":12,"column":52,"offset":499},"end":{"line":13,"column":18,"offset":582},"indent":[9]}}],"position":{"start":{"line":12,"column":9,"offset":456},"end":{"line":13,"column":18,"offset":582},"indent":[9]}}],"position":{"start":{"line":12,"column":5,"offset":452},"end":{"line":13,"column":18,"offset":582},"indent":[5]}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"inlineCode","value":"topics","position":{"start":{"line":14,"column":9,"offset":591},"end":{"line":14,"column":17,"offset":599},"indent":[]}},{"type":"emphasis","children":[{"type":"linkReference","identifier":"optional","label":"optional","referenceType":"shortcut","children":[{"type":"text","value":"optional","position":{"start":{"line":14,"column":19,"offset":601},"end":{"line":14,"column":27,"offset":609},"indent":[]}}],"position":{"start":{"line":14,"column":18,"offset":600},"end":{"line":14,"column":28,"offset":610},"indent":[]}}],"position":{"start":{"line":14,"column":17,"offset":599},"end":{"line":14,"column":29,"offset":611},"indent":[]}},{"type":"text","value":" - Array of 32 Bytes DATA topics. Topics are order-dependent.","position":{"start":{"line":14,"column":29,"offset":611},"end":{"line":14,"column":90,"offset":672},"indent":[]}}],"position":{"start":{"line":14,"column":9,"offset":591},"end":{"line":14,"column":90,"offset":672},"indent":[]}}],"position":{"start":{"line":14,"column":5,"offset":587},"end":{"line":14,"column":90,"offset":672},"indent":[]}}],"position":{"start":{"line":9,"column":5,"offset":216},"end":{"line":14,"column":90,"offset":672},"indent":[5,5,5,5,5]}}],"position":{"start":{"line":8,"column":1,"offset":192},"end":{"line":14,"column":90,"offset":672},"indent":[1,1,1,1,1,1]}}],"position":{"start":{"line":8,"column":1,"offset":192},"end":{"line":14,"column":90,"offset":672},"indent":[1,1,1,1,1,1]}},{"type":"paragraph","children":[{"type":"strong","children":[{"type":"text","value":"A note on specifying topic filters:","position":{"start":{"line":16,"column":3,"offset":676},"end":{"line":16,"column":38,"offset":711},"indent":[]}}],"position":{"start":{"line":16,"column":1,"offset":674},"end":{"line":16,"column":40,"offset":713},"indent":[]}},{"type":"text","value":" Topics are order-dependent. A transaction with a log with topics ","position":{"start":{"line":16,"column":40,"offset":713},"end":{"line":16,"column":106,"offset":779},"indent":[]}},{"type":"linkReference","identifier":"a, b","label":"A, B","referenceType":"shortcut","children":[{"type":"text","value":"A, B","position":{"start":{"line":16,"column":107,"offset":780},"end":{"line":16,"column":111,"offset":784},"indent":[]}}],"position":{"start":{"line":16,"column":106,"offset":779},"end":{"line":16,"column":112,"offset":785},"indent":[]}},{"type":"text","value":" will be\nmatched by the following topic filters:","position":{"start":{"line":16,"column":112,"offset":785},"end":{"line":17,"column":40,"offset":833},"indent":[1]}}],"position":{"start":{"line":16,"column":1,"offset":674},"end":{"line":17,"column":40,"offset":833},"indent":[1]}},{"type":"list","ordered":false,"start":null,"spread":false,"children":[{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"text","value":"[] - anything\"","position":{"start":{"line":19,"column":5,"offset":839},"end":{"line":19,"column":19,"offset":853},"indent":[]}}],"position":{"start":{"line":19,"column":5,"offset":839},"end":{"line":19,"column":19,"offset":853},"indent":[]}}],"position":{"start":{"line":19,"column":1,"offset":835},"end":{"line":19,"column":19,"offset":853},"indent":[]}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"linkReference","identifier":"a","label":"A","referenceType":"shortcut","children":[{"type":"text","value":"A","position":{"start":{"line":20,"column":6,"offset":859},"end":{"line":20,"column":7,"offset":860},"indent":[]}}],"position":{"start":{"line":20,"column":5,"offset":858},"end":{"line":20,"column":8,"offset":861},"indent":[]}},{"type":"text","value":" - A in first position (and anything after)","position":{"start":{"line":20,"column":8,"offset":861},"end":{"line":20,"column":51,"offset":904},"indent":[]}}],"position":{"start":{"line":20,"column":5,"offset":858},"end":{"line":20,"column":51,"offset":904},"indent":[]}}],"position":{"start":{"line":20,"column":1,"offset":854},"end":{"line":20,"column":51,"offset":904},"indent":[]}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"linkReference","identifier":"null, b","label":"null, B","referenceType":"shortcut","children":[{"type":"text","value":"null, B","position":{"start":{"line":21,"column":6,"offset":910},"end":{"line":21,"column":13,"offset":917},"indent":[]}}],"position":{"start":{"line":21,"column":5,"offset":909},"end":{"line":21,"column":14,"offset":918},"indent":[]}},{"type":"text","value":" - anything in first position AND B in second position (and anything after)","position":{"start":{"line":21,"column":14,"offset":918},"end":{"line":21,"column":89,"offset":993},"indent":[]}}],"position":{"start":{"line":21,"column":5,"offset":909},"end":{"line":21,"column":89,"offset":993},"indent":[]}}],"position":{"start":{"line":21,"column":1,"offset":905},"end":{"line":21,"column":89,"offset":993},"indent":[]}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"linkReference","identifier":"a, b","label":"A, B","referenceType":"shortcut","children":[{"type":"text","value":"A, B","position":{"start":{"line":22,"column":6,"offset":999},"end":{"line":22,"column":10,"offset":1003},"indent":[]}}],"position":{"start":{"line":22,"column":5,"offset":998},"end":{"line":22,"column":11,"offset":1004},"indent":[]}},{"type":"text","value":" - A in first position AND B in second position (and anything after)\"","position":{"start":{"line":22,"column":11,"offset":1004},"end":{"line":22,"column":80,"offset":1073},"indent":[]}}],"position":{"start":{"line":22,"column":5,"offset":998},"end":{"line":22,"column":80,"offset":1073},"indent":[]}}],"position":{"start":{"line":22,"column":1,"offset":994},"end":{"line":22,"column":80,"offset":1073},"indent":[]}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"text","value":"[","position":{"start":{"line":23,"column":5,"offset":1078},"end":{"line":23,"column":7,"offset":1080},"indent":[]}},{"type":"linkReference","identifier":"a, b","label":"A, B","referenceType":"shortcut","children":[{"type":"text","value":"A, B","position":{"start":{"line":23,"column":8,"offset":1081},"end":{"line":23,"column":12,"offset":1085},"indent":[]}}],"position":{"start":{"line":23,"column":7,"offset":1080},"end":{"line":23,"column":13,"offset":1086},"indent":[]}},{"type":"text","value":", ","position":{"start":{"line":23,"column":13,"offset":1086},"end":{"line":23,"column":15,"offset":1088},"indent":[]}},{"type":"linkReference","identifier":"a, b","label":"A, B","referenceType":"shortcut","children":[{"type":"text","value":"A, B","position":{"start":{"line":23,"column":16,"offset":1089},"end":{"line":23,"column":20,"offset":1093},"indent":[]}}],"position":{"start":{"line":23,"column":15,"offset":1088},"end":{"line":23,"column":21,"offset":1094},"indent":[]}},{"type":"text","value":"] - (A OR B) in first position AND (A OR B) in second position (and anything after)","position":{"start":{"line":23,"column":21,"offset":1094},"end":{"line":23,"column":104,"offset":1177},"indent":[]}}],"position":{"start":{"line":23,"column":5,"offset":1078},"end":{"line":23,"column":104,"offset":1177},"indent":[]}}],"position":{"start":{"line":23,"column":1,"offset":1074},"end":{"line":23,"column":104,"offset":1177},"indent":[]}}],"position":{"start":{"line":19,"column":1,"offset":835},"end":{"line":23,"column":104,"offset":1177},"indent":[1,1,1,1]}},{"type":"heading","depth":4,"children":[{"type":"text","value":"EXAMPLE","position":{"start":{"line":25,"column":6,"offset":1184},"end":{"line":25,"column":13,"offset":1191},"indent":[]}}],"position":{"start":{"line":25,"column":1,"offset":1179},"end":{"line":25,"column":13,"offset":1191},"indent":[]}},{"type":"code","lang":"bash","meta":null,"value":">wscat -c wss://mainnet.backbonecabal.xyz/ws\n\n>{\"jsonrpc\":\"2.0\",\"method\":\"eth_newFilter\",\"params\":[{\"topics\": [\"0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef\"]}],\"id\":73}","position":{"start":{"line":27,"column":1,"offset":1193},"end":{"line":31,"column":4,"offset":1396},"indent":[1,1,1,1]}},{"type":"heading","depth":3,"children":[{"type":"text","value":"RESPONSE","position":{"start":{"line":33,"column":5,"offset":1402},"end":{"line":33,"column":13,"offset":1410},"indent":[]}}],"position":{"start":{"line":33,"column":1,"offset":1398},"end":{"line":33,"column":13,"offset":1410},"indent":[]}},{"type":"heading","depth":4,"children":[{"type":"text","value":"RESULT FIELDS","position":{"start":{"line":35,"column":6,"offset":1417},"end":{"line":35,"column":19,"offset":1430},"indent":[]}}],"position":{"start":{"line":35,"column":1,"offset":1412},"end":{"line":35,"column":19,"offset":1430},"indent":[]}},{"type":"list","ordered":false,"start":null,"spread":false,"children":[{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"inlineCode","value":"FILTER ID","position":{"start":{"line":37,"column":5,"offset":1436},"end":{"line":37,"column":16,"offset":1447},"indent":[]}},{"type":"text","value":" - A string denoting the newly created filter id","position":{"start":{"line":37,"column":16,"offset":1447},"end":{"line":37,"column":64,"offset":1495},"indent":[]}}],"position":{"start":{"line":37,"column":5,"offset":1436},"end":{"line":37,"column":64,"offset":1495},"indent":[]}}],"position":{"start":{"line":37,"column":1,"offset":1432},"end":{"line":37,"column":64,"offset":1495},"indent":[]}}],"position":{"start":{"line":37,"column":1,"offset":1432},"end":{"line":37,"column":64,"offset":1495},"indent":[]}},{"type":"heading","depth":4,"children":[{"type":"text","value":"BODY","position":{"start":{"line":39,"column":6,"offset":1502},"end":{"line":39,"column":10,"offset":1506},"indent":[]}}],"position":{"start":{"line":39,"column":1,"offset":1497},"end":{"line":39,"column":10,"offset":1506},"indent":[]}},{"type":"code","lang":"json","meta":null,"value":"{\n\t\"jsonrpc\": \"2.0\",\n\t\"id\": 73,\n\t\"result\": \"0x7db09f66a25e197d995d3895278b731\"\n}","position":{"start":{"line":41,"column":1,"offset":1508},"end":{"line":47,"column":4,"offset":1600},"indent":[1,1,1,1,1,1]}},{"type":"export","value":"export const _frontmatter = {}","position":{"start":{"line":50,"column":1,"offset":1603},"end":{"line":50,"column":31,"offset":1633},"indent":[]}}],"position":{"start":{"line":1,"column":1,"offset":0},"end":{"line":50,"column":31,"offset":1633}}},"scopeImports":["import * as React from 'react'"],"scopeIdentifiers":["React"],"body":"function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }\n\nfunction _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }\n\nfunction _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }\n\n/* @jsx mdx */\nvar _frontmatter = {};\nvar layoutProps = {\n  _frontmatter: _frontmatter\n};\nvar MDXLayout = \"wrapper\";\nreturn function MDXContent(_ref) {\n  var components = _ref.components,\n      props = _objectWithoutProperties(_ref, [\"components\"]);\n\n  return mdx(MDXLayout, _extends({}, layoutProps, props, {\n    components: components,\n    mdxType: \"MDXLayout\"\n  }), mdx(\"section\", null, mdx(\"h1\", {\n    parentName: \"section\"\n  }, \"eth_newFilter\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, \"Creates a filter object, based on filter options, to notify when the state changes (logs). To check if the state has\\nchanged, call eth_getFilterChanges\"), mdx(\"section\", {\n    parentName: \"section\"\n  }, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"REQUEST PAYLOAD\"), mdx(\"ul\", {\n    parentName: \"section\"\n  }, mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"FILTER OBJECT\"), mdx(\"ul\", {\n    parentName: \"li\"\n  }, mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"address\"), \" \", mdx(\"em\", {\n    parentName: \"li\"\n  }, \"[optional]\"), \" - a string representing the address (20 bytes) to check for balance\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"fromBlock\"), \" \", mdx(\"em\", {\n    parentName: \"li\"\n  }, \"[optional, default is \\\"latest\\\"]\"), \" - an integer block number, or the string \\\"latest\\\", \\\"earliest\\\" or\\n\\\"pending\\\"\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"toBlock\"), \" \", mdx(\"em\", {\n    parentName: \"li\"\n  }, \"[optional, default is \\\"latest\\\"]\"), \" - an integer block number, or the string \\\"latest\\\", \\\"earliest\\\" or\\n\\\"pending\\\"\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"topics\"), mdx(\"em\", {\n    parentName: \"li\"\n  }, \"[optional]\"), \" - Array of 32 Bytes DATA topics. Topics are order-dependent.\")))), mdx(\"p\", {\n    parentName: \"section\"\n  }, mdx(\"strong\", {\n    parentName: \"p\"\n  }, \"A note on specifying topic filters:\"), \" Topics are order-dependent. A transaction with a log with topics \", \"[A, B]\", \" will be\\nmatched by the following topic filters:\"), mdx(\"ul\", {\n    parentName: \"section\"\n  }, mdx(\"li\", {\n    parentName: \"ul\"\n  }, \"[] - anything\\\"\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, \"[A]\", \" - A in first position (and anything after)\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, \"[null, B]\", \" - anything in first position AND B in second position (and anything after)\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, \"[A, B]\", \" - A in first position AND B in second position (and anything after)\\\"\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, \"[\", \"[A, B]\", \", \", \"[A, B]\", \"] - (A OR B) in first position AND (A OR B) in second position (and anything after)\"))), mdx(\"section\", {\n    parentName: \"section\"\n  }, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"EXAMPLE\"), mdx(\"pre\", {\n    parentName: \"section\"\n  }, mdx(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-bash\"\n  }), \">wscat -c wss://mainnet.backbonecabal.xyz/ws\\n\\n>{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"method\\\":\\\"eth_newFilter\\\",\\\"params\\\":[{\\\"topics\\\": [\\\"0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef\\\"]}],\\\"id\\\":73}\\n\")))), mdx(\"section\", null, mdx(\"h3\", {\n    parentName: \"section\"\n  }, \"RESPONSE\")), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"RESULT FIELDS\"), mdx(\"ul\", {\n    parentName: \"section\"\n  }, mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"FILTER ID\"), \" - A string denoting the newly created filter id\"))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"BODY\"), mdx(\"pre\", {\n    parentName: \"section\"\n  }, mdx(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-json\"\n  }), \"{\\n    \\\"jsonrpc\\\": \\\"2.0\\\",\\n    \\\"id\\\": 73,\\n    \\\"result\\\": \\\"0x7db09f66a25e197d995d3895278b731\\\"\\n}\\n\"))));\n}\n;\nMDXContent.isMDXComponent = true;","rawMDXOutput":"/* @jsx mdx */\nimport { mdx } from '@mdx-js/react';\n/* @jsx mdx */\n\nexport const _frontmatter = {};\n\nconst layoutProps = {\n  _frontmatter\n};\nconst MDXLayout = \"wrapper\"\nexport default function MDXContent({\n  components,\n  ...props\n}) {\n  return <MDXLayout {...layoutProps} {...props} components={components} mdxType=\"MDXLayout\">\n    <section><h1 parentName=\"section\">{`eth_newFilter`}</h1><p parentName=\"section\">{`Creates a filter object, based on filter options, to notify when the state changes (logs). To check if the state has\nchanged, call eth_getFilterChanges`}</p><section parentName=\"section\"><h4 parentName=\"section\">{`REQUEST PAYLOAD`}</h4><ul parentName=\"section\">\n          <li parentName=\"ul\"><inlineCode parentName=\"li\">{`FILTER OBJECT`}</inlineCode><ul parentName=\"li\">\n              <li parentName=\"ul\"><inlineCode parentName=\"li\">{`address`}</inlineCode>{` `}<em parentName=\"li\">{`[optional]`}</em>{` - a string representing the address (20 bytes) to check for balance`}</li>\n              <li parentName=\"ul\"><inlineCode parentName=\"li\">{`fromBlock`}</inlineCode>{` `}<em parentName=\"li\">{`[optional, default is \"latest\"]`}</em>{` - an integer block number, or the string \"latest\", \"earliest\" or\n\"pending\"`}</li>\n              <li parentName=\"ul\"><inlineCode parentName=\"li\">{`toBlock`}</inlineCode>{` `}<em parentName=\"li\">{`[optional, default is \"latest\"]`}</em>{` - an integer block number, or the string \"latest\", \"earliest\" or\n\"pending\"`}</li>\n              <li parentName=\"ul\"><inlineCode parentName=\"li\">{`topics`}</inlineCode><em parentName=\"li\">{`[optional]`}</em>{` - Array of 32 Bytes DATA topics. Topics are order-dependent.`}</li>\n            </ul></li>\n        </ul><p parentName=\"section\"><strong parentName=\"p\">{`A note on specifying topic filters:`}</strong>{` Topics are order-dependent. A transaction with a log with topics `}{`[A, B]`}{` will be\nmatched by the following topic filters:`}</p><ul parentName=\"section\">\n          <li parentName=\"ul\">{`[] - anything\"`}</li>\n          <li parentName=\"ul\">{`[A]`}{` - A in first position (and anything after)`}</li>\n          <li parentName=\"ul\">{`[null, B]`}{` - anything in first position AND B in second position (and anything after)`}</li>\n          <li parentName=\"ul\">{`[A, B]`}{` - A in first position AND B in second position (and anything after)\"`}</li>\n          <li parentName=\"ul\">{`[`}{`[A, B]`}{`, `}{`[A, B]`}{`] - (A OR B) in first position AND (A OR B) in second position (and anything after)`}</li>\n        </ul></section><section parentName=\"section\"><h4 parentName=\"section\">{`EXAMPLE`}</h4><pre parentName=\"section\"><code parentName=\"pre\" {...{\n            \"className\": \"language-bash\"\n          }}>{`>wscat -c wss://mainnet.backbonecabal.xyz/ws\n\n>{\"jsonrpc\":\"2.0\",\"method\":\"eth_newFilter\",\"params\":[{\"topics\": [\"0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef\"]}],\"id\":73}\n`}</code></pre></section></section>\n    <section><h3 parentName=\"section\">{`RESPONSE`}</h3></section>\n    <section><h4 parentName=\"section\">{`RESULT FIELDS`}</h4><ul parentName=\"section\">\n        <li parentName=\"ul\"><inlineCode parentName=\"li\">{`FILTER ID`}</inlineCode>{` - A string denoting the newly created filter id`}</li>\n      </ul></section>\n    <section><h4 parentName=\"section\">{`BODY`}</h4><pre parentName=\"section\"><code parentName=\"pre\" {...{\n          \"className\": \"language-json\"\n        }}>{`{\n    \"jsonrpc\": \"2.0\",\n    \"id\": 73,\n    \"result\": \"0x7db09f66a25e197d995d3895278b731\"\n}\n`}</code></pre></section>\n\n    </MDXLayout>;\n}\n\n;\nMDXContent.isMDXComponent = true;"}}
+{
+  "expireTime": 9007200869051277000,
+  "key": "gatsby-plugin-mdx-entire-payload-396eb9571375b41d12ee89ba1e96a401-",
+  "val": {
+    "mdast": {
+      "type": "root",
+      "children": [
+        {
+          "type": "heading",
+          "depth": 1,
+          "children": [
+            {
+              "type": "text",
+              "value": "eth_newFilter",
+              "position": {
+                "start": { "line": 1, "column": 3, "offset": 2 },
+                "end": { "line": 1, "column": 16, "offset": 15 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 1, "column": 1, "offset": 0 },
+            "end": { "line": 1, "column": 16, "offset": 15 },
+            "indent": []
+          }
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "Creates a filter object, based on filter options, to notify when the state changes (logs). To check if the state has\nchanged, call eth_getFilterChanges",
+              "position": {
+                "start": { "line": 3, "column": 1, "offset": 17 },
+                "end": { "line": 4, "column": 35, "offset": 168 },
+                "indent": [1]
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 3, "column": 1, "offset": 17 },
+            "end": { "line": 4, "column": 35, "offset": 168 },
+            "indent": [1]
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 4,
+          "children": [
+            {
+              "type": "text",
+              "value": "REQUEST PAYLOAD",
+              "position": {
+                "start": { "line": 6, "column": 6, "offset": 175 },
+                "end": { "line": 6, "column": 21, "offset": 190 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 6, "column": 1, "offset": 170 },
+            "end": { "line": 6, "column": 21, "offset": 190 },
+            "indent": []
+          }
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "start": null,
+          "spread": false,
+          "children": [
+            {
+              "type": "listItem",
+              "spread": false,
+              "checked": null,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "inlineCode",
+                      "value": "FILTER OBJECT",
+                      "position": {
+                        "start": { "line": 8, "column": 5, "offset": 196 },
+                        "end": { "line": 8, "column": 20, "offset": 211 },
+                        "indent": []
+                      }
+                    }
+                  ],
+                  "position": {
+                    "start": { "line": 8, "column": 5, "offset": 196 },
+                    "end": { "line": 8, "column": 20, "offset": 211 },
+                    "indent": []
+                  }
+                },
+                {
+                  "type": "list",
+                  "ordered": false,
+                  "start": null,
+                  "spread": false,
+                  "children": [
+                    {
+                      "type": "listItem",
+                      "spread": false,
+                      "checked": null,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "inlineCode",
+                              "value": "address",
+                              "position": {
+                                "start": {
+                                  "line": 9,
+                                  "column": 9,
+                                  "offset": 220
+                                },
+                                "end": {
+                                  "line": 9,
+                                  "column": 18,
+                                  "offset": 229
+                                },
+                                "indent": []
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "value": " ",
+                              "position": {
+                                "start": {
+                                  "line": 9,
+                                  "column": 18,
+                                  "offset": 229
+                                },
+                                "end": {
+                                  "line": 9,
+                                  "column": 19,
+                                  "offset": 230
+                                },
+                                "indent": []
+                              }
+                            },
+                            {
+                              "type": "emphasis",
+                              "children": [
+                                {
+                                  "type": "linkReference",
+                                  "identifier": "optional",
+                                  "label": "optional",
+                                  "referenceType": "shortcut",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "value": "optional",
+                                      "position": {
+                                        "start": {
+                                          "line": 9,
+                                          "column": 21,
+                                          "offset": 232
+                                        },
+                                        "end": {
+                                          "line": 9,
+                                          "column": 29,
+                                          "offset": 240
+                                        },
+                                        "indent": []
+                                      }
+                                    }
+                                  ],
+                                  "position": {
+                                    "start": {
+                                      "line": 9,
+                                      "column": 20,
+                                      "offset": 231
+                                    },
+                                    "end": {
+                                      "line": 9,
+                                      "column": 30,
+                                      "offset": 241
+                                    },
+                                    "indent": []
+                                  }
+                                }
+                              ],
+                              "position": {
+                                "start": {
+                                  "line": 9,
+                                  "column": 19,
+                                  "offset": 230
+                                },
+                                "end": {
+                                  "line": 9,
+                                  "column": 31,
+                                  "offset": 242
+                                },
+                                "indent": []
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "value": " - a string representing the address (20 bytes) to check for balance",
+                              "position": {
+                                "start": {
+                                  "line": 9,
+                                  "column": 31,
+                                  "offset": 242
+                                },
+                                "end": {
+                                  "line": 9,
+                                  "column": 99,
+                                  "offset": 310
+                                },
+                                "indent": []
+                              }
+                            }
+                          ],
+                          "position": {
+                            "start": { "line": 9, "column": 9, "offset": 220 },
+                            "end": { "line": 9, "column": 99, "offset": 310 },
+                            "indent": []
+                          }
+                        }
+                      ],
+                      "position": {
+                        "start": { "line": 9, "column": 5, "offset": 216 },
+                        "end": { "line": 9, "column": 99, "offset": 310 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "listItem",
+                      "spread": false,
+                      "checked": null,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "inlineCode",
+                              "value": "fromBlock",
+                              "position": {
+                                "start": {
+                                  "line": 10,
+                                  "column": 9,
+                                  "offset": 319
+                                },
+                                "end": {
+                                  "line": 10,
+                                  "column": 20,
+                                  "offset": 330
+                                },
+                                "indent": []
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "value": " ",
+                              "position": {
+                                "start": {
+                                  "line": 10,
+                                  "column": 20,
+                                  "offset": 330
+                                },
+                                "end": {
+                                  "line": 10,
+                                  "column": 21,
+                                  "offset": 331
+                                },
+                                "indent": []
+                              }
+                            },
+                            {
+                              "type": "emphasis",
+                              "children": [
+                                {
+                                  "type": "linkReference",
+                                  "identifier": "optional, default is \"latest\"",
+                                  "label": "optional, default is \"latest\"",
+                                  "referenceType": "shortcut",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "value": "optional, default is \"latest\"",
+                                      "position": {
+                                        "start": {
+                                          "line": 10,
+                                          "column": 23,
+                                          "offset": 333
+                                        },
+                                        "end": {
+                                          "line": 10,
+                                          "column": 52,
+                                          "offset": 362
+                                        },
+                                        "indent": []
+                                      }
+                                    }
+                                  ],
+                                  "position": {
+                                    "start": {
+                                      "line": 10,
+                                      "column": 22,
+                                      "offset": 332
+                                    },
+                                    "end": {
+                                      "line": 10,
+                                      "column": 53,
+                                      "offset": 363
+                                    },
+                                    "indent": []
+                                  }
+                                }
+                              ],
+                              "position": {
+                                "start": {
+                                  "line": 10,
+                                  "column": 21,
+                                  "offset": 331
+                                },
+                                "end": {
+                                  "line": 10,
+                                  "column": 54,
+                                  "offset": 364
+                                },
+                                "indent": []
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "value": " - an integer block number, or the string \"latest\", \"earliest\" or\n\"pending\"",
+                              "position": {
+                                "start": {
+                                  "line": 10,
+                                  "column": 54,
+                                  "offset": 364
+                                },
+                                "end": {
+                                  "line": 11,
+                                  "column": 18,
+                                  "offset": 447
+                                },
+                                "indent": [9]
+                              }
+                            }
+                          ],
+                          "position": {
+                            "start": { "line": 10, "column": 9, "offset": 319 },
+                            "end": { "line": 11, "column": 18, "offset": 447 },
+                            "indent": [9]
+                          }
+                        }
+                      ],
+                      "position": {
+                        "start": { "line": 10, "column": 5, "offset": 315 },
+                        "end": { "line": 11, "column": 18, "offset": 447 },
+                        "indent": [5]
+                      }
+                    },
+                    {
+                      "type": "listItem",
+                      "spread": false,
+                      "checked": null,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "inlineCode",
+                              "value": "toBlock",
+                              "position": {
+                                "start": {
+                                  "line": 12,
+                                  "column": 9,
+                                  "offset": 456
+                                },
+                                "end": {
+                                  "line": 12,
+                                  "column": 18,
+                                  "offset": 465
+                                },
+                                "indent": []
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "value": " ",
+                              "position": {
+                                "start": {
+                                  "line": 12,
+                                  "column": 18,
+                                  "offset": 465
+                                },
+                                "end": {
+                                  "line": 12,
+                                  "column": 19,
+                                  "offset": 466
+                                },
+                                "indent": []
+                              }
+                            },
+                            {
+                              "type": "emphasis",
+                              "children": [
+                                {
+                                  "type": "linkReference",
+                                  "identifier": "optional, default is \"latest\"",
+                                  "label": "optional, default is \"latest\"",
+                                  "referenceType": "shortcut",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "value": "optional, default is \"latest\"",
+                                      "position": {
+                                        "start": {
+                                          "line": 12,
+                                          "column": 21,
+                                          "offset": 468
+                                        },
+                                        "end": {
+                                          "line": 12,
+                                          "column": 50,
+                                          "offset": 497
+                                        },
+                                        "indent": []
+                                      }
+                                    }
+                                  ],
+                                  "position": {
+                                    "start": {
+                                      "line": 12,
+                                      "column": 20,
+                                      "offset": 467
+                                    },
+                                    "end": {
+                                      "line": 12,
+                                      "column": 51,
+                                      "offset": 498
+                                    },
+                                    "indent": []
+                                  }
+                                }
+                              ],
+                              "position": {
+                                "start": {
+                                  "line": 12,
+                                  "column": 19,
+                                  "offset": 466
+                                },
+                                "end": {
+                                  "line": 12,
+                                  "column": 52,
+                                  "offset": 499
+                                },
+                                "indent": []
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "value": " - an integer block number, or the string \"latest\", \"earliest\" or\n\"pending\"",
+                              "position": {
+                                "start": {
+                                  "line": 12,
+                                  "column": 52,
+                                  "offset": 499
+                                },
+                                "end": {
+                                  "line": 13,
+                                  "column": 18,
+                                  "offset": 582
+                                },
+                                "indent": [9]
+                              }
+                            }
+                          ],
+                          "position": {
+                            "start": { "line": 12, "column": 9, "offset": 456 },
+                            "end": { "line": 13, "column": 18, "offset": 582 },
+                            "indent": [9]
+                          }
+                        }
+                      ],
+                      "position": {
+                        "start": { "line": 12, "column": 5, "offset": 452 },
+                        "end": { "line": 13, "column": 18, "offset": 582 },
+                        "indent": [5]
+                      }
+                    },
+                    {
+                      "type": "listItem",
+                      "spread": false,
+                      "checked": null,
+                      "children": [
+                        {
+                          "type": "paragraph",
+                          "children": [
+                            {
+                              "type": "inlineCode",
+                              "value": "topics",
+                              "position": {
+                                "start": {
+                                  "line": 14,
+                                  "column": 9,
+                                  "offset": 591
+                                },
+                                "end": {
+                                  "line": 14,
+                                  "column": 17,
+                                  "offset": 599
+                                },
+                                "indent": []
+                              }
+                            },
+                            {
+                              "type": "emphasis",
+                              "children": [
+                                {
+                                  "type": "linkReference",
+                                  "identifier": "optional",
+                                  "label": "optional",
+                                  "referenceType": "shortcut",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "value": "optional",
+                                      "position": {
+                                        "start": {
+                                          "line": 14,
+                                          "column": 19,
+                                          "offset": 601
+                                        },
+                                        "end": {
+                                          "line": 14,
+                                          "column": 27,
+                                          "offset": 609
+                                        },
+                                        "indent": []
+                                      }
+                                    }
+                                  ],
+                                  "position": {
+                                    "start": {
+                                      "line": 14,
+                                      "column": 18,
+                                      "offset": 600
+                                    },
+                                    "end": {
+                                      "line": 14,
+                                      "column": 28,
+                                      "offset": 610
+                                    },
+                                    "indent": []
+                                  }
+                                }
+                              ],
+                              "position": {
+                                "start": {
+                                  "line": 14,
+                                  "column": 17,
+                                  "offset": 599
+                                },
+                                "end": {
+                                  "line": 14,
+                                  "column": 29,
+                                  "offset": 611
+                                },
+                                "indent": []
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "value": " - Array of 32 Bytes DATA topics. Topics are order-dependent.",
+                              "position": {
+                                "start": {
+                                  "line": 14,
+                                  "column": 29,
+                                  "offset": 611
+                                },
+                                "end": {
+                                  "line": 14,
+                                  "column": 90,
+                                  "offset": 672
+                                },
+                                "indent": []
+                              }
+                            }
+                          ],
+                          "position": {
+                            "start": { "line": 14, "column": 9, "offset": 591 },
+                            "end": { "line": 14, "column": 90, "offset": 672 },
+                            "indent": []
+                          }
+                        }
+                      ],
+                      "position": {
+                        "start": { "line": 14, "column": 5, "offset": 587 },
+                        "end": { "line": 14, "column": 90, "offset": 672 },
+                        "indent": []
+                      }
+                    }
+                  ],
+                  "position": {
+                    "start": { "line": 9, "column": 5, "offset": 216 },
+                    "end": { "line": 14, "column": 90, "offset": 672 },
+                    "indent": [5, 5, 5, 5, 5]
+                  }
+                }
+              ],
+              "position": {
+                "start": { "line": 8, "column": 1, "offset": 192 },
+                "end": { "line": 14, "column": 90, "offset": 672 },
+                "indent": [1, 1, 1, 1, 1, 1]
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 8, "column": 1, "offset": 192 },
+            "end": { "line": 14, "column": 90, "offset": 672 },
+            "indent": [1, 1, 1, 1, 1, 1]
+          }
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "strong",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "A note on specifying topic filters:",
+                  "position": {
+                    "start": { "line": 16, "column": 3, "offset": 676 },
+                    "end": { "line": 16, "column": 38, "offset": 711 },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": { "line": 16, "column": 1, "offset": 674 },
+                "end": { "line": 16, "column": 40, "offset": 713 },
+                "indent": []
+              }
+            },
+            {
+              "type": "text",
+              "value": " Topics are order-dependent. A transaction with a log with topics ",
+              "position": {
+                "start": { "line": 16, "column": 40, "offset": 713 },
+                "end": { "line": 16, "column": 106, "offset": 779 },
+                "indent": []
+              }
+            },
+            {
+              "type": "linkReference",
+              "identifier": "a, b",
+              "label": "A, B",
+              "referenceType": "shortcut",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "A, B",
+                  "position": {
+                    "start": { "line": 16, "column": 107, "offset": 780 },
+                    "end": { "line": 16, "column": 111, "offset": 784 },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": { "line": 16, "column": 106, "offset": 779 },
+                "end": { "line": 16, "column": 112, "offset": 785 },
+                "indent": []
+              }
+            },
+            {
+              "type": "text",
+              "value": " will be\nmatched by the following topic filters:",
+              "position": {
+                "start": { "line": 16, "column": 112, "offset": 785 },
+                "end": { "line": 17, "column": 40, "offset": 833 },
+                "indent": [1]
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 16, "column": 1, "offset": 674 },
+            "end": { "line": 17, "column": 40, "offset": 833 },
+            "indent": [1]
+          }
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "start": null,
+          "spread": false,
+          "children": [
+            {
+              "type": "listItem",
+              "spread": false,
+              "checked": null,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "[] - anything\"",
+                      "position": {
+                        "start": { "line": 19, "column": 5, "offset": 839 },
+                        "end": { "line": 19, "column": 19, "offset": 853 },
+                        "indent": []
+                      }
+                    }
+                  ],
+                  "position": {
+                    "start": { "line": 19, "column": 5, "offset": 839 },
+                    "end": { "line": 19, "column": 19, "offset": 853 },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": { "line": 19, "column": 1, "offset": 835 },
+                "end": { "line": 19, "column": 19, "offset": 853 },
+                "indent": []
+              }
+            },
+            {
+              "type": "listItem",
+              "spread": false,
+              "checked": null,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "linkReference",
+                      "identifier": "a",
+                      "label": "A",
+                      "referenceType": "shortcut",
+                      "children": [
+                        {
+                          "type": "text",
+                          "value": "A",
+                          "position": {
+                            "start": { "line": 20, "column": 6, "offset": 859 },
+                            "end": { "line": 20, "column": 7, "offset": 860 },
+                            "indent": []
+                          }
+                        }
+                      ],
+                      "position": {
+                        "start": { "line": 20, "column": 5, "offset": 858 },
+                        "end": { "line": 20, "column": 8, "offset": 861 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "value": " - A in first position (and anything after)",
+                      "position": {
+                        "start": { "line": 20, "column": 8, "offset": 861 },
+                        "end": { "line": 20, "column": 51, "offset": 904 },
+                        "indent": []
+                      }
+                    }
+                  ],
+                  "position": {
+                    "start": { "line": 20, "column": 5, "offset": 858 },
+                    "end": { "line": 20, "column": 51, "offset": 904 },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": { "line": 20, "column": 1, "offset": 854 },
+                "end": { "line": 20, "column": 51, "offset": 904 },
+                "indent": []
+              }
+            },
+            {
+              "type": "listItem",
+              "spread": false,
+              "checked": null,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "linkReference",
+                      "identifier": "null, b",
+                      "label": "null, B",
+                      "referenceType": "shortcut",
+                      "children": [
+                        {
+                          "type": "text",
+                          "value": "null, B",
+                          "position": {
+                            "start": { "line": 21, "column": 6, "offset": 910 },
+                            "end": { "line": 21, "column": 13, "offset": 917 },
+                            "indent": []
+                          }
+                        }
+                      ],
+                      "position": {
+                        "start": { "line": 21, "column": 5, "offset": 909 },
+                        "end": { "line": 21, "column": 14, "offset": 918 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "value": " - anything in first position AND B in second position (and anything after)",
+                      "position": {
+                        "start": { "line": 21, "column": 14, "offset": 918 },
+                        "end": { "line": 21, "column": 89, "offset": 993 },
+                        "indent": []
+                      }
+                    }
+                  ],
+                  "position": {
+                    "start": { "line": 21, "column": 5, "offset": 909 },
+                    "end": { "line": 21, "column": 89, "offset": 993 },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": { "line": 21, "column": 1, "offset": 905 },
+                "end": { "line": 21, "column": 89, "offset": 993 },
+                "indent": []
+              }
+            },
+            {
+              "type": "listItem",
+              "spread": false,
+              "checked": null,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "linkReference",
+                      "identifier": "a, b",
+                      "label": "A, B",
+                      "referenceType": "shortcut",
+                      "children": [
+                        {
+                          "type": "text",
+                          "value": "A, B",
+                          "position": {
+                            "start": { "line": 22, "column": 6, "offset": 999 },
+                            "end": { "line": 22, "column": 10, "offset": 1003 },
+                            "indent": []
+                          }
+                        }
+                      ],
+                      "position": {
+                        "start": { "line": 22, "column": 5, "offset": 998 },
+                        "end": { "line": 22, "column": 11, "offset": 1004 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "value": " - A in first position AND B in second position (and anything after)\"",
+                      "position": {
+                        "start": { "line": 22, "column": 11, "offset": 1004 },
+                        "end": { "line": 22, "column": 80, "offset": 1073 },
+                        "indent": []
+                      }
+                    }
+                  ],
+                  "position": {
+                    "start": { "line": 22, "column": 5, "offset": 998 },
+                    "end": { "line": 22, "column": 80, "offset": 1073 },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": { "line": 22, "column": 1, "offset": 994 },
+                "end": { "line": 22, "column": 80, "offset": 1073 },
+                "indent": []
+              }
+            },
+            {
+              "type": "listItem",
+              "spread": false,
+              "checked": null,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "[",
+                      "position": {
+                        "start": { "line": 23, "column": 5, "offset": 1078 },
+                        "end": { "line": 23, "column": 7, "offset": 1080 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "linkReference",
+                      "identifier": "a, b",
+                      "label": "A, B",
+                      "referenceType": "shortcut",
+                      "children": [
+                        {
+                          "type": "text",
+                          "value": "A, B",
+                          "position": {
+                            "start": {
+                              "line": 23,
+                              "column": 8,
+                              "offset": 1081
+                            },
+                            "end": { "line": 23, "column": 12, "offset": 1085 },
+                            "indent": []
+                          }
+                        }
+                      ],
+                      "position": {
+                        "start": { "line": 23, "column": 7, "offset": 1080 },
+                        "end": { "line": 23, "column": 13, "offset": 1086 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "value": ", ",
+                      "position": {
+                        "start": { "line": 23, "column": 13, "offset": 1086 },
+                        "end": { "line": 23, "column": 15, "offset": 1088 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "linkReference",
+                      "identifier": "a, b",
+                      "label": "A, B",
+                      "referenceType": "shortcut",
+                      "children": [
+                        {
+                          "type": "text",
+                          "value": "A, B",
+                          "position": {
+                            "start": {
+                              "line": 23,
+                              "column": 16,
+                              "offset": 1089
+                            },
+                            "end": { "line": 23, "column": 20, "offset": 1093 },
+                            "indent": []
+                          }
+                        }
+                      ],
+                      "position": {
+                        "start": { "line": 23, "column": 15, "offset": 1088 },
+                        "end": { "line": 23, "column": 21, "offset": 1094 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "value": "] - (A OR B) in first position AND (A OR B) in second position (and anything after)",
+                      "position": {
+                        "start": { "line": 23, "column": 21, "offset": 1094 },
+                        "end": { "line": 23, "column": 104, "offset": 1177 },
+                        "indent": []
+                      }
+                    }
+                  ],
+                  "position": {
+                    "start": { "line": 23, "column": 5, "offset": 1078 },
+                    "end": { "line": 23, "column": 104, "offset": 1177 },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": { "line": 23, "column": 1, "offset": 1074 },
+                "end": { "line": 23, "column": 104, "offset": 1177 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 19, "column": 1, "offset": 835 },
+            "end": { "line": 23, "column": 104, "offset": 1177 },
+            "indent": [1, 1, 1, 1]
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 4,
+          "children": [
+            {
+              "type": "text",
+              "value": "EXAMPLE",
+              "position": {
+                "start": { "line": 25, "column": 6, "offset": 1184 },
+                "end": { "line": 25, "column": 13, "offset": 1191 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 25, "column": 1, "offset": 1179 },
+            "end": { "line": 25, "column": 13, "offset": 1191 },
+            "indent": []
+          }
+        },
+        {
+          "type": "code",
+          "lang": "bash",
+          "meta": null,
+          "value": ">wscat -c wss://mainnet.backbonecabal.xyz/ws\n\n>{\"jsonrpc\":\"2.0\",\"method\":\"eth_newFilter\",\"params\":[{\"topics\": [\"0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef\"]}],\"id\":73}",
+          "position": {
+            "start": { "line": 27, "column": 1, "offset": 1193 },
+            "end": { "line": 31, "column": 4, "offset": 1396 },
+            "indent": [1, 1, 1, 1]
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 3,
+          "children": [
+            {
+              "type": "text",
+              "value": "RESPONSE",
+              "position": {
+                "start": { "line": 33, "column": 5, "offset": 1402 },
+                "end": { "line": 33, "column": 13, "offset": 1410 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 33, "column": 1, "offset": 1398 },
+            "end": { "line": 33, "column": 13, "offset": 1410 },
+            "indent": []
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 4,
+          "children": [
+            {
+              "type": "text",
+              "value": "RESULT FIELDS",
+              "position": {
+                "start": { "line": 35, "column": 6, "offset": 1417 },
+                "end": { "line": 35, "column": 19, "offset": 1430 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 35, "column": 1, "offset": 1412 },
+            "end": { "line": 35, "column": 19, "offset": 1430 },
+            "indent": []
+          }
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "start": null,
+          "spread": false,
+          "children": [
+            {
+              "type": "listItem",
+              "spread": false,
+              "checked": null,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "inlineCode",
+                      "value": "FILTER ID",
+                      "position": {
+                        "start": { "line": 37, "column": 5, "offset": 1436 },
+                        "end": { "line": 37, "column": 16, "offset": 1447 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "value": " - A string denoting the newly created filter id",
+                      "position": {
+                        "start": { "line": 37, "column": 16, "offset": 1447 },
+                        "end": { "line": 37, "column": 64, "offset": 1495 },
+                        "indent": []
+                      }
+                    }
+                  ],
+                  "position": {
+                    "start": { "line": 37, "column": 5, "offset": 1436 },
+                    "end": { "line": 37, "column": 64, "offset": 1495 },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": { "line": 37, "column": 1, "offset": 1432 },
+                "end": { "line": 37, "column": 64, "offset": 1495 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 37, "column": 1, "offset": 1432 },
+            "end": { "line": 37, "column": 64, "offset": 1495 },
+            "indent": []
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 4,
+          "children": [
+            {
+              "type": "text",
+              "value": "BODY",
+              "position": {
+                "start": { "line": 39, "column": 6, "offset": 1502 },
+                "end": { "line": 39, "column": 10, "offset": 1506 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 39, "column": 1, "offset": 1497 },
+            "end": { "line": 39, "column": 10, "offset": 1506 },
+            "indent": []
+          }
+        },
+        {
+          "type": "code",
+          "lang": "json",
+          "meta": null,
+          "value": "{\n\t\"jsonrpc\": \"2.0\",\n\t\"id\": 73,\n\t\"result\": \"0x7db09f66a25e197d995d3895278b731\"\n}",
+          "position": {
+            "start": { "line": 41, "column": 1, "offset": 1508 },
+            "end": { "line": 47, "column": 4, "offset": 1600 },
+            "indent": [1, 1, 1, 1, 1, 1]
+          }
+        },
+        {
+          "type": "export",
+          "value": "export const _frontmatter = {}",
+          "position": {
+            "start": { "line": 50, "column": 1, "offset": 1603 },
+            "end": { "line": 50, "column": 31, "offset": 1633 },
+            "indent": []
+          }
+        }
+      ],
+      "position": {
+        "start": { "line": 1, "column": 1, "offset": 0 },
+        "end": { "line": 50, "column": 31, "offset": 1633 }
+      }
+    },
+    "scopeImports": ["import * as React from 'react'"],
+    "scopeIdentifiers": ["React"],
+    "body": "function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }\n\nfunction _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }\n\nfunction _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }\n\n/* @jsx mdx */\nvar _frontmatter = {};\nvar layoutProps = {\n  _frontmatter: _frontmatter\n};\nvar MDXLayout = \"wrapper\";\nreturn function MDXContent(_ref) {\n  var components = _ref.components,\n      props = _objectWithoutProperties(_ref, [\"components\"]);\n\n  return mdx(MDXLayout, _extends({}, layoutProps, props, {\n    components: components,\n    mdxType: \"MDXLayout\"\n  }), mdx(\"section\", null, mdx(\"h1\", {\n    parentName: \"section\"\n  }, \"eth_newFilter\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, \"Creates a filter object, based on filter options, to notify when the state changes (logs). To check if the state has\\nchanged, call eth_getFilterChanges\"), mdx(\"section\", {\n    parentName: \"section\"\n  }, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"REQUEST PAYLOAD\"), mdx(\"ul\", {\n    parentName: \"section\"\n  }, mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"FILTER OBJECT\"), mdx(\"ul\", {\n    parentName: \"li\"\n  }, mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"address\"), \" \", mdx(\"em\", {\n    parentName: \"li\"\n  }, \"[optional]\"), \" - a string representing the address (20 bytes) to check for balance\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"fromBlock\"), \" \", mdx(\"em\", {\n    parentName: \"li\"\n  }, \"[optional, default is \\\"latest\\\"]\"), \" - an integer block number, or the string \\\"latest\\\", \\\"earliest\\\" or\\n\\\"pending\\\"\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"toBlock\"), \" \", mdx(\"em\", {\n    parentName: \"li\"\n  }, \"[optional, default is \\\"latest\\\"]\"), \" - an integer block number, or the string \\\"latest\\\", \\\"earliest\\\" or\\n\\\"pending\\\"\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"topics\"), mdx(\"em\", {\n    parentName: \"li\"\n  }, \"[optional]\"), \" - Array of 32 Bytes DATA topics. Topics are order-dependent.\")))), mdx(\"p\", {\n    parentName: \"section\"\n  }, mdx(\"strong\", {\n    parentName: \"p\"\n  }, \"A note on specifying topic filters:\"), \" Topics are order-dependent. A transaction with a log with topics \", \"[A, B]\", \" will be\\nmatched by the following topic filters:\"), mdx(\"ul\", {\n    parentName: \"section\"\n  }, mdx(\"li\", {\n    parentName: \"ul\"\n  }, \"[] - anything\\\"\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, \"[A]\", \" - A in first position (and anything after)\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, \"[null, B]\", \" - anything in first position AND B in second position (and anything after)\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, \"[A, B]\", \" - A in first position AND B in second position (and anything after)\\\"\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, \"[\", \"[A, B]\", \", \", \"[A, B]\", \"] - (A OR B) in first position AND (A OR B) in second position (and anything after)\"))), mdx(\"section\", {\n    parentName: \"section\"\n  }, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"EXAMPLE\"), mdx(\"pre\", {\n    parentName: \"section\"\n  }, mdx(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-bash\"\n  }), \">wscat -c wss://mainnet.backbonecabal.xyz/ws\\n\\n>{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"method\\\":\\\"eth_newFilter\\\",\\\"params\\\":[{\\\"topics\\\": [\\\"0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef\\\"]}],\\\"id\\\":73}\\n\")))), mdx(\"section\", null, mdx(\"h3\", {\n    parentName: \"section\"\n  }, \"RESPONSE\")), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"RESULT FIELDS\"), mdx(\"ul\", {\n    parentName: \"section\"\n  }, mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"FILTER ID\"), \" - A string denoting the newly created filter id\"))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"BODY\"), mdx(\"pre\", {\n    parentName: \"section\"\n  }, mdx(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-json\"\n  }), \"{\\n    \\\"jsonrpc\\\": \\\"2.0\\\",\\n    \\\"id\\\": 73,\\n    \\\"result\\\": \\\"0x7db09f66a25e197d995d3895278b731\\\"\\n}\\n\"))));\n}\n;\nMDXContent.isMDXComponent = true;",
+    "rawMDXOutput": "/* @jsx mdx */\nimport { mdx } from '@mdx-js/react';\n/* @jsx mdx */\n\nexport const _frontmatter = {};\n\nconst layoutProps = {\n  _frontmatter\n};\nconst MDXLayout = \"wrapper\"\nexport default function MDXContent({\n  components,\n  ...props\n}) {\n  return <MDXLayout {...layoutProps} {...props} components={components} mdxType=\"MDXLayout\">\n    <section><h1 parentName=\"section\">{`eth_newFilter`}</h1><p parentName=\"section\">{`Creates a filter object, based on filter options, to notify when the state changes (logs). To check if the state has\nchanged, call eth_getFilterChanges`}</p><section parentName=\"section\"><h4 parentName=\"section\">{`REQUEST PAYLOAD`}</h4><ul parentName=\"section\">\n          <li parentName=\"ul\"><inlineCode parentName=\"li\">{`FILTER OBJECT`}</inlineCode><ul parentName=\"li\">\n              <li parentName=\"ul\"><inlineCode parentName=\"li\">{`address`}</inlineCode>{` `}<em parentName=\"li\">{`[optional]`}</em>{` - a string representing the address (20 bytes) to check for balance`}</li>\n              <li parentName=\"ul\"><inlineCode parentName=\"li\">{`fromBlock`}</inlineCode>{` `}<em parentName=\"li\">{`[optional, default is \"latest\"]`}</em>{` - an integer block number, or the string \"latest\", \"earliest\" or\n\"pending\"`}</li>\n              <li parentName=\"ul\"><inlineCode parentName=\"li\">{`toBlock`}</inlineCode>{` `}<em parentName=\"li\">{`[optional, default is \"latest\"]`}</em>{` - an integer block number, or the string \"latest\", \"earliest\" or\n\"pending\"`}</li>\n              <li parentName=\"ul\"><inlineCode parentName=\"li\">{`topics`}</inlineCode><em parentName=\"li\">{`[optional]`}</em>{` - Array of 32 Bytes DATA topics. Topics are order-dependent.`}</li>\n            </ul></li>\n        </ul><p parentName=\"section\"><strong parentName=\"p\">{`A note on specifying topic filters:`}</strong>{` Topics are order-dependent. A transaction with a log with topics `}{`[A, B]`}{` will be\nmatched by the following topic filters:`}</p><ul parentName=\"section\">\n          <li parentName=\"ul\">{`[] - anything\"`}</li>\n          <li parentName=\"ul\">{`[A]`}{` - A in first position (and anything after)`}</li>\n          <li parentName=\"ul\">{`[null, B]`}{` - anything in first position AND B in second position (and anything after)`}</li>\n          <li parentName=\"ul\">{`[A, B]`}{` - A in first position AND B in second position (and anything after)\"`}</li>\n          <li parentName=\"ul\">{`[`}{`[A, B]`}{`, `}{`[A, B]`}{`] - (A OR B) in first position AND (A OR B) in second position (and anything after)`}</li>\n        </ul></section><section parentName=\"section\"><h4 parentName=\"section\">{`EXAMPLE`}</h4><pre parentName=\"section\"><code parentName=\"pre\" {...{\n            \"className\": \"language-bash\"\n          }}>{`>wscat -c wss://mainnet.backbonecabal.xyz/ws\n\n>{\"jsonrpc\":\"2.0\",\"method\":\"eth_newFilter\",\"params\":[{\"topics\": [\"0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef\"]}],\"id\":73}\n`}</code></pre></section></section>\n    <section><h3 parentName=\"section\">{`RESPONSE`}</h3></section>\n    <section><h4 parentName=\"section\">{`RESULT FIELDS`}</h4><ul parentName=\"section\">\n        <li parentName=\"ul\"><inlineCode parentName=\"li\">{`FILTER ID`}</inlineCode>{` - A string denoting the newly created filter id`}</li>\n      </ul></section>\n    <section><h4 parentName=\"section\">{`BODY`}</h4><pre parentName=\"section\"><code parentName=\"pre\" {...{\n          \"className\": \"language-json\"\n        }}>{`{\n    \"jsonrpc\": \"2.0\",\n    \"id\": 73,\n    \"result\": \"0x7db09f66a25e197d995d3895278b731\"\n}\n`}</code></pre></section>\n\n    </MDXLayout>;\n}\n\n;\nMDXContent.isMDXComponent = true;"
+  }
+}

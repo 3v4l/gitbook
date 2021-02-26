@@ -1,11 +1,18 @@
-import PropTypes from 'prop-types';
-import React from 'react';
-import { Sun as DayImage, Moon as NightImage } from 'react-feather';
-import { ButtonIcon } from '../';
+import PropTypes from "prop-types";
+import React from "react";
+import { Sun as DayImage, Moon as NightImage } from "react-feather";
+import { ButtonIcon } from "../";
 
 const DarkModeSwitch = ({ isDarkThemeActive, toggleActiveTheme, ...props }) => {
   const img = isDarkThemeActive ? NightImage : DayImage;
-  return <ButtonIcon icon={img} onClick={toggleActiveTheme} title={'Switch theme'} {...props} />;
+  return (
+    <ButtonIcon
+      icon={img}
+      onClick={toggleActiveTheme}
+      title={"Switch theme"}
+      {...props}
+    />
+  );
 };
 
 DarkModeSwitch.propTypes = {

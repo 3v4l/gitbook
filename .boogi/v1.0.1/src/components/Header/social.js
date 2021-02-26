@@ -1,4 +1,4 @@
-import * as SocialButtons from '../Buttons/Social';
+import * as SocialButtons from "../Buttons/Social";
 
 const SocialButtonsBuilder = (baseProps) => {
   const iconBaseProps = baseProps;
@@ -7,11 +7,16 @@ const SocialButtonsBuilder = (baseProps) => {
     if (config && config.length > 0) {
       const btn = SocialButtons[name];
       if (btn) {
-        const link = optConfig && optConfig.linkFn ? optConfig.linkFn(config) : config;
+        const link =
+          optConfig && optConfig.linkFn ? optConfig.linkFn(config) : config;
         const title =
-          optConfig && optConfig.titleFn ? optConfig.titleFn(name) : `Follow on ${name}`;
+          optConfig && optConfig.titleFn
+            ? optConfig.titleFn(name)
+            : `Follow on ${name}`;
         const additionalProps =
-          optConfig && optConfig.additionalProps ? optConfig.additionalProps : {};
+          optConfig && optConfig.additionalProps
+            ? optConfig.additionalProps
+            : {};
         buttons.push(
           btn({
             link: link,
@@ -33,32 +38,33 @@ const SocialButtonsBuilder = (baseProps) => {
 
 export default (iconBaseProps, socialConfig) => {
   const buttons = SocialButtonsBuilder(iconBaseProps);
-  buttons.create(socialConfig.facebook, 'Facebook');
-  buttons.create(socialConfig.github, 'Github');
-  buttons.create(socialConfig.gitlab, 'Gitlab');
-  buttons.create(socialConfig.instagram, 'Instagram');
-  buttons.create(socialConfig.linkedin, 'Linkedin', {
+  buttons.create(socialConfig.facebook, "Facebook");
+  buttons.create(socialConfig.github, "Github");
+  buttons.create(socialConfig.gitlab, "Gitlab");
+  buttons.create(socialConfig.instagram, "Instagram");
+  buttons.create(socialConfig.linkedin, "Linkedin", {
     additionalProps: {
       fill: iconBaseProps.stroke,
       hoverFill: iconBaseProps.hoverStroke,
     },
   });
-  buttons.create(socialConfig.mail, 'Mail', {
+  buttons.create(socialConfig.mail, "Mail", {
     linkFn: (address) => `mailto:${address}`,
     titleFn: () => `Send email to owner`,
   });
-  buttons.create(socialConfig.gmail, 'Mail', {
-    linkFn: (address) => `https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=${address}`,
+  buttons.create(socialConfig.gmail, "Mail", {
+    linkFn: (address) =>
+      `https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=${address}`,
     titleFn: () => `Send email to owner`,
   });
-  buttons.create(socialConfig.slack, 'Slack');
-  buttons.create(socialConfig.twitch, 'Twitch');
-  buttons.create(socialConfig.twitter, 'Twitter', {
+  buttons.create(socialConfig.slack, "Slack");
+  buttons.create(socialConfig.twitch, "Twitch");
+  buttons.create(socialConfig.twitter, "Twitter", {
     additionalProps: {
       fill: iconBaseProps.stroke,
       hoverFill: iconBaseProps.hoverStroke,
     },
   });
-  buttons.create(socialConfig.youtube, 'Youtube');
+  buttons.create(socialConfig.youtube, "Youtube");
   return buttons.get();
 };

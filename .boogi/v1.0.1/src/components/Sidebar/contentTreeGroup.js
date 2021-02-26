@@ -1,54 +1,58 @@
-import React from 'react';
-import ContentTreeNode from './contentTreeNode';
-import config from 'config';
-import styled from '@emotion/styled';
-import emoji from '../../utils/emoji';
+import React from "react";
+import ContentTreeNode from "./contentTreeNode";
+import config from "config";
+import styled from "@emotion/styled";
+import emoji from "../../utils/emoji";
 
-const ContentTreeGroup = styled(({ className, treeState, title, icon, location, children }) => {
-  children.forEach((item) => {
-    const alreadyExpanded = treeState.collapsed[item.url] === false;
-    const expanded =
-      alreadyExpanded ||
-      location.pathname === item.url ||
-      location.pathname === item.url + '/' ||
-      item.children.some((child) => child.url === location.pathname) ||
-      (config.sidebar.expanded && config.sidebar.expanded.includes(item.url));
+const ContentTreeGroup = styled(
+  ({ className, treeState, title, icon, location, children }) => {
+    children.forEach((item) => {
+      const alreadyExpanded = treeState.collapsed[item.url] === false;
+      const expanded =
+        alreadyExpanded ||
+        location.pathname === item.url ||
+        location.pathname === item.url + "/" ||
+        item.children.some((child) => child.url === location.pathname) ||
+        (config.sidebar.expanded && config.sidebar.expanded.includes(item.url));
 
-    treeState.collapsed[item.url] = !expanded;
-  });
-  const toggle = (url) => {
-    treeState.setCollapsed({
-      ...treeState.collapsed,
-      [url]: !treeState.collapsed[url],
+      treeState.collapsed[item.url] = !expanded;
     });
-  };
-  const emojified = emoji.emojify(title);
-  return (
-    <div className={className}>
-      {title ? (
-        <>
-          <span>
-            {icon ? <img src={icon} alt={`group ${emojified}`} loading={'lazy'} /> : null}{' '}
-            {emojified}
-          </span>
-        </>
-      ) : null}
-      <ul>
-        {children.map((child) => (
-          <ContentTreeNode
-            key={child.url}
-            toggle={toggle}
-            collapsed={treeState.collapsed}
-            location={location}
-            {...child}
-          />
-        ))}
-      </ul>
-    </div>
+    const toggle = (url) => {
+      treeState.setCollapsed({
+        ...treeState.collapsed,
+        [url]: !treeState.collapsed[url],
+      });
+    };
+    const emojified = emoji.emojify(title);
+    return (
+      <div className={className}>
+        {title ? (
+          <>
+            <span>
+              {icon ? (
+                <img src={icon} alt={`group ${emojified}`} loading={"lazy"} />
+              ) : null}{" "}
+              {emojified}
+            </span>
+          </>
+        ) : null}
+        <ul>
+          {children.map((child) => (
+            <ContentTreeNode
+              key={child.url}
+              toggle={toggle}
+              collapsed={treeState.collapsed}
+              location={location}
+              {...child}
+            />
+          ))}
+        </ul>
+      </div>
 
-    // {...item}
-  );
-})`
+      // {...item}
+    );
+  }
+)`
   display: block;
   padding: 0;
   position: relative;

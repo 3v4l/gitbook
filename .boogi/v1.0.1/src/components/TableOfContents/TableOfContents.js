@@ -1,16 +1,16 @@
-import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
-import styled from '@emotion/styled';
-import { AlignRight } from 'react-feather';
-import config from 'config';
-import Scrollspy from 'react-scrollspy';
-import { sleep } from '../../utils/utils';
-import { scrollbar } from '../../styles';
-import emoji from '../../utils/emoji';
+import React from "react";
+import { StaticQuery, graphql } from "gatsby";
+import styled from "@emotion/styled";
+import { AlignRight } from "react-feather";
+import config from "config";
+import Scrollspy from "react-scrollspy";
+import { sleep } from "../../utils/utils";
+import { scrollbar } from "../../styles";
+import emoji from "../../utils/emoji";
 
 const Sidebar = styled.aside`
   background-color: ${(props) => props.theme.tableOfContents.background};
-  display: ${(props) => props.show ? 'block' : 'none'};
+  display: ${(props) => (props.show ? "block" : "none")};
   min-width: 260px;
   height: 100vh;
   overflow: auto;
@@ -47,7 +47,8 @@ const Sidebar = styled.aside`
   }
   .currentItem {
     a {
-      border-left: 2px solid ${(props) => props.theme.tableOfContents.font.current} !important;
+      border-left: 2px solid
+        ${(props) => props.theme.tableOfContents.font.current} !important;
       color: ${(props) => props.theme.tableOfContents.font.current} !important;
     }
   }
@@ -103,8 +104,8 @@ const buildToC = (item, items, maxDepth, depth) => {
         return;
       }
       const itemId = innerItem.title
-        ? emoji.clean(innerItem.title).replace(/\s+/g, '').toLowerCase()
-        : '#';
+        ? emoji.clean(innerItem.title).replace(/\s+/g, "").toLowerCase()
+        : "#";
       const title = emoji.emojify(innerItem.title);
       let listItem = (
         <ListItem key={items.length} to={`#${itemId}`} level={depth}>
@@ -120,15 +121,20 @@ const buildToC = (item, items, maxDepth, depth) => {
 const generateToCItems = (allMdx, location) => {
   let finalNavItems = [];
   const isCurrentPage = (slug) =>
-    slug === location.pathname || config.metadata.pathPrefix + slug === location.pathname;
+    slug === location.pathname ||
+    config.metadata.pathPrefix + slug === location.pathname;
   const showToc = (showToc) =>
-    (config.features.toc.show === true && showToc !== false) || showToc === true;
+    (config.features.toc.show === true && showToc !== false) ||
+    showToc === true;
 
   if (allMdx.edges !== undefined && allMdx.edges.length > 0) {
     allMdx.edges.every((item) => {
       let innerItems = [];
       if (item !== undefined) {
-        if (isCurrentPage(item.node.fields.slug) && showToc(item.node.frontmatter.showToc)) {
+        if (
+          isCurrentPage(item.node.fields.slug) &&
+          showToc(item.node.frontmatter.showToc)
+        ) {
           const maxDepth = item.node.frontmatter.tocDepth
             ? item.node.frontmatter.tocDepth
             : config.features.toc.depth;
@@ -164,7 +170,7 @@ const TableOfContents = ({ show, className, location }) => (
   <StaticQuery
     query={graphql`
       query {
-        allMdx(filter: {fields: {draft: {ne: true}}}) {
+        allMdx(filter: { fields: { draft: { ne: true } } }) {
           edges {
             node {
               fields {
@@ -195,7 +201,10 @@ const TableOfContents = ({ show, className, location }) => (
           // trigger scrollspy reinitialization when its props change.
           if (
             scrollspyRef.current &&
-            !tocItemsEqual(scrollspyRef.current.props.items, scrollspyRef.current.state.targetItems)
+            !tocItemsEqual(
+              scrollspyRef.current.props.items,
+              scrollspyRef.current.state.targetItems
+            )
           ) {
             sleep(200).then(() => {
               if (scrollspyRef.current) {
@@ -213,7 +222,7 @@ const TableOfContents = ({ show, className, location }) => (
               ref={scrollspyRef}
               onUpdate={refresh}
               items={ids}
-              currentClassName={'currentItem'}
+              currentClassName={"currentItem"}
             >
               {finalNavItems}
             </Scrollspy>

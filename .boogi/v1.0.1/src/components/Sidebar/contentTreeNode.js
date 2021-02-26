@@ -1,13 +1,13 @@
-import React from 'react';
-import OpenedSvg from '../../images/opened';
-import ClosedSvg from '../../images/closed';
-import config from 'config';
-import { Link } from '../';
-import { css } from '@emotion/core';
+import React from "react";
+import OpenedSvg from "../../images/opened";
+import ClosedSvg from "../../images/closed";
+import config from "config";
+import { Link } from "../";
+import { css } from "@emotion/core";
 
-import styled from '@emotion/styled';
-import { useTheme } from 'emotion-theming';
-import emoji from '../../utils/emoji';
+import styled from "@emotion/styled";
+import { useTheme } from "emotion-theming";
+import emoji from "../../utils/emoji";
 
 // If you want to have a css call based on props, create a function that returns a css call like this
 // let dynamicStyle = (props) => css`color: ${props.color}`
@@ -84,7 +84,8 @@ const NestedContentTreeNode = styled(
   flex: 100%;
   li {
     margin-left: 16px;
-    border-left: 1px solid ${(props) => props.theme.navigationSidebar.font.nested};
+    border-left: 1px solid
+      ${(props) => props.theme.navigationSidebar.font.nested};
     a {
       color: ${(props) => props.theme.navigationSidebar.font.nested};
     }
@@ -114,12 +115,20 @@ const NodeCollapseButton = styled(({ className, isCollapsed, collapse }) => {
   }
 `;
 
-const ContentTreeNode = ({ className, toggle, collapsed, url, title, location, children }) => {
+const ContentTreeNode = ({
+  className,
+  toggle,
+  collapsed,
+  url,
+  title,
+  location,
+  children,
+}) => {
   const hasChildren = children.length !== 0;
   const active =
     location &&
     (location.pathname === url ||
-      location.pathname === url + '/' ||
+      location.pathname === url + "/" ||
       location.pathname === config.metadata.pathPrefix + url);
   const collapse = () => {
     toggle(url);
@@ -133,7 +142,7 @@ const ContentTreeNode = ({ className, toggle, collapsed, url, title, location, c
         text={text}
         link={url}
         className={className}
-        css={active ? activeNode(theme) : ''}
+        css={active ? activeNode(theme) : ""}
       >
         {title && hasChildren ? (
           <>
@@ -143,7 +152,11 @@ const ContentTreeNode = ({ className, toggle, collapsed, url, title, location, c
       </NodeContent>
 
       {!isCollapsed ? (
-        <NestedContentTreeNode collapsed={collapsed} location={location} setCollapsed={toggle}>
+        <NestedContentTreeNode
+          collapsed={collapsed}
+          location={location}
+          setCollapsed={toggle}
+        >
           {children}
         </NestedContentTreeNode>
       ) : null}

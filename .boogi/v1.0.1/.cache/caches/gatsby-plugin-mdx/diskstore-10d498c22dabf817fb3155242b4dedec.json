@@ -1,1 +1,539 @@
-{"expireTime":9007200869051276000,"key":"gatsby-plugin-mdx-entire-payload-790023e49c3f0907b218703f0f94ea86-","val":{"mdast":{"type":"root","children":[{"type":"heading","depth":1,"children":[{"type":"text","value":"eth_submitHashrate","position":{"start":{"line":1,"column":3,"offset":2},"end":{"line":1,"column":21,"offset":20},"indent":[]}}],"position":{"start":{"line":1,"column":1,"offset":0},"end":{"line":1,"column":21,"offset":20},"indent":[]}},{"type":"heading","depth":2,"children":[{"type":"text","value":"/v1/jsonrpc/:network/eth_submitHashrate","position":{"start":{"line":3,"column":4,"offset":25},"end":{"line":3,"column":43,"offset":64},"indent":[]}}],"position":{"start":{"line":3,"column":1,"offset":22},"end":{"line":3,"column":43,"offset":64},"indent":[]}},{"type":"paragraph","children":[{"type":"text","value":"Used for submitting mining hashrate.","position":{"start":{"line":5,"column":1,"offset":66},"end":{"line":5,"column":37,"offset":102},"indent":[]}}],"position":{"start":{"line":5,"column":1,"offset":66},"end":{"line":5,"column":37,"offset":102},"indent":[]}},{"type":"heading","depth":3,"children":[{"type":"text","value":"REQUEST","position":{"start":{"line":7,"column":5,"offset":108},"end":{"line":7,"column":12,"offset":115},"indent":[]}}],"position":{"start":{"line":7,"column":1,"offset":104},"end":{"line":7,"column":12,"offset":115},"indent":[]}},{"type":"paragraph","children":[{"type":"inlineCode","value":"POST https://api.backbonecabal.xyz/v1/jsonrpc/:network/eth_submitHashrate","position":{"start":{"line":9,"column":1,"offset":117},"end":{"line":9,"column":76,"offset":192},"indent":[]}}],"position":{"start":{"line":9,"column":1,"offset":117},"end":{"line":9,"column":76,"offset":192},"indent":[]}},{"type":"heading","depth":4,"children":[{"type":"text","value":"HEADERS","position":{"start":{"line":11,"column":6,"offset":199},"end":{"line":11,"column":13,"offset":206},"indent":[]}}],"position":{"start":{"line":11,"column":1,"offset":194},"end":{"line":11,"column":13,"offset":206},"indent":[]}},{"type":"paragraph","children":[{"type":"inlineCode","value":"Content-Type: application/json","position":{"start":{"line":13,"column":1,"offset":208},"end":{"line":13,"column":33,"offset":240},"indent":[]}}],"position":{"start":{"line":13,"column":1,"offset":208},"end":{"line":13,"column":33,"offset":240},"indent":[]}},{"type":"heading","depth":4,"children":[{"type":"text","value":"REQUEST PAYLOAD","position":{"start":{"line":15,"column":6,"offset":247},"end":{"line":15,"column":21,"offset":262},"indent":[]}}],"position":{"start":{"line":15,"column":1,"offset":242},"end":{"line":15,"column":21,"offset":262},"indent":[]}},{"type":"list","ordered":false,"start":null,"spread":false,"children":[{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"inlineCode","value":"HASHRATE","position":{"start":{"line":17,"column":5,"offset":268},"end":{"line":17,"column":15,"offset":278},"indent":[]}},{"type":"text","value":" ","position":{"start":{"line":17,"column":15,"offset":278},"end":{"line":17,"column":16,"offset":279},"indent":[]}},{"type":"emphasis","children":[{"type":"linkReference","identifier":"required","label":"required","referenceType":"shortcut","children":[{"type":"text","value":"required","position":{"start":{"line":17,"column":18,"offset":281},"end":{"line":17,"column":26,"offset":289},"indent":[]}}],"position":{"start":{"line":17,"column":17,"offset":280},"end":{"line":17,"column":27,"offset":290},"indent":[]}}],"position":{"start":{"line":17,"column":16,"offset":279},"end":{"line":17,"column":28,"offset":291},"indent":[]}},{"type":"text","value":" - a hexadecimal string representation (32 bytes) of the hash rate","position":{"start":{"line":17,"column":28,"offset":291},"end":{"line":17,"column":94,"offset":357},"indent":[]}}],"position":{"start":{"line":17,"column":5,"offset":268},"end":{"line":17,"column":94,"offset":357},"indent":[]}}],"position":{"start":{"line":17,"column":1,"offset":264},"end":{"line":17,"column":94,"offset":357},"indent":[]}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"inlineCode","value":"ID","position":{"start":{"line":18,"column":5,"offset":362},"end":{"line":18,"column":9,"offset":366},"indent":[]}},{"type":"text","value":" ","position":{"start":{"line":18,"column":9,"offset":366},"end":{"line":18,"column":10,"offset":367},"indent":[]}},{"type":"emphasis","children":[{"type":"linkReference","identifier":"required","label":"required","referenceType":"shortcut","children":[{"type":"text","value":"required","position":{"start":{"line":18,"column":12,"offset":369},"end":{"line":18,"column":20,"offset":377},"indent":[]}}],"position":{"start":{"line":18,"column":11,"offset":368},"end":{"line":18,"column":21,"offset":378},"indent":[]}}],"position":{"start":{"line":18,"column":10,"offset":367},"end":{"line":18,"column":22,"offset":379},"indent":[]}},{"type":"text","value":" - a string representing a random hexadecimal (32 bytes) ID identifying the client","position":{"start":{"line":18,"column":22,"offset":379},"end":{"line":18,"column":104,"offset":461},"indent":[]}}],"position":{"start":{"line":18,"column":5,"offset":362},"end":{"line":18,"column":104,"offset":461},"indent":[]}}],"position":{"start":{"line":18,"column":1,"offset":358},"end":{"line":18,"column":104,"offset":461},"indent":[]}}],"position":{"start":{"line":17,"column":1,"offset":264},"end":{"line":18,"column":104,"offset":461},"indent":[1]}},{"type":"heading","depth":4,"children":[{"type":"text","value":"EXAMPLE","position":{"start":{"line":20,"column":6,"offset":468},"end":{"line":20,"column":13,"offset":475},"indent":[]}}],"position":{"start":{"line":20,"column":1,"offset":463},"end":{"line":20,"column":13,"offset":475},"indent":[]}},{"type":"code","lang":"bash","meta":null,"value":"// HTTP POST api.backbonecabal.xyz\ncurl https://api.backbonecabal.xyz/v1/jsonrpc/mainnet \\\n    -X POST \\\n    -H \"Content-Type: application/json\" \\\n    -d '{\"jsonrpc\":\"2.0\",\"method\":\"eth_submitHashrate\",\"params\":[\"0x0000000000000000000000000000000000000000000000000000000000500000\", \"0x59daa26581d0acd1fce254fb7e85952f4c09d0915afd33d3886cd914bc7d283c\"],\"id\":1}'\n\n// HTTP POST mainnet.backbonecabal.xyz\ncurl https://mainnet.backbonecabal.xyz/ \\\n    -X POST \\\n    -H \"Content-Type: application/json\" \\\n    -d '{\"jsonrpc\":\"2.0\",\"method\":\"eth_submitHashrate\",\"params\":[\"0x0000000000000000000000000000000000000000000000000000000000500000\", \"0x59daa26581d0acd1fce254fb7e85952f4c09d0915afd33d3886cd914bc7d283c\"],\"id\":1}'\n\n// WEBSOCKETS\n>wscat -c wss://mainnet.backbonecabal.xyz/ws\n>{\"jsonrpc\":\"2.0\",\"method\":\"eth_submitHashrate\",\"params\":[\"0x0000000000000000000000000000000000000000000000000000000000500000\", \"0x59daa26581d0acd1fce254fb7e85952f4c09d0915afd33d3886cd914bc7d283c\"],\"id\":1}","position":{"start":{"line":22,"column":1,"offset":477},"end":{"line":38,"column":4,"offset":1467},"indent":[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]}},{"type":"heading","depth":3,"children":[{"type":"text","value":"RESPONSE","position":{"start":{"line":40,"column":5,"offset":1473},"end":{"line":40,"column":13,"offset":1481},"indent":[]}}],"position":{"start":{"line":40,"column":1,"offset":1469},"end":{"line":40,"column":13,"offset":1481},"indent":[]}},{"type":"heading","depth":4,"children":[{"type":"text","value":"RESULT FIELDS","position":{"start":{"line":42,"column":6,"offset":1488},"end":{"line":42,"column":19,"offset":1501},"indent":[]}}],"position":{"start":{"line":42,"column":1,"offset":1483},"end":{"line":42,"column":19,"offset":1501},"indent":[]}},{"type":"list","ordered":false,"start":null,"spread":false,"children":[{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"inlineCode","value":"SUCCESS","position":{"start":{"line":44,"column":5,"offset":1507},"end":{"line":44,"column":14,"offset":1516},"indent":[]}},{"type":"text","value":" - returns true if submitting went through succesfully and false otherwise.","position":{"start":{"line":44,"column":14,"offset":1516},"end":{"line":44,"column":89,"offset":1591},"indent":[]}}],"position":{"start":{"line":44,"column":5,"offset":1507},"end":{"line":44,"column":89,"offset":1591},"indent":[]}}],"position":{"start":{"line":44,"column":1,"offset":1503},"end":{"line":44,"column":89,"offset":1591},"indent":[]}}],"position":{"start":{"line":44,"column":1,"offset":1503},"end":{"line":44,"column":89,"offset":1591},"indent":[]}},{"type":"heading","depth":4,"children":[{"type":"text","value":"BODY","position":{"start":{"line":46,"column":6,"offset":1598},"end":{"line":46,"column":10,"offset":1602},"indent":[]}}],"position":{"start":{"line":46,"column":1,"offset":1593},"end":{"line":46,"column":10,"offset":1602},"indent":[]}},{"type":"code","lang":"json","meta":null,"value":"{\n\t\"id\": 73,\n\t\"jsonrpc\": \"2.0\",\n\t\"result\": true\n}","position":{"start":{"line":48,"column":1,"offset":1604},"end":{"line":54,"column":4,"offset":1665},"indent":[1,1,1,1,1,1]}},{"type":"export","value":"export const _frontmatter = {}","position":{"start":{"line":57,"column":1,"offset":1668},"end":{"line":57,"column":31,"offset":1698},"indent":[]}}],"position":{"start":{"line":1,"column":1,"offset":0},"end":{"line":57,"column":31,"offset":1698}}},"scopeImports":["import * as React from 'react'"],"scopeIdentifiers":["React"],"body":"function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }\n\nfunction _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }\n\nfunction _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }\n\n/* @jsx mdx */\nvar _frontmatter = {};\nvar layoutProps = {\n  _frontmatter: _frontmatter\n};\nvar MDXLayout = \"wrapper\";\nreturn function MDXContent(_ref) {\n  var components = _ref.components,\n      props = _objectWithoutProperties(_ref, [\"components\"]);\n\n  return mdx(MDXLayout, _extends({}, layoutProps, props, {\n    components: components,\n    mdxType: \"MDXLayout\"\n  }), mdx(\"section\", null, mdx(\"h1\", {\n    parentName: \"section\"\n  }, \"eth_submitHashrate\")), mdx(\"section\", null, mdx(\"h2\", {\n    parentName: \"section\"\n  }, \"/v1/jsonrpc/:network/eth_submitHashrate\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, \"Used for submitting mining hashrate.\")), mdx(\"section\", null, mdx(\"h3\", {\n    parentName: \"section\"\n  }, \"REQUEST\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"p\"\n  }, \"POST https://api.backbonecabal.xyz/v1/jsonrpc/:network/eth_submitHashrate\"))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"HEADERS\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"p\"\n  }, \"Content-Type: application/json\"))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"REQUEST PAYLOAD\"), mdx(\"ul\", {\n    parentName: \"section\"\n  }, mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"HASHRATE\"), \" \", mdx(\"em\", {\n    parentName: \"li\"\n  }, \"[required]\"), \" - a hexadecimal string representation (32 bytes) of the hash rate\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"ID\"), \" \", mdx(\"em\", {\n    parentName: \"li\"\n  }, \"[required]\"), \" - a string representing a random hexadecimal (32 bytes) ID identifying the client\"))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"EXAMPLE\"), mdx(\"pre\", {\n    parentName: \"section\"\n  }, mdx(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-bash\"\n  }), \"// HTTP POST api.backbonecabal.xyz\\ncurl https://api.backbonecabal.xyz/v1/jsonrpc/mainnet \\\\\\n    -X POST \\\\\\n    -H \\\"Content-Type: application/json\\\" \\\\\\n    -d '{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"method\\\":\\\"eth_submitHashrate\\\",\\\"params\\\":[\\\"0x0000000000000000000000000000000000000000000000000000000000500000\\\", \\\"0x59daa26581d0acd1fce254fb7e85952f4c09d0915afd33d3886cd914bc7d283c\\\"],\\\"id\\\":1}'\\n\\n// HTTP POST mainnet.backbonecabal.xyz\\ncurl https://mainnet.backbonecabal.xyz/ \\\\\\n    -X POST \\\\\\n    -H \\\"Content-Type: application/json\\\" \\\\\\n    -d '{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"method\\\":\\\"eth_submitHashrate\\\",\\\"params\\\":[\\\"0x0000000000000000000000000000000000000000000000000000000000500000\\\", \\\"0x59daa26581d0acd1fce254fb7e85952f4c09d0915afd33d3886cd914bc7d283c\\\"],\\\"id\\\":1}'\\n\\n// WEBSOCKETS\\n>wscat -c wss://mainnet.backbonecabal.xyz/ws\\n>{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"method\\\":\\\"eth_submitHashrate\\\",\\\"params\\\":[\\\"0x0000000000000000000000000000000000000000000000000000000000500000\\\", \\\"0x59daa26581d0acd1fce254fb7e85952f4c09d0915afd33d3886cd914bc7d283c\\\"],\\\"id\\\":1}\\n\"))), mdx(\"section\", null, mdx(\"h3\", {\n    parentName: \"section\"\n  }, \"RESPONSE\")), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"RESULT FIELDS\"), mdx(\"ul\", {\n    parentName: \"section\"\n  }, mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"SUCCESS\"), \" - returns true if submitting went through succesfully and false otherwise.\"))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"BODY\"), mdx(\"pre\", {\n    parentName: \"section\"\n  }, mdx(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-json\"\n  }), \"{\\n    \\\"id\\\": 73,\\n    \\\"jsonrpc\\\": \\\"2.0\\\",\\n    \\\"result\\\": true\\n}\\n\"))));\n}\n;\nMDXContent.isMDXComponent = true;","rawMDXOutput":"/* @jsx mdx */\nimport { mdx } from '@mdx-js/react';\n/* @jsx mdx */\n\nexport const _frontmatter = {};\n\nconst layoutProps = {\n  _frontmatter\n};\nconst MDXLayout = \"wrapper\"\nexport default function MDXContent({\n  components,\n  ...props\n}) {\n  return <MDXLayout {...layoutProps} {...props} components={components} mdxType=\"MDXLayout\">\n    <section><h1 parentName=\"section\">{`eth_submitHashrate`}</h1></section>\n    <section><h2 parentName=\"section\">{`/v1/jsonrpc/:network/eth_submitHashrate`}</h2><p parentName=\"section\">{`Used for submitting mining hashrate.`}</p></section>\n    <section><h3 parentName=\"section\">{`REQUEST`}</h3><p parentName=\"section\"><inlineCode parentName=\"p\">{`POST https://api.backbonecabal.xyz/v1/jsonrpc/:network/eth_submitHashrate`}</inlineCode></p></section>\n    <section><h4 parentName=\"section\">{`HEADERS`}</h4><p parentName=\"section\"><inlineCode parentName=\"p\">{`Content-Type: application/json`}</inlineCode></p></section>\n    <section><h4 parentName=\"section\">{`REQUEST PAYLOAD`}</h4><ul parentName=\"section\">\n        <li parentName=\"ul\"><inlineCode parentName=\"li\">{`HASHRATE`}</inlineCode>{` `}<em parentName=\"li\">{`[required]`}</em>{` - a hexadecimal string representation (32 bytes) of the hash rate`}</li>\n        <li parentName=\"ul\"><inlineCode parentName=\"li\">{`ID`}</inlineCode>{` `}<em parentName=\"li\">{`[required]`}</em>{` - a string representing a random hexadecimal (32 bytes) ID identifying the client`}</li>\n      </ul></section>\n    <section><h4 parentName=\"section\">{`EXAMPLE`}</h4><pre parentName=\"section\"><code parentName=\"pre\" {...{\n          \"className\": \"language-bash\"\n        }}>{`// HTTP POST api.backbonecabal.xyz\ncurl https://api.backbonecabal.xyz/v1/jsonrpc/mainnet \\\\\n    -X POST \\\\\n    -H \"Content-Type: application/json\" \\\\\n    -d '{\"jsonrpc\":\"2.0\",\"method\":\"eth_submitHashrate\",\"params\":[\"0x0000000000000000000000000000000000000000000000000000000000500000\", \"0x59daa26581d0acd1fce254fb7e85952f4c09d0915afd33d3886cd914bc7d283c\"],\"id\":1}'\n\n// HTTP POST mainnet.backbonecabal.xyz\ncurl https://mainnet.backbonecabal.xyz/ \\\\\n    -X POST \\\\\n    -H \"Content-Type: application/json\" \\\\\n    -d '{\"jsonrpc\":\"2.0\",\"method\":\"eth_submitHashrate\",\"params\":[\"0x0000000000000000000000000000000000000000000000000000000000500000\", \"0x59daa26581d0acd1fce254fb7e85952f4c09d0915afd33d3886cd914bc7d283c\"],\"id\":1}'\n\n// WEBSOCKETS\n>wscat -c wss://mainnet.backbonecabal.xyz/ws\n>{\"jsonrpc\":\"2.0\",\"method\":\"eth_submitHashrate\",\"params\":[\"0x0000000000000000000000000000000000000000000000000000000000500000\", \"0x59daa26581d0acd1fce254fb7e85952f4c09d0915afd33d3886cd914bc7d283c\"],\"id\":1}\n`}</code></pre></section>\n    <section><h3 parentName=\"section\">{`RESPONSE`}</h3></section>\n    <section><h4 parentName=\"section\">{`RESULT FIELDS`}</h4><ul parentName=\"section\">\n        <li parentName=\"ul\"><inlineCode parentName=\"li\">{`SUCCESS`}</inlineCode>{` - returns true if submitting went through succesfully and false otherwise.`}</li>\n      </ul></section>\n    <section><h4 parentName=\"section\">{`BODY`}</h4><pre parentName=\"section\"><code parentName=\"pre\" {...{\n          \"className\": \"language-json\"\n        }}>{`{\n    \"id\": 73,\n    \"jsonrpc\": \"2.0\",\n    \"result\": true\n}\n`}</code></pre></section>\n\n    </MDXLayout>;\n}\n\n;\nMDXContent.isMDXComponent = true;"}}
+{
+  "expireTime": 9007200869051276000,
+  "key": "gatsby-plugin-mdx-entire-payload-790023e49c3f0907b218703f0f94ea86-",
+  "val": {
+    "mdast": {
+      "type": "root",
+      "children": [
+        {
+          "type": "heading",
+          "depth": 1,
+          "children": [
+            {
+              "type": "text",
+              "value": "eth_submitHashrate",
+              "position": {
+                "start": { "line": 1, "column": 3, "offset": 2 },
+                "end": { "line": 1, "column": 21, "offset": 20 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 1, "column": 1, "offset": 0 },
+            "end": { "line": 1, "column": 21, "offset": 20 },
+            "indent": []
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 2,
+          "children": [
+            {
+              "type": "text",
+              "value": "/v1/jsonrpc/:network/eth_submitHashrate",
+              "position": {
+                "start": { "line": 3, "column": 4, "offset": 25 },
+                "end": { "line": 3, "column": 43, "offset": 64 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 3, "column": 1, "offset": 22 },
+            "end": { "line": 3, "column": 43, "offset": 64 },
+            "indent": []
+          }
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "Used for submitting mining hashrate.",
+              "position": {
+                "start": { "line": 5, "column": 1, "offset": 66 },
+                "end": { "line": 5, "column": 37, "offset": 102 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 5, "column": 1, "offset": 66 },
+            "end": { "line": 5, "column": 37, "offset": 102 },
+            "indent": []
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 3,
+          "children": [
+            {
+              "type": "text",
+              "value": "REQUEST",
+              "position": {
+                "start": { "line": 7, "column": 5, "offset": 108 },
+                "end": { "line": 7, "column": 12, "offset": 115 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 7, "column": 1, "offset": 104 },
+            "end": { "line": 7, "column": 12, "offset": 115 },
+            "indent": []
+          }
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "inlineCode",
+              "value": "POST https://api.backbonecabal.xyz/v1/jsonrpc/:network/eth_submitHashrate",
+              "position": {
+                "start": { "line": 9, "column": 1, "offset": 117 },
+                "end": { "line": 9, "column": 76, "offset": 192 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 9, "column": 1, "offset": 117 },
+            "end": { "line": 9, "column": 76, "offset": 192 },
+            "indent": []
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 4,
+          "children": [
+            {
+              "type": "text",
+              "value": "HEADERS",
+              "position": {
+                "start": { "line": 11, "column": 6, "offset": 199 },
+                "end": { "line": 11, "column": 13, "offset": 206 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 11, "column": 1, "offset": 194 },
+            "end": { "line": 11, "column": 13, "offset": 206 },
+            "indent": []
+          }
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "inlineCode",
+              "value": "Content-Type: application/json",
+              "position": {
+                "start": { "line": 13, "column": 1, "offset": 208 },
+                "end": { "line": 13, "column": 33, "offset": 240 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 13, "column": 1, "offset": 208 },
+            "end": { "line": 13, "column": 33, "offset": 240 },
+            "indent": []
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 4,
+          "children": [
+            {
+              "type": "text",
+              "value": "REQUEST PAYLOAD",
+              "position": {
+                "start": { "line": 15, "column": 6, "offset": 247 },
+                "end": { "line": 15, "column": 21, "offset": 262 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 15, "column": 1, "offset": 242 },
+            "end": { "line": 15, "column": 21, "offset": 262 },
+            "indent": []
+          }
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "start": null,
+          "spread": false,
+          "children": [
+            {
+              "type": "listItem",
+              "spread": false,
+              "checked": null,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "inlineCode",
+                      "value": "HASHRATE",
+                      "position": {
+                        "start": { "line": 17, "column": 5, "offset": 268 },
+                        "end": { "line": 17, "column": 15, "offset": 278 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "value": " ",
+                      "position": {
+                        "start": { "line": 17, "column": 15, "offset": 278 },
+                        "end": { "line": 17, "column": 16, "offset": 279 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "emphasis",
+                      "children": [
+                        {
+                          "type": "linkReference",
+                          "identifier": "required",
+                          "label": "required",
+                          "referenceType": "shortcut",
+                          "children": [
+                            {
+                              "type": "text",
+                              "value": "required",
+                              "position": {
+                                "start": {
+                                  "line": 17,
+                                  "column": 18,
+                                  "offset": 281
+                                },
+                                "end": {
+                                  "line": 17,
+                                  "column": 26,
+                                  "offset": 289
+                                },
+                                "indent": []
+                              }
+                            }
+                          ],
+                          "position": {
+                            "start": {
+                              "line": 17,
+                              "column": 17,
+                              "offset": 280
+                            },
+                            "end": { "line": 17, "column": 27, "offset": 290 },
+                            "indent": []
+                          }
+                        }
+                      ],
+                      "position": {
+                        "start": { "line": 17, "column": 16, "offset": 279 },
+                        "end": { "line": 17, "column": 28, "offset": 291 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "value": " - a hexadecimal string representation (32 bytes) of the hash rate",
+                      "position": {
+                        "start": { "line": 17, "column": 28, "offset": 291 },
+                        "end": { "line": 17, "column": 94, "offset": 357 },
+                        "indent": []
+                      }
+                    }
+                  ],
+                  "position": {
+                    "start": { "line": 17, "column": 5, "offset": 268 },
+                    "end": { "line": 17, "column": 94, "offset": 357 },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": { "line": 17, "column": 1, "offset": 264 },
+                "end": { "line": 17, "column": 94, "offset": 357 },
+                "indent": []
+              }
+            },
+            {
+              "type": "listItem",
+              "spread": false,
+              "checked": null,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "inlineCode",
+                      "value": "ID",
+                      "position": {
+                        "start": { "line": 18, "column": 5, "offset": 362 },
+                        "end": { "line": 18, "column": 9, "offset": 366 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "value": " ",
+                      "position": {
+                        "start": { "line": 18, "column": 9, "offset": 366 },
+                        "end": { "line": 18, "column": 10, "offset": 367 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "emphasis",
+                      "children": [
+                        {
+                          "type": "linkReference",
+                          "identifier": "required",
+                          "label": "required",
+                          "referenceType": "shortcut",
+                          "children": [
+                            {
+                              "type": "text",
+                              "value": "required",
+                              "position": {
+                                "start": {
+                                  "line": 18,
+                                  "column": 12,
+                                  "offset": 369
+                                },
+                                "end": {
+                                  "line": 18,
+                                  "column": 20,
+                                  "offset": 377
+                                },
+                                "indent": []
+                              }
+                            }
+                          ],
+                          "position": {
+                            "start": {
+                              "line": 18,
+                              "column": 11,
+                              "offset": 368
+                            },
+                            "end": { "line": 18, "column": 21, "offset": 378 },
+                            "indent": []
+                          }
+                        }
+                      ],
+                      "position": {
+                        "start": { "line": 18, "column": 10, "offset": 367 },
+                        "end": { "line": 18, "column": 22, "offset": 379 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "value": " - a string representing a random hexadecimal (32 bytes) ID identifying the client",
+                      "position": {
+                        "start": { "line": 18, "column": 22, "offset": 379 },
+                        "end": { "line": 18, "column": 104, "offset": 461 },
+                        "indent": []
+                      }
+                    }
+                  ],
+                  "position": {
+                    "start": { "line": 18, "column": 5, "offset": 362 },
+                    "end": { "line": 18, "column": 104, "offset": 461 },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": { "line": 18, "column": 1, "offset": 358 },
+                "end": { "line": 18, "column": 104, "offset": 461 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 17, "column": 1, "offset": 264 },
+            "end": { "line": 18, "column": 104, "offset": 461 },
+            "indent": [1]
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 4,
+          "children": [
+            {
+              "type": "text",
+              "value": "EXAMPLE",
+              "position": {
+                "start": { "line": 20, "column": 6, "offset": 468 },
+                "end": { "line": 20, "column": 13, "offset": 475 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 20, "column": 1, "offset": 463 },
+            "end": { "line": 20, "column": 13, "offset": 475 },
+            "indent": []
+          }
+        },
+        {
+          "type": "code",
+          "lang": "bash",
+          "meta": null,
+          "value": "// HTTP POST api.backbonecabal.xyz\ncurl https://api.backbonecabal.xyz/v1/jsonrpc/mainnet \\\n    -X POST \\\n    -H \"Content-Type: application/json\" \\\n    -d '{\"jsonrpc\":\"2.0\",\"method\":\"eth_submitHashrate\",\"params\":[\"0x0000000000000000000000000000000000000000000000000000000000500000\", \"0x59daa26581d0acd1fce254fb7e85952f4c09d0915afd33d3886cd914bc7d283c\"],\"id\":1}'\n\n// HTTP POST mainnet.backbonecabal.xyz\ncurl https://mainnet.backbonecabal.xyz/ \\\n    -X POST \\\n    -H \"Content-Type: application/json\" \\\n    -d '{\"jsonrpc\":\"2.0\",\"method\":\"eth_submitHashrate\",\"params\":[\"0x0000000000000000000000000000000000000000000000000000000000500000\", \"0x59daa26581d0acd1fce254fb7e85952f4c09d0915afd33d3886cd914bc7d283c\"],\"id\":1}'\n\n// WEBSOCKETS\n>wscat -c wss://mainnet.backbonecabal.xyz/ws\n>{\"jsonrpc\":\"2.0\",\"method\":\"eth_submitHashrate\",\"params\":[\"0x0000000000000000000000000000000000000000000000000000000000500000\", \"0x59daa26581d0acd1fce254fb7e85952f4c09d0915afd33d3886cd914bc7d283c\"],\"id\":1}",
+          "position": {
+            "start": { "line": 22, "column": 1, "offset": 477 },
+            "end": { "line": 38, "column": 4, "offset": 1467 },
+            "indent": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 3,
+          "children": [
+            {
+              "type": "text",
+              "value": "RESPONSE",
+              "position": {
+                "start": { "line": 40, "column": 5, "offset": 1473 },
+                "end": { "line": 40, "column": 13, "offset": 1481 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 40, "column": 1, "offset": 1469 },
+            "end": { "line": 40, "column": 13, "offset": 1481 },
+            "indent": []
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 4,
+          "children": [
+            {
+              "type": "text",
+              "value": "RESULT FIELDS",
+              "position": {
+                "start": { "line": 42, "column": 6, "offset": 1488 },
+                "end": { "line": 42, "column": 19, "offset": 1501 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 42, "column": 1, "offset": 1483 },
+            "end": { "line": 42, "column": 19, "offset": 1501 },
+            "indent": []
+          }
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "start": null,
+          "spread": false,
+          "children": [
+            {
+              "type": "listItem",
+              "spread": false,
+              "checked": null,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "inlineCode",
+                      "value": "SUCCESS",
+                      "position": {
+                        "start": { "line": 44, "column": 5, "offset": 1507 },
+                        "end": { "line": 44, "column": 14, "offset": 1516 },
+                        "indent": []
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "value": " - returns true if submitting went through succesfully and false otherwise.",
+                      "position": {
+                        "start": { "line": 44, "column": 14, "offset": 1516 },
+                        "end": { "line": 44, "column": 89, "offset": 1591 },
+                        "indent": []
+                      }
+                    }
+                  ],
+                  "position": {
+                    "start": { "line": 44, "column": 5, "offset": 1507 },
+                    "end": { "line": 44, "column": 89, "offset": 1591 },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": { "line": 44, "column": 1, "offset": 1503 },
+                "end": { "line": 44, "column": 89, "offset": 1591 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 44, "column": 1, "offset": 1503 },
+            "end": { "line": 44, "column": 89, "offset": 1591 },
+            "indent": []
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 4,
+          "children": [
+            {
+              "type": "text",
+              "value": "BODY",
+              "position": {
+                "start": { "line": 46, "column": 6, "offset": 1598 },
+                "end": { "line": 46, "column": 10, "offset": 1602 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 46, "column": 1, "offset": 1593 },
+            "end": { "line": 46, "column": 10, "offset": 1602 },
+            "indent": []
+          }
+        },
+        {
+          "type": "code",
+          "lang": "json",
+          "meta": null,
+          "value": "{\n\t\"id\": 73,\n\t\"jsonrpc\": \"2.0\",\n\t\"result\": true\n}",
+          "position": {
+            "start": { "line": 48, "column": 1, "offset": 1604 },
+            "end": { "line": 54, "column": 4, "offset": 1665 },
+            "indent": [1, 1, 1, 1, 1, 1]
+          }
+        },
+        {
+          "type": "export",
+          "value": "export const _frontmatter = {}",
+          "position": {
+            "start": { "line": 57, "column": 1, "offset": 1668 },
+            "end": { "line": 57, "column": 31, "offset": 1698 },
+            "indent": []
+          }
+        }
+      ],
+      "position": {
+        "start": { "line": 1, "column": 1, "offset": 0 },
+        "end": { "line": 57, "column": 31, "offset": 1698 }
+      }
+    },
+    "scopeImports": ["import * as React from 'react'"],
+    "scopeIdentifiers": ["React"],
+    "body": "function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }\n\nfunction _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }\n\nfunction _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }\n\n/* @jsx mdx */\nvar _frontmatter = {};\nvar layoutProps = {\n  _frontmatter: _frontmatter\n};\nvar MDXLayout = \"wrapper\";\nreturn function MDXContent(_ref) {\n  var components = _ref.components,\n      props = _objectWithoutProperties(_ref, [\"components\"]);\n\n  return mdx(MDXLayout, _extends({}, layoutProps, props, {\n    components: components,\n    mdxType: \"MDXLayout\"\n  }), mdx(\"section\", null, mdx(\"h1\", {\n    parentName: \"section\"\n  }, \"eth_submitHashrate\")), mdx(\"section\", null, mdx(\"h2\", {\n    parentName: \"section\"\n  }, \"/v1/jsonrpc/:network/eth_submitHashrate\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, \"Used for submitting mining hashrate.\")), mdx(\"section\", null, mdx(\"h3\", {\n    parentName: \"section\"\n  }, \"REQUEST\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"p\"\n  }, \"POST https://api.backbonecabal.xyz/v1/jsonrpc/:network/eth_submitHashrate\"))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"HEADERS\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"p\"\n  }, \"Content-Type: application/json\"))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"REQUEST PAYLOAD\"), mdx(\"ul\", {\n    parentName: \"section\"\n  }, mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"HASHRATE\"), \" \", mdx(\"em\", {\n    parentName: \"li\"\n  }, \"[required]\"), \" - a hexadecimal string representation (32 bytes) of the hash rate\"), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"ID\"), \" \", mdx(\"em\", {\n    parentName: \"li\"\n  }, \"[required]\"), \" - a string representing a random hexadecimal (32 bytes) ID identifying the client\"))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"EXAMPLE\"), mdx(\"pre\", {\n    parentName: \"section\"\n  }, mdx(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-bash\"\n  }), \"// HTTP POST api.backbonecabal.xyz\\ncurl https://api.backbonecabal.xyz/v1/jsonrpc/mainnet \\\\\\n    -X POST \\\\\\n    -H \\\"Content-Type: application/json\\\" \\\\\\n    -d '{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"method\\\":\\\"eth_submitHashrate\\\",\\\"params\\\":[\\\"0x0000000000000000000000000000000000000000000000000000000000500000\\\", \\\"0x59daa26581d0acd1fce254fb7e85952f4c09d0915afd33d3886cd914bc7d283c\\\"],\\\"id\\\":1}'\\n\\n// HTTP POST mainnet.backbonecabal.xyz\\ncurl https://mainnet.backbonecabal.xyz/ \\\\\\n    -X POST \\\\\\n    -H \\\"Content-Type: application/json\\\" \\\\\\n    -d '{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"method\\\":\\\"eth_submitHashrate\\\",\\\"params\\\":[\\\"0x0000000000000000000000000000000000000000000000000000000000500000\\\", \\\"0x59daa26581d0acd1fce254fb7e85952f4c09d0915afd33d3886cd914bc7d283c\\\"],\\\"id\\\":1}'\\n\\n// WEBSOCKETS\\n>wscat -c wss://mainnet.backbonecabal.xyz/ws\\n>{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"method\\\":\\\"eth_submitHashrate\\\",\\\"params\\\":[\\\"0x0000000000000000000000000000000000000000000000000000000000500000\\\", \\\"0x59daa26581d0acd1fce254fb7e85952f4c09d0915afd33d3886cd914bc7d283c\\\"],\\\"id\\\":1}\\n\"))), mdx(\"section\", null, mdx(\"h3\", {\n    parentName: \"section\"\n  }, \"RESPONSE\")), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"RESULT FIELDS\"), mdx(\"ul\", {\n    parentName: \"section\"\n  }, mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"inlineCode\", {\n    parentName: \"li\"\n  }, \"SUCCESS\"), \" - returns true if submitting went through succesfully and false otherwise.\"))), mdx(\"section\", null, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"BODY\"), mdx(\"pre\", {\n    parentName: \"section\"\n  }, mdx(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-json\"\n  }), \"{\\n    \\\"id\\\": 73,\\n    \\\"jsonrpc\\\": \\\"2.0\\\",\\n    \\\"result\\\": true\\n}\\n\"))));\n}\n;\nMDXContent.isMDXComponent = true;",
+    "rawMDXOutput": "/* @jsx mdx */\nimport { mdx } from '@mdx-js/react';\n/* @jsx mdx */\n\nexport const _frontmatter = {};\n\nconst layoutProps = {\n  _frontmatter\n};\nconst MDXLayout = \"wrapper\"\nexport default function MDXContent({\n  components,\n  ...props\n}) {\n  return <MDXLayout {...layoutProps} {...props} components={components} mdxType=\"MDXLayout\">\n    <section><h1 parentName=\"section\">{`eth_submitHashrate`}</h1></section>\n    <section><h2 parentName=\"section\">{`/v1/jsonrpc/:network/eth_submitHashrate`}</h2><p parentName=\"section\">{`Used for submitting mining hashrate.`}</p></section>\n    <section><h3 parentName=\"section\">{`REQUEST`}</h3><p parentName=\"section\"><inlineCode parentName=\"p\">{`POST https://api.backbonecabal.xyz/v1/jsonrpc/:network/eth_submitHashrate`}</inlineCode></p></section>\n    <section><h4 parentName=\"section\">{`HEADERS`}</h4><p parentName=\"section\"><inlineCode parentName=\"p\">{`Content-Type: application/json`}</inlineCode></p></section>\n    <section><h4 parentName=\"section\">{`REQUEST PAYLOAD`}</h4><ul parentName=\"section\">\n        <li parentName=\"ul\"><inlineCode parentName=\"li\">{`HASHRATE`}</inlineCode>{` `}<em parentName=\"li\">{`[required]`}</em>{` - a hexadecimal string representation (32 bytes) of the hash rate`}</li>\n        <li parentName=\"ul\"><inlineCode parentName=\"li\">{`ID`}</inlineCode>{` `}<em parentName=\"li\">{`[required]`}</em>{` - a string representing a random hexadecimal (32 bytes) ID identifying the client`}</li>\n      </ul></section>\n    <section><h4 parentName=\"section\">{`EXAMPLE`}</h4><pre parentName=\"section\"><code parentName=\"pre\" {...{\n          \"className\": \"language-bash\"\n        }}>{`// HTTP POST api.backbonecabal.xyz\ncurl https://api.backbonecabal.xyz/v1/jsonrpc/mainnet \\\\\n    -X POST \\\\\n    -H \"Content-Type: application/json\" \\\\\n    -d '{\"jsonrpc\":\"2.0\",\"method\":\"eth_submitHashrate\",\"params\":[\"0x0000000000000000000000000000000000000000000000000000000000500000\", \"0x59daa26581d0acd1fce254fb7e85952f4c09d0915afd33d3886cd914bc7d283c\"],\"id\":1}'\n\n// HTTP POST mainnet.backbonecabal.xyz\ncurl https://mainnet.backbonecabal.xyz/ \\\\\n    -X POST \\\\\n    -H \"Content-Type: application/json\" \\\\\n    -d '{\"jsonrpc\":\"2.0\",\"method\":\"eth_submitHashrate\",\"params\":[\"0x0000000000000000000000000000000000000000000000000000000000500000\", \"0x59daa26581d0acd1fce254fb7e85952f4c09d0915afd33d3886cd914bc7d283c\"],\"id\":1}'\n\n// WEBSOCKETS\n>wscat -c wss://mainnet.backbonecabal.xyz/ws\n>{\"jsonrpc\":\"2.0\",\"method\":\"eth_submitHashrate\",\"params\":[\"0x0000000000000000000000000000000000000000000000000000000000500000\", \"0x59daa26581d0acd1fce254fb7e85952f4c09d0915afd33d3886cd914bc7d283c\"],\"id\":1}\n`}</code></pre></section>\n    <section><h3 parentName=\"section\">{`RESPONSE`}</h3></section>\n    <section><h4 parentName=\"section\">{`RESULT FIELDS`}</h4><ul parentName=\"section\">\n        <li parentName=\"ul\"><inlineCode parentName=\"li\">{`SUCCESS`}</inlineCode>{` - returns true if submitting went through succesfully and false otherwise.`}</li>\n      </ul></section>\n    <section><h4 parentName=\"section\">{`BODY`}</h4><pre parentName=\"section\"><code parentName=\"pre\" {...{\n          \"className\": \"language-json\"\n        }}>{`{\n    \"id\": 73,\n    \"jsonrpc\": \"2.0\",\n    \"result\": true\n}\n`}</code></pre></section>\n\n    </MDXLayout>;\n}\n\n;\nMDXContent.isMDXComponent = true;"
+  }
+}

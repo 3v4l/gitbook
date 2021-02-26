@@ -1,5 +1,5 @@
 const defaultOptions = {
-    publishDraft: false,
+  publishDraft: false,
 };
 
 exports.onCreateNode = ({ node, actions }, pluginOptions) => {
@@ -10,15 +10,17 @@ exports.onCreateNode = ({ node, actions }, pluginOptions) => {
     ...pluginOptions,
   };
 
-  if (node.internal.type !== 'MarkdownRemark' && node.internal.type !== 'Mdx') {
+  if (node.internal.type !== "MarkdownRemark" && node.internal.type !== "Mdx") {
     return;
   }
 
-  const isDraft = options.publishDraft === false && node.frontmatter && node.frontmatter.draft === true;
+  const isDraft =
+    options.publishDraft === false &&
+    node.frontmatter &&
+    node.frontmatter.draft === true;
   createNodeField({
     node,
     name: "draft",
-    value: isDraft
+    value: isDraft,
   });
-
 };

@@ -1,5 +1,5 @@
-import styled from '@emotion/styled';
-import { MDXProvider } from '@mdx-js/react';
+import styled from "@emotion/styled";
+import { MDXProvider } from "@mdx-js/react";
 import {
   Header,
   MdxComponents,
@@ -8,14 +8,14 @@ import {
   Sidebar,
   TableOfContents,
   ThemeProvider,
-} from '../';
+} from "../";
 
-import config from 'config';
-import React, { useRef, useEffect, useState } from 'react';
-import { Slide } from 'react-reveal';
-import { hiddenMobile, hiddenTablet } from '../../styles';
-import { onMobile, onTablet } from '../../styles/responsive';
-import 'css';
+import config from "config";
+import React, { useRef, useEffect, useState } from "react";
+import { Slide } from "react-reveal";
+import { hiddenMobile, hiddenTablet } from "../../styles";
+import { onMobile, onTablet } from "../../styles/responsive";
+import "css";
 
 const Wrapper = styled.div`
   display: flex;
@@ -28,7 +28,7 @@ const Wrapper = styled.div`
   }
 `;
 
-const Content = styled('main')`
+const Content = styled("main")`
   display: flex;
   flex-grow: 1;
   flex-direction: column;
@@ -58,19 +58,19 @@ function actOnClose(ref, onClose) {
     }
 
     function handleEscape(event) {
-      if (event.key === 'Escape') {
+      if (event.key === "Escape") {
         onClose(ref.current);
       }
     }
     // Bind the event listener
-    document.addEventListener('mousedown', handleClickOutside);
-    document.addEventListener('touchstart', handleClickOutside);
-    document.addEventListener('keydown', handleEscape);
+    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener("touchstart", handleClickOutside);
+    document.addEventListener("keydown", handleEscape);
     return () => {
       // Unbind the event listener on clean up
-      document.removeEventListener('mousedown', handleClickOutside);
-      document.removeEventListener('touchstart', handleClickOutside);
-      document.removeEventListener('keydown', handleEscape);
+      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("touchstart", handleClickOutside);
+      document.removeEventListener("keydown", handleEscape);
     };
   }, [ref]);
 }
@@ -85,22 +85,31 @@ const Layout = ({ children, location }) => {
   actOnClose(searchSidebarRef, closeSearch);
 
   return (
-    <ThemeProvider ref={themeProviderRef} darkModeConfig={config.features.darkMode}>
+    <ThemeProvider
+      ref={themeProviderRef}
+      darkModeConfig={config.features.darkMode}
+    >
       {config.header.enabled === true ? (
         <>
           <div
             css={{
               zIndex: 20,
-              position: 'relative',
-              display: showSearch || searchVisible ? 'block' : 'none',
+              position: "relative",
+              display: showSearch || searchVisible ? "block" : "none",
             }}
           >
             <Slide right delay={0} duration={400} when={showSearch}>
-              <SearchSidebar ref={searchSidebarRef} onVisibleChange={setSearchVisible} closeSelf={closeSearch} />
+              <SearchSidebar
+                ref={searchSidebarRef}
+                onVisibleChange={setSearchVisible}
+                closeSelf={closeSearch}
+              />
             </Slide>
           </div>
           <Header
-            show={! (config.features.fullScreenMode.hideHeader && fullscreenMode)}
+            show={
+              !(config.features.fullScreenMode.hideHeader && fullscreenMode)
+            }
             location={location}
             setShowSearch={setShowSearch}
             themeProvider={themeProviderRef}
@@ -108,18 +117,28 @@ const Layout = ({ children, location }) => {
           />
         </>
       ) : (
-        ''
+        ""
       )}
       <MDXProvider components={MdxComponents}>
-        {config.features.scrollTop === true ? <ScrollTop /> : ''}
+        {config.features.scrollTop === true ? <ScrollTop /> : ""}
         <Wrapper>
           {config.sidebar.enabled === true ? (
-            <Sidebar show={! (config.features.fullScreenMode.hideSidebar && fullscreenMode)} location={location} css={hiddenMobile} />
+            <Sidebar
+              show={
+                !(config.features.fullScreenMode.hideSidebar && fullscreenMode)
+              }
+              location={location}
+              css={hiddenMobile}
+            />
           ) : (
-            ''
+            ""
           )}
           <Content>{children}</Content>
-          <TableOfContents show={! (config.features.fullScreenMode.hideToc && fullscreenMode)} location={location} css={hiddenTablet} />
+          <TableOfContents
+            show={!(config.features.fullScreenMode.hideToc && fullscreenMode)}
+            location={location}
+            css={hiddenTablet}
+          />
         </Wrapper>
       </MDXProvider>
     </ThemeProvider>

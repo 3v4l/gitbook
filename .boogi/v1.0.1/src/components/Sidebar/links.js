@@ -1,12 +1,12 @@
-import { ExternalLink } from 'react-feather';
-import React from 'react';
-import styled from '@emotion/styled';
-import { flex, transparent } from '../../styles';
+import { ExternalLink } from "react-feather";
+import React from "react";
+import styled from "@emotion/styled";
+import { flex, transparent } from "../../styles";
 
 const Link = styled(({ className, to, text }) => {
   return (
     <li className={className}>
-      <a href={to} target={'_blank'} css={flex} rel={'noreferrer'}>
+      <a href={to} target={"_blank"} css={flex} rel={"noreferrer"}>
         {text}
         <button css={transparent}>
           <ExternalLink size={14} />
@@ -41,7 +41,7 @@ const Link = styled(({ className, to, text }) => {
 const Links = ({ links }) => (
   <ul>
     {links.map((link, key) => {
-      if (link.link !== '' && link.text !== '') {
+      if (link.link !== "" && link.text !== "") {
         return <Link key={key} to={link.link} text={link.text} />;
       }
     })}

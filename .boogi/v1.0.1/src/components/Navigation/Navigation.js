@@ -1,10 +1,10 @@
-import { useStaticQuery, graphql } from 'gatsby';
-import config from 'config';
+import { useStaticQuery, graphql } from "gatsby";
+import config from "config";
 
 const getNavigationData = () => {
   const { allMdx } = useStaticQuery(graphql`
     query NavigationQuery {
-      allMdx(filter: {fields: {draft: {ne: true}}}) {
+      allMdx(filter: { fields: { draft: { ne: true } } }) {
         edges {
           node {
             fields {
@@ -23,15 +23,17 @@ const getNavigationData = () => {
 };
 
 const getGroup = function (url) {
-  return url ? config.sidebar.groups.find((group) => url.startsWith(group.path)) : null;
+  return url
+    ? config.sidebar.groups.find((group) => url.startsWith(group.path))
+    : null;
 };
 
 const createUnassignedGroup = () => {
   return {
-    title: '',
+    title: "",
     icon: null,
     order: 0,
-    id: '__root',
+    id: "__root",
     children: [],
   };
 };
@@ -40,12 +42,12 @@ const calculateTreeDataForData = (contentData) => {
   let navigationItems = contentData
     .map((data) => data.node)
     .map((node) => {
-      let parts = node.fields.slug.substr(1).split('/');
-      const label = parts.join('');
+      let parts = node.fields.slug.substr(1).split("/");
+      const label = parts.join("");
       parts = parts.splice(0, parts.length - 1);
       let parents = [];
       parts.forEach((part, index) => {
-        let v = '/' + part;
+        let v = "/" + part;
         if (parents[index - 1]) {
           v = parents[index - 1] + v;
         }
@@ -95,18 +97,18 @@ const calculateTreeDataForData = (contentData) => {
     }
     if (!isChild) {
       // assume first level of navigation entry URL may be ID (path) of a group
-      let group = result[data.url.split('/')[1].toLowerCase()];
+      let group = result[data.url.split("/")[1].toLowerCase()];
       if (group == null) {
         group = group ? group : getGroup(data.url);
         if (!group) {
-          group = result['__root'];
+          group = result["__root"];
         } else {
           group = {
-            title: group ? group.title : '',
+            title: group ? group.title : "",
             icon: group ? group.icon : null,
             order: group ? group.order : 0,
             // assume group have 1 level, e.g. /config
-            id: group ? group.path.replace(/^\//, '').toLowerCase() : null,
+            id: group ? group.path.replace(/^\//, "").toLowerCase() : null,
             children: [],
           };
           result[group.id] = group;
@@ -136,7 +138,7 @@ const calculateNavigation = (edges) => {
           node: {
             fields: { slug },
           },
-        }) => slug !== '/'
+        }) => slug !== "/"
       )
     : edges;
   const data = calculateTreeDataForData(contentData);
@@ -146,19 +148,19 @@ const calculateNavigation = (edges) => {
 };
 
 const flat = (parent, acc) => {
-  parent.children.forEach(child => {
+  parent.children.forEach((child) => {
     acc.push(child);
     flat(child, acc);
-  })
-}
+  });
+};
 
 const calculateFlatNavigation = (edges) => {
   const navigation = calculateNavigation(edges);
   const acc = [];
-  navigation.children.forEach(group => {
-    flat(group, acc)
-  })
-  return acc;;
+  navigation.children.forEach((group) => {
+    flat(group, acc);
+  });
+  return acc;
 };
 
 export { getNavigationData, calculateNavigation, calculateFlatNavigation };

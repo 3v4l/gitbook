@@ -1,4 +1,4 @@
-import colorfn from 'color';
+import colorfn from "color";
 
 export const increaseIntensivity = (color, factor) => {
   const clr = colorfn(color);

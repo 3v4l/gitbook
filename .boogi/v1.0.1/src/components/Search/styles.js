@@ -1,7 +1,7 @@
-import { css } from '@emotion/core';
+import { css } from "@emotion/core";
 
 const defaults = {
-  leftRight: '24px',
+  leftRight: "24px",
 };
 
 export const paddingLeftRight = css`

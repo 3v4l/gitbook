@@ -1,52 +1,52 @@
 // 08:46
-require('dotenv').config();
-const { getSearchPlugins } = require('./src/utils/search');
-const configManager = require('./src/utils/config');
-const path = require('path');
-const emoji = require('./src/utils/emoji');
-const _ = require('lodash');
-const { truncate } = require('lodash');
+require("dotenv").config();
+const { getSearchPlugins } = require("./src/utils/search");
+const configManager = require("./src/utils/config");
+const path = require("path");
+const emoji = require("./src/utils/emoji");
+const _ = require("lodash");
+const { truncate } = require("lodash");
 
 const config = configManager.read();
-configManager.generate(__dirname + '/.generated.config.js', config);
+configManager.generate(__dirname + "/.generated.config.js", config);
 
 const plugins = [
-  'gatsby-plugin-loadable-components-ssr',
-  'gatsby-plugin-sitemap',
-  'gatsby-plugin-instagram-embed',
-  'gatsby-plugin-pinterest',
-  'gatsby-plugin-twitter',
-  'gatsby-plugin-sharp',
-  'gatsby-plugin-sass',
+  "gatsby-plugin-loadable-components-ssr",
+  "gatsby-plugin-sitemap",
+  "gatsby-plugin-instagram-embed",
+  "gatsby-plugin-pinterest",
+  "gatsby-plugin-twitter",
+  "gatsby-plugin-sharp",
+  "gatsby-plugin-sass",
   {
     resolve: `gatsby-plugin-layout`,
     options: {
       component: require.resolve(`./src/templates/docs.js`),
     },
   },
-  'gatsby-plugin-emotion',
-  'gatsby-plugin-remove-trailing-slashes',
+  "gatsby-plugin-emotion",
+  "gatsby-plugin-remove-trailing-slashes",
   {
     resolve: require.resolve(`./plugins/gatsby-plugin-draft`),
     options: {
       publishDraft: config.features.publishDraft,
     },
   },
-  'gatsby-transformer-sharp',
+  "gatsby-transformer-sharp",
   {
-    resolve: 'gatsby-plugin-react-svg',
+    resolve: "gatsby-plugin-react-svg",
     options: {
       rule: {
         include: /\.inline\.svg$/,
       },
     },
   },
-  'gatsby-plugin-react-helmet',
-  'gatsby-source-local-git',
+  "gatsby-plugin-react-helmet",
+  "gatsby-source-local-git",
   {
-    resolve: 'gatsby-source-filesystem',
+    resolve: "gatsby-source-filesystem",
     options: {
-      name: 'docs',
+      name: "docs",
       path: `${__dirname}/content/`,
     },
   },
@@ -57,12 +57,12 @@ const plugins = [
     },
   },
   {
-    resolve: 'gatsby-plugin-mdx',
+    resolve: "gatsby-plugin-mdx",
     options: {
-      remarkPlugins: [require('remark-emoji'), require('remark-abbr')],
+      remarkPlugins: [require("remark-emoji"), require("remark-abbr")],
       gatsbyRemarkPlugins: [
         {
-          resolve: 'gatsby-remark-mermaid',
+          resolve: "gatsby-remark-mermaid",
           options: {
             language: config.features.mermaid.language,
             theme: config.features.mermaid.theme,
@@ -73,7 +73,7 @@ const plugins = [
             mermaidOptions: config.features.mermaid.options,
           },
         },
-        'gatsby-remark-graphviz',
+        "gatsby-remark-graphviz",
         {
           resolve: require.resolve(`./plugins/gatsby-remark-sectionize-toc`),
           options: {
@@ -81,7 +81,7 @@ const plugins = [
           },
         },
         {
-          resolve: 'gatsby-remark-images',
+          resolve: "gatsby-remark-images",
           options: {
             maxWidth: 1050,
             quality: 75,
@@ -90,10 +90,10 @@ const plugins = [
             withWebp: true,
           },
         },
-        'gatsby-remark-copy-linked-files',
+        "gatsby-remark-copy-linked-files",
         {
-          resolve: 'gatsby-remark-jargon',
-          options: { jargon: require('./src/utils/jargon-config.js') },
+          resolve: "gatsby-remark-jargon",
+          options: { jargon: require("./src/utils/jargon-config.js") },
         },
         {
           resolve: `gatsby-remark-embed-snippet`,
@@ -113,7 +113,7 @@ const plugins = [
           },
         },
       ],
-      extensions: ['.mdx', '.md'],
+      extensions: [".mdx", ".md"],
     },
   },
   {
@@ -128,13 +128,13 @@ const plugins = [
     },
   },
   {
-    resolve: 'gatsby-plugin-root-import',
+    resolve: "gatsby-plugin-root-import",
     options: {
-      '~': path.join(__dirname, 'src'),
-      config: path.join(__dirname, '.generated.config.js'),
-      images: path.join(__dirname, 'src/images'),
-      styles: path.join(__dirname, 'src/styles'),
-      css: path.join(__dirname, 'src/styles/main.scss'),
+      "~": path.join(__dirname, "src"),
+      config: path.join(__dirname, ".generated.config.js"),
+      images: path.join(__dirname, "src/images"),
+      styles: path.join(__dirname, "src/styles"),
+      css: path.join(__dirname, "src/styles/main.scss"),
     },
   },
   {
@@ -148,7 +148,7 @@ const plugins = [
 
 if (config.features.pageProgress && config.features.pageProgress.enabled) {
   plugins.push({
-    resolve: 'gatsby-plugin-page-progress',
+    resolve: "gatsby-plugin-page-progress",
     options: {
       includePaths: config.features.pageProgress.includePaths,
       excludePaths: config.features.pageProgress.excludePaths,
@@ -188,18 +188,25 @@ if (config.features.rss && config.features.rss.enabled) {
                   ? frontmatter.metaTitle
                   : frontmatter.title;
               const title = emoji.clean(rawTitle);
-              const date = fields && fields.gitLogLatestDate ? fields.gitLogLatestDate : new Date();
+              const date =
+                fields && fields.gitLogLatestDate
+                  ? fields.gitLogLatestDate
+                  : new Date();
               const author =
-                fields && fields.gitLogLatestAuthorName ? fields.gitLogLatestAuthorName : 'unknown';
+                fields && fields.gitLogLatestAuthorName
+                  ? fields.gitLogLatestAuthorName
+                  : "unknown";
               return {
                 title: title,
-                description: frontmatter.description ? frontmatter.description : edge.node.excerpt,
+                description: frontmatter.description
+                  ? frontmatter.description
+                  : edge.node.excerpt,
                 date: date,
                 url: site.siteMetadata.siteUrl + edge.node.fields.slug,
                 author: author,
               };
             });
-            return _.orderBy(items, ['date', 'title'], ['desc', 'asc']);
+            return _.orderBy(items, ["date", "title"], ["desc", "asc"]);
           },
           query: `
           {
@@ -230,7 +237,9 @@ if (config.features.rss && config.features.rss.enabled) {
           `,
           output: config.features.rss.outputPath,
           match: config.features.rss.matchRegex,
-          title: config.features.rss.title ? config.features.rss.title : config.metadata.title,
+          title: config.features.rss.title
+            ? config.features.rss.title
+            : config.metadata.title,
         },
       ],
     },
@@ -238,7 +247,7 @@ if (config.features.rss && config.features.rss.enabled) {
 }
 
 const searchPlugins = getSearchPlugins(config.features.search);
-searchPlugins.forEach(plugin => plugins.push(plugin));
+searchPlugins.forEach((plugin) => plugins.push(plugin));
 
 // check and add pwa functionality
 if (config.pwa && config.pwa.enabled && config.pwa.manifest) {
@@ -247,14 +256,14 @@ if (config.pwa && config.pwa.enabled && config.pwa.manifest) {
     options: { ...config.pwa.manifest },
   });
   plugins.push({
-    resolve: 'gatsby-plugin-offline',
+    resolve: "gatsby-plugin-offline",
     options: {
       appendScript: require.resolve(`./src/custom-sw-code.js`),
     },
   });
   // plugins.push('gatsby-plugin-offline');
 } else {
-  plugins.push('gatsby-plugin-remove-serviceworker');
+  plugins.push("gatsby-plugin-remove-serviceworker");
 }
 
 module.exports = {
@@ -268,7 +277,7 @@ module.exports = {
     siteImage: config.metadata.siteImage,
     favicon: config.metadata.favicon,
     logo: {
-      link: config.header.logoLink ? config.header.logoLink : '/',
+      link: config.header.logoLink ? config.header.logoLink : "/",
       image: config.header.logo,
     }, // backwards compatible
     headerTitle: config.metadata.name,

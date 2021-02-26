@@ -1,11 +1,11 @@
-import React from 'react';
-import styled from '@emotion/styled';
-import { useTheme } from 'emotion-theming';
-import { ArrowRight } from 'react-feather';
-import emoji from '../../utils/emoji';
-import Link from '../Link';
-import { decreaseIntensivity } from '../../utils/colors';
-import Card from './card';
+import React from "react";
+import styled from "@emotion/styled";
+import { useTheme } from "emotion-theming";
+import { ArrowRight } from "react-feather";
+import emoji from "../../utils/emoji";
+import Link from "../Link";
+import { decreaseIntensivity } from "../../utils/colors";
+import Card from "./card";
 
 const LinkCard = styled(Card)`
   cursor: pointer;
@@ -33,7 +33,7 @@ const Title = styled.div`
 
 export default ({ title, url }) => {
   const theme = useTheme();
-  const path = url.replace(/(https:\/\/)|(http:\/\/)/, '');
+  const path = url.replace(/(https:\/\/)|(http:\/\/)/, "");
   return (
     <Link to={url}>
       <LinkCard>

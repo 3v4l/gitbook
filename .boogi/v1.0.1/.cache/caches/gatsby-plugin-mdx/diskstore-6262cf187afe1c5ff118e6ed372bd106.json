@@ -1,1 +1,303 @@
-{"expireTime":9007200869051277000,"key":"gatsby-plugin-mdx-entire-payload-bd49c221ec2833ca093cf72e3d56d212-","val":{"mdast":{"type":"root","children":[{"type":"heading","depth":1,"children":[{"type":"text","value":"Introduction","position":{"start":{"line":1,"column":3,"offset":2},"end":{"line":1,"column":15,"offset":14},"indent":[]}}],"position":{"start":{"line":1,"column":1,"offset":0},"end":{"line":1,"column":15,"offset":14},"indent":[]}},{"type":"paragraph","children":[{"type":"text","value":"Backbone's websocket endpoint provides support for Pub/Sub API as well as JSON-RPC filter support. The regular Ethereum\nAPI is also supported and documented in the 'examples' portion of 'Ethereum API'","position":{"start":{"line":3,"column":1,"offset":16},"end":{"line":4,"column":81,"offset":216},"indent":[1]}}],"position":{"start":{"line":3,"column":1,"offset":16},"end":{"line":4,"column":81,"offset":216},"indent":[1]}},{"type":"paragraph","children":[{"type":"text","value":"All examples in this reference section uses WSCAT, but will work with any tool that supports websockets.","position":{"start":{"line":6,"column":1,"offset":218},"end":{"line":6,"column":105,"offset":322},"indent":[]}}],"position":{"start":{"line":6,"column":1,"offset":218},"end":{"line":6,"column":105,"offset":322},"indent":[]}},{"type":"paragraph","children":[{"type":"text","value":"Some tools you can use for making these requests","position":{"start":{"line":8,"column":1,"offset":324},"end":{"line":8,"column":49,"offset":372},"indent":[]}}],"position":{"start":{"line":8,"column":1,"offset":324},"end":{"line":8,"column":49,"offset":372},"indent":[]}},{"type":"list","ordered":false,"start":null,"spread":false,"children":[{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"link","title":null,"url":"https://github.com/websockets/wscat","children":[{"type":"text","value":"WSCAT","position":{"start":{"line":10,"column":6,"offset":379},"end":{"line":10,"column":11,"offset":384},"indent":[]}}],"position":{"start":{"line":10,"column":5,"offset":378},"end":{"line":10,"column":49,"offset":422},"indent":[]}}],"position":{"start":{"line":10,"column":5,"offset":378},"end":{"line":10,"column":49,"offset":422},"indent":[]}}],"position":{"start":{"line":10,"column":1,"offset":374},"end":{"line":10,"column":49,"offset":422},"indent":[]}},{"type":"listItem","spread":false,"checked":null,"children":[{"type":"paragraph","children":[{"type":"link","title":null,"url":"https://install.advancedrestclient.com/","children":[{"type":"text","value":"Advanced Rest Client","position":{"start":{"line":11,"column":6,"offset":428},"end":{"line":11,"column":26,"offset":448},"indent":[]}}],"position":{"start":{"line":11,"column":5,"offset":427},"end":{"line":11,"column":68,"offset":490},"indent":[]}}],"position":{"start":{"line":11,"column":5,"offset":427},"end":{"line":11,"column":68,"offset":490},"indent":[]}}],"position":{"start":{"line":11,"column":1,"offset":423},"end":{"line":11,"column":68,"offset":490},"indent":[]}}],"position":{"start":{"line":10,"column":1,"offset":374},"end":{"line":11,"column":68,"offset":490},"indent":[1]}},{"type":"heading","depth":4,"children":[{"type":"text","value":"EXAMPLE","position":{"start":{"line":13,"column":6,"offset":497},"end":{"line":13,"column":13,"offset":504},"indent":[]}}],"position":{"start":{"line":13,"column":1,"offset":492},"end":{"line":13,"column":13,"offset":504},"indent":[]}},{"type":"paragraph","children":[{"type":"text","value":"The following is an example showing a connection to the WebSockets endpoint and using subscriptions through web3.js 1.0","position":{"start":{"line":15,"column":1,"offset":506},"end":{"line":15,"column":120,"offset":625},"indent":[]}}],"position":{"start":{"line":15,"column":1,"offset":506},"end":{"line":15,"column":120,"offset":625},"indent":[]}},{"type":"paragraph","children":[{"type":"text","value":"NOTE: web3.js 1.0.0-beta.34 has an open issue with request headers. (","position":{"start":{"line":17,"column":1,"offset":627},"end":{"line":17,"column":70,"offset":696},"indent":[]}},{"type":"link","title":null,"url":"https://github.com/ethereum/web3.js/issues/1559","children":[{"type":"text","value":"https://github.com/ethereum/web3.js/issues/1559","position":{"start":{"line":17,"column":70,"offset":696},"end":{"line":17,"column":117,"offset":743},"indent":[]}}],"position":{"start":{"line":17,"column":70,"offset":696},"end":{"line":17,"column":117,"offset":743},"indent":[]}},{"type":"text","value":")\nUsers will have to revert to version 1.0.0-beta.33 to avoid the issue.","position":{"start":{"line":17,"column":117,"offset":743},"end":{"line":18,"column":71,"offset":815},"indent":[1]}}],"position":{"start":{"line":17,"column":1,"offset":627},"end":{"line":18,"column":71,"offset":815},"indent":[1]}},{"type":"code","lang":"js","meta":null,"value":"const Web3 = require(\"web3\");\n\nlet web3 = new Web3(\n  new Web3.providers.WebsocketProvider(\"wss://mainnet.backbonecabal.xyz/ws\")\n);\n\nconst instance = new web3.eth.Contract(<abi>, <address>);\n\ninstance.getPastEvents(\n    \"SomeEvent\",\n    { fromBlock: 0, toBlock: \"latest\" },\n    (errors, events) => {\n        if (!errors) {\n            // process events\n        }\n    }\n);","position":{"start":{"line":20,"column":1,"offset":817},"end":{"line":38,"column":4,"offset":1198},"indent":[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]}},{"type":"export","value":"export const _frontmatter = {}","position":{"start":{"line":41,"column":1,"offset":1201},"end":{"line":41,"column":31,"offset":1231},"indent":[]}}],"position":{"start":{"line":1,"column":1,"offset":0},"end":{"line":41,"column":31,"offset":1231}}},"scopeImports":["import * as React from 'react'"],"scopeIdentifiers":["React"],"body":"function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }\n\nfunction _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }\n\nfunction _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }\n\n/* @jsx mdx */\nvar _frontmatter = {};\nvar layoutProps = {\n  _frontmatter: _frontmatter\n};\nvar MDXLayout = \"wrapper\";\nreturn function MDXContent(_ref) {\n  var components = _ref.components,\n      props = _objectWithoutProperties(_ref, [\"components\"]);\n\n  return mdx(MDXLayout, _extends({}, layoutProps, props, {\n    components: components,\n    mdxType: \"MDXLayout\"\n  }), mdx(\"section\", null, mdx(\"h1\", {\n    parentName: \"section\"\n  }, \"Introduction\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, \"Backbone's websocket endpoint provides support for Pub/Sub API as well as JSON-RPC filter support. The regular Ethereum\\nAPI is also supported and documented in the 'examples' portion of 'Ethereum API'\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, \"All examples in this reference section uses WSCAT, but will work with any tool that supports websockets.\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, \"Some tools you can use for making these requests\"), mdx(\"ul\", {\n    parentName: \"section\"\n  }, mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"a\", _extends({\n    parentName: \"li\"\n  }, {\n    \"href\": \"https://github.com/websockets/wscat\"\n  }), \"WSCAT\")), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"a\", _extends({\n    parentName: \"li\"\n  }, {\n    \"href\": \"https://install.advancedrestclient.com/\"\n  }), \"Advanced Rest Client\"))), mdx(\"section\", {\n    parentName: \"section\"\n  }, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"EXAMPLE\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, \"The following is an example showing a connection to the WebSockets endpoint and using subscriptions through web3.js 1.0\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, \"NOTE: web3.js 1.0.0-beta.34 has an open issue with request headers. (\", mdx(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://github.com/ethereum/web3.js/issues/1559\"\n  }), \"https://github.com/ethereum/web3.js/issues/1559\"), \")\\nUsers will have to revert to version 1.0.0-beta.33 to avoid the issue.\"), mdx(\"pre\", {\n    parentName: \"section\"\n  }, mdx(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-js\"\n  }), \"const Web3 = require(\\\"web3\\\");\\n\\nlet web3 = new Web3(\\n  new Web3.providers.WebsocketProvider(\\\"wss://mainnet.backbonecabal.xyz/ws\\\")\\n);\\n\\nconst instance = new web3.eth.Contract(<abi>, <address>);\\n\\ninstance.getPastEvents(\\n    \\\"SomeEvent\\\",\\n    { fromBlock: 0, toBlock: \\\"latest\\\" },\\n    (errors, events) => {\\n        if (!errors) {\\n            // process events\\n        }\\n    }\\n);\\n\")))));\n}\n;\nMDXContent.isMDXComponent = true;","rawMDXOutput":"/* @jsx mdx */\nimport { mdx } from '@mdx-js/react';\n/* @jsx mdx */\n\nexport const _frontmatter = {};\n\nconst layoutProps = {\n  _frontmatter\n};\nconst MDXLayout = \"wrapper\"\nexport default function MDXContent({\n  components,\n  ...props\n}) {\n  return <MDXLayout {...layoutProps} {...props} components={components} mdxType=\"MDXLayout\">\n    <section><h1 parentName=\"section\">{`Introduction`}</h1><p parentName=\"section\">{`Backbone's websocket endpoint provides support for Pub/Sub API as well as JSON-RPC filter support. The regular Ethereum\nAPI is also supported and documented in the 'examples' portion of 'Ethereum API'`}</p><p parentName=\"section\">{`All examples in this reference section uses WSCAT, but will work with any tool that supports websockets.`}</p><p parentName=\"section\">{`Some tools you can use for making these requests`}</p><ul parentName=\"section\">\n        <li parentName=\"ul\"><a parentName=\"li\" {...{\n            \"href\": \"https://github.com/websockets/wscat\"\n          }}>{`WSCAT`}</a></li>\n        <li parentName=\"ul\"><a parentName=\"li\" {...{\n            \"href\": \"https://install.advancedrestclient.com/\"\n          }}>{`Advanced Rest Client`}</a></li>\n      </ul><section parentName=\"section\"><h4 parentName=\"section\">{`EXAMPLE`}</h4><p parentName=\"section\">{`The following is an example showing a connection to the WebSockets endpoint and using subscriptions through web3.js 1.0`}</p><p parentName=\"section\">{`NOTE: web3.js 1.0.0-beta.34 has an open issue with request headers. (`}<a parentName=\"p\" {...{\n            \"href\": \"https://github.com/ethereum/web3.js/issues/1559\"\n          }}>{`https://github.com/ethereum/web3.js/issues/1559`}</a>{`)\nUsers will have to revert to version 1.0.0-beta.33 to avoid the issue.`}</p><pre parentName=\"section\"><code parentName=\"pre\" {...{\n            \"className\": \"language-js\"\n          }}>{`const Web3 = require(\"web3\");\n\nlet web3 = new Web3(\n  new Web3.providers.WebsocketProvider(\"wss://mainnet.backbonecabal.xyz/ws\")\n);\n\nconst instance = new web3.eth.Contract(<abi>, <address>);\n\ninstance.getPastEvents(\n    \"SomeEvent\",\n    { fromBlock: 0, toBlock: \"latest\" },\n    (errors, events) => {\n        if (!errors) {\n            // process events\n        }\n    }\n);\n`}</code></pre></section></section>\n\n    </MDXLayout>;\n}\n\n;\nMDXContent.isMDXComponent = true;"}}
+{
+  "expireTime": 9007200869051277000,
+  "key": "gatsby-plugin-mdx-entire-payload-bd49c221ec2833ca093cf72e3d56d212-",
+  "val": {
+    "mdast": {
+      "type": "root",
+      "children": [
+        {
+          "type": "heading",
+          "depth": 1,
+          "children": [
+            {
+              "type": "text",
+              "value": "Introduction",
+              "position": {
+                "start": { "line": 1, "column": 3, "offset": 2 },
+                "end": { "line": 1, "column": 15, "offset": 14 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 1, "column": 1, "offset": 0 },
+            "end": { "line": 1, "column": 15, "offset": 14 },
+            "indent": []
+          }
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "Backbone's websocket endpoint provides support for Pub/Sub API as well as JSON-RPC filter support. The regular Ethereum\nAPI is also supported and documented in the 'examples' portion of 'Ethereum API'",
+              "position": {
+                "start": { "line": 3, "column": 1, "offset": 16 },
+                "end": { "line": 4, "column": 81, "offset": 216 },
+                "indent": [1]
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 3, "column": 1, "offset": 16 },
+            "end": { "line": 4, "column": 81, "offset": 216 },
+            "indent": [1]
+          }
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "All examples in this reference section uses WSCAT, but will work with any tool that supports websockets.",
+              "position": {
+                "start": { "line": 6, "column": 1, "offset": 218 },
+                "end": { "line": 6, "column": 105, "offset": 322 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 6, "column": 1, "offset": 218 },
+            "end": { "line": 6, "column": 105, "offset": 322 },
+            "indent": []
+          }
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "Some tools you can use for making these requests",
+              "position": {
+                "start": { "line": 8, "column": 1, "offset": 324 },
+                "end": { "line": 8, "column": 49, "offset": 372 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 8, "column": 1, "offset": 324 },
+            "end": { "line": 8, "column": 49, "offset": 372 },
+            "indent": []
+          }
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "start": null,
+          "spread": false,
+          "children": [
+            {
+              "type": "listItem",
+              "spread": false,
+              "checked": null,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "link",
+                      "title": null,
+                      "url": "https://github.com/websockets/wscat",
+                      "children": [
+                        {
+                          "type": "text",
+                          "value": "WSCAT",
+                          "position": {
+                            "start": { "line": 10, "column": 6, "offset": 379 },
+                            "end": { "line": 10, "column": 11, "offset": 384 },
+                            "indent": []
+                          }
+                        }
+                      ],
+                      "position": {
+                        "start": { "line": 10, "column": 5, "offset": 378 },
+                        "end": { "line": 10, "column": 49, "offset": 422 },
+                        "indent": []
+                      }
+                    }
+                  ],
+                  "position": {
+                    "start": { "line": 10, "column": 5, "offset": 378 },
+                    "end": { "line": 10, "column": 49, "offset": 422 },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": { "line": 10, "column": 1, "offset": 374 },
+                "end": { "line": 10, "column": 49, "offset": 422 },
+                "indent": []
+              }
+            },
+            {
+              "type": "listItem",
+              "spread": false,
+              "checked": null,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "link",
+                      "title": null,
+                      "url": "https://install.advancedrestclient.com/",
+                      "children": [
+                        {
+                          "type": "text",
+                          "value": "Advanced Rest Client",
+                          "position": {
+                            "start": { "line": 11, "column": 6, "offset": 428 },
+                            "end": { "line": 11, "column": 26, "offset": 448 },
+                            "indent": []
+                          }
+                        }
+                      ],
+                      "position": {
+                        "start": { "line": 11, "column": 5, "offset": 427 },
+                        "end": { "line": 11, "column": 68, "offset": 490 },
+                        "indent": []
+                      }
+                    }
+                  ],
+                  "position": {
+                    "start": { "line": 11, "column": 5, "offset": 427 },
+                    "end": { "line": 11, "column": 68, "offset": 490 },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": { "line": 11, "column": 1, "offset": 423 },
+                "end": { "line": 11, "column": 68, "offset": 490 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 10, "column": 1, "offset": 374 },
+            "end": { "line": 11, "column": 68, "offset": 490 },
+            "indent": [1]
+          }
+        },
+        {
+          "type": "heading",
+          "depth": 4,
+          "children": [
+            {
+              "type": "text",
+              "value": "EXAMPLE",
+              "position": {
+                "start": { "line": 13, "column": 6, "offset": 497 },
+                "end": { "line": 13, "column": 13, "offset": 504 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 13, "column": 1, "offset": 492 },
+            "end": { "line": 13, "column": 13, "offset": 504 },
+            "indent": []
+          }
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "The following is an example showing a connection to the WebSockets endpoint and using subscriptions through web3.js 1.0",
+              "position": {
+                "start": { "line": 15, "column": 1, "offset": 506 },
+                "end": { "line": 15, "column": 120, "offset": 625 },
+                "indent": []
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 15, "column": 1, "offset": 506 },
+            "end": { "line": 15, "column": 120, "offset": 625 },
+            "indent": []
+          }
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "NOTE: web3.js 1.0.0-beta.34 has an open issue with request headers. (",
+              "position": {
+                "start": { "line": 17, "column": 1, "offset": 627 },
+                "end": { "line": 17, "column": 70, "offset": 696 },
+                "indent": []
+              }
+            },
+            {
+              "type": "link",
+              "title": null,
+              "url": "https://github.com/ethereum/web3.js/issues/1559",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "https://github.com/ethereum/web3.js/issues/1559",
+                  "position": {
+                    "start": { "line": 17, "column": 70, "offset": 696 },
+                    "end": { "line": 17, "column": 117, "offset": 743 },
+                    "indent": []
+                  }
+                }
+              ],
+              "position": {
+                "start": { "line": 17, "column": 70, "offset": 696 },
+                "end": { "line": 17, "column": 117, "offset": 743 },
+                "indent": []
+              }
+            },
+            {
+              "type": "text",
+              "value": ")\nUsers will have to revert to version 1.0.0-beta.33 to avoid the issue.",
+              "position": {
+                "start": { "line": 17, "column": 117, "offset": 743 },
+                "end": { "line": 18, "column": 71, "offset": 815 },
+                "indent": [1]
+              }
+            }
+          ],
+          "position": {
+            "start": { "line": 17, "column": 1, "offset": 627 },
+            "end": { "line": 18, "column": 71, "offset": 815 },
+            "indent": [1]
+          }
+        },
+        {
+          "type": "code",
+          "lang": "js",
+          "meta": null,
+          "value": "const Web3 = require(\"web3\");\n\nlet web3 = new Web3(\n  new Web3.providers.WebsocketProvider(\"wss://mainnet.backbonecabal.xyz/ws\")\n);\n\nconst instance = new web3.eth.Contract(<abi>, <address>);\n\ninstance.getPastEvents(\n    \"SomeEvent\",\n    { fromBlock: 0, toBlock: \"latest\" },\n    (errors, events) => {\n        if (!errors) {\n            // process events\n        }\n    }\n);",
+          "position": {
+            "start": { "line": 20, "column": 1, "offset": 817 },
+            "end": { "line": 38, "column": 4, "offset": 1198 },
+            "indent": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+          }
+        },
+        {
+          "type": "export",
+          "value": "export const _frontmatter = {}",
+          "position": {
+            "start": { "line": 41, "column": 1, "offset": 1201 },
+            "end": { "line": 41, "column": 31, "offset": 1231 },
+            "indent": []
+          }
+        }
+      ],
+      "position": {
+        "start": { "line": 1, "column": 1, "offset": 0 },
+        "end": { "line": 41, "column": 31, "offset": 1231 }
+      }
+    },
+    "scopeImports": ["import * as React from 'react'"],
+    "scopeIdentifiers": ["React"],
+    "body": "function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }\n\nfunction _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }\n\nfunction _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }\n\n/* @jsx mdx */\nvar _frontmatter = {};\nvar layoutProps = {\n  _frontmatter: _frontmatter\n};\nvar MDXLayout = \"wrapper\";\nreturn function MDXContent(_ref) {\n  var components = _ref.components,\n      props = _objectWithoutProperties(_ref, [\"components\"]);\n\n  return mdx(MDXLayout, _extends({}, layoutProps, props, {\n    components: components,\n    mdxType: \"MDXLayout\"\n  }), mdx(\"section\", null, mdx(\"h1\", {\n    parentName: \"section\"\n  }, \"Introduction\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, \"Backbone's websocket endpoint provides support for Pub/Sub API as well as JSON-RPC filter support. The regular Ethereum\\nAPI is also supported and documented in the 'examples' portion of 'Ethereum API'\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, \"All examples in this reference section uses WSCAT, but will work with any tool that supports websockets.\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, \"Some tools you can use for making these requests\"), mdx(\"ul\", {\n    parentName: \"section\"\n  }, mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"a\", _extends({\n    parentName: \"li\"\n  }, {\n    \"href\": \"https://github.com/websockets/wscat\"\n  }), \"WSCAT\")), mdx(\"li\", {\n    parentName: \"ul\"\n  }, mdx(\"a\", _extends({\n    parentName: \"li\"\n  }, {\n    \"href\": \"https://install.advancedrestclient.com/\"\n  }), \"Advanced Rest Client\"))), mdx(\"section\", {\n    parentName: \"section\"\n  }, mdx(\"h4\", {\n    parentName: \"section\"\n  }, \"EXAMPLE\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, \"The following is an example showing a connection to the WebSockets endpoint and using subscriptions through web3.js 1.0\"), mdx(\"p\", {\n    parentName: \"section\"\n  }, \"NOTE: web3.js 1.0.0-beta.34 has an open issue with request headers. (\", mdx(\"a\", _extends({\n    parentName: \"p\"\n  }, {\n    \"href\": \"https://github.com/ethereum/web3.js/issues/1559\"\n  }), \"https://github.com/ethereum/web3.js/issues/1559\"), \")\\nUsers will have to revert to version 1.0.0-beta.33 to avoid the issue.\"), mdx(\"pre\", {\n    parentName: \"section\"\n  }, mdx(\"code\", _extends({\n    parentName: \"pre\"\n  }, {\n    \"className\": \"language-js\"\n  }), \"const Web3 = require(\\\"web3\\\");\\n\\nlet web3 = new Web3(\\n  new Web3.providers.WebsocketProvider(\\\"wss://mainnet.backbonecabal.xyz/ws\\\")\\n);\\n\\nconst instance = new web3.eth.Contract(<abi>, <address>);\\n\\ninstance.getPastEvents(\\n    \\\"SomeEvent\\\",\\n    { fromBlock: 0, toBlock: \\\"latest\\\" },\\n    (errors, events) => {\\n        if (!errors) {\\n            // process events\\n        }\\n    }\\n);\\n\")))));\n}\n;\nMDXContent.isMDXComponent = true;",
+    "rawMDXOutput": "/* @jsx mdx */\nimport { mdx } from '@mdx-js/react';\n/* @jsx mdx */\n\nexport const _frontmatter = {};\n\nconst layoutProps = {\n  _frontmatter\n};\nconst MDXLayout = \"wrapper\"\nexport default function MDXContent({\n  components,\n  ...props\n}) {\n  return <MDXLayout {...layoutProps} {...props} components={components} mdxType=\"MDXLayout\">\n    <section><h1 parentName=\"section\">{`Introduction`}</h1><p parentName=\"section\">{`Backbone's websocket endpoint provides support for Pub/Sub API as well as JSON-RPC filter support. The regular Ethereum\nAPI is also supported and documented in the 'examples' portion of 'Ethereum API'`}</p><p parentName=\"section\">{`All examples in this reference section uses WSCAT, but will work with any tool that supports websockets.`}</p><p parentName=\"section\">{`Some tools you can use for making these requests`}</p><ul parentName=\"section\">\n        <li parentName=\"ul\"><a parentName=\"li\" {...{\n            \"href\": \"https://github.com/websockets/wscat\"\n          }}>{`WSCAT`}</a></li>\n        <li parentName=\"ul\"><a parentName=\"li\" {...{\n            \"href\": \"https://install.advancedrestclient.com/\"\n          }}>{`Advanced Rest Client`}</a></li>\n      </ul><section parentName=\"section\"><h4 parentName=\"section\">{`EXAMPLE`}</h4><p parentName=\"section\">{`The following is an example showing a connection to the WebSockets endpoint and using subscriptions through web3.js 1.0`}</p><p parentName=\"section\">{`NOTE: web3.js 1.0.0-beta.34 has an open issue with request headers. (`}<a parentName=\"p\" {...{\n            \"href\": \"https://github.com/ethereum/web3.js/issues/1559\"\n          }}>{`https://github.com/ethereum/web3.js/issues/1559`}</a>{`)\nUsers will have to revert to version 1.0.0-beta.33 to avoid the issue.`}</p><pre parentName=\"section\"><code parentName=\"pre\" {...{\n            \"className\": \"language-js\"\n          }}>{`const Web3 = require(\"web3\");\n\nlet web3 = new Web3(\n  new Web3.providers.WebsocketProvider(\"wss://mainnet.backbonecabal.xyz/ws\")\n);\n\nconst instance = new web3.eth.Contract(<abi>, <address>);\n\ninstance.getPastEvents(\n    \"SomeEvent\",\n    { fromBlock: 0, toBlock: \"latest\" },\n    (errors, events) => {\n        if (!errors) {\n            // process events\n        }\n    }\n);\n`}</code></pre></section></section>\n\n    </MDXLayout>;\n}\n\n;\nMDXContent.isMDXComponent = true;"
+  }
+}

@@ -1,10 +1,10 @@
-import React from 'react';
-import styled from '@emotion/styled';
-import { useTheme } from 'emotion-theming';
-import { Download } from 'react-feather';
-import emoji from '../../utils/emoji';
-import { decreaseIntensivity } from '../../utils/colors';
-import Card from './card';
+import React from "react";
+import styled from "@emotion/styled";
+import { useTheme } from "emotion-theming";
+import { Download } from "react-feather";
+import emoji from "../../utils/emoji";
+import { decreaseIntensivity } from "../../utils/colors";
+import Card from "./card";
 
 const DownloadCard = styled(Card)`
   cursor: pointer;
@@ -32,8 +32,8 @@ const Title = styled.div`
 
 export default ({ title, url }) => {
   const theme = useTheme();
-  const splitted = url.split('/')
-  const filename = splitted[splitted.length - 1]
+  const splitted = url.split("/");
+  const filename = splitted[splitted.length - 1];
   return (
     <a href={url} download>
       <DownloadCard title={`Download file ${filename}`}>

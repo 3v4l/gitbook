@@ -1,20 +1,30 @@
-import React, { useState, useEffect } from 'react';
-import { StaticQuery, graphql } from 'gatsby';
-import styled from '@emotion/styled';
-import config from 'config';
-import Logo from './logo';
-import Navigation from './navigation';
-import { ButtonIcon, DarkModeSwitch, SearchInput, Sidebar } from '../';
-import { HelpCircle, Menu, Search } from 'react-feather';
-import { useTheme } from 'emotion-theming';
-import SocialButtons from './social';
-import { Rss } from '../Buttons';
-import { globalHistory } from '@reach/router';
-import { hiddenMobile, visibleMobile, visibleTablet, hiddenTablet } from '../../styles';
-import { onMobile, onTablet, isMobile } from '../../styles/responsive';
-import { FullScreenClose, FullScreenEnter, FullScreenHeader } from './fullscreen';
+import React, { useState, useEffect } from "react";
+import { StaticQuery, graphql } from "gatsby";
+import styled from "@emotion/styled";
+import config from "config";
+import Logo from "./logo";
+import Navigation from "./navigation";
+import { ButtonIcon, DarkModeSwitch, SearchInput, Sidebar } from "../";
+import { HelpCircle, Menu, Search } from "react-feather";
+import { useTheme } from "emotion-theming";
+import SocialButtons from "./social";
+import { Rss } from "../Buttons";
+import { globalHistory } from "@reach/router";
+import {
+  hiddenMobile,
+  visibleMobile,
+  visibleTablet,
+  hiddenTablet,
+} from "../../styles";
+import { onMobile, onTablet, isMobile } from "../../styles/responsive";
+import {
+  FullScreenClose,
+  FullScreenEnter,
+  FullScreenHeader,
+} from "./fullscreen";
 
-const isSearchEnabled = config.features.search && config.features.search.enabled;
+const isSearchEnabled =
+  config.features.search && config.features.search.enabled;
 
 const SearchWrapper = styled.div`
   padding-left: 20px;
@@ -40,7 +50,7 @@ const HeaderWrapper = styled.header`
   border-radius: 0;
   margin-bottom: 0;
   border: 0;
-  display: ${(props) => (props.show ? 'flex' : 'none')};
+  display: ${(props) => (props.show ? "flex" : "none")};
   align-items: center;
   box-shadow: 0 3px 8px 0 ${(props) => props.theme.header.shadow};
   border-bottom: 1px solid ${(props) => props.theme.header.border};
@@ -102,19 +112,27 @@ const SearchOpener = ({ open, forcedComponent, ...props }) => {
   const method = forcedComponent || config.features.search.startComponent;
   let opener = <div></div>;
   switch (method.toLowerCase()) {
-    case 'input':
+    case "input":
       opener = (
-        <SearchWrapper css={hiddenMobile} style={{ marginRight: '10px' }} {...props}>
-          <SearchInput style={{marginTop: '0', marginBottom: '0'}} onChange={(e) => (e.target.value = '')} onFocus={open} />
+        <SearchWrapper
+          css={hiddenMobile}
+          style={{ marginRight: "10px" }}
+          {...props}
+        >
+          <SearchInput
+            style={{ marginTop: "0", marginBottom: "0" }}
+            onChange={(e) => (e.target.value = "")}
+            onFocus={open}
+          />
         </SearchWrapper>
       );
       break;
-    case 'icon':
+    case "icon":
       opener = (
         <ButtonIcon
           background={theme.header.icons.background}
           hoverStroke={theme.header.icons.hover}
-          fill={'transparent'}
+          fill={"transparent"}
           stroke={theme.header.icons.stroke}
           icon={Search}
           onClick={open}
@@ -123,7 +141,9 @@ const SearchOpener = ({ open, forcedComponent, ...props }) => {
       );
       break;
     default:
-      console.error(`Provided show component '${method}' is not supported. Use 'icon' or 'input'.`);
+      console.error(
+        `Provided show component '${method}' is not supported. Use 'icon' or 'input'.`
+      );
       opener = <div></div>;
   }
   return opener;
@@ -132,7 +152,7 @@ const SearchOpener = ({ open, forcedComponent, ...props }) => {
 const HelpButton = ({ helpUrl, ...props }) => {
   const theme = useTheme();
   const open = () => {
-    const help = window.open(helpUrl, '_blank');
+    const help = window.open(helpUrl, "_blank");
     help.focus();
   };
   return (
@@ -147,13 +167,17 @@ const HelpButton = ({ helpUrl, ...props }) => {
 };
 
 const RssIcon = (iconBaseProps) => {
-  if (config.features.rss && config.features.rss.enabled && config.features.rss.showIcon) {
+  if (
+    config.features.rss &&
+    config.features.rss.enabled &&
+    config.features.rss.showIcon
+  ) {
     return (
       <Rss
         className={hiddenMobile}
         {...iconBaseProps}
         link={config.features.rss.outputPath}
-        title={'RSS feed'}
+        title={"RSS feed"}
       />
     );
   }
@@ -161,7 +185,7 @@ const RssIcon = (iconBaseProps) => {
 };
 
 const MobileNavigation = styled.div`
-  display: ${(props) => (props.show ? 'flex' : 'none')} !important;
+  display: ${(props) => (props.show ? "flex" : "none")} !important;
   flex-basis: 100%;
   flex-direction: column;
 `;
@@ -171,11 +195,13 @@ const MobileMenuToggle = styled(({ open, toggle, className, ...props }) => {
   return (
     <div className={className} {...props}>
       <ButtonIcon
-        title={'Open menu'}
+        title={"Open menu"}
         background={theme.header.icons.background}
         hoverStroke={theme.header.icons.hover}
-        fill={'transparent'}
-        stroke={open === true ? theme.header.icons.hover : theme.header.icons.stroke}
+        fill={"transparent"}
+        stroke={
+          open === true ? theme.header.icons.hover : theme.header.icons.stroke
+        }
         icon={Menu}
         onClick={toggle}
         {...props}
@@ -201,7 +227,13 @@ const SocialButtonsWrapper = styled.div`
   }
 `;
 
-const Header = ({ setShowSearch, location, themeProvider, show, toggleFullscreenMode }) => (
+const Header = ({
+  setShowSearch,
+  location,
+  themeProvider,
+  show,
+  toggleFullscreenMode,
+}) => (
   <StaticQuery
     query={graphql`
       query headerTitleQuery {
@@ -228,8 +260,8 @@ const Header = ({ setShowSearch, location, themeProvider, show, toggleFullscreen
           siteMetadata: { headerTitle, helpUrl, logo, headerLinks },
         },
       } = data;
-      const logoLink = logo.link !== '' ? logo.link : '/';
-      const logoImg = require('images/logo.svg');
+      const logoLink = logo.link !== "" ? logo.link : "/";
+      const logoImg = require("images/logo.svg");
       const [darkMode, setDarkMode] = useState(false);
       useEffect(() => {
         setDarkMode(themeProvider.current.retrieveActiveTheme());
@@ -257,7 +289,7 @@ const Header = ({ setShowSearch, location, themeProvider, show, toggleFullscreen
           }}
         />
       ) : (
-        ''
+        ""
       );
       const toggleMenuOpen = () => setMenuOpen(!menuOpen);
       globalHistory.listen((location) => {
@@ -273,7 +305,7 @@ const Header = ({ setShowSearch, location, themeProvider, show, toggleFullscreen
               {DarkModeButton}
             </FullScreenHeader>
           ) : (
-            ''
+            ""
           )}
           <HeaderWrapper show={show}>
             <Logo link={logoLink} img={logoImg} title={headerTitle} />
@@ -283,14 +315,18 @@ const Header = ({ setShowSearch, location, themeProvider, show, toggleFullscreen
             <ButtonsWrapper>
               {isSearchEnabled ? (
                 <>
-                  <SearchOpener open={open} forcedComponent={'icon'} css={visibleTablet} />
+                  <SearchOpener
+                    open={open}
+                    forcedComponent={"icon"}
+                    css={visibleTablet}
+                  />
                   <SearchOpener open={open} css={hiddenTablet} />
                 </>
               ) : null}
               {helpUrl && helpUrl.length > 0 ? (
                 <HelpButton css={hiddenMobile} helpUrl={helpUrl} />
               ) : (
-                ''
+                ""
               )}
               <SocialButtonsWrapper css={hiddenMobile}>
                 {SocialButtons(iconBaseProps, config.social)}
@@ -298,9 +334,12 @@ const Header = ({ setShowSearch, location, themeProvider, show, toggleFullscreen
               <RssIcon {...iconBaseProps} />
               {config.features.fullScreenMode.enabled &&
               config.features.fullScreenMode.enabled === true ? (
-                <FullScreenEnter toggle={toggleFullscreenMode} css={hiddenMobile} />
+                <FullScreenEnter
+                  toggle={toggleFullscreenMode}
+                  css={hiddenMobile}
+                />
               ) : (
-                ''
+                ""
               )}
               {DarkModeButton}
               <MobileMenuToggle toggle={toggleMenuOpen} open={menuOpen} />
@@ -317,7 +356,7 @@ const Header = ({ setShowSearch, location, themeProvider, show, toggleFullscreen
                 </SocialButtonsWrapper>
               </MobileNavigation>
             ) : (
-              ''
+              ""
             )}
           </HeaderWrapper>
         </>

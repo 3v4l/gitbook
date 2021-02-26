@@ -1,11 +1,11 @@
-import React from 'react';
-import styled from '@emotion/styled';
-import { useTheme } from 'emotion-theming';
-import Collapsible from 'react-collapsible';
-import { ChevronUp, ChevronDown } from 'react-feather';
-import { renderToStaticMarkup } from 'react-dom/server';
-import emoji from '../../utils/emoji';
-import { shadowAround } from '../../styles';
+import React from "react";
+import styled from "@emotion/styled";
+import { useTheme } from "emotion-theming";
+import Collapsible from "react-collapsible";
+import { ChevronUp, ChevronDown } from "react-feather";
+import { renderToStaticMarkup } from "react-dom/server";
+import emoji from "../../utils/emoji";
+import { shadowAround } from "../../styles";
 
 const AccordionWrapper = styled.div`
 margin: 10px 0;
@@ -17,14 +17,16 @@ margin: 10px 0;
         &.is-open {
             border-bottom: 1px solid ${(props) => props.theme.colors.border};
             &:after {
-                content: url('data:image/svg+xml; utf8, ${(props) => props.openImg}');
+                content: url('data:image/svg+xml; utf8, ${(props) =>
+                  props.openImg}');
             }
         }
         &:hover {
             border: 1px solid ${(props) => props.theme.colors.primary};
         }
         &:after {
-            content: url('data:image/svg+xml; utf8, ${(props) => props.closedImg}');
+            content: url('data:image/svg+xml; utf8, ${(props) =>
+              props.closedImg}');
             float: right;
         }
         transition: ${(props) => props.theme.transitions.hover};

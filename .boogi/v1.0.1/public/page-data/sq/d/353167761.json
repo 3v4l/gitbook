@@ -1,1 +1,12 @@
-{"data":{"site":{"siteMetadata":{"headerTitle":"manifoldfinance","helpUrl":"","logo":{"link":"/","image":"/assets/logo.png"},"headerLinks":[]}}}}
+{
+  "data": {
+    "site": {
+      "siteMetadata": {
+        "headerTitle": "Manifold Finance Documentation Portal",
+        "helpUrl": "",
+        "logo": { "link": "/", "image": "/assets/logo.png" },
+        "headerLinks": []
+      }
+    }
+  }
+}
